@@ -273,7 +273,7 @@
 						height = new_height
 
 				if("species")
-					var/list/new_species = list(HUMAN)
+					var/list/new_species = list(IPC)
 					var/prev_species = species
 					var/whitelisted = 0
 
