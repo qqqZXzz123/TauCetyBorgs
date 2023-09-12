@@ -57,7 +57,7 @@
 		AND BUMPING UP THE SAVEFILE_VERSION_MAX, AND SAVEFILE_VERSION_SPECIES_JOBS
 		~Luduk
 	*/
-	restricted_species = list(SKRELL, UNATHI, TAJARAN, DIONA, VOX, IPC)
+	restricted_species = list(SKRELL, UNATHI, TAJARAN, DIONA, VOX)
 	skillsets = list("Head of Personnel" = /datum/skillset/hop)
 
 /datum/job/blueshield
@@ -83,5 +83,5 @@
 		AND BUMPING UP THE SAVEFILE_VERSION_MAX, AND SAVEFILE_VERSION_SPECIES_JOBS
 		~Luduk
 	*/
-	restricted_species = list(SKRELL, UNATHI, TAJARAN, DIONA, VOX, IPC)
+	restricted_species = list(SKRELL, UNATHI, TAJARAN, DIONA, VOX)
 	skillsets = list("Blueshield Officer" = /datum/skillset/blueshield)
