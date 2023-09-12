@@ -16,9 +16,9 @@
 	outfit = /datum/outfit/job/captain
 	skillsets = list("Captain" = /datum/skillset/captain)
 
-// Non-human species can't be captains.
+// Только спу может быть капитаном
 /datum/job/captain/special_species_check(datum/species/S)
-	return S.name == HUMAN
+	return S.name == IPC
 
 /datum/job/captain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(!visualsOnly)
