@@ -255,7 +255,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 /datum/preferences/proc/repetitive_updates_character(current_version, savefile/S)
 
 	if(current_version < SAVEFILE_VERSION_SPECIES_JOBS)
-		if(species != HUMAN)
+		if(species != IPC)
 			for(var/datum/job/job in SSjob.occupations)
 				if(!job.is_species_permitted(species))
 					SetJobPreferenceLevel(job, 0)
@@ -594,7 +594,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	real_name		= sanitize_name(real_name)
 
 	if(isnull(species))
-		species = HUMAN
+		species = IPC
 	var/datum/species/species_obj = all_species[species]
 
 	if(isnull(language)) language = "None"
