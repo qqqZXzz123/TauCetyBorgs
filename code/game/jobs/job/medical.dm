@@ -82,7 +82,7 @@
 		AND BUMPING UP THE SAVEFILE_VERSION_MAX, AND SAVEFILE_VERSION_SPECIES_JOBS
 		~Luduk
 	*/
-	restricted_species = list(IPC)
+	restricted_species = null
 
 // Slow species shouldn't be paramedics.
 /datum/job/paramedic/special_species_check(datum/species/S)
