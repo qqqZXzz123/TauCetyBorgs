@@ -26,7 +26,7 @@
 		AND BUMPING UP THE SAVEFILE_VERSION_MAX, AND SAVEFILE_VERSION_SPECIES_JOBS
 		~Luduk
 	*/
-	restricted_species = list(SKRELL, UNATHI, TAJARAN, DIONA, VOX, IPC)
+	restricted_species = list(SKRELL, UNATHI, TAJARAN, DIONA, VOX)
 
 
 /datum/job/warden
@@ -51,7 +51,7 @@
 		AND BUMPING UP THE SAVEFILE_VERSION_MAX, AND SAVEFILE_VERSION_SPECIES_JOBS
 		~Luduk
 	*/
-	restricted_species = list(TAJARAN, DIONA, VOX, IPC)
+	restricted_species = list(TAJARAN, DIONA, VOX)
 
 
 /datum/job/detective
@@ -101,7 +101,7 @@
 		AND BUMPING UP THE SAVEFILE_VERSION_MAX, AND SAVEFILE_VERSION_SPECIES_JOBS
 		~Luduk
 	*/
-	restricted_species = list(DIONA, TAJARAN, VOX, IPC)
+	restricted_species = list(DIONA, TAJARAN, VOX)
 
 
 /datum/job/forensic
@@ -151,5 +151,5 @@
 		AND BUMPING UP THE SAVEFILE_VERSION_MAX, AND SAVEFILE_VERSION_SPECIES_JOBS
 		~Luduk
 	*/
-	restricted_species = list(DIONA, TAJARAN, VOX, IPC)
+	restricted_species = list(DIONA, TAJARAN, VOX)
 
