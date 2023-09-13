@@ -42,6 +42,7 @@
 	brainmob.dna = H.dna
 	brainmob.timeofhostdeath = H.timeofdeath
 	brainmob.stat = CONSCIOUS
+	brainmob.robot_talk_understand = 1
 	name = "positronic brain ([brainmob.name])"
 	if(brainmob.mind)
 		brainmob.mind.assigned_role = "Positronic Brain"
@@ -60,6 +61,7 @@
 	to_chat(src.brainmob, "<b>You are a positronic brain, brought into existence on [station_name()].</b>")
 	to_chat(src.brainmob, "<b>As a synthetic intelligence, you answer to all crewmembers, as well as the AI.</b>")
 	to_chat(src.brainmob, "<b>Remember, the purpose of your existence is to serve the crew and the station. Above all else, do no harm.</b>")
+	to_chat(src.brainmob, "<b>Use say :b to speak to other artificial intelligences.</b>")
 	src.brainmob.mind.assigned_role = "Positronic Brain"
 
 	brainmob.mind.skills.add_available_skillset(/datum/skillset/cyborg)
@@ -121,6 +123,7 @@
 	brainmob.real_name = brainmob.name
 	brainmob.loc = src
 	brainmob.container = src
+	brainmob.robot_talk_understand = 1
 	brainmob.stat = CONSCIOUS
 	brainmob.silent = 0
 	dead_mob_list -= brainmob
