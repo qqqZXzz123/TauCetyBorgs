@@ -131,6 +131,7 @@ var/global/list/ai_verbs_default = list(
 		"NT" = "ai-nanotrasen",
 		"Gentoo" = "ai-gentoo",
 		"Hal 9000" = "ai-hal",
+		"Binah" = "ai-binah",
 	)
 
 	var/datum/announcement/station/command/ai/announcement = new
