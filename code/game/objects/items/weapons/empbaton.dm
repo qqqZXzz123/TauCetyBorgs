@@ -2,7 +2,7 @@
 	name = "emp baton"
 	desc = "A emp baton for incapacitating robots with."
 	icon_state = "emp_stunbaton"
-	item_state = "baton"
+	item_state = "emp_baton"
 	slot_flags = SLOT_FLAGS_BELT
 	force = 10
 	throwforce = 7
