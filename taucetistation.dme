@@ -1048,6 +1048,7 @@
 #include "code\game\objects\items\weapons\defibrillator.dm"
 #include "code\game\objects\items\weapons\dice.dm"
 #include "code\game\objects\items\weapons\dna_injector.dm"
+#include "code\game\objects\items\weapons\empbaton.dm"
 #include "code\game\objects\items\weapons\explosives.dm"
 #include "code\game\objects\items\weapons\flamethrower.dm"
 #include "code\game\objects\items\weapons\fulton.dm"
