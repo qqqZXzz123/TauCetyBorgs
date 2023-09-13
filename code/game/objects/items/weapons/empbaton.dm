@@ -1,7 +1,7 @@
 /obj/item/weapon/melee/emp_baton
 	name = "emp baton"
 	desc = "A emp baton for incapacitating robots with."
-	icon_state = "stunbaton"
+	icon_state = "emp_stunbaton"
 	item_state = "baton"
 	slot_flags = SLOT_FLAGS_BELT
 	force = 10
