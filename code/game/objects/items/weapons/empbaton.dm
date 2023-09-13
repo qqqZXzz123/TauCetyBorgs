@@ -103,7 +103,7 @@
 			//H.apply_effect(10, STUN, 0)
 			H.apply_effect(2, WEAKEN, 0)
 			H.apply_effect(2, STUTTER, 0)
-			if(H.lying)
+			if(H.lying || H.crawling)
 				H.apply_effect(10, STUN, 0)
 
 
