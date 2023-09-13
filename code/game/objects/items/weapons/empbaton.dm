@@ -101,9 +101,9 @@
 		if(H.species.flags[IS_SYNTHETIC])
 			H.flash_eyes(affect_silicon = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
 			//H.apply_effect(10, STUN, 0)
-			H.apply_effect(1, WEAKEN, 0)
-			H.apply_effect(1, STUTTER, 0)
-			if(H.crawling)
+			H.apply_effect(2, WEAKEN, 0)
+			H.apply_effect(2, STUTTER, 0)
+			if(H.lying)
 				H.apply_effect(10, STUN, 0)
 
 
