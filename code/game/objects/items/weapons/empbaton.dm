@@ -39,7 +39,7 @@
 
 		var/mob/living/carbon/human/H = user
 		if(H.species.flags[IS_SYNTHETIC])
-			user.flash_eyes(affect_silicon = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
+			user.flash_eyes(affect_silicon = TRUE, override_blindness_check = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
 			user.apply_effect(10, STUN, 0)
 			user.apply_effect(10, WEAKEN, 0)
 			user.apply_effect(10, STUTTER, 0)
@@ -65,11 +65,11 @@
 
 		var/mob/living/carbon/human/H = user
 		if(H.species.flags[IS_SYNTHETIC])
-			user.flash_eyes(affect_silicon = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
+			user.flash_eyes(affect_silicon = TRUE, override_blindness_check = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
 			//user.apply_effect(10, STUN, 0)
 			user.apply_effect(10, WEAKEN, 0)
 			user.apply_effect(10, STUTTER, 0)
-			to_chat(user, "<span class='danger'>2</span>")
+			//to_chat(user, "<span class='danger'>2</span>")
 		discharge()
 		return
 
@@ -99,17 +99,17 @@
 		H.apply_effect(agony,AGONY,0)
 
 		if(H.species.flags[IS_SYNTHETIC])
-			H.flash_eyes(affect_silicon = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
+			H.flash_eyes(affect_silicon = TRUE, override_blindness_check = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
 			//H.apply_effect(10, STUN, 0)
 			if(H.lying || H.crawling || H.stuttering || H.stunned || H.weakened)
 				H.apply_effect(10, STUN, 0)
 				H.apply_effect(10, WEAKEN, 0)
 				H.apply_effect(10, STUTTER, 0)
-			H.apply_effect(2, WEAKEN, 0)
-			H.apply_effect(2, STUTTER, 0)
+			H.apply_effect(1, WEAKEN, 0)
+			H.apply_effect(1, STUTTER, 0)
 
 
-			to_chat(H, "<span class='danger'>3</span>")
+			//to_chat(H, "<span class='danger'>3</span>")
 
 		H.set_lastattacker_info(user)
 		if(isrobot(src.loc))
@@ -157,10 +157,10 @@
 				H.apply_effect(agony,AGONY,0)
 
 				if(H.species.flags[IS_SYNTHETIC])
-					H.flash_eyes(affect_silicon = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
+					H.flash_eyes(affect_silicon = TRUE, override_blindness_check = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
 					H.apply_effect(10, STUN, 0)
-					H.apply_effect(10, WEAKEN, 0)
-					H.apply_effect(10, STUTTER, 0)
+					H.apply_effect(20, WEAKEN, 0)
+					H.apply_effect(20, STUTTER, 0)
 					//to_chat(H, "<span class='danger'>4</span>")
 
 				discharge()
