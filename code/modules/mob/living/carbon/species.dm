@@ -957,7 +957,7 @@
 	// IPCs heat up until ~306C. No more 2000C IPCs
 	synth_temp_max = 550
 
-	brute_mod = 1.5
+	brute_mod = 0.75 //робот терминатор
 	burn_mod = 1
 	oxy_mod = 0
 	tox_mod = 0
