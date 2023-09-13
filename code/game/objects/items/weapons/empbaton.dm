@@ -101,10 +101,12 @@
 		if(H.species.flags[IS_SYNTHETIC])
 			H.flash_eyes(affect_silicon = TRUE, type = /atom/movable/screen/fullscreen/flash/noise)
 			//H.apply_effect(10, STUN, 0)
-			H.apply_effect(2, WEAKEN, 0)
-			H.apply_effect(2, STUTTER, 0)
 			if(H.lying || H.crawling || H.stuttering || H.stunned || H.weakened)
 				H.apply_effect(10, STUN, 0)
+				H.apply_effect(10, WEAKEN, 0)
+				H.apply_effect(10, STUTTER, 0)
+			H.apply_effect(2, WEAKEN, 0)
+			H.apply_effect(2, STUTTER, 0)
 
 
 			to_chat(H, "<span class='danger'>3</span>")
