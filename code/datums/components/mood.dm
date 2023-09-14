@@ -183,7 +183,7 @@
 		return
 
 	H.moody_color = null
-
+	return // прощай смена цвета
 	if(H.stat == DEAD)
 		return
 
