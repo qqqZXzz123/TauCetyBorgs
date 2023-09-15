@@ -211,6 +211,7 @@
 	modules += new /obj/item/device/flash(src)
 	modules += new /obj/item/weapon/handcuffs/cyborg(src)
 	modules += new /obj/item/weapon/melee/baton(src)
+	modules += new /obj/item/weapon/melee/emp_baton(src)
 	modules += new /obj/item/weapon/gun/energy/taser/cyborg(src)
 	modules += new /obj/item/taperoll/police(src)
 	modules += new /obj/item/device/gps/cyborg(src)
@@ -227,6 +228,9 @@
 	else
 		T.charge_tick = 0
 	var/obj/item/weapon/melee/baton/B = locate() in src.modules
+	if(B.charges < 10)
+		B.charges += 1
+	var/obj/item/weapon/melee/emp_baton/B = locate() in src.modules
 	if(B.charges < 10)
 		B.charges += 1
 
