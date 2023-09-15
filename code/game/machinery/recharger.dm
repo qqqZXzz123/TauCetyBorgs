@@ -113,10 +113,10 @@
 				icon_state = "recharger2"
 			return
 if(istype(charging, /obj/item/weapon/melee/emp_baton))
-			var/obj/item/weapon/melee/emp_baton/B = charging
-			//if(B.bcell.give(B.bcell.chargerate * recharge_coeff))
-			if(B.charges < initial(B.charges))
-				B.charges++
+			var/obj/item/weapon/melee/emp_baton/B2 = charging
+			//if(B2.bcell.give(B2.bcell.chargerate * recharge_coeff))
+			if(B2.charges < initial(B2.charges))
+				B2.charges++
 				icon_state = "recharger1"
 				use_power(200 * recharge_coeff)
 			else
@@ -194,9 +194,9 @@ if(istype(charging, /obj/item/weapon/melee/emp_baton))
 				icon_state = "wrecharger2"
 			return
 		if(istype(charging, /obj/item/weapon/melee/emp_baton))
-			var/obj/item/weapon/melee/emp_baton/B = charging
-			if(B.charges < initial(B.charges))
-				B.charges++
+			var/obj/item/weapon/melee/emp_baton/B2 = charging
+			if(B2.charges < initial(B2.charges))
+				B2.charges++
 				icon_state = "wrecharger1"
 				use_power(200 * recharge_coeff)
 			else
