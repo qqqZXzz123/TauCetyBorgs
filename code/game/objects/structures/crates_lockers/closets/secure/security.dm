@@ -244,9 +244,9 @@ ADD_TO_GLOBAL_LIST(/obj/structure/closet/secure_closet/security, sec_closets_lis
 	new /obj/item/weapon/reagent_containers/spray/pepper(src)
 	new /obj/item/weapon/grenade/flashbang(src)
 	if(prob(15))
-			new /obj/item/weapon/melee/baton(src)
-		else
-			new /obj/item/weapon/melee/emp_baton(src)
+		new /obj/item/weapon/melee/baton(src)
+	else
+		new /obj/item/weapon/melee/emp_baton(src)
 	new /obj/item/clothing/glasses/sunglasses/hud/sechud(src)
 	new /obj/item/taperoll/police(src)
 	new /obj/item/device/hailer(src)
