@@ -112,7 +112,7 @@
 			else
 				icon_state = "recharger2"
 			return
-if(istype(charging, /obj/item/weapon/melee/emp_baton))
+		if(istype(charging, /obj/item/weapon/melee/emp_baton))
 			var/obj/item/weapon/melee/emp_baton/B2 = charging
 			//if(B2.bcell.give(B2.bcell.chargerate * recharge_coeff))
 			if(B2.charges < initial(B2.charges))
