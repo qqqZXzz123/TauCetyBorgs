@@ -230,9 +230,9 @@
 	var/obj/item/weapon/melee/baton/B = locate() in src.modules
 	if(B.charges < 10)
 		B.charges += 1
-	var/obj/item/weapon/melee/emp_baton/B = locate() in src.modules
-	if(B.charges < 10)
-		B.charges += 1
+	var/obj/item/weapon/melee/emp_baton/B2 = locate() in src.modules
+	if(B2.charges < 10)
+		B2.charges += 1
 
 /obj/item/weapon/robot_module/janitor
 	name = "janitorial robot module"
