@@ -232,6 +232,7 @@
 
 	can_hold = list(
 		/obj/item/weapon/melee/baton,
+		/obj/item/weapon/melee/emp_baton,
 		/obj/item/weapon/melee/classic_baton,
 		/obj/item/weapon/melee/telebaton,
 		/obj/item/weapon/wirerod,
