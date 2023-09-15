@@ -151,7 +151,10 @@
 	new /obj/item/weapon/storage/box/flashbangs(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/weapon/reagent_containers/spray/pepper(src)
-	new /obj/item/weapon/melee/baton(src)
+	if(prob(15))
+		new /obj/item/weapon/melee/baton(src)
+	else
+		new /obj/item/weapon/melee/emp_baton(src)
 	new /obj/item/clothing/accessory/holster/armpit(src)
 	new /obj/item/weapon/melee/telebaton(src)
 	new /obj/item/weapon/gun/energy/gun/hos(src)
@@ -197,7 +200,10 @@
 	new /obj/item/weapon/storage/box/flashbangs(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/weapon/reagent_containers/spray/pepper(src)
-	new /obj/item/weapon/melee/baton(src)
+	if(prob(15))
+		new /obj/item/weapon/melee/baton(src)
+	else
+		new /obj/item/weapon/melee/emp_baton(src)
 	new /obj/item/weapon/storage/box/holobadge(src)
 	new /obj/item/device/flashlight/seclite(src)
 	new /obj/item/clothing/shoes/boots(src)
@@ -237,7 +243,10 @@ ADD_TO_GLOBAL_LIST(/obj/structure/closet/secure_closet/security, sec_closets_lis
 	new /obj/item/device/flash(src)
 	new /obj/item/weapon/reagent_containers/spray/pepper(src)
 	new /obj/item/weapon/grenade/flashbang(src)
-	new /obj/item/weapon/melee/baton(src)
+	if(prob(15))
+			new /obj/item/weapon/melee/baton(src)
+		else
+			new /obj/item/weapon/melee/emp_baton(src)
 	new /obj/item/clothing/glasses/sunglasses/hud/sechud(src)
 	new /obj/item/taperoll/police(src)
 	new /obj/item/device/hailer(src)
@@ -453,8 +462,10 @@ ADD_TO_GLOBAL_LIST(/obj/structure/closet/secure_closet/security, sec_closets_lis
 /obj/structure/closet/secure_closet/blueshield/PopulateContents()
 	new /obj/item/clothing/head/helmet/blueshield(src)
 	new /obj/item/clothing/suit/storage/flak/blueshield(src)
-
-	new /obj/item/weapon/melee/baton(src)
+	if(prob(15))
+		new /obj/item/weapon/melee/baton(src)
+	else
+		new /obj/item/weapon/melee/emp_baton(src)
 	new /obj/item/weapon/gun/projectile/automatic/glock/spec(src)
 	for (var/i in 1 to 4)
 		new /obj/item/ammo_box/magazine/glock/extended/rubber(src)
