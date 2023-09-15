@@ -13,6 +13,7 @@
 	var/static/list/allowed_items = list(
                                         /obj/item/weapon/gun/energy,
                                         /obj/item/weapon/melee/baton,
+                                        /obj/item/weapon/melee/emp_baton,
                                         /obj/item/weapon/shockpaddles/standalone,
                                         /obj/item/ammo_box/magazine/plasma
                                     )
