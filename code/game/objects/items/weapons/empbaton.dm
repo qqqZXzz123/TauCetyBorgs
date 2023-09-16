@@ -105,8 +105,10 @@
 				H.apply_effect(10, STUN, 0)
 				H.apply_effect(10, WEAKEN, 0)
 				H.apply_effect(10, STUTTER, 0)
-			H.apply_effect(1, WEAKEN, 0)
-			H.apply_effect(1, STUTTER, 0)
+			if(H.confused)
+				H.apply_effect(1, WEAKEN, 0)
+				H.apply_effect(1, STUTTER, 0)
+			H.MakeConfused(rand(1, 2))
 
 
 			//to_chat(H, "<span class='danger'>3</span>")
