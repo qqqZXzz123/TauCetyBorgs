@@ -533,10 +533,10 @@
 		if(!(BP.is_robotic()) || user.a_intent != INTENT_HELP)
 			return ..()
 
-		if(H.species.flags[IS_SYNTHETIC])
-			if(M == user)
-				to_chat(user, "<span class='rose'>You can't repair damage to your own body - it's against OH&S.</span>")
-				return
+//		if(H.species.flags[IS_SYNTHETIC])
+//			if(M == user)
+//				to_chat(user, "<span class='rose'>You can't repair damage to your own body - it's against OH&S.</span>")
+//				return
 
 		if(BP.brute_dam)
 			BP.heal_damage(15,0,0,1)
