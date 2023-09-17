@@ -463,10 +463,10 @@ By design, d1 is the smallest direction and d2 is the highest
 		if(!BP.is_robotic() || user.a_intent != INTENT_HELP)
 			return ..()
 
-		if(H.species.flags[IS_SYNTHETIC])
-			if(H == user)
-				to_chat(user, "<span class='alert'>You can't repair damage to your own body - it's against OH&S.</span>")
-				return
+//		if(H.species.flags[IS_SYNTHETIC])
+//			if(H == user)
+//				to_chat(user, "<span class='alert'>You can't repair damage to your own body - it's against OH&S.</span>")
+//				return
 
 		if(BP.burn_dam > 0)
 			if(use(1))
