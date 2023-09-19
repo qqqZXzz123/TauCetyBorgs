@@ -543,7 +543,7 @@
 	target.SetStunned(0)
 	target.SetWeakened(0)
 	target.SetParalysis(0)
-
+	target.timeofdeath = 0
 
 //////////////////////////////////////////////////////////////////
 //				RIBCAGE	ROBOTIC SURGERY							//
