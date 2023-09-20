@@ -7,6 +7,8 @@
 	my_client = client
 	..()
 
+	message_admins("Connected Player: [key]")
+
 	if(join_motd)
 		to_chat(src, "<div class='motd'>[join_motd]</div>")
 	if(join_test_merge)
