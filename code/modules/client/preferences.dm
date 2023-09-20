@@ -105,7 +105,7 @@ var/global/list/preferences_datums = list()
 	var/r_eyes = 0						//Eye color
 	var/g_eyes = 0						//Eye color
 	var/b_eyes = 0						//Eye color
-	var/species = IPC
+	var/species = HUMAN
 	var/language = "None"				//Secondary language
 
 	//Some faction information.
