@@ -155,7 +155,7 @@
 			to_chat(usr, "<span class='warning'>The round is either not ready, or has already finished...</span>")
 			return
 
-		if(client.prefs.species != IPC)
+		if(client.prefs.species != HUMAN)
 			if(!is_alien_whitelisted(src, client.prefs.species) && config.usealienwhitelist)
 				tgui_alert(usr, "You are currently not whitelisted to play [client.prefs.species].")
 				return FALSE
@@ -172,7 +172,7 @@
 			to_chat(usr, "<span class='notice'>There is an administrative lock on entering the game for non-observers!</span>")
 			return
 
-		if(client.prefs.species != IPC)
+		if(client.prefs.species != HUMAN)
 			if(!is_alien_whitelisted(src, client.prefs.species) && config.usealienwhitelist)
 				tgui_alert(usr, "You are currently not whitelisted to play [client.prefs.species].")
 				return FALSE
@@ -472,12 +472,12 @@
 		chosen_species = all_species[client.prefs.species]
 
 	if(!chosen_species)
-		return IPC
+		return HUMAN
 
 	if(is_species_whitelisted(chosen_species) || has_admin_rights())
 		return chosen_species.name
 
-	return IPC
+	return HUMAN
 
 /mob/dead/new_player/get_gender()
 	if(!client || !client.prefs) ..()
