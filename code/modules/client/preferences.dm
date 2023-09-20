@@ -183,8 +183,8 @@ var/global/list/preferences_datums = list()
 		message_admins("Get name error [C.ckey]")
 		real_name = random_name(gender)
 	else
-			real_name = w
-			message_admins("Get name success: [w]")
+		real_name = w
+		message_admins("Get name success: [w]")
 
 	key_bindings = deepCopyList(global.hotkey_keybinding_list_by_key) // give them default keybinds too
 	C?.set_macros()
