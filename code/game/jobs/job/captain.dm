@@ -18,7 +18,7 @@
 
 // Только спу может быть капитаном
 /datum/job/captain/special_species_check(datum/species/S)
-	return S.name == IPC
+	return S.name == HUMAN
 
 /datum/job/captain/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(!visualsOnly)
