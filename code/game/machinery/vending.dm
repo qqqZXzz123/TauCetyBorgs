@@ -115,10 +115,11 @@
 			if(mapload && is_station_level(src.z) && !private)
 				var/players_coefficient = num_players() / 75 //75 players = max load, 0 players = min load
 				var/randomness_coefficient = rand(50,100) / 100 //50-100% randomness
-//				var/final_coefficient = clamp(players_coefficient * randomness_coefficient, 0.1, 1.0) //10% minimum, 100% maximum
+				var/final_coefficient = clamp(players_coefficient * randomness_coefficient, 0.1, 1.0) //10% minimum, 100% maximum
 
 //				amount = round(amount * final_coefficient) //10-100% roundstart load depending on player amount and randomness
-				amount = round(amount * 2)
+//				amount = round(amount * 2)
+				amount = round(amount * (final_coefficient + 1)) //10-100% roundstart load depending on player amount and randomness
 
 				if(!amount && prob(20)) //20% that empty slot will be not empty. For very low-pop rounds.
 					amount = 1
