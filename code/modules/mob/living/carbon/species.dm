@@ -160,6 +160,7 @@
 
 	var/prothesis_icobase = 'icons/mob/human_races/robotic.dmi'
 
+	var/surgery_icobase = 'icons/mob/surgery.dmi'
 
 /datum/species/New()
 	blood_datum = new blood_datum_path
@@ -934,6 +935,7 @@
 	unarmed_type = /datum/unarmed_attack/punch
 	dietflags = 0		//IPCs can't eat, so no diet
 	taste_sensitivity = TASTE_SENSITIVITY_NO_TASTE
+	surgery_icobase = 'icons/mob/species/ipc/surgery.dmi'
 
 	eyes = null
 
@@ -957,7 +959,7 @@
 	// IPCs heat up until ~306C. No more 2000C IPCs
 	synth_temp_max = 550
 
-	brute_mod = 0.75 //робот терминатор
+	brute_mod = 1.5
 	burn_mod = 1
 	oxy_mod = 0
 	tox_mod = 0
