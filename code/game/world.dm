@@ -32,7 +32,6 @@ var/global/it_is_a_snow_day = FALSE
 	load_last_mode()
 	load_motd()
 	load_host_announcements()
-	load_test_merges()
 	load_admins()
 	load_mentors()
 	load_supporters()
