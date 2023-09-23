@@ -3,7 +3,7 @@
 	name = "snow"
 	icon_state = "snow0"
 	plane = FLOOR_PLANE
-	
+
 	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
 	force_lighting_update = TRUE
 
@@ -254,7 +254,7 @@
 	transform = Mx
 
 	if(catch_target_turf)
-		INVOKE_ASYNC(src, .proc/play_catch_anim, catch_target_turf)
+		INVOKE_ASYNC(src, PROC_REF(play_catch_anim), catch_target_turf)
 
 /obj/item/fish_carp/update_icon()
 	var/carp_color = pick(

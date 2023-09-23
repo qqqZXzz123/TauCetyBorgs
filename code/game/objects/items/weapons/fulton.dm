@@ -155,7 +155,7 @@
 /obj/item/weapon/extraction_pack/dealer/try_use_fulton(atom/movable/target, mob/user)
 	if(!isgundealer(user))
 		return FALSE
-	RegisterSignal(target, COMSIG_PARENT_QDELETING, CALLBACK(src, .proc/give_telecrystal, target.type, user))
+	RegisterSignal(target, COMSIG_PARENT_QDELETING, CALLBACK(src, PROC_REF(give_telecrystal), target.type, user))
 	if(!..())
 		UnregisterSignal(target, COMSIG_PARENT_QDELETING)
 		return FALSE

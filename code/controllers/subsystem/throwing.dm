@@ -76,7 +76,7 @@ SUBSYSTEM_DEF(throwing)
 	src.callback = callback
 	src.early_callback = early_callback
 
-	RegisterSignal(thrownthing, COMSIG_PARENT_QDELETING, .proc/on_thrownthing_qdel)
+	RegisterSignal(thrownthing, COMSIG_PARENT_QDELETING, PROC_REF(on_thrownthing_qdel))
 
 /datum/thrownthing/Destroy()
 	SSthrowing.processing -= thrownthing

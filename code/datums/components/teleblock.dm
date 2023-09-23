@@ -1,4 +1,4 @@
-// Note in case if you want to port teleport channels from /tg/: 
+// Note in case if you want to port teleport channels from /tg/:
 // in my opinion, we should not distinguish between magic, cult and bluespace teleportations technologies
 // it's better to leave the question "what is magic?" open
 
@@ -10,7 +10,7 @@
 		return COMPONENT_INCOMPATIBLE
 
 /datum/component/teleblock/RegisterWithParent() //RegisterSignal
-	RegisterSignal(parent, COMSIG_ATOM_INTERCEPT_TELEPORT, .proc/intercept)
+	RegisterSignal(parent, COMSIG_ATOM_INTERCEPT_TELEPORT, PROC_REF(intercept))
 
 /datum/component/teleblock/UnregisterFromParent()
 	UnregisterSignal(parent, COMSIG_ATOM_INTERCEPT_TELEPORT)

@@ -399,7 +399,7 @@
 		if( contents.len )
 			if(mode == 2)
 				feedback_inc("disposal_auto_flush",1)
-				INVOKE_ASYNC(src, .proc/flush)
+				INVOKE_ASYNC(src, PROC_REF(flush))
 		flush_count = 0
 
 	if(flush && air_contents.return_pressure() >= SEND_PRESSURE )	// flush can happen even without power
@@ -586,7 +586,7 @@
 	loc = trunk
 	active = 1
 	set_dir(DOWN)
-	addtimer(CALLBACK(src, .proc/move), 1)
+	addtimer(CALLBACK(src, PROC_REF(move)), 1)
 
 // movement process, persists while holder is moving through pipes
 /obj/structure/disposalholder/proc/move()

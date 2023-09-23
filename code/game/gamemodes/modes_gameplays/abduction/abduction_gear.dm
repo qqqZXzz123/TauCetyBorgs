@@ -286,7 +286,7 @@
 			imp_in.buckled.unbuckle_mob()
 		home.Retrieve(imp_in)
 		cooldown = 0
-		INVOKE_ASYNC(src, .proc/start_recharge, imp_in)
+		INVOKE_ASYNC(src, PROC_REF(start_recharge), imp_in)
 	else
 		to_chat(imp_in, "<span class='warning'>You must wait [(300 - cooldown) / 10] seconds to use [src] again!</span>")
 	return

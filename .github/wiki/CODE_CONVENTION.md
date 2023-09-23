@@ -192,7 +192,7 @@ var/path = /obj/item/something
 	var/obj/O = A
 	return O.some_var
 ```
-Данный оператор отрабатывает в рантайме, проходя по всем подтипам объекта в поисках запрашиваемой переменной, соответственно его использование чревато проблемами производительности. 
+Данный оператор отрабатывает в рантайме, проходя по всем подтипам объекта в поисках запрашиваемой переменной, соответственно его использование чревато проблемами производительности.
 
 ```proc().var``` и ```list[index].var``` - подобные конструкции равнозначны использованию ```:``` и их также не следует использовать по тем же причинам.
 ```dm
@@ -327,7 +327,7 @@ for(var/atom in bag_of_atoms)
 //Хорошо:
 /mob/some/class/proc/foo()
 	code
-	addtimer(CALLBACK(src, .proc/do_something_wrapper, variable), 20)
+	addtimer(CALLBACK(src, PROC_REF(do_something_wrapper), variable), 20)
 	addtimer(CALLBACK(other_mob, /mob.proc/do_something_crazy, a, b), 40)
 	VARSET_IN(src, name, "Steve", 30)
 
@@ -381,7 +381,7 @@ for(var/atom in bag_of_atoms)
 //Хорошо:
 /mob/some/class/proc/foo()
 	code
-	INVOKE_ASYNC(src, .proc/do_something_wrapper, variable)
+	INVOKE_ASYNC(src, PROC_REF(do_something_wrapper), variable)
 
 /mob/some/class/proc/do_something_wrapper(variable)
 	switch(variable)

@@ -299,7 +299,7 @@
 			if("tube","bulb")
 				if(prob(2))
 					broken(1)
-	addtimer(CALLBACK(src, .proc/update, 0), 1)
+	addtimer(CALLBACK(src, PROC_REF(update), 0), 1)
 
 /obj/machinery/light/Destroy()
 	var/area/A = get_area(src)
