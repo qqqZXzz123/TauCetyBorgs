@@ -498,7 +498,7 @@ var/global/bomb_set
 	safety = 1
 	if(!lighthack)
 		icon_state = "nuclearbomb3"
-	addtimer(CALLBACK(src, PROC_REF(fail)), 10 SECONDS) //Good taste, right?
+	addtimer(CALLBACK(src, .proc/fail), 10 SECONDS) //Good taste, right?
 	playsound(src, 'sound/effects/scary_honk.ogg', VOL_EFFECTS_MASTER, null, FALSE, null, 30)
 
 /obj/machinery/nuclearbomb/fake/examine(mob/user, distance)

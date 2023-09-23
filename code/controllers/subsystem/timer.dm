@@ -127,7 +127,7 @@ SUBSYSTEM_DEF(timer)
 	if (!length(alltimers))
 		return
 
-	sortTim(alltimers, GLOBAL_PROC_REF(cmp_timer))
+	sortTim(alltimers, .proc/cmp_timer)
 
 	var/datum/timedevent/head = alltimers[1]
 

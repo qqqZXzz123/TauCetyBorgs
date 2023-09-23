@@ -48,7 +48,7 @@ ADD_TO_GLOBAL_LIST(/obj/structure/toilet, toilet_list)
 		user.set_dir(dir)
 		to_chat(user, "<span class='notice'>You start doing your business...</span>")
 		playsound(src, SOUNDIN_RUSTLE, VOL_EFFECTS_MASTER, vol = 50)
-
+		
 		if(do_after(user, rand(5, 20) SECONDS, needhand = FALSE, target = src))
 			COOLDOWN_START(user, wc_use_cooldown, 30 MINUTES)
 			playsound(src, 'sound/effects/toilet_flush.ogg', VOL_EFFECTS_MASTER)
@@ -174,7 +174,7 @@ ADD_TO_GLOBAL_LIST(/obj/structure/toilet, toilet_list)
 		user.set_dir(turn(dir, 180))
 		to_chat(user, "<span class='notice'>You start doing your business...</span>")
 		playsound(src, SOUNDIN_RUSTLE, VOL_EFFECTS_MASTER, vol = 50)
-
+		
 		if(do_after(user, rand(5, 10) SECONDS, needhand = TRUE, target = src))
 			COOLDOWN_START(user, wc_use_cooldown, 30 MINUTES)
 			playsound(src, 'sound/effects/toilet_flush.ogg', VOL_EFFECTS_MASTER, vol = 50)
@@ -487,12 +487,12 @@ ADD_TO_GLOBAL_LIST(/obj/structure/toilet, toilet_list)
 			return
 		if(!ismist)
 			if(on)
-				addtimer(CALLBACK(src, PROC_REF(create_mist)), 50)
+				addtimer(CALLBACK(src, .proc/create_mist), 50)
 		else
 			create_mist()
 	else if(ismist)
 		create_mist()
-		addtimer(CALLBACK(src, PROC_REF(del_mist)), 250)
+		addtimer(CALLBACK(src, .proc/del_mist), 250)
 		if(!on)
 			del_mist()
 

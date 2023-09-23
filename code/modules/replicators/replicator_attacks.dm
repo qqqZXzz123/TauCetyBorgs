@@ -49,7 +49,7 @@
 		L.silent = max(L.silent, 2)
 
 		if(L.stat == CONSCIOUS && !L.lying && !L.crawling)
-			addtimer(CALLBACK(src, PROC_REF(check_for_explosion), A), 2 SECONDS)
+			addtimer(CALLBACK(src, .proc/check_for_explosion, A), 2 SECONDS)
 
 		INVOKE_ASYNC(src, /atom/movable.proc/do_attack_animation, L)
 		playsound(L, 'sound/weapons/crystal_hit.ogg', VOL_EFFECTS_MASTER)
@@ -65,7 +65,7 @@
 		return
 
 	if(a_intent == INTENT_GRAB)
-		INVOKE_ASYNC(src, PROC_REF(disintegrate_turf), get_turf(A))
+		INVOKE_ASYNC(src, .proc/disintegrate_turf, get_turf(A))
 		return
 
 	if(istype(A, /obj/structure/forcefield_node))
@@ -81,27 +81,27 @@
 		return
 
 	if(istype(A, /turf))
-		INVOKE_ASYNC(src, PROC_REF(disintegrate), A)
+		INVOKE_ASYNC(src, .proc/disintegrate, A)
 		return
 
 	if(istype(A, /obj))
-		INVOKE_ASYNC(src, PROC_REF(disintegrate), A)
+		INVOKE_ASYNC(src, .proc/disintegrate, A)
 		return
 
 	if(isreplicator(A))
 		var/mob/living/simple_animal/hostile/replicator/R = A
 		if(R == src || R.stat == DEAD || !R.ckey)
-			INVOKE_ASYNC(src, PROC_REF(disintegrate), A)
+			INVOKE_ASYNC(src, .proc/disintegrate, A)
 		return
 
 	if(isliving(A))
-		INVOKE_ASYNC(src, PROC_REF(disintegrate), A)
+		INVOKE_ASYNC(src, .proc/disintegrate, A)
 		return
 
 /mob/living/simple_animal/hostile/replicator/RangedAttack(atom/A, params)
 	// Adjacent() checks make this work in an unintuitive way otherwise.
 	if(get_dist(src, A) <= 1 && a_intent == INTENT_GRAB)
-		INVOKE_ASYNC(src, PROC_REF(disintegrate_turf), get_turf(A))
+		INVOKE_ASYNC(src, .proc/disintegrate_turf, get_turf(A))
 		return
 
 	if(a_intent == INTENT_HARM && get_turf(A) && get_turf(src))
@@ -206,7 +206,7 @@
 	armed = FALSE
 	update_icon()
 
-	addtimer(CALLBACK(src, PROC_REF(rearm)), 8 SECONDS)
+	addtimer(CALLBACK(src, .proc/rearm), 8 SECONDS)
 
 	var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread()
 	s.set_up(3, 1, src)
@@ -324,4 +324,4 @@
 	armed = FALSE
 	update_icon()
 
-	addtimer(CALLBACK(src, PROC_REF(rearm)), (8 SECONDS / severity))
+	addtimer(CALLBACK(src, .proc/rearm), (8 SECONDS / severity))

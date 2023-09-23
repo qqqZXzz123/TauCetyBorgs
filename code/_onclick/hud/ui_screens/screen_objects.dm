@@ -37,7 +37,7 @@
 	if(hud.hud_shown)
 		hud.mymob.client.screen += src
 	update_by_hud(hud)
-
+	
 /atom/movable/screen/proc/update_by_hud(datum/hud/hud)
 	if((copy_flags & HUD_COPY_ICON) && hud.ui_style)
 		icon = hud.ui_style
@@ -45,7 +45,7 @@
 		alpha = hud.ui_alpha
 	if((copy_flags & HUD_COPY_COLOR) && hud.ui_color)
 		color = hud.ui_color
-
+	
 /atom/movable/screen/proc/remove_from_hud(datum/hud/hud)
 	switch(hud_slot)
 		if(HUD_SLOT_ADDING)
@@ -154,7 +154,7 @@
 	cooldown_time = delay
 	set_maptext(cooldown_time)
 	if(need_timer)
-		timer = addtimer(CALLBACK(src, PROC_REF(tick)), 1 SECOND, TIMER_STOPPABLE)
+		timer = addtimer(CALLBACK(src, .proc/tick), 1 SECOND, TIMER_STOPPABLE)
 
 /atom/movable/screen/cooldown_overlay/proc/tick()
 	if(cooldown_time == 1)
@@ -163,7 +163,7 @@
 	cooldown_time--
 	set_maptext(cooldown_time)
 	if(timer)
-		timer = addtimer(CALLBACK(src, PROC_REF(tick)), 1 SECOND, TIMER_STOPPABLE)
+		timer = addtimer(CALLBACK(src, .proc/tick), 1 SECOND, TIMER_STOPPABLE)
 
 /atom/movable/screen/cooldown_overlay/proc/stop_cooldown()
 	if(cooldown_time == 0)

@@ -43,7 +43,7 @@
 		return FALSE
 	if(!isturf(user.loc))
 		return FALSE
-	if(!AStar(user, target.loc, TYPE_PROC_REF(/turf,Distance), C.sting_range, simulated_only = FALSE))
+	if(!AStar(user, target.loc, /turf/proc/Distance, C.sting_range, simulated_only = FALSE))
 		return FALSE //hope this ancient magic still works
 	if(ischangeling(target))
 		sting_feedback(user,target)

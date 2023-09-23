@@ -32,6 +32,7 @@ var/global/it_is_a_snow_day = FALSE
 	load_last_mode()
 	load_motd()
 	load_host_announcements()
+	load_test_merge()
 	load_admins()
 	load_mentors()
 	load_supporters()
@@ -180,7 +181,7 @@ var/global/world_topic_spam_protect_time = world.timeofday
 		if (packet_data)
 			if(packet_data["announce"] == "")
 				return receive_net_announce(packet_data, addr)
-			if(packet_data["bridge"] == "" && addr == "127.0.0.1") //
+			if(packet_data["bridge"] == "" && addr == "127.0.0.1") // 
 				bridge2game(packet_data)
 				return "bridge=1" // no return data in topic, feedback should be send only through bridge
 
@@ -207,7 +208,7 @@ var/global/world_topic_spam_protect_time = world.timeofday
 	var/list/dellog = list()
 
 	//sort by how long it's wasted hard deleting
-	sortTim(SSgarbage.items, cmp=GLOBAL_PROC_REF(cmp_qdel_item_time), associative = TRUE)
+	sortTim(SSgarbage.items, cmp=/proc/cmp_qdel_item_time, associative = TRUE)
 	for(var/path in SSgarbage.items)
 		var/datum/qdel_item/I = SSgarbage.items[path]
 		dellog += "Path: [path]"
@@ -268,7 +269,7 @@ var/global/shutdown_processed = FALSE
 			log_access("AFK: [key_name(C)]")
 			to_chat(C, "<span class='userdanger'>You have been inactive for more than [config.afk_time_bracket / 600] minutes and have been disconnected.</span>")
 			QDEL_IN(C, 2 SECONDS)
-	addtimer(CALLBACK(src, PROC_REF(KickInactiveClients)), 5 MINUTES)
+	addtimer(CALLBACK(GLOBAL_PROC, .proc/KickInactiveClients), 5 MINUTES)
 
 /world/proc/load_stealth_keys()
 	var/list/keys_list = file2list("config/stealth_keys.txt")
@@ -318,6 +319,14 @@ var/global/shutdown_processed = FALSE
 			host_announcements += trim(file2text("data/announcements/[file]"))
 
 		host_announcements = "<h2>Important Admin Announcements:</h2><br>[host_announcements]"
+
+/world/proc/load_test_merge()
+	if(fexists("test_merge.txt"))
+		join_test_merge = "<strong>Test merged PRs:</strong> "
+		var/list/prs = splittext(trim(file2text("test_merge.txt")), " ")
+		for(var/pr in prs)
+			test_merges += "#[pr] "
+			join_test_merge += "<a href='[config.repository_link]/pull/[pr]'>#[pr]</a> "
 
 /world/proc/load_regisration_panic_bunker()
 	if(config.registration_panic_bunker_age)
@@ -590,7 +599,7 @@ var/global/failed_db_connections = 0
 
 	packet_data["secret"] = "SECRET"
 	log_href("WTOPIC: NET ANNOUNCE: \"[list2params(packet_data)]\", from:[sender]")
-
+	
 	return proccess_net_announce(packet_data["type"], packet_data, sender)
 
 /world/proc/proccess_net_announce(type, list/data, sender)

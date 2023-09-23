@@ -13,7 +13,7 @@
 	flags = NOREACT
 
 	var/label
-
+	
 	var/test_stage = CHANGELING_TEST_INACTIVE
 	var/test_result_positive = FALSE
 
@@ -34,7 +34,7 @@
 
 /obj/item/weapon/changeling_test/Destroy()
 	reagents = null
-
+	
 	QDEL_NULL(chamber_A)
 	QDEL_NULL(chamber_B)
 
@@ -65,7 +65,7 @@
 
 	update_status()
 
-	addtimer(CALLBACK(src, PROC_REF(announce_result)), rand(120, 300) SECONDS) // ~2-5 minutes
+	addtimer(CALLBACK(src, .proc/announce_result), rand(120, 300) SECONDS) // ~2-5 minutes
 
 /obj/item/weapon/changeling_test/proc/announce_result()
 	test_stage = CHANGELING_TEST_DONE
@@ -89,7 +89,7 @@
 
 /obj/item/weapon/changeling_test/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/weapon/pen))
-
+		
 		var/new_label = sanitize_safe(input(user, "Write new label", label), MAX_NAME_LEN)
 		if(!new_label)
 			return

@@ -365,7 +365,7 @@
 
 /obj/structure/table/glass/atom_init()
 	. = ..()
-	AddComponent(/datum/component/clickplace, , CALLBACK(src, PROC_REF(slam)))
+	AddComponent(/datum/component/clickplace, , CALLBACK(src, .proc/slam))
 
 /obj/structure/table/glass/flip(direction)
 	if( !straight_table_check(turn(direction,90)) || !straight_table_check(turn(direction,-90)) )
@@ -571,7 +571,7 @@
 	. = ..()
 
 	table_attached_to = Table
-	RegisterSignal(table_attached_to, list(COMSIG_PARENT_QDELETING), PROC_REF(on_table_destroy))
+	RegisterSignal(table_attached_to, list(COMSIG_PARENT_QDELETING), .proc/on_table_destroy)
 
 	held_Item = Item
 	Item.forceMove(src)
@@ -653,7 +653,7 @@
 
 /obj/structure/table/reinforced/stall/atom_init()
 	. = ..()
-	AddComponent(/datum/component/clickplace, CALLBACK(src, PROC_REF(try_magnet)))
+	AddComponent(/datum/component/clickplace, CALLBACK(src, .proc/try_magnet))
 
 /obj/structure/table/reinforced/stall/proc/try_magnet(atom/A, obj/item/I, mob/user, params)
 	if(I.price_tag)
