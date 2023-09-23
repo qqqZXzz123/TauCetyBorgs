@@ -181,7 +181,7 @@ var/global/world_topic_spam_protect_time = world.timeofday
 		if (packet_data)
 			if(packet_data["announce"] == "")
 				return receive_net_announce(packet_data, addr)
-			if(packet_data["bridge"] == "" && addr == "127.0.0.1") // 
+			if(packet_data["bridge"] == "" && addr == "127.0.0.1") //
 				bridge2game(packet_data)
 				return "bridge=1" // no return data in topic, feedback should be send only through bridge
 
@@ -319,48 +319,6 @@ var/global/shutdown_processed = FALSE
 			host_announcements += trim(file2text("data/announcements/[file]"))
 
 		host_announcements = "<h2>Important Admin Announcements:</h2><br>[host_announcements]"
-
-/world/proc/load_test_merges()
-	if(!fexists("test_merge.txt"))
-		return
-
-	test_merges = splittext(trim(file2text("test_merge.txt")), " ")
-
-	var/list/to_fetch = list()
-
-	for(var/pr in test_merges)
-		var/path = "[PERSISTENT_CACHE_FOLDER]/github/[pr]"
-		if(fexists(path))
-			test_merges[pr] = sanitize(file2text(path))
-		else
-			test_merges[pr] = TEST_MERGE_DEFAULT_TEXT
-			to_fetch += pr
-
-	if(length(to_fetch))
-		fetch_new_test_merges(to_fetch)
-
-/world/proc/fetch_new_test_merges(list/to_fetch)
-	set waitfor = FALSE
-
-	if(!to_fetch)
-		return
-
-	var/arguments = to_fetch.Join(" ")
-	if(config.github_token)
-		arguments += " -t '[config.github_token]'"
-	if(config.repository_link)
-		arguments += " -r '[config.github_repository_owner]/[config.github_repository_name]'"
-
-	var/json_content = world.ext_python("fetch_test_merges.py", arguments)
-	if(!json_content)
-		return
-
-	var/list/fetch = json_decode(json_content) // {"number": {"title": title, "success": TRUE|FALSE}}
-	for(var/pr in fetch)
-		test_merges[pr] = sanitize(fetch[pr]["title"])
-		if(fetch[pr]["success"])
-			var/path = "[PERSISTENT_CACHE_FOLDER]/github/[pr]"
-			text2file(fetch[pr]["title"], path)
 
 /world/proc/load_regisration_panic_bunker()
 	if(config.registration_panic_bunker_age)
@@ -633,7 +591,7 @@ var/global/failed_db_connections = 0
 
 	packet_data["secret"] = "SECRET"
 	log_href("WTOPIC: NET ANNOUNCE: \"[list2params(packet_data)]\", from:[sender]")
-	
+
 	return proccess_net_announce(packet_data["type"], packet_data, sender)
 
 /world/proc/proccess_net_announce(type, list/data, sender)
