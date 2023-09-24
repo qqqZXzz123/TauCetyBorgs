@@ -43,6 +43,17 @@
 		message = "Обнаружена активация ядерной боеголовки в [initial(A.name)]. Кто-то пытается взорвать станцию!"
 	..()
 
+/datum/announcement/station/nuke_teleport
+	name = "Alert: Nuke Translocation"
+	message =  "Обнаружено подпространственное перемещение ядерной боеголовки. Требуется немедленное вмешательство!"
+	sound = "nuke2"
+
+/datum/announcement/station/nuke_teleport/play(area/new_loc, area/old_loc)
+	if(new_loc && old_loc)
+		message = "Обнаружено подпространственное перемещение ядерной боеголовки из [initial(old_loc.name)] в [initial(new_loc.name)]. Требуется немедленное вмешательство!"
+		message = "Обнаружена активация ядерной боеголовки в [initial(A.name)]. Кто-то пытается взорвать станцию!"
+	..()
+
 /datum/announcement/station/maint_revoke
 	name = "Alert: Maintenance Access Revoked"
 	message = "Был аннулирован доступ на все технические туннели."
