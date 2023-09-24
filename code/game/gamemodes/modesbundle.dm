@@ -51,7 +51,7 @@
 		/datum/game_mode/revolution,
 		/datum/game_mode/shadowling,
 		/datum/game_mode/families,
-		/datum/game_mode/replicators,
+//		/datum/game_mode/replicators,
 	)
 
 /datum/modesbundle/mix
