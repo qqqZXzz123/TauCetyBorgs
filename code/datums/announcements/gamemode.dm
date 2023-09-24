@@ -31,6 +31,11 @@
 	if(message)
 		src.message = message
 	..()
+/datum/announcement/centcomm/nuclear/gateway
+	name = "Hacked gateway"
+	subtitle = "Активация гейтвея."
+	sound = "gateway"
+	message = "Произведена синхронизация гейтвеев. Ожидайте гостей."
 
 /* Vox */
 /datum/announcement/centcomm/vox/arrival
@@ -196,4 +201,34 @@
 	message = "До нас дошла информация о том, что на борту [station_name_ru()] больше не осталось взрослых особей ксеноморфов. " + \
 			"Похоже вы справились! Центральное командование выражает благодарность экипажу [station_name_ru()]. " + \
 			"Всему гражданскому персоналу необходимо сдать полученное вооружение сотрудникам безопасности. Протокол изоляции экипажа станции деактивирован."
+
+/* Replicators */
+/datum/announcement/centcomm/replicator
+	name = "Bluespace Breach: Detected"
+	subtitle = "Тревога! Блюспэйс прорыв"
+
+/datum/announcement/centcomm/replicator/construction_began/play(area/A)
+	message = "Обнаружено открытие блюспэйс прорыва в [initial(A.name)]. Полное раскрытие прорыва приведёт к дестабилизации реальности вокруг станции!"
+	sound = "construction_began"
+	..()
+
+/datum/announcement/centcomm/replicator/construction_quarter/play(area/A)
+	message = "Блюспэйс прорыв в [initial(A.name)] достиг 25% от критического гиперобъема."
+	sound = "construction_quarter"
+	..()
+
+/datum/announcement/centcomm/replicator/construction_half/play(area/A)
+	message = "Блюспэйс прорыв в [initial(A.name)] достиг 50% от критического гиперобъема."
+	sound = "construction_half"
+	..()
+
+/datum/announcement/centcomm/replicator/construction_three_quarters/play(area/A)
+	message = "Блюспэйс прорыв в [initial(A.name)] достиг 75% от критического гиперобъема."
+	sound = "construction_three_quarters"
+	..()
+
+/datum/announcement/centcomm/replicator/doom/New()
+	message = "Тревога! Блюспэйс прорыв достиг критического гиперобъёма! Дестабилизация реальности неизбежна!"
+	sound = "construction_doom"
+
 
