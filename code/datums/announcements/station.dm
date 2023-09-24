@@ -36,11 +36,11 @@
 /* Alerts */
 /datum/announcement/station/nuke
 	name = "Alert: Nuke Activation"
-	message =  "Обнаружена активация ядерной боеголовки где-то на станции. Кто-то пытается взорвать станцию!"
-	sound = "nuke"
+	message =  "Тревога! На станции была обнаружена активация ядерной боеголовки!"
+	sound = "nuke1"
 /datum/announcement/station/nuke/play(area/A)
 	if(A)
-		message = "Обнаружена активация ядерной боеголовки в [initial(A.name)]. Кто-то пытается взорвать станцию!"
+		message = "Тревога! На станции была обнаружена активация ядерной боеголовки [initial(A.name)]!"
 	..()
 
 /datum/announcement/station/nuke_teleport
