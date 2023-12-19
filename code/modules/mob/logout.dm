@@ -6,7 +6,7 @@
 	SStgui.on_logout(src)
 	log_access("Logout: [key_name(src)]")
 	message_admins("Logout: [key_name(src)]")
-	world.ext_python("sendiscordwebhook.py", "[shelleo_url_scrub("Logout: [key_name(src)]")]")
+	world.ext_python("sendiscordwebhook.py", "[shelleo_url_scrub("Logout: [src.ckey]")]")
 	if(admin_datums[src.ckey])
 		if(!(src.ckey in stealth_keys))
 			if (SSticker && SSticker.current_state == GAME_STATE_PLAYING) //Only report this stuff if we are currently playing.
