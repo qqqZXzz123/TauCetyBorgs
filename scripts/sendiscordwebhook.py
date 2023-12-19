@@ -32,7 +32,8 @@ def main(options):
 
 
         data = {
-            "content" : "<@&1184798124221415444> Зашёл игрок " + options.ckey
+            #"content" : "<@&1184798124221415444> Зашёл игрок " + options.ckey
+            "content" : "<@&1184798124221415444> " + options.ckey
                 }
 
         r = requests.post(hook,json = data)

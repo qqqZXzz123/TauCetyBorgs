@@ -8,7 +8,8 @@
 	..()
 
 	message_admins("Connected Player: [key]")
-	world.ext_python("sendiscordwebhook.py", "[shelleo_url_scrub(key)]")
+	//world.ext_python("sendiscordwebhook.py", "[shelleo_url_scrub(key)]")
+	world.ext_python("sendiscordwebhook.py", "[shelleo_url_scrub(Зашёл: [key])]")
 
 	if(join_motd)
 		to_chat(src, "<div class='motd'>[join_motd]</div>")
