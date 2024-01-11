@@ -179,6 +179,8 @@ var/global/world_topic_spam_protect_time = world.timeofday
 	else if (length(T) && istext(T))
 		var/list/packet_data = params2list(T)
 		if (packet_data)
+			if(packet_data["bridge"] == "") // 
+				world.log << "addr: \"[addr]\""
 			if(packet_data["announce"] == "")
 				return receive_net_announce(packet_data, addr)
 			if(packet_data["bridge"] == "" && ( (addr == "127.0.0.1") || (addr == "37.131.196.100") || (addr == "172.18.0.1") ) ) // 
