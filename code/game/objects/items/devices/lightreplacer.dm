@@ -87,20 +87,21 @@
 	else if(istype(I, /obj/item/weapon/light))
 		var/obj/item/weapon/light/L = I
 	//	if(L.status == 0) // LIGHT OKAY
-			if(uses < max_uses)
-				AddUses(1)
-				to_chat(user, "You insert the [L.name] into the [src.name]. You have [uses] lights remaining.")
-				qdel(L)
-				return
+		if(uses < max_uses)
+			AddUses(1)
+			to_chat(user, "You insert the [L.name] into the [src.name]. You have [uses] lights remaining.")
+			qdel(L)
+			return
 	//	else
 	//		to_chat(user, "You need a working light.")
 	//		return
 
 	else if(istype(I, /obj/item/weapon/shard))
+		var/obj/item/weapon/shard/S = I
 		if(uses < max_uses)
 			AddUses(1)
-			to_chat(user, "You insert the [L.name] into the [src.name]. You have [uses] lights remaining.")
-			qdel(L)
+			to_chat(user, "You insert the [S.name] into the [src.name]. You have [uses] lights remaining.")
+			qdel(S)
 			return
 	else
 		return ..()
