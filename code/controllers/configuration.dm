@@ -581,7 +581,7 @@ var/global/bridge_secret = null
 					config.chat_bridge = value
 
 				if("bridge_secret")
-					var/global/bridge_secret = value
+					global.bridge_secret = value
 
 				if("check_randomizer")
 					config.check_randomizer = value
