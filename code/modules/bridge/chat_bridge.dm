@@ -47,6 +47,7 @@ var/global/list/datum/bridge_command/bridge_commands
 
 // Topic format: bridge&bridge_secret=secret&bridge_type=type&bridge_from_user=username&bridge_from_uid=DiscordID&bridge_from_suffix=Discord&bridge_arg_1=...
 /world/proc/bridge2game(list/packet_data)
+	world.log << "WTOPIC: BRIDGE: \"[list2params(packet_data)]\""
 	if(!config.chat_bridge)
 		return
 
