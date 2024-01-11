@@ -27,7 +27,7 @@
 		modify_hud()
 		var/datum/hud/hud = owner.hud_used
 		hud.show_hud(hud.hud_version)
-	unmodify_hud()//скрываем муд
+	//unmodify_hud()//скрываем муд// не работает
 
 /datum/component/mood/Destroy()
 	STOP_PROCESSING(SSmood, src)
@@ -328,7 +328,7 @@
 	var/datum/hud/hud = owner.hud_used
 	screen_obj = new
 	screen_obj.color = "#4b96c4"
-	screen_obj.add_to_hud(hud)
+	//screen_obj.add_to_hud(hud) //скрываем
 
 	RegisterSignal(hud, COMSIG_PARENT_QDELETING, .proc/unmodify_hud)
 	RegisterSignal(screen_obj, COMSIG_CLICK, .proc/hud_click)
