@@ -215,7 +215,8 @@ var/global/loopModeNames=list(
 
 /obj/machinery/media/jukebox/process()
 	if(!playlist)
-		var/url="[config.media_base_url]/index.php?playlist=[playlist_id]"
+		//var/url="[config.media_base_url]/index.php?playlist=[playlist_id]"
+		var/url="[config.media_base_url]/[playlist_id].json"
 		//testing("[src] - Updating playlist from [url]...")
 		var/response = world.Export(url)
 		playlist=list()
