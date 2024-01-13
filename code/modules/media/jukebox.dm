@@ -284,24 +284,11 @@ var/global/loopModeNames=list(
 	playlist_id="bar"
 	// Must be defined on your server.
 	playlists=list(
-		"bar"  = "Bar Mix",
-		"mogesfm84"  = "Moghes FM-84",
-		"moges" = "Moghes Club Music",
-		"club" = "Club Mix",
-		"customs" = "Customs Music",
-		"japan" = "Banzai Radio",
-		"govnar" = "Soviet Radio",
-		"classic" = "Classical Music",
-		"ussr_disco" = "Disco USSR-89s",
-		"topreptilian" = "Top Reptillian",
-		"zvukbanok" = "Sounds of beer cans",
-		"eurobeat" = "Eurobeat",
-		"finland" = "Suomi wave",
-		"dreamsofvenus" = "Dreams of Venus",
-		"hiphop" = "Hip-Hop for Space Gangstas",
-		"vaporfunk" = "Qerrbalak VaporFunkFM",
-		"thematic" = "Side-Bursting Tunes",
-		"lofi" = "Sadness/Longing/Loneliness",
+		"banzairadio"  = "Banzai Radio",
+		"classicalmusic"  = "Classical Music",
+		"moghesclubmusic" = "Moghes Club Music",
+		"sovietradio" = "Soviet Radio",
+		"topreptillian" = "Top Reptillian",
 	)
 
 // Relaxing elevator music~
