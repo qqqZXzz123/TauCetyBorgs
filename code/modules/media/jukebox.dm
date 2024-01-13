@@ -281,7 +281,7 @@ var/global/loopModeNames=list(
 	return
 
 /obj/machinery/media/jukebox/bar
-	playlist_id="bar"
+	playlist_id="banzairadio"
 	// Must be defined on your server.
 	playlists=list(
 		"banzairadio"  = "Banzai Radio",
@@ -289,6 +289,8 @@ var/global/loopModeNames=list(
 		"moghesclubmusic" = "Moghes Club Music",
 		"sovietradio" = "Soviet Radio",
 		"topreptillian" = "Top Reptillian",
+		"dubstep" = "Dubstep",
+		"radiokchp" = "Radio KChP",
 	)
 
 // Relaxing elevator music~
