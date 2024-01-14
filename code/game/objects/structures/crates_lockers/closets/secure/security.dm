@@ -151,7 +151,7 @@
 	new /obj/item/weapon/storage/box/flashbangs(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/weapon/reagent_containers/spray/pepper(src)
-	if(prob(50))
+	if(prob(90))
 		new /obj/item/weapon/melee/baton(src)
 	else
 		new /obj/item/weapon/melee/emp_baton(src)
@@ -200,7 +200,7 @@
 	new /obj/item/weapon/storage/box/flashbangs(src)
 	new /obj/item/device/flash(src)
 	new /obj/item/weapon/reagent_containers/spray/pepper(src)
-	if(prob(50))
+	if(prob(90))
 		new /obj/item/weapon/melee/baton(src)
 	else
 		new /obj/item/weapon/melee/emp_baton(src)
@@ -243,7 +243,7 @@ ADD_TO_GLOBAL_LIST(/obj/structure/closet/secure_closet/security, sec_closets_lis
 	new /obj/item/device/flash(src)
 	new /obj/item/weapon/reagent_containers/spray/pepper(src)
 	new /obj/item/weapon/grenade/flashbang(src)
-	if(prob(50))
+	if(prob(90))
 		new /obj/item/weapon/melee/baton(src)
 	else
 		new /obj/item/weapon/melee/emp_baton(src)
@@ -462,7 +462,7 @@ ADD_TO_GLOBAL_LIST(/obj/structure/closet/secure_closet/security, sec_closets_lis
 /obj/structure/closet/secure_closet/blueshield/PopulateContents()
 	new /obj/item/clothing/head/helmet/blueshield(src)
 	new /obj/item/clothing/suit/storage/flak/blueshield(src)
-	if(prob(50))
+	if(prob(90))
 		new /obj/item/weapon/melee/baton(src)
 	else
 		new /obj/item/weapon/melee/emp_baton(src)
