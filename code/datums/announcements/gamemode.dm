@@ -230,4 +230,3 @@
 /datum/announcement/centcomm/replicator/doom/New()
 	message = "Тревога! Блюспэйс прорыв достиг критического гиперобъёма! Дестабилизация реальности неизбежна!"
 	sound = "construction_doom"
-	
