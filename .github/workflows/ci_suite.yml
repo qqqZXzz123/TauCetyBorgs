@@ -2,10 +2,10 @@ name: CI Suite
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 env:
   BYOND_MAJOR: 514
   BYOND_MINOR: 1565
