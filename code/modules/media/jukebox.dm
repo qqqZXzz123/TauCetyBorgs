@@ -291,6 +291,7 @@ var/global/loopModeNames=list(
 		"topreptillian" = "Top Reptillian",
 		"dubstep" = "Dubstep",
 		"radiokchp" = "Radio KChP",
+		"radiohl" = "Radio HL",
 	)
 
 // Relaxing elevator music~
