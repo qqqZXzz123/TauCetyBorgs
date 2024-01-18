@@ -185,22 +185,22 @@
 
 	H.moody_color = null
 	return // прощай смена цвета
-	if(H.stat == DEAD)
-		return
-
-	if(spirit_level < 4)
-		return
-
-	var/dissapointment
-	switch(spirit_level)
-		if(6)
-			dissapointment = 0.8
-		if(5)
-			dissapointment = 0.4
-		if(4)
-			dissapointment = 0.2
-
-	H.moody_color = SADNESS_COLOR(dissapointment)
+//	if(H.stat == DEAD)
+//		return
+//
+//	if(spirit_level < 4)
+//		return
+//
+//	var/dissapointment
+//	switch(spirit_level)
+//		if(6)
+//			dissapointment = 0.8
+//		if(5)
+//			dissapointment = 0.4
+//		if(4)
+//			dissapointment = 0.2
+//
+//	H.moody_color = SADNESS_COLOR(dissapointment)
 
 ///Called on SSmood process
 /datum/component/mood/process(delta_time)
