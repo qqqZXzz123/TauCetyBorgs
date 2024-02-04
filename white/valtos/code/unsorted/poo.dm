@@ -154,6 +154,9 @@
 
 /datum/reagent/toxin/poo/on_mob_life(mob/living/carbon/C)
 	//SSblackbox.record_feedback("tally", "poo", 1, "Poo Eaten")
+	H.lip_style = "lipstick"
+	H.lip_color = "#4b3320"
+	H.update_body()
 	return ..()
 
 //datum/reagent/toxin/poo/expose_turf(turf/open/T, reac_volume)//splash the poo all over the place
@@ -252,8 +255,13 @@
 /datum/emote/human/poo
 	key = "poo"
 //	ru_name = "наложить"
-	message_3p = "shits on the floor"
+//	message_3p = "shits on the floor"
 	message_type = SHOWMSG_AUDIO
+	state_checks = list(
+		EMOTE_STATE(is_stat, CONSCIOUS),
+		EMOTE_STATE(is_intentional_or_species_no_flag, NO_PAIN),
+		EMOTE_STATE(is_intentional_or_species_no_flag, NO_BREATHE),
+	)
 
 /datum/emote/human/poo/do_emote(mob/living/carbon/human/user, emote_key, intentional)
 	. = ..()
@@ -331,6 +339,7 @@
 	gain_text = "<span class='notice'>Теперь я знаю древние техники покакунек.</span>"
 	lose_text = "<span class='danger'>Забываю как правильно какать.</span>"
 	//medical_record_text = "Дефекационные навыки пациента стоят за гранью понимания." //prikol
+	incompatible_species = list(DIONA, IPC)
 	
 	
 	
