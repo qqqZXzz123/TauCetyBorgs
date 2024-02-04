@@ -236,7 +236,7 @@
 		H.Weaken(1)
 		H.adjustBlurriness(1)
 		H.visible_message("<span class='warning'><b>[H]</b> ловит <b>[src]</b> своим телом!</span>", "<span class='userdanger'>Ловлю <b>[src]</b> своим телом!</span>")
-		playsound(H, pick(SOUNDIN_DESCERATION), 50, TRUE)
+		playsound(H, pick(SOUNDIN_DESCERATION), VOL_EFFECTS_MASTER, 50, TRUE)
 		if(!H.pooed) // one layer at a time
 			pooverlay.icon_state = "facepoo"
 			H.add_overlay(pooverlay)
