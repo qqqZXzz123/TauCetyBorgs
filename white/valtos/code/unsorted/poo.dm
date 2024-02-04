@@ -148,7 +148,7 @@
 	name = "Говно"
 	id = "shit"
 	description = "Говно?"
-	color = "#4B3320"
+	color = "#4b3320"
 	toxpwr = 1.5
 	taste_message = "говно"
 
@@ -268,7 +268,7 @@
 			if(HAS_TRAIT(H, TRAIT_LIGHT_POOER))
 				H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] себе прямо в руку!</span>", \
 					"<span class='notice'>Выдавливаю какаху из своего тела.</span>")
-				playsound(H, 'white/valtos/sounds/poo2.ogg', 25, 1) //silence hunter
+				playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 25, TRUE) //silence hunter
 				var/obj/item/weapon/reagent_containers/food/snacks/poo/P = new(T)
 				H.put_in_hands(P)
 				H.throw_mode_on()
@@ -279,7 +279,7 @@
 				if(H.w_uniform)
 					H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] себе в штаны!</span>", \
 						"<span class='notice'>Сру себе в штаны.</span>")
-					playsound(H, 'white/valtos/sounds/poo2.ogg', 50, 1)
+					playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 50, TRUE)
 					H.pooition -= 25
 					if(!H.pooed)
 						var/mutable_appearance/pooverlay = mutable_appearance('white/valtos/icons/poo.dmi')
@@ -294,14 +294,14 @@
 				else if(locate(/obj/structure/toilet) in T)
 					H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] в туалет!</span>", \
 						"<span class='notice'>Выдавливаю какаху прямиком в туалет.</span>")
-					playsound(H, 'white/valtos/sounds/poo2.ogg', 50, 1)
+					playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 50, TRUE)
 					H.pooition -= 25
 					//SSblackbox.record_feedback("tally", "poo", 1, "Poo Created")
 					return
 				else
 					H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] на пол!</span>", \
 						"<span class='notice'>Выдавливаю какаху из своего тела.</span>")
-					playsound(H, 'white/valtos/sounds/poo2.ogg', 50, 1)
+					playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 50, TRUE)
 					new /obj/item/weapon/reagent_containers/food/snacks/poo(T)
 					H.pooition -= 25
 					//SSblackbox.record_feedback("tally", "poo", 1, "Poo Created")
