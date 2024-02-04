@@ -265,6 +265,8 @@
 	user.try_poo()
 
 /mob/living/proc/try_poo()
+	if(H.species.flags[IS_SYNTHETIC])
+		return
 	var/list/random_poo = list("покакунькивает", "срёт", "какает", "производит акт дефекации", "обсирается", "выдавливает какулину")
 	if(ishuman(src))
 		var/mob/living/carbon/human/H = src
