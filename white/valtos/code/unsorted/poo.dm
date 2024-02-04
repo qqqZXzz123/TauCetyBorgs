@@ -266,9 +266,15 @@
 
 /mob/living/proc/try_poo()
 	var/list/random_poo = list("покакунькивает", "срёт", "какает", "производит акт дефекации", "обсирается", "выдавливает какулину")
-	if(ishuman(src) && !H.species.flags[IS_SYNTHETIC])
+	if(ishuman(src))
 		var/mob/living/carbon/human/H = src
 		var/turf/T = get_turf(src)
+		if(H.species.flags[IS_SYNTHETIC])
+			H.visible_message("<span class='notice'><b>[H]</b> проигрывает звук пердежа!</span>", \
+			"<span class='notice'>Проигрываю poo.mp3.</span>")
+			playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 40, TRUE)
+			H.set_pooition(0)
+			return
 		if(H.pooition >= 25)
 			if(HAS_TRAIT(H, TRAIT_LIGHT_POOER))
 				H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] себе прямо в руку!</span>", \
@@ -311,7 +317,7 @@
 					H.pooition -= 25
 					//SSblackbox.record_feedback("tally", "poo", 1, "Poo Created")
 					return
-		else if(H.stat == CONSCIOUS)
+		else if(H.stat == CONSCIOUS && !H.species.flags[IS_SYNTHETIC]) //неадекватный кодинг
 			H.visible_message("<span class='notice'><b>[H]</b> тужится!</span>", \
 					"<span class='notice'>Вам нечем какать.</span>")
 			H.adjustBlurriness(1)
