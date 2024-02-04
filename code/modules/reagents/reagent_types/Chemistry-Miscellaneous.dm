@@ -238,6 +238,7 @@
 			C.wear_mask.clean_blood()
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = C
+			H.wash_poo()
 			if(H.head)
 				H.head.clean_blood()
 			if(H.wear_suit)

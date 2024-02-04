@@ -1321,3 +1321,4 @@
 			nutrition_to_remove += pain * 0.01
 	nutrition_to_remove *= met_factor
 	nutrition = max(0.0, nutrition - nutrition_to_remove)
+	adjust_pooition(nutrition_to_remove)
