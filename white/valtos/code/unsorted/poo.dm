@@ -154,9 +154,6 @@
 
 /datum/reagent/toxin/poo/on_mob_life(mob/living/carbon/C)
 	//SSblackbox.record_feedback("tally", "poo", 1, "Poo Eaten")
-	С.lip_style = "lipstick"
-	С.lip_color = "#4b3320"
-	С.update_body()
 	return ..()
 
 //datum/reagent/toxin/poo/expose_turf(turf/open/T, reac_volume)//splash the poo all over the place
