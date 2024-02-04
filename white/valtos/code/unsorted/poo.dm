@@ -113,8 +113,8 @@
 
 
 /obj/item/weapon/reagent_containers/food/snacks/poo
-	name = "говно"
-	desc = "Продукт человеческой единицы."
+	name = "Poop"
+	desc = "It's brown and stinks"
 	icon = 'white/valtos/icons/poo.dmi'
 	icon_state = "truepoo"
 //	tastes = list("shit" = 1, "poo" = 1)
@@ -133,7 +133,7 @@
 	reagents.add_reagent("shit", 10)
 
 /obj/item/weapon/reagent_containers/food/snacks/poo/cooked
-	name = "жареное говно"
+	name = "Fried poop"
 	icon_state = "ppoo1"
 	random_icon_states = list("ppoo1", "ppoo2", "ppoo3", "ppoo4", "ppoo5", "ppoo6")
 	list_reagents = list("lube" = 10)
@@ -145,12 +145,12 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/poo/cooked
 
 /datum/reagent/toxin/poo
-	name = "Говно"
+	name = "Poop"
 	id = "shit"
-	description = "Говно?"
+	description = "Poop"
 	color = "#4b3320"
 	toxpwr = 1.5
-	taste_message = "говно"
+	taste_message = "It tastes bitter and nasty"
 
 /datum/reagent/toxin/poo/on_mob_life(mob/living/carbon/C)
 	//SSblackbox.record_feedback("tally", "poo", 1, "Poo Eaten")
@@ -210,8 +210,8 @@
 	return TRUE
 
 /obj/effect/decal/cleanable/poo
-	name = "шоколадный каток"
-	desc = "И кто это тут размазал?"
+	name = "Brown spot"
+	desc = "Is it supposed to stink?"
 	icon = 'white/valtos/icons/poo.dmi'
 	icon_state = "splat1"
 	random_icon_states = list("splat1", "splat2", "splat3", "splat4", "splat5", "splat6", "splat7", "splat8")
@@ -235,7 +235,7 @@
 		H.Stun(1)
 		H.Weaken(1)
 		H.adjustBlurriness(1)
-		H.visible_message("<span class='warning'><b>[H]</b> ловит <b>[src]</b> своим телом!</span>", "<span class='userdanger'>Ловлю <b>[src]</b> своим телом!</span>")
+		H.visible_message("<span class='warning'><b>[H]</b> caught <b>[src]</b> with own body!</span>", "<span class='userdanger'>You caught <b>[src]</b> with you body!</span>")
 		playsound(H, pick(SOUNDIN_DESCERATION), VOL_EFFECTS_MASTER, 50, TRUE)
 		if(!H.pooed) // one layer at a time
 			pooverlay.icon_state = "facepoo"
@@ -260,14 +260,14 @@
 	user.try_poo()
 
 /mob/living/proc/try_poo()
-	var/list/random_poo = list("покакунькивает", "срёт", "какает", "производит акт дефекации", "обсирается", "выдавливает какулину")
+	var/list/random_poo = list("defecate", "drop a brown bomb", "shit", "crap", "makes a poop")
 	if(ishuman(src))
 		var/mob/living/carbon/human/H = src
 		var/turf/T = get_turf(src)
 		if(H.pooition >= 25)
 			if(HAS_TRAIT(H, TRAIT_LIGHT_POOER))
-				H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] себе прямо в руку!</span>", \
-					"<span class='notice'>Выдавливаю какаху из своего тела.</span>")
+				H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] into own hand!</span>", \
+					"<span class='notice'>You make a poop.</span>")
 				playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 25, TRUE) //silence hunter
 				var/obj/item/weapon/reagent_containers/food/snacks/poo/P = new(T)
 				H.put_in_hands(P)
@@ -277,8 +277,8 @@
 				return
 			else
 				if(H.w_uniform)
-					H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] себе в штаны!</span>", \
-						"<span class='notice'>Сру себе в штаны.</span>")
+					H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] in own pants!</span>", \
+						"<span class='notice'>You shitting in your own pants!</span>")
 					playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 50, TRUE)
 					H.pooition -= 25
 					if(!H.pooed)
@@ -292,23 +292,23 @@
 					//SSblackbox.record_feedback("tally", "poo", 1, "Poo Self")
 					return
 				else if(locate(/obj/structure/toilet) in T)
-					H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] в туалет!</span>", \
-						"<span class='notice'>Выдавливаю какаху прямиком в туалет.</span>")
+					H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] in the toilet.</span>", \
+						"<span class='notice'>You shitting in the toilet.</span>")
 					playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 50, TRUE)
 					H.pooition -= 25
 					//SSblackbox.record_feedback("tally", "poo", 1, "Poo Created")
 					return
 				else
 					H.visible_message("<span class='notice'><b>[H]</b> [prob(75) ? pick(random_poo) : uppertext(pick(random_poo))] на пол!</span>", \
-						"<span class='notice'>Выдавливаю какаху из своего тела.</span>")
+						"<span class='notice'>You make a poop.</span>")
 					playsound(H, 'white/valtos/sounds/poo2.ogg', VOL_EFFECTS_MASTER, 50, TRUE)
 					new /obj/item/weapon/reagent_containers/food/snacks/poo(T)
 					H.pooition -= 25
 					//SSblackbox.record_feedback("tally", "poo", 1, "Poo Created")
 					return
 		else if(H.stat == CONSCIOUS)
-			H.visible_message("<span class='notice'><b>[H]</b> тужится!</span>", \
-					"<span class='notice'>Вам нечем какать.</span>")
+			H.visible_message("<span class='notice'><b>[H]</b> tries to poop.</span>", \
+					"<span class='notice'>You can't make a poop.</span>")
 			H.adjustBlurriness(1)
 			//SSblackbox.record_feedback("tally", "poo", 1, "Poo Creation Failed")
 			return
@@ -325,12 +325,12 @@
 
 /datum/quirk/legkoserya
 	name = QUIRK_LIGHT_POOER
-	desc = "Древнее умение какать прямо себе в руку и не только."
+	desc = "Ancient skill of pooping in your own hand and more."
 	value = 2
 	mob_trait = TRAIT_LIGHT_POOER
-	gain_text = "<span class='notice'>Теперь я знаю древние техники покакунек.</span>"
-	lose_text = "<span class='danger'>Забываю как правильно какать.</span>"
-	//medical_record_text = "Дефекационные навыки пациента стоят за гранью понимания." //prikol
+	gain_text = "<span class='notice'>Now you know the ancient technique of shitting.</span>"
+	lose_text = "<span class='danger'>You forgot how to poop properly.</span>"
+	//medical_record_text = "The patient's defecation skills are beyond comprehension." //prikol
 	
 	
 	
