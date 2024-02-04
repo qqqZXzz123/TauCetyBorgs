@@ -265,10 +265,8 @@
 	user.try_poo()
 
 /mob/living/proc/try_poo()
-	if(H.species.flags[IS_SYNTHETIC])
-		return
 	var/list/random_poo = list("покакунькивает", "срёт", "какает", "производит акт дефекации", "обсирается", "выдавливает какулину")
-	if(ishuman(src))
+	if(ishuman(src) && !H.species.flags[IS_SYNTHETIC])
 		var/mob/living/carbon/human/H = src
 		var/turf/T = get_turf(src)
 		if(H.pooition >= 25)
