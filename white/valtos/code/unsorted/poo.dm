@@ -262,7 +262,7 @@
 
 /datum/emote/human/poo/do_emote(mob/living/carbon/human/user, emote_key, intentional)
 	. = ..()
-	user.try_poo()
+//	user.try_poo()
 
 /mob/living/proc/try_poo()
 	var/list/random_poo = list("покакунькивает", "срёт", "какает", "производит акт дефекации", "обсирается", "выдавливает какулину")
@@ -334,15 +334,15 @@
 		cut_overlay(mutable_appearance('white/valtos/icons/poo.dmi', "suitpoo"))
 		pooed = FALSE
 
-/datum/quirk/legkoserya
-	name = QUIRK_LIGHT_POOER
-	desc = "Древнее умение какать прямо себе в руку и не только."
-	value = 2
-	mob_trait = TRAIT_LIGHT_POOER
-	gain_text = "<span class='notice'>Теперь я знаю древние техники покакунек.</span>"
-	lose_text = "<span class='danger'>Забываю как правильно какать.</span>"
-	//medical_record_text = "Дефекационные навыки пациента стоят за гранью понимания." //prikol
-	incompatible_species = list(DIONA, IPC)
+// /datum/quirk/legkoserya
+//	name = QUIRK_LIGHT_POOER
+//	desc = "Древнее умение какать прямо себе в руку и не только."
+//	value = 2
+//	mob_trait = TRAIT_LIGHT_POOER
+//	gain_text = "<span class='notice'>Теперь я знаю древние техники покакунек.</span>"
+//	lose_text = "<span class='danger'>Забываю как правильно какать.</span>"
+//	//medical_record_text = "Дефекационные навыки пациента стоят за гранью понимания." //prikol
+//	incompatible_species = list(DIONA, IPC)
 	
 	
 	
