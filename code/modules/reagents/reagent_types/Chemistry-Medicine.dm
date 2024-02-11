@@ -109,6 +109,8 @@
 
 /datum/reagent/tramadol/on_general_digest(mob/living/M)
 	..()
+	if(!data["time"])
+		data["time"] = 0
 	if(volume <= 0.1 && data["time"] != -1)
 		data["time"] = -1
 		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
@@ -142,6 +144,8 @@
 
 /datum/reagent/oxycodone/on_general_digest(mob/living/M)
 	..()
+	if(!data["time"])
+		data["time"] = 0
 	if(volume <= 0.1 && data["time"] != -1)
 		data["time"] = -1
 		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
