@@ -105,17 +105,29 @@
 	overdose = REAGENTS_OVERDOSE
 	custom_metabolism = 0.025
 	restrict_species = list(IPC, DIONA)
+	data = list()
 
 /datum/reagent/tramadol/on_general_digest(mob/living/M)
 	..()
+	if(volume <= 0.1 && data != -1)
+		data["time"] = -1
+		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
+		var/mob/living/carbon/human/H = M
+		H.shock_stage += 2
+		M.blurEyes(4)
+	else
+		if(world.time > data + 10 SECONDS)
+			data["time"] = world.time
+			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-4)
-	M.blurEyes(4)
 	if(volume > overdose)
 		M.hallucination = max(M.hallucination, 2)
-	if(prob(1))
-		to_chat(M, "<span class='notice'>Your body feel numb.</span>")
-	var/mob/living/carbon/human/H = M
-	H.shock_stage += 2
+		M.blurEyes(3)
+		if(prob(1))
+			to_chat(M, "<span class='notice'>Your body feel numb.</span>")
+		if(prob(3))
+			var/mob/living/carbon/human/H = M
+			H.shock_stage += 1
 
 /datum/reagent/oxycodone
 	name = "Oxycodone"
@@ -126,21 +138,33 @@
 	overdose = 20
 	custom_metabolism = 0.025
 	restrict_species = list(IPC, DIONA)
+	data = list()
 
 /datum/reagent/oxycodone/on_general_digest(mob/living/M)
 	..()
-	M.blurEyes(8)
+	if(volume <= 0.1 && data != -1)
+		data["time"] = -1
+		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
+		var/mob/living/carbon/human/H = M
+		H.shock_stage += 5
+		M.blurEyes(8)
+	else
+		if(world.time > data + 10 SECONDS)
+			data["time"] = world.time
+			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-8)
 	if(volume > overdose)
 		M.adjustDrugginess(1)
 		M.hallucination = max(M.hallucination, 3)
-	if(prob(10))//Побочки, которые бьют немного по игроку.
-		M.emote(pick("giggle","drool","laugh"))
-		M.random_move()
-	if(prob(1))
-		to_chat(M, "<span class='notice'>Your body feel numb.</span>")
-	var/mob/living/carbon/human/H = M
-	H.shock_stage += 5
+		if(prob(10))//Побочки, которые бьют немного по игроку.
+			M.emote(pick("giggle","drool","laugh"))
+			M.random_move()
+		if(prob(1))
+			to_chat(M, "<span class='notice'>Your body feel numb.</span>")
+		if(prob(10))
+			var/mob/living/carbon/human/H = M
+			H.shock_stage += 1
+			M.blurEyes(7)
 
 /datum/reagent/sterilizine
 	name = "Sterilizine"
