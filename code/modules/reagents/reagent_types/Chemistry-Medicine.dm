@@ -111,7 +111,7 @@
 	..()
 	if(!data["time"])
 		data["time"] = 0
-	if(volume <= 0.1 && data["time"] != -1)
+	if(volume <= 0.3 && data["time"] != -1)
 		data["time"] = -1
 		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
 		var/mob/living/carbon/human/H = M
@@ -146,7 +146,7 @@
 	..()
 	if(!data["time"])
 		data["time"] = 0
-	if(volume <= 0.1 && data["time"] != -1)
+	if(volume <= 0.3 && data["time"] != -1)
 		data["time"] = -1
 		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
 		var/mob/living/carbon/human/H = M
