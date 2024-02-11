@@ -109,16 +109,19 @@
 
 /datum/reagent/tramadol/on_general_digest(mob/living/M)
 	..()
+	if(!data["ticks"])
+		data["ticks"] = 1
+	data["ticks"]++
 	if(!data["time"])
 		data["time"] = 0
-	if(volume <= 0.3 && data["time"] != -1)
+	if(volume <= 0.2 && data["time"] != -1 && data["ticks"] >= 50)
 		data["time"] = -1
 		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
 		var/mob/living/carbon/human/H = M
-		H.shock_stage += 2
+		H.shock_stage += 8
 		M.blurEyes(4)
 	else
-		if(world.time > data["time"] + 5 SECONDS)
+		if(world.time > data["time"] + 180 SECONDS)
 			data["time"] = world.time
 			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-4)
@@ -144,16 +147,19 @@
 
 /datum/reagent/oxycodone/on_general_digest(mob/living/M)
 	..()
+	if(!data["ticks"])
+		data["ticks"] = 1
+	data["ticks"]++
 	if(!data["time"])
 		data["time"] = 0
-	if(volume <= 0.3 && data["time"] != -1)
+	if(volume <= 0.2 && data["time"] != -1 && data["ticks"] >= 50)
 		data["time"] = -1
 		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
 		var/mob/living/carbon/human/H = M
-		H.shock_stage += 5
+		H.shock_stage += 20
 		M.blurEyes(8)
 	else
-		if(world.time > data["time"] + 5 SECONDS)
+		if(world.time > data["time"] + 180 SECONDS)
 			data["time"] = world.time
 			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-8)
