@@ -121,7 +121,7 @@
 		H.shock_stage += 8
 		M.blurEyes(4)
 	else
-		if(world.time > data["time"] + 180 SECONDS)
+		if(world.time > data["time"] + 180 SECONDS && volume >= 0.3)
 			data["time"] = world.time
 			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-4)
@@ -159,7 +159,7 @@
 		H.shock_stage += 20
 		M.blurEyes(8)
 	else
-		if(world.time > data["time"] + 180 SECONDS)
+		if(world.time > data["time"] + 180 SECONDS && volume >= 0.3)
 			data["time"] = world.time
 			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-8)
