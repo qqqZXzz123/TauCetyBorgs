@@ -109,14 +109,14 @@
 
 /datum/reagent/tramadol/on_general_digest(mob/living/M)
 	..()
-	if(volume <= 0.1 && data != -1)
+	if(volume <= 0.1 && data["time"] != -1)
 		data["time"] = -1
 		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
 		var/mob/living/carbon/human/H = M
 		H.shock_stage += 2
 		M.blurEyes(4)
 	else
-		if(world.time > data + 10 SECONDS)
+		if(world.time > data["time"] + 5 SECONDS)
 			data["time"] = world.time
 			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-4)
@@ -125,7 +125,7 @@
 		M.blurEyes(3)
 		if(prob(1))
 			to_chat(M, "<span class='notice'>Your body feel numb.</span>")
-		if(prob(3))
+		if(prob(10))
 			var/mob/living/carbon/human/H = M
 			H.shock_stage += 1
 
@@ -142,14 +142,14 @@
 
 /datum/reagent/oxycodone/on_general_digest(mob/living/M)
 	..()
-	if(volume <= 0.1 && data != -1)
+	if(volume <= 0.1 && data["time"] != -1)
 		data["time"] = -1
 		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
 		var/mob/living/carbon/human/H = M
 		H.shock_stage += 5
 		M.blurEyes(8)
 	else
-		if(world.time > data + 10 SECONDS)
+		if(world.time > data["time"] + 5 SECONDS)
 			data["time"] = world.time
 			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-8)
@@ -161,10 +161,10 @@
 			M.random_move()
 		if(prob(1))
 			to_chat(M, "<span class='notice'>Your body feel numb.</span>")
-		if(prob(10))
+		if(prob(20))
 			var/mob/living/carbon/human/H = M
 			H.shock_stage += 1
-			M.blurEyes(7)
+			M.blurEyes(4)
 
 /datum/reagent/sterilizine
 	name = "Sterilizine"
