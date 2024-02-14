@@ -2203,8 +2203,8 @@
 		to_chat(user, "<span class='notice'>Looks like [src] doesn't have a brain... Your efforts are futile.</span>")
 		return
 		
-	var/obj/item/organ/external/head/BP = bodyparts_by_name[BP_HEAD]
-	if(!BP || (BP.is_stump))
+	var/obj/item/organ/external/head/BP_H = bodyparts_by_name[BP_HEAD]
+	if(!BP_H || (BP_H.is_stump))
 		to_chat(user, "<span class='notice'>Looks like [src] doesn't have a head.... Your efforts are futile.</span>")
 	return
 
