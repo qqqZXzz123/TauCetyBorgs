@@ -14,10 +14,6 @@
 	qdel(H.bodyparts_by_name[BP_R_LEG])
 	qdel(H.bodyparts_by_name[BP_L_ARM])
 	qdel(H.bodyparts_by_name[BP_R_ARM])
-	
-	qdel(H.bodyparts_by_name[BP_CHEST])
-	qdel(H.bodyparts_by_name[BP_HEAD])
-	qdel(H.bodyparts_by_name[BP_GROIN])
 
 	var/obj/item/organ/external/l_arm/robot/LA = new(null)
 	LA.insert_organ(H)
@@ -30,17 +26,6 @@
 
 	var/obj/item/organ/external/r_leg/robot/RL = new(null)
 	RL.insert_organ(H)
-	
-	
-	var/obj/item/organ/external/chest/robot/CH = new(null)
-	CH.insert_organ(H)
-	
-	var/obj/item/organ/external/head/robot/HE = new(null)
-	HE.insert_organ(H)
-	
-	var/obj/item/organ/external/groin/robot/GR = new(null)
-	GR.insert_organ(H)
-	
 
 	for(var/obj/item/organ/internal/IO in H.organs)
 		IO.mechanize()
