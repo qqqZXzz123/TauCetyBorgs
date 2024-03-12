@@ -69,6 +69,12 @@
 	},
 /turf/simulated/floor,
 /area/station/civilian/dormitories)
+"aB" = (
+/obj/machinery/telecomms/processor/preset_four,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "aC" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass{
@@ -168,7 +174,7 @@
 "ba" = (
 /obj/structure/table,
 /turf/simulated/floor{
-	icon_state = "darkbluefull"
+	icon_state = "dark"
 	},
 /area/station/hallway/primary/central)
 "bf" = (
@@ -304,6 +310,18 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"bO" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 4;
+	icon_state = "freezer_1";
+	power_setting = 20;
+	set_temperature = 73;
+	use_power = 1
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/bridge)
 "bP" = (
 /obj/machinery/atmospherics/components/unary/portables_connector{
 	dir = 4
@@ -599,6 +617,14 @@
 	icon_state = "vault"
 	},
 /area/station/hallway/secondary/exit)
+"cR" = (
+/obj/structure/table,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "cT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -626,6 +652,20 @@
 /area/station/civilian/cold_room{
 	lightswitch = 0
 	})
+"cX" = (
+/obj/machinery/alarm/server{
+	pixel_y = -34
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuitoff"
+	},
+/area/station/tcommsat/chamber)
+"cZ" = (
+/obj/machinery/telecomms/processor/preset_three,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "db" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1016,6 +1056,30 @@
 /area/station/medical/reception{
 	lightswitch = 0
 	})
+"fa" = (
+/obj/machinery/door/window{
+	name = "Telecommunications Access";
+	req_access = list(10)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 6
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = null;
+	pixel_x = -28
+	},
+/obj/structure/cable{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "fd" = (
 /obj/structure/table,
 /obj/item/weapon/reagent_containers/food/drinks/coffee{
@@ -1078,17 +1142,8 @@
 /turf/simulated/wall,
 /area/station/civilian/dormitories/dormfour)
 "fj" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	dir = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/airless{
-	dir = 5;
-	icon_state = "asteroidfloor"
-	},
-/area/space)
+/turf/simulated/wall,
+/area/station/tcommsat/chamber)
 "fk" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
@@ -1256,6 +1311,12 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormone)
+"fZ" = (
+/obj/machinery/telecomms/server/presets/engineering,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "gc" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor/wood{
@@ -1310,6 +1371,11 @@
 /obj/machinery/alarm{
 	dir = null;
 	pixel_x = 30
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
@@ -1453,10 +1519,9 @@
 /area/station/civilian/dormitories)
 "gS" = (
 /obj/structure/cable{
-	d1 = 2;
+	d1 = 1;
 	d2 = 8;
-	dir = 8;
-	icon_state = "2-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/space)
@@ -1889,10 +1954,29 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/item/weapon/paper{
+	info = "Уважаемый повар! Прошу впредь не добавлять в ваши блюда мясо без спроса. Как минимум предупреждайте о том из чего состоит ваше блюдо ПРЕЖДЕ чем его подать. На станции, к вашему сведению, могут быть вегетарианцы, которых оскорбляет подобное поведение. Надеюсь, что вы с пониманием отнесётесь к этому сообщению и в будущем будете учтивее.";
+	pixel_x = 6
+	},
+/obj/item/weapon/pen{
+	pixel_x = -6;
+	pixel_y = 8
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
 	lightswitch = 0
 	})
+"iE" = (
+/obj/machinery/alarm/server{
+	pixel_y = -34
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 9
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuitoff"
+	},
+/area/station/tcommsat/chamber)
 "iK" = (
 /obj/item/stack/sheet/metal{
 	amount = 12
@@ -2244,6 +2328,25 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/station/civilian/locker)
+"kh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Telecoms Server Access";
+	req_access = list(10)
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "kl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -2267,6 +2370,12 @@
 /area/station/bridge{
 	lightswitch = 0
 	})
+"km" = (
+/obj/machinery/telecomms/processor/preset_two,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "kn" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor/wood{
@@ -2476,14 +2585,13 @@
 	},
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "blackcorner"
+	icon_state = "blue"
 	},
 /area/station/hallway/primary/central)
 "lm" = (
 /obj/structure/cable{
 	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
+	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -2509,6 +2617,26 @@
 	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/space)
+"lr" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "lv" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/wood{
@@ -3485,8 +3613,7 @@
 "pm" = (
 /obj/structure/cable{
 	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
+	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -3584,6 +3711,14 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"pF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 9
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/bridge)
 "pG" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -3831,10 +3966,9 @@
 /area/station/civilian/dormitories/dormtwo)
 "qD" = (
 /obj/structure/cable{
-	d1 = 2;
+	d1 = 1;
 	d2 = 8;
-	dir = 8;
-	icon_state = "2-8"
+	icon_state = "1-8"
 	},
 /turf/environment/space,
 /area/space)
@@ -3906,6 +4040,16 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
+"ra" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "rb" = (
@@ -4084,6 +4228,12 @@
 /area/station/engineering/monitoring{
 	lightswitch = 0
 	})
+"rX" = (
+/obj/machinery/telecomms/bus/preset_three,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "rZ" = (
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -4153,6 +4303,30 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
+"sn" = (
+/obj/machinery/door/window{
+	name = "Telecommunications Access";
+	req_access = list(10)
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "so" = (
 /turf/simulated/floor{
 	icon_state = "floorscorched1"
@@ -4219,6 +4393,12 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/station/construction)
+"sA" = (
+/obj/machinery/telecomms/server/presets/command,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "sD" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
@@ -4597,8 +4777,7 @@
 "tW" = (
 /obj/structure/cable{
 	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
+	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -4698,6 +4877,12 @@
 /area/station/civilian/toilet{
 	lightswitch = 0
 	})
+"ui" = (
+/obj/machinery/telecomms/receiver/preset_left,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "uq" = (
 /turf/simulated/wall,
 /area/station/hallway/secondary/arrival)
@@ -4738,6 +4923,11 @@
 /area/station/bridge/captain_quarters{
 	lightswitch = 0
 	})
+"uu" = (
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuitoff"
+	},
+/area/station/tcommsat/chamber)
 "ux" = (
 /obj/structure/dresser,
 /obj/machinery/light{
@@ -4932,6 +5122,14 @@
 /obj/structure/girder,
 /turf/simulated/wall,
 /area/station/construction)
+"vD" = (
+/obj/machinery/telecomms/hub/preset{
+	autolinkers = list("hub","c_relay","s_relay","r_relay","science","medical","p_relay","supply","common","command","engineering","security","receiverA","receiverB","broadcasterA","broadcasterB")
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "vK" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -4966,8 +5164,7 @@
 "vN" = (
 /obj/structure/cable{
 	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
+	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -5002,6 +5199,14 @@
 	icon_state = "blackcorner"
 	},
 /area/station/civilian/dormitories)
+"wb" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 5
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuitoff"
+	},
+/area/station/tcommsat/chamber)
 "wd" = (
 /turf/simulated/floor/plating/airless/asteroid,
 /area/station/cargo/miningoffice{
@@ -5159,6 +5364,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
+"wS" = (
+/obj/structure/table,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "wT" = (
 /turf/simulated/wall/r_wall,
 /area/station/hallway/primary/central)
@@ -5345,6 +5558,12 @@
 /obj/machinery/scrap/stacking_machine,
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
+"xI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
 "xJ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -5518,6 +5737,15 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
+"yi" = (
+/obj/structure/table,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "yj" = (
 /obj/structure/weightlifter,
 /turf/simulated/floor/carpet/orange,
@@ -7039,6 +7267,12 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"EC" = (
+/obj/machinery/telecomms/bus/preset_two,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "EF" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 6
@@ -7386,6 +7620,24 @@
 	icon_state = "blackcorner"
 	},
 /area/station/civilian/dormitories)
+"Gw" = (
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "Gz" = (
 /obj/structure/table/reinforced,
 /turf/simulated/floor/wood,
@@ -7477,8 +7729,14 @@
 	},
 /area/station/maintenance/dormitory)
 "GT" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
@@ -7576,6 +7834,12 @@
 /area/station/medical/sleeper{
 	lightswitch = 0
 	})
+"HJ" = (
+/obj/machinery/telecomms/server/presets/common,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "HL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -7597,6 +7861,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/construction)
+"HP" = (
+/obj/machinery/telecomms/broadcaster/preset_left,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "HT" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -7969,6 +8239,14 @@
 	icon_state = "white"
 	},
 /area/station/hallway/secondary/exit)
+"Jy" = (
+/obj/machinery/atmospherics/components/unary/tank/nitrogen{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/bridge)
 "JD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8241,7 +8519,7 @@
 	},
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "black"
+	icon_state = "blue"
 	},
 /area/station/hallway/primary/central)
 "Ku" = (
@@ -8310,6 +8588,12 @@
 /area/station/medical/surgery{
 	lightswitch = 0
 	})
+"KF" = (
+/obj/machinery/telecomms/server/presets/medical,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "KL" = (
 /obj/structure/table,
 /obj/item/clothing/glasses/aviator_black{
@@ -8323,8 +8607,13 @@
 /area/station/maintenance/dormitory)
 "KN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
@@ -8467,6 +8756,14 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"Lv" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/bridge)
 "Lw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8594,6 +8891,12 @@
 	icon_state = "asteroidfloor"
 	},
 /area/space)
+"Me" = (
+/obj/machinery/telecomms/broadcaster/preset_right,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "Mh" = (
 /obj/structure/table,
 /obj/item/stack/medical/bruise_pack{
@@ -9267,6 +9570,19 @@
 /area/station/security/main{
 	lightswitch = 0
 	})
+"OB" = (
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "OC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9327,6 +9643,12 @@
 "OJ" = (
 /turf/simulated/wall,
 /area/station/civilian/locker)
+"OS" = (
+/obj/machinery/telecomms/server/presets/security,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "OU" = (
 /turf/simulated/wall,
 /area/station/maintenance/medbay)
@@ -9389,6 +9711,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/simulated/floor,
 /area/station/hallway/secondary/arrival)
+"Pn" = (
+/obj/machinery/computer/message_monitor,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "Pu" = (
 /obj/structure/table,
 /obj/item/weapon/paper{
@@ -9427,16 +9755,6 @@
 	},
 /turf/simulated/floor,
 /area/station/civilian/dormitories)
-"PB" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/paper{
-	info = "Уважаемый повар! Прошу впредь не добавлять в ваши блюда мясо без спроса. Как минимум предупреждайте о том из чего состоит ваше блюдо ПРЕЖДЕ чем его подать. На станции, к вашему сведению, могут быть вегетарианцы, которых оскорбляет подобное поведение. Надеюсь, что вы с пониманием отнесётесь к этому сообщению и в будущем будете учтивее.";
-	pixel_x = 6
-	},
-/turf/simulated/floor/wood,
-/area/station/civilian/bar{
-	lightswitch = 0
-	})
 "PI" = (
 /obj/machinery/computer/general_air_control{
 	frequency = 1443;
@@ -9458,6 +9776,12 @@
 /obj/structure/girder,
 /turf/environment/space,
 /area/space)
+"PL" = (
+/obj/machinery/telecomms/server/presets/supply,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "PQ" = (
 /obj/machinery/computer/stockexchange,
 /obj/structure/table,
@@ -9493,8 +9817,7 @@
 "Qa" = (
 /obj/structure/cable{
 	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
+	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -9578,6 +9901,13 @@
 /obj/item/clothing/shoes/footwraps,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"Qs" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/paper_bin,
+/turf/simulated/floor/wood,
+/area/station/civilian/bar{
+	lightswitch = 0
+	})
 "Qw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -9831,6 +10161,12 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/primary/central)
+"RH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuitoff"
+	},
+/area/station/tcommsat/chamber)
 "RI" = (
 /turf/simulated/floor{
 	icon_state = "bar"
@@ -9924,6 +10260,19 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
+"St" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 9
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
 "Sw" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /obj/machinery/light{
@@ -9977,6 +10326,12 @@
 /area/station/security/main{
 	lightswitch = 0
 	})
+"SF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/turf/simulated/floor/bluegrid{
+	icon_state = "darkstairs_alone"
+	},
+/area/station/tcommsat/chamber)
 "SO" = (
 /turf/simulated/floor,
 /area/station/cargo/storage{
@@ -10397,6 +10752,21 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/secondary/arrival)
+"Ug" = (
+/obj/machinery/telecomms/bus/preset_one,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
+"Uh" = (
+/obj/structure/table,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "Ui" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -10463,6 +10833,12 @@
 /area/station/security/main{
 	lightswitch = 0
 	})
+"Uy" = (
+/obj/machinery/telecomms/bus/preset_four,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "Uz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -10681,7 +11057,7 @@
 	},
 /turf/simulated/floor{
 	dir = 1;
-	icon_state = "black"
+	icon_state = "blue"
 	},
 /area/station/hallway/primary/central)
 "Vi" = (
@@ -10759,6 +11135,12 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormfive)
+"VE" = (
+/obj/machinery/telecomms/processor/preset_one,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "VI" = (
 /obj/structure/curtain/medical,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -10821,6 +11203,13 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor,
 /area/station/cargo/storage{
+	lightswitch = 0
+	})
+"VX" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/bell,
+/turf/simulated/floor/wood,
+/area/station/civilian/bar{
 	lightswitch = 0
 	})
 "VZ" = (
@@ -11125,6 +11514,12 @@
 /area/station/civilian/gym{
 	lightswitch = 0
 	})
+"Xq" = (
+/obj/machinery/telecomms/receiver/preset_right,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "Xr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -11164,11 +11559,16 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormone)
+"XB" = (
+/obj/machinery/blackbox_recorder,
+/turf/simulated/floor/bluegrid{
+	icon_state = "elevatorshaft"
+	},
+/area/station/tcommsat/chamber)
 "XC" = (
 /obj/structure/cable{
 	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
+	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -11499,6 +11899,24 @@
 	icon_state = "vault"
 	},
 /area/station/hallway/secondary/arrival)
+"YU" = (
+/obj/machinery/door/window{
+	base_state = "right";
+	icon_state = "right";
+	name = "Telecommunications Access";
+	req_access = list(10)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/tcommsat/chamber)
 "YV" = (
 /obj/machinery/door/airlock/medical/glass{
 	id_tag = null;
@@ -24959,7 +25377,7 @@ ig
 ig
 cB
 wQ
-fj
+zk
 Ma
 Ma
 th
@@ -26761,7 +27179,7 @@ IE
 IE
 IE
 IE
-th
+IE
 th
 zB
 zB
@@ -27007,9 +27425,9 @@ IE
 IE
 ig
 ig
-ig
-ig
-ig
+IE
+IE
+IE
 IE
 IE
 IE
@@ -27774,10 +28192,10 @@ IE
 IE
 IE
 IE
+IE
+IE
 ig
-ig
-ig
-ig
+IE
 IE
 IE
 IE
@@ -28031,10 +28449,10 @@ IE
 IE
 IE
 IE
+IE
+IE
 ig
-ig
-ig
-ig
+IE
 IE
 IE
 IE
@@ -28288,21 +28706,21 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
-ig
 IE
 IE
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
+fj
+fj
+fj
+fj
+fj
+fj
+fj
+ZQ
+ZQ
+ZQ
 IE
 th
 zB
@@ -28545,21 +28963,21 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
-ig
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+fj
+fj
+fj
+km
+ui
+aB
+OS
+Me
+fj
+bO
+Jy
+ZQ
 IE
 th
 th
@@ -28802,20 +29220,20 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
-ig
-ig
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-ZQ
-ZQ
+fj
+wS
+fa
+SF
+RH
+wb
+uu
+cX
+fj
+Lv
+pF
 ZQ
 ZQ
 ZQ
@@ -29059,19 +29477,19 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
-ig
-ig
-ig
 IE
 IE
 IE
-IE
-IE
-ZQ
-ZQ
+fj
+vD
+Gw
+fZ
+rX
+Uh
+EC
+sA
+fj
+xI
 Yp
 Gm
 sl
@@ -29316,23 +29734,23 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
-ig
-ig
-ig
-ig
 IE
 IE
 IE
-IE
-ZQ
-Yp
-Yp
+fj
+Pn
+sn
+lr
+lr
+lr
+lr
+lr
+kh
+St
+ra
 GT
 KN
-Wf
+SX
 gn
 SX
 SX
@@ -29573,18 +29991,18 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
-ig
-ig
-ig
-ig
-ig
 IE
 IE
 IE
-ZQ
+fj
+XB
+OB
+VE
+Uy
+HJ
+HP
+yi
+fj
 Yp
 Yp
 Vn
@@ -29830,18 +30248,18 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
-ig
-ig
-IE
-ig
-ig
 IE
 IE
 IE
-ZQ
+fj
+cR
+YU
+SF
+RH
+RH
+RH
+iE
+fj
 Yp
 Yp
 Vn
@@ -30087,18 +30505,18 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
-ig
 IE
 IE
-ig
-ig
-ig
 IE
-IE
-ZQ
+fj
+fj
+fj
+Ug
+KF
+Xq
+PL
+cZ
+fj
 Yp
 Yp
 Vn
@@ -30345,17 +30763,17 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
 IE
 IE
 IE
-ig
-ig
 IE
-IE
-ZQ
+fj
+fj
+fj
+fj
+fj
+fj
+fj
 Yp
 Yp
 Vn
@@ -30602,9 +31020,9 @@ IE
 IE
 IE
 IE
-ig
-ig
-ig
+IE
+IE
+IE
 IE
 IE
 IE
@@ -30860,8 +31278,8 @@ IE
 IE
 IE
 ig
-ig
-ig
+IE
+IE
 IE
 IE
 IE
@@ -31117,8 +31535,8 @@ IE
 IE
 IE
 ig
-ig
-ig
+IE
+IE
 IE
 IE
 IE
@@ -31143,10 +31561,10 @@ UO
 Vg
 ts
 ZL
-Gz
+Qs
 iA
 Gz
-PB
+VX
 Gz
 Gz
 OU
@@ -31375,7 +31793,7 @@ IE
 IE
 ig
 ig
-ig
+IE
 IE
 IE
 IE
@@ -31632,8 +32050,8 @@ IE
 IE
 ig
 ig
-ig
-ig
+IE
+IE
 IE
 IE
 IE
@@ -31911,7 +32329,7 @@ xE
 xE
 xE
 wT
-pz
+Vg
 Bj
 xj
 Kx
