@@ -122,7 +122,7 @@
 	pixel_y = 7
 	},
 /obj/item/weapon/paper{
-	info = "[small]Если бы ты знал, как сильно мне тебя не хватает...[/small]";
+	info = Словами не описать, как сильно мне тебя не хватает...;
 	pixel_x = -9;
 	pixel_y = 11
 	},
@@ -303,6 +303,9 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "floorscorched2"
@@ -570,6 +573,7 @@
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -662,6 +666,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
+/obj/structure/disposalpipe/junction{
+	dir = 4;
+	icon_state = "pipe-y"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "cV" = (
@@ -733,10 +741,13 @@
 	lightswitch = 0
 	})
 "dn" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 8
+/obj/structure/disposalpipe/broken{
+	dir = 1
 	},
-/turf/simulated/floor/plating,
+/obj/random/randomfigure,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
+	},
 /area/station/maintenance/dormitory)
 "dt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -752,6 +763,9 @@
 "dv" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "dx" = (
@@ -805,6 +819,10 @@
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
+/area/station/maintenance/dormitory)
+"dN" = (
+/obj/random/scrap/safe_even,
+/turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "dQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -891,6 +909,12 @@
 /area/station/civilian/bar{
 	lightswitch = 0
 	})
+"ej" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	icon_state = "asteroidwarning"
+	},
+/area/station/maintenance/dormitory)
 "em" = (
 /obj/machinery/alarm{
 	dir = 0;
@@ -920,6 +944,7 @@
 "es" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -992,6 +1017,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "eM" = (
@@ -1002,6 +1032,9 @@
 	},
 /obj/machinery/light/small{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -1061,12 +1094,34 @@
 	req_access = list(5)
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
 /area/station/medical/reception{
 	lightswitch = 0
 	})
+"eZ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
+/turf/simulated/floor,
+/area/station/civilian/dormitories)
 "fd" = (
 /obj/structure/table,
 /obj/item/weapon/reagent_containers/food/drinks/coffee{
@@ -1406,6 +1461,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1430,6 +1488,7 @@
 	name = "Medbay Maintenance";
 	req_access = list(72)
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/medical/patients_rooms{
 	lightswitch = 0
@@ -1526,6 +1585,10 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
@@ -1754,6 +1817,7 @@
 	dir = 2;
 	name = "Conveyor Access"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1772,15 +1836,15 @@
 	})
 "hN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
+	},
 /area/station/maintenance/dormitory)
 "hO" = (
 /obj/machinery/telecomms/server/presets/medical,
@@ -1921,6 +1985,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/machinery/disposal,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -1947,6 +2015,7 @@
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -2019,6 +2088,17 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"iR" = (
+/obj/structure/table,
+/obj/item/weapon/paper/crumpled{
+	icon_state = "crumpled";
+	pixel_x = -10;
+	pixel_y = -7
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/dormitory)
 "iS" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 6
@@ -2191,6 +2271,7 @@
 "ju" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "jx" = (
@@ -2264,8 +2345,17 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/plating,
+/obj/random/scrap/safe_even,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
 /area/station/maintenance/dormitory)
+"jN" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
 "jP" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 4
@@ -2350,6 +2440,9 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/junction{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
 	},
@@ -2431,7 +2524,10 @@
 	},
 /area/station/hallway/primary/central)
 "ks" = (
-/obj/item/weapon/flora/random,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -2526,6 +2622,9 @@
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/civilian/toilet{
 	lightswitch = 0
@@ -2576,10 +2675,19 @@
 "lc" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
 /area/station/civilian/dormitories)
+"ld" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	icon_state = "asteroidfloor"
+	},
+/area/station/maintenance/dormitory)
 "le" = (
 /obj/structure/window/reinforced/polarized{
 	dir = 4;
@@ -2638,6 +2746,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "lq" = (
@@ -2713,6 +2822,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -2725,6 +2839,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
@@ -2831,8 +2950,10 @@
 "lY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	icon_state = "asteroidwarning"
+	},
 /area/station/maintenance/dormitory)
 "lZ" = (
 /turf/simulated/floor{
@@ -2914,6 +3035,25 @@
 	},
 /turf/simulated/floor/plating/airless/asteroid,
 /area/space)
+"mx" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/cargo)
 "my" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3003,6 +3143,9 @@
 /area/station/hallway/secondary/arrival)
 "mN" = (
 /obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whitecorner"
@@ -3024,6 +3167,11 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
@@ -3179,6 +3327,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -3311,6 +3462,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -3339,7 +3493,12 @@
 	id = "packageSort2"
 	},
 /obj/item/weapon/paper{
-	info = "Привет дружище, давно не виделись.[br]Слышал у тебя в последнее время одни неприятности и сейчас ты активно ищешь где бы залечь на дно, пока все не уляжется. Так вот, есть у меня одно такое местечко на примете. Крошечная астероидная станция на самом отшибе системы в участке астероидного поля, некогда считавшимся перспективным. Как это часто бывает, спустя время нашли участок поперспективнее, вбухнули туда станцию поновее, а про старую забыли с концами, что нам с тобой только на руку.Сейчас на станцию отправляют либо вчерашних выпускников, либо ксеносов, которых на нормальные станции отправлять стыдно, либо особо провинившихся перед корпорацией сотрудников, так что думаю ты впишешься. По контракту экипаж туда закидывают сразу на несколько месяцев, так что приходится и каюту с кем-то делить и шваброй работать - всё таки уборщиков там нет, так что полы моют все по очереди.[br]В общем, местечко не самое плохое, если не учитывать, что построили его хрен знает когда. О современном оборудовании можно и не мечтать, а о развлечениях тем более. Если не боишься скиснуть от скуки на старом корыте - твой верный друг и товарищ готов помочь перебраться туда так, чтобы об этом никто никогда не узнал.[br]Учитывая твои обстоятельства, я бы не затягивал с решением. Надеюсь, ты ещё помнишь как со мной связаться.[br][small]Думаю, не нужно говорить, что после этого [u]мы в расчете[/u][/small]"
+	info = `"Привет дружище, давно не виделись.Слышал у тебя в последнее время одни неприятности и сейчас ты активно ищешь где бы залечь на дно, пока все не уляжется. Так вот, есть у меня одно такое местечко на примете. Крошечная астероидная станция на самом отшибе системы в участке астероидного поля, некогда считавшимся перспективным. Как это часто бывает, спустя время нашли участок поперспективнее, вбухнули туда станцию поновее, а про старую забыли с концами, что нам с тобой только на руку.Сейчас на станцию отправляют либо вчерашних выпускников, либо ксеносов, которых на нормальные станции отправлять стыдно, либо особо провинившихся перед корпорацией сотрудников, так что думаю ты впишешься. По контракту экипаж туда закидывают сразу на несколько месяцев, так что приходится и каюту с кем-то делить и шваброй работать - всё таки уборщиков там нет, так что полы моют все по очереди.В общем, местечко не самое плохое, если не учитывать, что построили его хрен знает когда. О современном оборудовании можно и не мечтать, а о развлечениях тем более. Если не боишься скиснуть от скуки на старом корыте - твой верный друг и товарищ готов помочь перебраться туда так, чтобы об этом никто никогда не узнал.                                                                                                                                                                                                                                                                                                                                                      Учитывая твои обстоятельства, я бы не затягивал с решением. Надеюсь, ты ещё помнишь как со мной связаться.                                                                                                                                                                                                                                                                                         Думаю, не нужно говорить, что после этого мы в расчете"`
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
@@ -3394,6 +3553,9 @@
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "oq" = (
@@ -3439,6 +3601,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "black"
@@ -3504,6 +3667,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -3551,6 +3715,7 @@
 	name = "Kitchen Cold Room Maintenance";
 	req_access = list(28)
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "oW" = (
@@ -3558,6 +3723,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "oY" = (
@@ -3628,6 +3794,10 @@
 	pixel_y = 32;
 	supply_display = 1
 	},
+/obj/item/weapon/paper{
+	info = "Сообщение из инженерного отдела: тот метеорит, что едва не протаранил карго, сильно истощил наши запасы стройматериалов. Нужно ли говорить, что если их срочно не пополнить, то станция рискует развалиться по частям. Станция уже далеко не новая, поэтому нуждается в регулярном тех.обслуживании, а для этого нужны листы металла и панели стекол. Просим вас как можно скорее предоставить инженерному отделу недостающие материалы.";
+	pixel_x = -6
+	},
 /turf/simulated/floor,
 /area/station/cargo/storage{
 	lightswitch = 0
@@ -3670,6 +3840,10 @@
 /area/station/civilian/locker)
 "pk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/junction{
+	dir = 4;
+	icon_state = "pipe-y"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "pm" = (
@@ -3751,6 +3925,15 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/primary/central)
+"pA" = (
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/station/civilian/dormitories)
 "pD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -3813,6 +3996,16 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormfour)
+"pM" = (
+/obj/item/weapon/paper{
+	info = "Уважаемые члены экипажа, гуляющие по техническим тоннелям. Напоминаю вам, что это тоннели нужны для корректной работы вентиляционной и мусоропроводной системы. Тоннели позволяют инженерам проводить обслуживание транспортных труб и вовремя устранять возникающие поломки. Наличие у гражданского персонала доступа в техничесские тоннели обусловлено соображениям безопасности. НО ЭТО НЕ ЗНАЧИТ ЧТО ВАМ МОЖНО ЗДЕСЬ ШНЫРЯТЬСЯ. ПОСТОРОННИМ ВХОД СЮДА ЗАПРЕЩЕН. ХВАТИТ ТОСКАТЬ СЮДА ВСЯКИЙ ХЛАМ И РАССТАСКИВАТЬ ИЗ ТЕХНИЧЕСКИХ ХРАНИЛИЩ ИНСТРУМЕНТЫ.                                                                                                                                                                                                          -попробуй останови меня";
+	pixel_y = 3
+	},
+/obj/structure/table,
+/turf/simulated/floor{
+	icon_state = "asteroidfloor"
+	},
+/area/station/maintenance/dormitory)
 "pP" = (
 /obj/machinery/door/firedoor,
 /turf/simulated/floor{
@@ -3914,6 +4107,9 @@
 	id = "packageSort2"
 	},
 /obj/item/weapon/scrap_lump,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
 "ql" = (
@@ -3968,6 +4164,11 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor/carpet/green,
 /area/station/medical/patients_rooms{
@@ -4036,6 +4237,20 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormtwo)
+"qC" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "blackcorner"
+	},
+/area/station/hallway/primary/central)
 "qD" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -4284,6 +4499,7 @@
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "rT" = (
@@ -4641,6 +4857,9 @@
 	name = null;
 	pixel_y = -28
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -4653,6 +4872,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
@@ -4826,6 +5048,9 @@
 	pixel_y = 9
 	},
 /obj/item/clothing/accessory/tie/black,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
 	},
@@ -4886,6 +5111,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
@@ -5069,6 +5297,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -5170,6 +5399,9 @@
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/civilian/toilet{
 	lightswitch = 0
@@ -5253,6 +5485,11 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -5449,9 +5686,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 1
-	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
 "wT" = (
@@ -5471,6 +5706,9 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
@@ -5547,6 +5785,10 @@
 /obj/machinery/light_switch{
 	pixel_x = 25
 	},
+/obj/item/weapon/paper{
+	info = "Сообщение инженерному отделу: Вчера, прямо посреди ночи, за стеной моей каюты что-то очень громко гремело, а потом хлопнуло с такой силой, что мне показалось, будто внешнюю обшивку пробило нахрен. Кажется там что-то взорвалось. Пожалуйста, почините там всё поскорее, второго падения с койки я, боюсь, не переживу.";
+	pixel_x = -6
+	},
 /turf/simulated/floor,
 /area/station/engineering/break_room{
 	lightswitch = 0
@@ -5585,6 +5827,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
@@ -5664,6 +5911,10 @@
 	icon_state = "black"
 	},
 /area/station/civilian/dormitories)
+"xL" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/station/maintenance/dormitory)
 "xM" = (
 /obj/structure/table/glass,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -5715,6 +5966,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "xR" = (
@@ -5738,6 +5992,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -5748,6 +6003,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
 "xY" = (
@@ -5787,6 +6043,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "blackcorner"
 	},
@@ -5866,6 +6123,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "yz" = (
@@ -5972,10 +6230,17 @@
 /obj/machinery/door/airlock/glass{
 	name = "Escape Hall"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
 /area/station/hallway/secondary/exit)
+"yQ" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
 "yR" = (
 /obj/structure/girder,
 /obj/item/stack/sheet/metal{
@@ -6049,6 +6314,11 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -6106,6 +6376,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "blackchecker"
@@ -6393,6 +6666,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "Ao" = (
@@ -6521,6 +6797,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -6660,6 +6937,14 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/primary/central)
+"Bk" = (
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
 "Bp" = (
 /turf/simulated/floor/plating{
 	icon_state = "platingdmg3"
@@ -6979,7 +7264,9 @@
 	dir = 0;
 	pixel_x = 30
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
 /area/station/maintenance/dormitory)
 "CE" = (
 /obj/structure/cable{
@@ -7014,11 +7301,18 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "asteroidwarning"
 	},
 /area/station/civilian/hydroponics)
+"CK" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/station/maintenance/dormitory)
 "CL" = (
 /obj/structure/closet/secure_closet/security,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -7183,6 +7477,10 @@
 "Dw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/disposalpipe/junction{
+	dir = 4;
+	icon_state = "pipe-j2"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "Dy" = (
@@ -7231,6 +7529,14 @@
 	icon_state = "platingdmg3"
 	},
 /area/station/construction)
+"DH" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor{
+	icon_state = "asteroidfloor"
+	},
+/area/station/civilian/hydroponics)
 "DI" = (
 /turf/simulated/floor{
 	dir = 5;
@@ -7275,6 +7581,7 @@
 /obj/machinery/door/airlock/glass{
 	name = "Hydroponics"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor,
 /area/station/civilian/dormitories)
 "DS" = (
@@ -7324,6 +7631,13 @@
 	icon_state = "floorscorched1"
 	},
 /area/station/maintenance/cargo)
+"Ea" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/maintenance/disposal)
 "Eb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -7596,6 +7910,13 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"Fx" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/station/hallway/primary/central)
 "Fy" = (
 /turf/simulated/wall,
 /area/station/civilian/toilet{
@@ -7625,6 +7946,22 @@
 /area/station/engineering/break_room{
 	lightswitch = 0
 	})
+"FH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/station/maintenance/dormitory)
 "FM" = (
 /turf/simulated/floor{
 	dir = 8;
@@ -7752,6 +8089,14 @@
 	})
 "Gl" = (
 /obj/structure/stool/bed/chair/metal,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
 	},
@@ -7835,6 +8180,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -7864,6 +8214,11 @@
 	dir = 4;
 	name = null;
 	pixel_x = 28
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
@@ -7902,6 +8257,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
@@ -7964,6 +8322,14 @@
 	icon_state = "blackcorner"
 	},
 /area/station/civilian/dormitories)
+"Hi" = (
+/obj/structure/disposalpipe/broken{
+	dir = 4
+	},
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/station/maintenance/dormitory)
 "Hj" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/hooded/wintercoat/medical,
@@ -7980,6 +8346,11 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
+"Ht" = (
+/turf/simulated/floor{
+	icon_state = "asteroidfloor"
+	},
+/area/station/maintenance/dormitory)
 "Hv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8040,6 +8411,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/construction)
+"HN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/station/maintenance/dormitory)
 "HT" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -8050,6 +8432,11 @@
 /obj/machinery/light_switch{
 	pixel_x = -25;
 	pixel_y = -25
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -8066,6 +8453,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -8091,6 +8479,14 @@
 /area/station/security/main{
 	lightswitch = 0
 	})
+"Id" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
 "Ig" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8099,6 +8495,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -8126,11 +8525,32 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormtwo)
+"Ii" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 4;
+	icon_state = "pipe-j2"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/medbay)
 "Im" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -8176,6 +8596,9 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -8238,6 +8661,9 @@
 	pixel_x = -10;
 	pixel_y = 8
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
 	},
@@ -8279,7 +8705,6 @@
 	lightswitch = 0
 	})
 "IP" = (
-/obj/machinery/atmospherics/pipe/simple/visible/universal,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -8289,6 +8714,7 @@
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -8348,6 +8774,9 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "Jj" = (
@@ -8371,6 +8800,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/disposalpipe/junction{
+	dir = 4;
+	icon_state = "pipe-j2"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Jo" = (
@@ -8379,6 +8812,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -8464,6 +8898,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor{
 	icon_state = "blackcorner"
 	},
@@ -8548,6 +8987,9 @@
 	pixel_x = -25;
 	pixel_y = 25
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "blackchecker"
 	},
@@ -8565,6 +9007,9 @@
 /obj/machinery/door/airlock/command{
 	name = "Captain's Office";
 	req_access = list(20)
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/bridge{
@@ -8591,6 +9036,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -8624,6 +9070,9 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -8653,6 +9102,14 @@
 	icon_state = "asteroidfloor"
 	},
 /area/station/cargo/miningoffice{
+	lightswitch = 0
+	})
+"Kl" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/carpet/green,
+/area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
 "Ko" = (
@@ -8767,12 +9224,28 @@
 /area/station/medical/surgery{
 	lightswitch = 0
 	})
+"KE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/station/maintenance/dormitory)
 "KG" = (
 /obj/structure/stool/bed/chair/metal{
 	dir = 4;
 	flip_angle = 1;
 	flipped = 1
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
 	},
@@ -8784,16 +9257,6 @@
 	pixel_y = 6
 	},
 /obj/item/weapon/paper/crumpled,
-/obj/item/weapon/paper/crumpled{
-	icon_state = "crumpled";
-	pixel_x = -10;
-	pixel_y = -7
-	},
-/obj/item/weapon/paper/crumpled{
-	icon_state = "crumpled";
-	pixel_x = -6;
-	pixel_y = -3
-	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -8867,6 +9330,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "blackcorner"
@@ -8877,6 +9341,10 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
@@ -8921,6 +9389,7 @@
 	})
 "Lk" = (
 /obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Lm" = (
@@ -8980,6 +9449,13 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"LA" = (
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/station/civilian/dormitories)
 "LD" = (
 /obj/machinery/light{
 	dir = 1
@@ -9020,6 +9496,9 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -9078,6 +9557,7 @@
 "LQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "asteroidwarning"
@@ -9096,6 +9576,20 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormtwo)
+"LY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/green,
+/area/station/medical/patients_rooms{
+	lightswitch = 0
+	})
 "Ma" = (
 /turf/simulated/floor/airless{
 	dir = 5;
@@ -9167,6 +9661,10 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"Mo" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/station/maintenance/medbay)
 "Mp" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable{
@@ -9237,6 +9735,9 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/disposalpipe/junction{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -9282,6 +9783,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -9395,6 +9897,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "Stairs2_wide"
@@ -9416,6 +9921,11 @@
 /area/station/hallway/primary/central)
 "Nd" = (
 /obj/structure/table,
+/obj/item/weapon/paper/crumpled{
+	icon_state = "crumpled";
+	pixel_x = -6;
+	pixel_y = -3
+	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -9536,11 +10046,28 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whitehall"
 	},
 /area/station/hallway/primary/central)
+"Nw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	req_access = list(12)
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/dormitory)
 "Nx" = (
 /obj/machinery/telecomms/server/presets/common,
 /turf/simulated/floor/bluegrid{
@@ -9569,6 +10096,9 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
@@ -9631,6 +10161,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -9658,6 +10193,13 @@
 /obj/machinery/smartfridge,
 /turf/simulated/wall,
 /area/station/civilian/hydroponics)
+"Oa" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/station/maintenance/dormitory)
 "Ob" = (
 /obj/machinery/kitchen_machine/candymaker,
 /turf/simulated/floor{
@@ -9861,6 +10403,13 @@
 "OJ" = (
 /turf/simulated/wall,
 /area/station/civilian/locker)
+"OK" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
+/obj/machinery/disposal,
+/turf/simulated/floor/plating,
+/area/station/maintenance/dormitory)
 "OU" = (
 /turf/simulated/wall,
 /area/station/maintenance/medbay)
@@ -9879,6 +10428,7 @@
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "Pc" = (
@@ -9897,7 +10447,9 @@
 	})
 "Pg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
 /obj/machinery/power/apc{
 	dir = 8;
 	name = null;
@@ -9933,6 +10485,9 @@
 	})
 "Pj" = (
 /obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "Pk" = (
@@ -9973,6 +10528,17 @@
 	},
 /turf/simulated/floor,
 /area/station/civilian/dormitories)
+"PD" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/engineering)
 "PI" = (
 /obj/machinery/computer/general_air_control{
 	frequency = 1443;
@@ -10066,6 +10632,9 @@
 /obj/machinery/alarm{
 	pixel_y = 30
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Qe" = (
@@ -10106,6 +10675,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "Qn" = (
@@ -10117,7 +10687,10 @@
 	})
 "Qp" = (
 /obj/item/clothing/shoes/footwraps,
-/turf/simulated/floor/plating,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "asteroidwarning"
+	},
 /area/station/maintenance/dormitory)
 "Qw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -10129,6 +10702,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -10192,6 +10766,11 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
@@ -10384,6 +10963,29 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/primary/central)
+"RE" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blue"
+	},
+/area/station/hallway/primary/central)
+"RG" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	req_access = list(12)
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
 "RH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /turf/simulated/floor/bluegrid{
@@ -10398,11 +11000,17 @@
 "RM" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
 "RN" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whitehall"
@@ -10420,6 +11028,9 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"Sa" = (
+/turf/simulated/wall,
+/area/space)
 "Sb" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
@@ -10468,6 +11079,7 @@
 	lightswitch = 0
 	})
 "So" = (
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
 	},
@@ -10488,6 +11100,11 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -10521,6 +11138,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "Sz" = (
@@ -10534,6 +11154,12 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"SA" = (
+/obj/random/scrap/safe_even,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg2"
+	},
+/area/station/maintenance/dormitory)
 "SE" = (
 /obj/structure/table,
 /obj/machinery/recharger{
@@ -10569,6 +11195,19 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"SQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	icon_state = "blackcorner"
+	},
+/area/station/civilian/dormitories)
 "SS" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -10587,6 +11226,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -10621,6 +11263,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "Ta" = (
@@ -10634,6 +11281,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "blackchecker"
@@ -10711,6 +11361,7 @@
 	lightswitch = 0
 	})
 "Tt" = (
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whitecorner"
@@ -10736,23 +11387,24 @@
 	req_access = list(20)
 	},
 /obj/item/weapon/paper{
-	info = "Капитан, поскольку у нас отсутствует штатный уборщик, пожалуйста, не забывайте назначать дежурного за уборку на станции. На прошлой смене был такой страшный бардак, а убирать его никто даже и не собирался, поэтому работать руками пришлось мне, а ведь у меня и без этого дел полно! Назначение дежурного одновременно обеспечивает чистоту на станции и позволяет экипажу не отвлекаться своих дел на уборку.[br][br]Только, чур начинайте не с меня, мне вчерашней уборки хватило";
+	info = "Капитан, поскольку у нас отсутствует штатный уборщик, пожалуйста, не забывайте назначать дежурного за уборку на станции. На прошлой смене был такой страшный бардак, а убирать его никто даже и не собирался, поэтому работать руками пришлось мне, а ведь у меня и без этого дел полно! Назначение дежурного одновременно обеспечивает чистоту на станции и позволяет экипажу не отвлекаться своих дел на уборку.                                                                                                                                                                                                                                                                                                                                                                                                                        Только, чур начинайте не с меня, мне вчерашней уборки хватило";
 	pixel_x = -12;
 	pixel_y = 9
 	},
 /obj/item/weapon/paper{
-	info = "Товарищ Капитан, я понимаю, что у Вас и без меня сейчас дел невпроворот, но всё же попрошу выслушать меня. На станции отсутствует летальное оружие. Я понимаю, что летальное вооружение на такой небольшой станции может звучать как нечто из ряда вон, однако в случае возникновения непредвиденной ситуации,  (достойное) вооружение значительно увеличит наши шанс на нейтрализацию угрозы. Также отмечу, что сам факт наличия летального оружия на станции значительно снижает шансы возникновения вышеупомянутых непредвиденных ситуаций. Я посчитал своим непременным долгом поделиться своими опасениями касательно безопасности станции с Вами. Поступайте с этой информацией так, как посчитаете нужным.[br]С уважением, офицер службы безопасности";
+	info = "Товарищ Капитан, я понимаю, что у Вас и без меня сейчас дел невпроворот, но всё же попрошу выслушать меня. В арсенале службы безопасности отсутствует летальное оружие. Я понимаю, что летальное вооружение на такой небольшой станции может звучать как нечто из ряда вон, однако я считаю что в случае возникновения непредвиденной ситуации,  сильное оружие значительно увеличит наши шансы на нейтрализацию угрозы. Также отмечу, что сам факт наличия летального оружия на станции значительно снижает шансы возникновения вышеупомянутых непредвиденных ситуаций. Я посчитал своим непременным долгом поделиться своими опасениями касательно безопасности станции с Вами. Поступайте с этой информацией так, как посчитаете нужным. С уважением, офицер службы безопасности";
 	pixel_x = 6;
 	pixel_y = 5
-	},
-/obj/item/weapon/paper{
-	info = "Сообщение из инженерного отдела: Кэп, тот метеорит, что едва не протаранил карго, сильно истощил наши запасы стройматериалов. Нужно ли говорить, что если их срочно не пополнить, то станция рискует развалиться по частям. Напрягите шахтеров, что ли...";
-	pixel_x = -6
 	},
 /obj/item/weapon/paper{
 	info = "Сообщение из медицинского отдела: Капитан, у нас кончаются пакеты с кровью. Предлагаю организовать донорскую акцию, либо же заказать пакеты через отдел снабжения.";
 	pixel_x = 3;
 	pixel_y = 3
+	},
+/obj/item/weapon/paper{
+	info = "Капитан, кого вообще понабрали на эту станцию? Некоторые из так называемых 'членов экипажа внеземного происхождения' даже двух слов не могут связать на интергалактическом! Выпишите им азбуку что ли, пусть почитают-поучаться в свободное время. Я даже готов взять на себя роль учителя на некоторое время, при условии, что вы выпишите мне нормальный учебник.";
+	pixel_x = 11;
+	pixel_y = -1
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -10800,6 +11452,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -10811,6 +11464,9 @@
 /obj/machinery/alarm{
 	dir = 0;
 	pixel_x = 30
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -10870,6 +11526,12 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"TO" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/station/maintenance/dormitory)
 "TQ" = (
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
@@ -10962,16 +11624,19 @@
 /area/station/medical/reception{
 	lightswitch = 0
 	})
+"Ua" = (
+/obj/machinery/disposal,
+/turf/simulated/floor/plating,
+/area/station/maintenance/bridge)
 "Uc" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/random/scrap/safe_even,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Ud" = (
@@ -11124,11 +11789,18 @@
 	lightswitch = 0
 	})
 "UF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/alarm{
 	dir = 0;
 	pixel_x = -30
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
@@ -11151,10 +11823,20 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"UK" = (
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
+/obj/random/scrap/safe_even,
+/turf/simulated/floor/plating,
+/area/station/maintenance/dormitory)
 "UL" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -11404,6 +12086,7 @@
 "VO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "VP" = (
@@ -11418,12 +12101,12 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/item/weapon/paper{
-	info = "Уважаемые члены экипажа, гуляющие по техническим тоннелям. Напоминаю вам, что это тоннели нужны для корректной работы вентиляционной и (мусорной) системы. Тоннели позволяют инженерам проводить обслуживание транспортных труб и вовремя устранять возникающие поломки. ПОСТОРОННИМ ВХОД СЮДА ЗАПРЕЩЕН. ХВАТИТ ТОСКАТЬ СЮДА ВСЯКИЙ ХЛАМ И РАССТАСКИВАТЬ ИЗ ТЕХНИЧЕСКИХ ХРАНИЛИЩ ИНСТРУМЕНТЫ.[br][br][br][small]попробуй останови меня[/small]";
-	pixel_x = 26;
-	pixel_y = 3
+/obj/structure/disposalpipe/junction{
+	dir = 2
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor{
+	icon_state = "asteroidfloor"
+	},
 /area/station/maintenance/dormitory)
 "VR" = (
 /obj/machinery/computer/secure_data,
@@ -11449,6 +12132,9 @@
 "VZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
@@ -11489,6 +12175,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -11523,6 +12214,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "asteroidfloor"
 	},
@@ -11570,6 +12262,9 @@
 /area/station/maintenance/cargo)
 "Ws" = (
 /obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -11609,6 +12304,11 @@
 	pixel_x = -25;
 	pixel_y = -25
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -11633,6 +12333,9 @@
 /obj/machinery/alarm{
 	dir = 0;
 	pixel_x = -30
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 2
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -11675,6 +12378,7 @@
 /obj/machinery/door/airlock/freezer{
 	req_access = list(28)
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	dir = 5;
 	icon_state = "cafeteria"
@@ -11715,6 +12419,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "Xm" = (
@@ -11881,6 +12586,12 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"XL" = (
+/obj/structure/table,
+/turf/simulated/floor{
+	icon_state = "asteroidfloor"
+	},
+/area/station/maintenance/dormitory)
 "XN" = (
 /obj/structure/grille,
 /obj/structure/window/basic{
@@ -11918,6 +12629,20 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
+"XV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "asteroidwarning"
+	},
+/area/station/maintenance/dormitory)
 "XW" = (
 /obj/structure/gravemarker,
 /turf/simulated/floor/plating/airless/asteroid,
@@ -11931,6 +12656,11 @@
 	lightswitch = 0
 	})
 "Yb" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whitehall"
@@ -12014,6 +12744,19 @@
 /area/station/medical/surgery{
 	lightswitch = 0
 	})
+"Yv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor{
+	icon_state = "asteroidfloor"
+	},
+/area/station/maintenance/dormitory)
 "Yw" = (
 /obj/item/weapon/paper/crumpled{
 	pixel_x = -6;
@@ -12118,11 +12861,17 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c";
+	layer = 1.9
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
 "YM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -12196,6 +12945,9 @@
 /obj/structure/disposaloutlet{
 	dir = 8
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
 "Zf" = (
@@ -12253,6 +13005,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c";
+	layer = 1.9
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
@@ -27180,7 +27937,7 @@ bJ
 sx
 QH
 bg
-ty
+PD
 CE
 Iq
 gO
@@ -29757,7 +30514,7 @@ Kf
 Lt
 ql
 Ig
-UC
+Fx
 Tt
 Nv
 Yb
@@ -30011,8 +30768,8 @@ YD
 YC
 Sp
 Lb
-Xn
-Xn
+qC
+qC
 vM
 Xn
 Xr
@@ -31036,8 +31793,8 @@ Yq
 ug
 NQ
 rR
-TQ
-Sy
+Mo
+Ii
 SV
 fr
 Qn
@@ -31784,8 +32541,8 @@ IE
 IE
 IE
 ZQ
-Yp
-Yp
+Ua
+Id
 hK
 ud
 rz
@@ -32069,7 +32826,7 @@ Sy
 TQ
 oF
 Ly
-aQ
+LY
 NP
 ux
 NP
@@ -32299,7 +33056,7 @@ IE
 IE
 IE
 ZQ
-Yp
+jN
 hK
 hK
 hK
@@ -32325,7 +33082,7 @@ JI
 GF
 cU
 gI
-MT
+Kl
 qt
 Br
 yG
@@ -32556,11 +33313,11 @@ IE
 IE
 IE
 ZQ
-Yp
-Yp
-Yp
-Yp
-Yp
+Bk
+yQ
+yQ
+yQ
+Id
 xE
 xE
 JT
@@ -32596,7 +33353,7 @@ xq
 zH
 gY
 dC
-lP
+mx
 aW
 QR
 nX
@@ -32825,7 +33582,7 @@ Wf
 Wf
 Wf
 yN
-Vg
+RE
 Bj
 xj
 PZ
@@ -33075,7 +33832,7 @@ IE
 IE
 ZQ
 Th
-Yp
+jN
 tT
 ZQ
 ZQ
@@ -33110,11 +33867,11 @@ dC
 dC
 dC
 dC
-lP
+mx
 KC
 QR
 GA
-JN
+Ea
 hG
 oi
 KB
@@ -33332,7 +34089,7 @@ ig
 IE
 ZQ
 UZ
-Yp
+jN
 pX
 OJ
 Ty
@@ -33367,7 +34124,7 @@ WF
 ss
 ku
 XK
-lP
+mx
 so
 QR
 he
@@ -33589,7 +34346,7 @@ hE
 hE
 ZQ
 ZQ
-mz
+RG
 ZQ
 OJ
 fw
@@ -33846,7 +34603,7 @@ hE
 CF
 CF
 Yo
-Xb
+DH
 rV
 OJ
 xp
@@ -34620,10 +35377,10 @@ nl
 ke
 Wj
 DQ
-cm
+SQ
 oA
 yb
-cm
+SQ
 JE
 yr
 cm
@@ -34881,7 +35638,7 @@ PV
 Az
 PV
 GD
-Rx
+LA
 PA
 Rx
 Rx
@@ -35645,7 +36402,7 @@ hE
 hE
 IB
 IB
-NG
+Nw
 IB
 PV
 UB
@@ -35669,8 +36426,8 @@ OD
 ZR
 QT
 nE
-PA
-nL
+eZ
+pA
 Zg
 Sm
 dG
@@ -35901,7 +36658,7 @@ ig
 ig
 ig
 IB
-Kr
+OK
 Jm
 Kr
 PV
@@ -36432,7 +37189,7 @@ ox
 wg
 SL
 wg
-wg
+KE
 Uc
 hN
 jK
@@ -36685,13 +37442,13 @@ Fh
 Gl
 So
 KG
-Ek
-Kr
+ej
+xL
 Lk
-Kr
-Kr
+TO
+xL
 dn
-Jd
+dN
 Av
 Fy
 Xm
@@ -36947,9 +37704,9 @@ IB
 IB
 IB
 IB
-Kr
-Kr
-Av
+SA
+Hi
+FH
 Fy
 Fy
 Fy
@@ -37205,17 +37962,17 @@ IE
 IE
 IB
 IB
-Kr
+UK
 yt
-wg
-wg
-wg
-wg
+HN
+HN
+XV
+Yv
 VP
-ju
+ld
 lY
 ju
-ju
+Oa
 oW
 ju
 xr
@@ -37224,7 +37981,7 @@ xO
 Kb
 Kb
 Kb
-Nd
+iR
 Ae
 ig
 ig
@@ -37467,12 +38224,12 @@ Kr
 CC
 Kr
 Qp
+Ht
+Ht
+Ht
+Ek
 Kr
-Kr
-Kr
-Lk
-Kr
-Kr
+CK
 Jd
 Kr
 Kr
@@ -37724,9 +38481,9 @@ IB
 IB
 IB
 IB
-IB
-IB
-IB
+Ht
+pM
+XL
 IB
 IB
 IB
@@ -37980,11 +38737,11 @@ IE
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
+Sa
+Sa
+Sa
+Sa
+Sa
 IE
 IE
 IE
