@@ -1,0 +1,14 @@
+{
+    "map_name": "Old Sparrow",
+    "map_path": "oldsparrow",
+    "map_file": "oldsparrow.dmm",
+    "station_name": "NMS Old Sparrow",
+	"station_name_ru": "НШС Старый воробей",
+    "system_name" : "Tau Ceti",
+    "station_image": "oldsparrow",
+    "traits": [{"Mining": true, "Linkage": "Cross"}],
+    "space_ruin_levels": 2,
+    "space_empty_levels": 1,
+    "load_junkyard": 1,
+    "minetype": null
+}
