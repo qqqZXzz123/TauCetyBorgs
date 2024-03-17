@@ -172,42 +172,42 @@
 	minimal_player_ingame_minutes = 300
 	skillsets = list("Recycler" = /datum/skillset/oldsparrow/recycler)
 
-MAP_REMOVE_JOB(barber)
+//MAP_REMOVE_JOB(barber)
 
-MAP_REMOVE_JOB(cargo_tech)
+//MAP_REMOVE_JOB(cargo_tech)
 
-MAP_REMOVE_JOB(hydro)
+//MAP_REMOVE_JOB(hydro)
 
-MAP_REMOVE_JOB(janitor)
+//MAP_REMOVE_JOB(janitor)
 
-MAP_REMOVE_JOB(librarian)
+//MAP_REMOVE_JOB(librarian)
 
-MAP_REMOVE_JOB(lawyer)
+//MAP_REMOVE_JOB(lawyer)
 
-MAP_REMOVE_JOB(mime)
+//MAP_REMOVE_JOB(mime)
 
-MAP_REMOVE_JOB(atmos)
+//MAP_REMOVE_JOB(atmos)
 
-MAP_REMOVE_JOB(paramedic)
+//MAP_REMOVE_JOB(paramedic)
 
-MAP_REMOVE_JOB(chemist)
+//MAP_REMOVE_JOB(chemist)
 
-MAP_REMOVE_JOB(geneticist)
+//MAP_REMOVE_JOB(geneticist)
 
-MAP_REMOVE_JOB(virologist)
+//MAP_REMOVE_JOB(virologist)
 
-MAP_REMOVE_JOB(psychiatrist)
+//MAP_REMOVE_JOB(psychiatrist)
 
-MAP_REMOVE_JOB(xenoarchaeologist)
+//MAP_REMOVE_JOB(xenoarchaeologist)
 
-MAP_REMOVE_JOB(xenobiologist)
+//MAP_REMOVE_JOB(xenobiologist)
 
-MAP_REMOVE_JOB(roboticist)
+//MAP_REMOVE_JOB(roboticist)
 
-MAP_REMOVE_JOB(warden)
+//MAP_REMOVE_JOB(warden)
 
-MAP_REMOVE_JOB(forensic)
+//MAP_REMOVE_JOB(forensic)
 
-MAP_REMOVE_JOB(blueshield)
+//MAP_REMOVE_JOB(blueshield)
 
 #undef JOB_MODIFICATION_MAP_NAME
