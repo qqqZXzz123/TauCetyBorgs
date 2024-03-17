@@ -2894,6 +2894,15 @@
 /area/station/civilian/kitchen{
 	lightswitch = 0
 	})
+"jY" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/lattice,
+/turf/simulated/floor/plating/airless/catwalk,
+/area/station/solar/auxport)
 "jZ" = (
 /obj/structure/window/basic{
 	dir = 1
@@ -3080,6 +3089,31 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"kw" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/effect/landmark{
+	name = "Observer-Start"
+	},
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "brownold"
+	},
+/area/station/civilian/dormitories)
 "ky" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3103,6 +3137,17 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"kD" = (
+/obj/machinery/alarm/server{
+	pixel_y = -34
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuitoff"
+	},
+/area/station/tcommsat/chamber)
 "kF" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
@@ -4647,31 +4692,6 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/station/civilian/dormitories/dormone)
-"pn" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/effect/landmark{
-	name = "Observer-Start"
-	},
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "brownold"
-	},
-/area/station/civilian/dormitories)
 "pr" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light{
@@ -8105,17 +8125,6 @@
 /area/station/civilian/toilet{
 	lightswitch = 0
 	})
-"AR" = (
-/obj/machinery/alarm/server{
-	pixel_y = -34
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1
-	},
-/turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
-	},
-/area/station/tcommsat/chamber)
 "AT" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor,
@@ -8346,6 +8355,10 @@
 /obj/item/weapon/ore/iron,
 /turf/environment/space,
 /area/asteroid/mine/unexplored)
+"Bz" = (
+/obj/item/weapon/pickaxe,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/explored)
 "BA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor,
@@ -8797,6 +8810,9 @@
 /area/station/bridge/comms{
 	lightswitch = 0
 	})
+"Dc" = (
+/turf/simulated/wall,
+/area/space)
 "De" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor{
@@ -8877,6 +8893,11 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"Do" = (
+/obj/structure/lattice,
+/obj/structure/grille,
+/turf/environment/space,
+/area/space)
 "Dp" = (
 /obj/machinery/power/apc{
 	name = null;
@@ -8988,15 +9009,6 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
-"DN" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/lattice,
-/turf/simulated/floor/plating/airless/catwalk,
-/area/station/solar/auxport)
 "DQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -9603,6 +9615,13 @@
 	icon_state = "dark"
 	},
 /area/station/tcommsat/chamber)
+"Gc" = (
+/obj/item/stack/cable_coil/random,
+/turf/simulated/floor/airless{
+	dir = 5;
+	icon_state = "asteroidfloor"
+	},
+/area/station/solar/auxport)
 "Ge" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -9874,9 +9893,6 @@
 	icon_state = "black"
 	},
 /area/station/civilian/dormitories)
-"GL" = (
-/turf/simulated/wall,
-/area/space)
 "GM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -10666,6 +10682,14 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"JM" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/bluegrid{
+	icon_state = "gcircuitoff"
+	},
+/area/station/tcommsat/chamber)
 "JN" = (
 /turf/simulated/floor{
 	dir = 4;
@@ -10819,10 +10843,6 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
-"Kj" = (
-/obj/item/weapon/pickaxe,
-/turf/simulated/floor/plating/airless/asteroid,
-/area/asteroid/mine/explored)
 "Ko" = (
 /obj/structure/closet/crate/secure/miningsec,
 /turf/simulated/floor{
@@ -12898,14 +12918,6 @@
 /area/station/bridge/captain_quarters{
 	lightswitch = 0
 	})
-"Ro" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1
-	},
-/turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
-	},
-/area/station/tcommsat/chamber)
 "Rq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13358,13 +13370,6 @@
 /area/station/medical/reception{
 	lightswitch = 0
 	})
-"SW" = (
-/obj/item/stack/cable_coil/random,
-/turf/simulated/floor/airless{
-	dir = 5;
-	icon_state = "asteroidfloor"
-	},
-/area/station/solar/auxport)
 "SX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -14887,11 +14892,6 @@
 /area/station/civilian/kitchen{
 	lightswitch = 0
 	})
-"Xu" = (
-/obj/structure/lattice,
-/obj/structure/grille,
-/turf/environment/space,
-/area/space)
 "Xw" = (
 /turf/simulated/floor{
 	dir = 4;
@@ -24042,7 +24042,7 @@ th
 th
 Vi
 Vi
-Xu
+Do
 Vi
 we
 th
@@ -24351,7 +24351,7 @@ th
 th
 eY
 Ma
-SW
+Gc
 Ma
 Ma
 Ma
@@ -24547,14 +24547,14 @@ Vi
 jF
 th
 th
-Xu
+Do
 Vi
 Vi
 Vi
 th
 jF
 Vi
-Xu
+Do
 th
 we
 Vi
@@ -24562,10 +24562,10 @@ jF
 Vi
 Vi
 th
-Xu
+Do
 jF
 jF
-Xu
+Do
 th
 jF
 Vi
@@ -24597,7 +24597,7 @@ Ma
 Ma
 Ma
 Ma
-SW
+Gc
 Ma
 Ma
 Ma
@@ -24798,7 +24798,7 @@ th
 th
 th
 Vi
-Xu
+Do
 Vi
 th
 we
@@ -24829,7 +24829,7 @@ th
 we
 we
 th
-Xu
+Do
 Vi
 jF
 we
@@ -24876,7 +24876,7 @@ Ma
 Ma
 Ma
 Ma
-SW
+Gc
 Ma
 Ma
 FK
@@ -25061,7 +25061,7 @@ th
 jF
 Vi
 Vi
-Xu
+Do
 Vi
 th
 jF
@@ -25100,7 +25100,7 @@ we
 th
 Ma
 Ma
-SW
+Gc
 Ma
 Ma
 ig
@@ -25305,7 +25305,7 @@ th
 th
 th
 Vi
-Xu
+Do
 Vi
 th
 we
@@ -25528,7 +25528,7 @@ th
 Ma
 Ma
 Ma
-SW
+Gc
 Ma
 Ma
 Ma
@@ -25568,7 +25568,7 @@ th
 we
 Vi
 Vi
-Xu
+Do
 we
 th
 th
@@ -25602,7 +25602,7 @@ th
 th
 lq
 pG
-DN
+jY
 pG
 UV
 th
@@ -26049,12 +26049,12 @@ Mx
 Ma
 Ma
 Ma
-SW
+Gc
 Ma
 Ma
 Ma
 Ma
-SW
+Gc
 Ma
 fX
 Ma
@@ -26097,15 +26097,15 @@ th
 th
 th
 th
-GL
-GL
-GL
+Dc
+Dc
+Dc
 th
 th
 th
-GL
-GL
-GL
+Dc
+Dc
+Dc
 th
 UY
 UY
@@ -32747,7 +32747,7 @@ YP
 Ag
 bD
 gp
-Ro
+JM
 iX
 zS
 fj
@@ -33777,7 +33777,7 @@ bD
 bD
 bD
 km
-AR
+kD
 fj
 Yp
 QA
@@ -37364,7 +37364,7 @@ Mx
 Mx
 Mx
 ig
-Kj
+Bz
 Mx
 Mx
 Mx
@@ -37695,7 +37695,7 @@ ig
 ig
 Mx
 Mx
-Kj
+Bz
 Mx
 Mx
 Mx
@@ -37909,7 +37909,7 @@ yr
 Ab
 Ab
 Ab
-pn
+kw
 Ab
 Gi
 Ab
