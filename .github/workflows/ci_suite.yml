@@ -62,6 +62,8 @@ jobs:
             map_name: Prometheus Station
           - map_meta: stroechka
             map_name: Stroecka Station
+          - map_meta: oldsparrow
+            map_name: Old Sparrow
     steps:
       - uses: actions/checkout@v2
       - name: Setup Cache
