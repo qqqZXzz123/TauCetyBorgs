@@ -186,6 +186,16 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"aT" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/wall,
+/area/station/engineering/atmos{
+	lightswitch = 0
+	})
 "aV" = (
 /obj/machinery/chem_dispenser/soda{
 	pixel_y = 10
@@ -358,6 +368,7 @@
 /obj/structure/sign/departments/engineering{
 	pixel_y = -32
 	},
+/obj/machinery/atmospherics/components/unary/portables_connector,
 /turf/simulated/floor{
 	icon_state = "blackcorner"
 	},
@@ -2071,6 +2082,11 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor,
 /area/station/engineering/break_room{
 	lightswitch = 0
@@ -2190,11 +2206,6 @@
 /turf/simulated/floor/plating,
 /area/station/civilian/hydroponics)
 "hF" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/structure/stool/bed/chair/office/dark{
 	dir = 4
 	},
@@ -2311,6 +2322,11 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor,
 /area/station/engineering/break_room{
 	lightswitch = 0
@@ -2576,6 +2592,11 @@
 /obj/machinery/light_switch{
 	pixel_x = -25
 	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -2595,10 +2616,10 @@
 	lightswitch = 0
 	})
 "iS" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 6
-	},
 /obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/manifold/visible/green{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -2962,9 +2983,14 @@
 /area/station/civilian/dormitories/dormone)
 "kb" = (
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -3130,6 +3156,11 @@
 "ky" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -3254,6 +3285,11 @@
 "kS" = (
 /obj/structure/stool/bed/chair/office/dark{
 	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -3648,6 +3684,18 @@
 /area/station/bridge{
 	lightswitch = 0
 	})
+"mg" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating/airless/catwalk,
+/area/station/solar/auxport)
 "mk" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	dir = 1;
@@ -3785,6 +3833,11 @@
 "mH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor,
 /area/station/engineering/break_room{
@@ -4096,6 +4149,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -4721,13 +4782,13 @@
 /turf/simulated/floor/plating/ironsand,
 /area/station/civilian/hydroponics)
 "pu" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -5427,11 +5488,21 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
 	},
 /area/station/engineering/monitoring{
+	lightswitch = 0
+	})
+"rY" = (
+/obj/machinery/atmospherics/components/unary/portables_connector,
+/turf/simulated/floor,
+/area/station/engineering/atmos{
 	lightswitch = 0
 	})
 "rZ" = (
@@ -5782,16 +5853,16 @@
 	},
 /area/asteroid/mine/unexplored)
 "te" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -7158,6 +7229,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
+/obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
@@ -7355,6 +7427,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
@@ -7673,8 +7748,8 @@
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/explored)
 "zh" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 6
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 8
 	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
@@ -7769,6 +7844,20 @@
 	icon_state = "blackchecker"
 	},
 /area/station/civilian/toilet{
+	lightswitch = 0
+	})
+"zv" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/station/engineering/atmos{
 	lightswitch = 0
 	})
 "zw" = (
@@ -8254,10 +8343,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 1
+	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -8722,21 +8811,16 @@
 	},
 /area/station/maintenance/disposal)
 "Cx" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -9505,6 +9589,11 @@
 	name = "Engineering";
 	req_access = list(10)
 	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -9763,21 +9852,16 @@
 	},
 /area/station/maintenance/cargo)
 "FT" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
 	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
@@ -10250,6 +10334,14 @@
 	icon_state = "asteroidfloor"
 	},
 /area/asteroid/mine/unexplored)
+"HJ" = (
+/obj/machinery/atmospherics/components/binary/pump/high_power/on{
+	dir = 1
+	},
+/turf/simulated/wall,
+/area/station/engineering/atmos{
+	lightswitch = 0
+	})
 "HL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -10695,6 +10787,14 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -10745,6 +10845,12 @@
 	icon_state = "white"
 	},
 /area/station/hallway/secondary/exit)
+"Jy" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/turf/simulated/floor,
+/area/station/engineering/atmos{
+	lightswitch = 0
+	})
 "JB" = (
 /obj/machinery/camera/autoname,
 /turf/simulated/floor{
@@ -10931,9 +11037,6 @@
 	lightswitch = 0
 	})
 "JV" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -11903,6 +12006,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -12638,9 +12744,7 @@
 /area/station/maintenance/dormitory)
 "Pi" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/visible/red,
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
@@ -12683,7 +12787,14 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -13843,13 +13954,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -14398,6 +14509,11 @@
 "UT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "caution"
@@ -14958,6 +15074,12 @@
 /area/station/bridge{
 	lightswitch = 0
 	})
+"WO" = (
+/obj/machinery/atmospherics/components/binary/pump/high_power/on/max_pressure,
+/turf/simulated/wall,
+/area/station/engineering/atmos{
+	lightswitch = 0
+	})
 "WR" = (
 /obj/structure/sign/departments/security{
 	pixel_x = -32
@@ -15367,6 +15489,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 9
 	},
+/obj/machinery/atmospherics/components/unary/portables_connector,
 /turf/simulated/floor{
 	icon_state = "black"
 	},
@@ -26373,7 +26496,7 @@ th
 nW
 pG
 pG
-gS
+mg
 th
 th
 eY
@@ -29976,7 +30099,7 @@ xA
 rA
 JH
 Nl
-RB
+rY
 iS
 YW
 Kz
@@ -30488,9 +30611,9 @@ DU
 EX
 mS
 Yd
-bg
+HJ
 xs
-RB
+Jy
 zh
 GX
 nb
@@ -30745,7 +30868,7 @@ uq
 Pk
 aZ
 bE
-bg
+WO
 Pi
 RB
 bJ
@@ -31007,7 +31130,7 @@ Wb
 Jo
 JV
 AM
-Jo
+zv
 IP
 gU
 Le
@@ -31518,7 +31641,7 @@ Ue
 mX
 bg
 bg
-bg
+aT
 MV
 bg
 bg
