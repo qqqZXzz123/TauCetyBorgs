@@ -977,6 +977,15 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"dK" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -32
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "black"
+	},
+/area/station/civilian/dormitories)
 "dL" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -1396,6 +1405,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/machinery/light_switch{
+	pixel_x = -25
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -1662,6 +1674,9 @@
 /area/station/civilian/dormitories/dormone)
 "gc" = (
 /obj/item/weapon/flora/random,
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -1978,6 +1993,9 @@
 /area/station/hallway/primary/central)
 "gW" = (
 /obj/machinery/bodyscanner,
+/obj/machinery/firealarm{
+	pixel_y = -32
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whitehall"
@@ -2010,6 +2028,9 @@
 /obj/item/clothing/accessory/stethoscope,
 /obj/machinery/camera/autoname{
 	dir = 1
+	},
+/obj/machinery/firealarm{
+	pixel_y = -32
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -2389,6 +2410,9 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 5
 	},
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -2589,13 +2613,13 @@
 	},
 /area/station/civilian/dormitories/dormone)
 "iN" = (
-/obj/machinery/light_switch{
-	pixel_x = -25
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/firealarm{
+	pixel_x = -28
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -3129,6 +3153,9 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -3616,6 +3643,9 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/machinery/firealarm{
+	pixel_x = 28
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "blackcorner"
@@ -3847,6 +3877,9 @@
 "mJ" = (
 /obj/machinery/camera/autoname{
 	dir = 1
+	},
+/obj/machinery/firealarm{
+	pixel_y = -32
 	},
 /turf/simulated/floor{
 	icon_state = "black"
@@ -4141,6 +4174,9 @@
 	lightswitch = 0
 	})
 "nE" = (
+/obj/machinery/atm{
+	pixel_y = 32
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "black"
@@ -4173,7 +4209,7 @@
 	},
 /area/station/maintenance/dormitory)
 "nJ" = (
-/obj/machinery/computer/communications,
+/obj/machinery/pdapainter,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -4374,6 +4410,9 @@
 /obj/item/device/guitar,
 /obj/structure/sign/warning/airlock{
 	pixel_y = -32
+	},
+/obj/machinery/firealarm{
+	pixel_x = -28
 	},
 /turf/simulated/floor{
 	icon_state = "yellowpatch"
@@ -4798,6 +4837,26 @@
 /area/station/engineering/monitoring{
 	lightswitch = 0
 	})
+"px" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "black"
+	},
+/area/station/hallway/primary/central)
 "py" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -5208,6 +5267,9 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/machinery/firealarm{
+	pixel_x = 28
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -5266,6 +5328,14 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"rj" = (
+/obj/machinery/atm{
+	pixel_y = -32
+	},
+/turf/simulated/floor{
+	icon_state = "black"
+	},
+/area/station/hallway/primary/central)
 "rn" = (
 /obj/machinery/media/jukebox/bar,
 /obj/machinery/light{
@@ -5288,8 +5358,8 @@
 /area/station/civilian/dormitories)
 "rq" = (
 /obj/machinery/hydroponics/soil,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -32
+/obj/machinery/firealarm{
+	pixel_x = -28
 	},
 /turf/simulated/floor/plating/ironsand,
 /area/station/civilian/hydroponics)
@@ -5309,6 +5379,9 @@
 /area/station/solar/port)
 "rs" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor{
 	icon_state = "blackchecker"
 	},
@@ -5773,6 +5846,9 @@
 	})
 "sM" = (
 /obj/machinery/life_assist/cardiopulmonary_bypass,
+/obj/machinery/firealarm{
+	pixel_y = 28
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -6492,6 +6568,9 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 32
+	},
 /turf/simulated/floor{
 	icon_state = "blackcorner"
 	},
@@ -6639,9 +6718,12 @@
 	lightswitch = 0
 	})
 "vm" = (
-/obj/machinery/processor,
+/obj/structure/table,
 /obj/machinery/camera/autoname{
 	dir = 8
+	},
+/obj/machinery/firealarm{
+	pixel_x = 28
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -6717,6 +6799,9 @@
 "vF" = (
 /obj/machinery/camera/autoname{
 	dir = 1
+	},
+/obj/machinery/firealarm{
+	pixel_y = -32
 	},
 /turf/simulated/floor{
 	icon_state = "blackcorner"
@@ -6830,6 +6915,9 @@
 /area/station/construction)
 "wa" = (
 /obj/machinery/light,
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor{
 	dir = 10;
 	icon_state = "black"
@@ -6866,9 +6954,7 @@
 /turf/environment/space,
 /area/asteroid/mine/unexplored)
 "wi" = (
-/obj/structure/stool/bed/chair/office/dark{
-	dir = 1
-	},
+/obj/machinery/idpainter,
 /obj/machinery/alarm{
 	dir = 0;
 	pixel_x = -30
@@ -7751,6 +7837,15 @@
 	},
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/explored)
+"ze" = (
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "black"
+	},
+/area/station/hallway/primary/central)
 "zh" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 8
@@ -8048,6 +8143,9 @@
 	dir = 4
 	},
 /obj/item/ashtray/plastic,
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor/carpet/black,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -8658,7 +8756,9 @@
 	},
 /area/station/maintenance/dormitory)
 "BK" = (
-/obj/machinery/pdapainter,
+/obj/machinery/computer/communications{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -8809,6 +8909,9 @@
 /obj/structure/table,
 /obj/item/clothing/gloves/black,
 /obj/item/weapon/storage/bag/trash,
+/obj/machinery/firealarm{
+	pixel_x = 28
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -8942,6 +9045,9 @@
 /obj/item/ammo_box/magazine/glock/rubber,
 /obj/item/weapon/gun/projectile/automatic/glock,
 /obj/item/weapon/shield/riot,
+/obj/machinery/firealarm{
+	pixel_x = 28
+	},
 /turf/simulated/floor{
 	icon_state = "redfull"
 	},
@@ -8992,6 +9098,9 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/atm{
+	pixel_x = -28
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "blackcorner"
@@ -9015,7 +9124,9 @@
 	},
 /area/station/hallway/secondary/arrival)
 "CU" = (
-/obj/machinery/idpainter,
+/obj/machinery/account_database{
+	dir = 8
+	},
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -9121,10 +9232,6 @@
 	lightswitch = 0
 	})
 "Dp" = (
-/obj/machinery/power/apc{
-	name = null;
-	pixel_y = -28
-	},
 /obj/structure/closet/secure_closet/medical3,
 /obj/item/clothing/accessory/stethoscope,
 /turf/simulated/floor{
@@ -9780,6 +9887,9 @@
 /obj/item/weapon/circuitboard/communications,
 /obj/item/weapon/circuitboard/aiupload,
 /obj/item/weapon/circuitboard/pacman,
+/obj/machinery/firealarm{
+	pixel_x = 28
+	},
 /turf/simulated/floor{
 	dir = 6;
 	icon_state = "caution"
@@ -10020,7 +10130,7 @@
 	},
 /area/station/civilian/dormitories/dormfour)
 "Gu" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/machinery/processor,
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
 	},
@@ -10504,6 +10614,9 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Io" = (
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor{
 	icon_state = "black"
 	},
@@ -10723,6 +10836,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"Jf" = (
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
+/turf/simulated/floor{
+	dir = 8;
+	icon_state = "black"
+	},
+/area/station/civilian/dormitories)
 "Jh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -10960,6 +11082,9 @@
 "JJ" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/cups,
+/obj/machinery/firealarm{
+	pixel_y = 28
+	},
 /turf/simulated/floor{
 	icon_state = "hydrofloor"
 	},
@@ -11540,6 +11665,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
+/obj/machinery/firealarm{
+	pixel_y = -32
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -11725,6 +11853,21 @@
 	icon_state = "asteroidplating"
 	},
 /area/station/solar/auxport)
+"Me" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/item/clothing/suit/space/globose/mining,
+/obj/item/clothing/head/helmet/space/globose/mining,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/shoes/magboots,
+/obj/item/device/radio/intercom{
+	pixel_x = 28
+	},
+/turf/simulated/floor{
+	icon_state = "yellowpatch"
+	},
+/area/station/cargo/miningoffice{
+	lightswitch = 0
+	})
 "Mg" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/airless/asteroid,
@@ -11789,6 +11932,9 @@
 /obj/item/weapon/stamp/approve{
 	pixel_y = -7
 	},
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor,
 /area/station/cargo/storage{
 	lightswitch = 0
@@ -11845,6 +11991,9 @@
 /area/asteroid/mine/explored)
 "My" = (
 /obj/item/weapon/flora/random,
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -13409,6 +13558,9 @@
 /area/station/hallway/secondary/exit)
 "RO" = (
 /obj/item/weapon/flora/random,
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -13569,10 +13721,24 @@
 	icon_state = "elevatorshaft"
 	},
 /area/station/tcommsat/chamber)
+"Sv" = (
+/obj/structure/stool/bed/chair/metal/white{
+	dir = 8
+	},
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/station/hallway/primary/central)
 "Sw" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /obj/machinery/light{
 	dir = 8
+	},
+/obj/machinery/atm{
+	pixel_x = -28
 	},
 /turf/simulated/floor/carpet/black,
 /area/station/civilian/bar{
@@ -13810,6 +13976,9 @@
 /obj/structure/sign/poster/contraband/hacking_guide{
 	pixel_y = -32
 	},
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -13823,6 +13992,9 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 1
+	},
+/obj/machinery/firealarm{
+	pixel_x = -28
 	},
 /turf/simulated/floor/carpet/green,
 /area/station/medical/patients_rooms{
@@ -14018,9 +14190,6 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "TD" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 32
-	},
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
@@ -14149,6 +14318,14 @@
 /area/station/civilian/bar{
 	lightswitch = 0
 	})
+"TS" = (
+/obj/machinery/firealarm{
+	pixel_y = -32
+	},
+/turf/simulated/floor{
+	icon_state = "black"
+	},
+/area/station/hallway/secondary/arrival)
 "TT" = (
 /obj/structure/cable{
 	d2 = 4;
@@ -14335,6 +14512,9 @@
 /obj/structure/table,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/machinery/firealarm{
+	pixel_x = -28
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/gym{
@@ -14557,6 +14737,9 @@
 	})
 "UX" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench,
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
 /turf/simulated/floor{
 	icon_state = "hydrofloor"
 	},
@@ -14645,6 +14828,15 @@
 /area/station/security/main{
 	lightswitch = 0
 	})
+"Vm" = (
+/obj/machinery/status_display{
+	pixel_x = -32
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/station/civilian/dormitories)
 "Vn" = (
 /turf/simulated/wall/r_wall,
 /area/station/bridge/captain_quarters{
@@ -14845,6 +15037,9 @@
 	pixel_x = 11;
 	pixel_y = -1
 	},
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor{
 	icon_state = "redchecker"
 	},
@@ -14968,6 +15163,9 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 9
+	},
+/obj/machinery/firealarm{
+	pixel_x = 28
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -15316,6 +15514,9 @@
 /area/station/solar/auxport)
 "XA" = (
 /obj/item/weapon/flora/random,
+/obj/machinery/firealarm{
+	pixel_x = -28
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -15932,6 +16133,9 @@
 /obj/item/weapon/pen/blue,
 /obj/item/weapon/stamp/captain{
 	pixel_x = 13
+	},
+/obj/machinery/firealarm{
+	pixel_x = -28
 	},
 /turf/simulated/floor{
 	icon_state = "dark"
@@ -32419,7 +32623,7 @@ uq
 uq
 uq
 Xa
-Io
+TS
 Uo
 zF
 pu
@@ -33453,7 +33657,7 @@ zm
 ql
 Xh
 AI
-zm
+ze
 RD
 FM
 pd
@@ -33980,7 +34184,7 @@ it
 AH
 EY
 cO
-cO
+Sv
 VL
 VL
 YV
@@ -35534,7 +35738,7 @@ iC
 QR
 uG
 NA
-NA
+Me
 NA
 hu
 uG
@@ -36017,7 +36221,7 @@ CU
 xE
 zV
 Vg
-Vt
+rj
 ZL
 aV
 dQ
@@ -36787,7 +36991,7 @@ ZQ
 mz
 ZQ
 ZQ
-Es
+px
 Vt
 xj
 jr
@@ -38076,13 +38280,13 @@ PA
 Rx
 zw
 zw
-zw
-zw
+dK
+Jf
 zw
 QY
 nL
 ZA
-YE
+Vm
 zw
 zw
 Ay
