@@ -2590,6 +2590,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/structure/closet/secure_closet/quartermaster,
 /turf/simulated/floor,
 /area/station/cargo/storage{
 	lightswitch = 0
@@ -4930,7 +4931,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/random/vending/snack,
+/obj/machinery/vending/cigarette,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -5700,7 +5701,7 @@
 	lightswitch = 0
 	})
 "sM" = (
-/obj/structure/table/glass,
+/obj/machinery/life_assist/cardiopulmonary_bypass,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -5906,6 +5907,9 @@
 /obj/item/weapon/pinpointer/advpinpointer,
 /obj/item/weapon/card/id/captains_spare,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/requests_console/captain{
+	pixel_y = 28
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -12133,7 +12137,7 @@
 	},
 /area/station/hallway/primary/central)
 "Nx" = (
-/obj/machinery/telecomms/broadcaster/preset_left,
+/obj/machinery/telecomms/broadcaster/preset_right,
 /turf/simulated/floor/bluegrid{
 	icon_state = "elevatorshaft"
 	},
@@ -12228,6 +12232,11 @@
 /obj/item/clothing/mask/gas/coloured,
 /obj/item/clothing/suit/armor/captain,
 /obj/item/clothing/head/helmet/space/capspace,
+/obj/machinery/recharger/wallcharger{
+	dir = 1;
+	pixel_x = 5;
+	pixel_y = 25
+	},
 /turf/simulated/floor/wood{
 	icon_state = "wooden"
 	},
@@ -13202,6 +13211,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
 	},
+/obj/item/device/megaphone,
 /turf/simulated/floor,
 /area/station/cargo/storage{
 	lightswitch = 0
@@ -13354,7 +13364,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Sg" = (
-/obj/machinery/telecomms/broadcaster/preset_right,
+/obj/machinery/telecomms/broadcaster/preset_left,
 /turf/simulated/floor/bluegrid{
 	icon_state = "elevatorshaft"
 	},
