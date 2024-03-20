@@ -1,4 +1,11 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/structure/object_wall/pod{
+	icon_state = "2,2";
+	dir = 4
+	},
+/turf/environment/space/shuttle,
+/area/space)
 "ac" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/atmos{
 	frequency = 1441;
@@ -129,6 +136,13 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormfour)
+"aN" = (
+/obj/structure/object_wall/pod{
+	icon_state = "3,2";
+	dir = 4
+	},
+/turf/environment/space,
+/area/space)
 "aO" = (
 /obj/structure/table,
 /obj/item/ashtray/plastic{
@@ -259,6 +273,21 @@
 	icon_state = "dark"
 	},
 /area/station/hallway/primary/central)
+"bd" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "be" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -1510,6 +1539,12 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"fp" = (
+/obj/structure/sign/departments/evac{
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored/safe)
 "fr" = (
 /obj/machinery/computer/med_data,
 /turf/simulated/floor{
@@ -1697,6 +1732,17 @@
 	icon_state = "wooden"
 	},
 /area/station/civilian/dormitories/dormone)
+"fZ" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/components/binary/valve/open{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "gc" = (
 /obj/item/weapon/flora/random,
 /obj/machinery/firealarm{
@@ -2251,6 +2297,16 @@
 /area/station/medical/reception{
 	lightswitch = 0
 	})
+"hC" = (
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "hE" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor,
@@ -3180,6 +3236,10 @@
 	icon_state = "elevatorshaft"
 	},
 /area/station/tcommsat/chamber)
+"kr" = (
+/obj/structure/sign/warning/pods,
+/turf/simulated/wall/r_wall,
+/area/space)
 "ks" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -3275,6 +3335,14 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
+"kK" = (
+/obj/structure/sign/warning/securearea{
+	desc = "A warning sign which reads 'HIGH VOLTAGE'";
+	icon_state = "shock";
+	name = "HIGH VOLTAGE"
+	},
+/turf/simulated/wall/r_wall,
+/area/space)
 "kL" = (
 /obj/machinery/icecream_vat,
 /obj/machinery/light{
@@ -3510,6 +3578,11 @@
 	icon_state = "platingdmg2"
 	},
 /area/station/maintenance/dormitory)
+"ls" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/obj/machinery/meter,
+/turf/simulated/floor/plating,
+/area/space)
 "lt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 9
@@ -3629,6 +3702,12 @@
 /area/station/engineering/break_room{
 	lightswitch = 0
 	})
+"lG" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "lI" = (
 /obj/structure/window/basic,
 /obj/structure/table,
@@ -4847,6 +4926,14 @@
 	},
 /turf/simulated/floor/carpet/red,
 /area/station/civilian/dormitories/dormone)
+"pn" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/item/weapon/storage/box/lights/mixed,
+/obj/item/weapon/wrench,
+/turf/simulated/floor/plating,
+/area/space)
 "pr" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light{
@@ -4931,6 +5018,9 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"pF" = (
+/turf/simulated/floor/plating/airless/asteroid,
+/area/space)
 "pG" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -5320,6 +5410,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
+"qZ" = (
+/obj/structure/cable,
+/obj/machinery/power/smes/fullcharge,
+/turf/simulated/floor/plating,
+/area/space)
 "rb" = (
 /turf/simulated/wall,
 /area/station/cargo/storage{
@@ -5806,6 +5901,10 @@
 /area/station/civilian/cold_room{
 	lightswitch = 0
 	})
+"sF" = (
+/obj/machinery/atmospherics/pipe/manifold4w/hidden,
+/turf/simulated/floor/plating,
+/area/space)
 "sG" = (
 /obj/structure/table,
 /obj/item/clothing/head/collectable/paper{
@@ -6655,6 +6754,13 @@
 /area/station/bridge{
 	lightswitch = 0
 	})
+"uP" = (
+/turf/simulated/mineral/random/labormineral,
+/area/space)
+"uQ" = (
+/obj/machinery/atmospherics/components/unary/tank/air,
+/turf/simulated/floor/plating,
+/area/space)
 "uS" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/generic,
@@ -6858,6 +6964,14 @@
 	icon_state = "blackcorner"
 	},
 /area/station/civilian/dormitories)
+"vH" = (
+/obj/machinery/door/unpowered/shuttle/pod{
+	dock_tag = "pod2"
+	},
+/turf/simulated/shuttle/floor/erokez{
+	icon_state = "floor"
+	},
+/area/space)
 "vI" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -32
@@ -7399,6 +7513,13 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"xz" = (
+/obj/structure/object_wall/pod{
+	icon_state = "3,0";
+	dir = 4
+	},
+/turf/environment/space,
+/area/space)
 "xA" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -7442,6 +7563,13 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"xK" = (
+/obj/structure/object_wall/pod{
+	icon_state = "1,0";
+	dir = 4
+	},
+/turf/environment/space/shuttle,
+/area/space)
 "xM" = (
 /obj/structure/table/glass,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -8777,6 +8905,9 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"BE" = (
+/turf/simulated/wall/r_wall,
+/area/space)
 "BF" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -9331,6 +9462,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
+"Dx" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "Dy" = (
 /obj/structure/window/reinforced/polarized{
 	dir = 1;
@@ -9636,6 +9774,13 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"EC" = (
+/obj/structure/object_wall/pod{
+	icon_state = "2,0";
+	dir = 4
+	},
+/turf/environment/space/shuttle,
+/area/space)
 "EE" = (
 /obj/structure/closet/toolcloset,
 /obj/effect/decal/cleanable/cobweb,
@@ -9653,6 +9798,13 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"EG" = (
+/obj/structure/object_wall/pod{
+	icon_state = "0,0";
+	dir = 4
+	},
+/turf/environment/space/shuttle,
+/area/space)
 "EH" = (
 /obj/item/weapon/flora/random,
 /turf/simulated/floor{
@@ -10799,6 +10951,9 @@
 "IB" = (
 /turf/simulated/wall,
 /area/station/maintenance/dormitory)
+"IC" = (
+/turf/simulated/floor/plating,
+/area/space)
 "IE" = (
 /turf/simulated/mineral/random/caves,
 /area/asteroid/mine/unexplored)
@@ -11287,6 +11442,16 @@
 "JZ" = (
 /turf/simulated/wall,
 /area/station/solar/auxport)
+"Ka" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/plating,
+/area/space)
 "Kb" = (
 /turf/simulated/floor{
 	icon_state = "floorgrime"
@@ -12369,6 +12534,22 @@
 /area/station/civilian/gym{
 	lightswitch = 0
 	})
+"Ng" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance{
+	name = "Mining Station Maintenance";
+	req_access = list(48)
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "Nh" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -12920,6 +13101,15 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"OI" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "OJ" = (
 /turf/simulated/wall,
 /area/station/civilian/locker)
@@ -12970,6 +13160,16 @@
 /area/station/civilian/kitchen{
 	lightswitch = 0
 	})
+"Pd" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/stool/bed/chair/schair/wagon,
+/turf/simulated/shuttle/floor/erokez{
+	icon_state = "floor";
+	dir = 4
+	},
+/area/space)
 "Pg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -13054,6 +13254,15 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"Px" = (
+/obj/structure/stool/bed/chair/schair/wagon{
+	dir = 1
+	},
+/turf/simulated/shuttle/floor/erokez{
+	icon_state = "floor";
+	dir = 4
+	},
+/area/space)
 "PA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13102,6 +13311,10 @@
 "PK" = (
 /obj/structure/girder,
 /turf/environment/space,
+/area/space)
+"PL" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/plating,
 /area/space)
 "PN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -14307,6 +14520,12 @@
 	icon_state = "platingdmg1"
 	},
 /area/station/maintenance/engineering)
+"TF" = (
+/obj/machinery/door/airlock/external{
+	dock_tag = "pod1"
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/space)
 "TG" = (
 /obj/machinery/disposal,
 /obj/machinery/alarm{
@@ -14905,6 +15124,16 @@
 	icon_state = "blue"
 	},
 /area/station/hallway/primary/central)
+"Vh" = (
+/obj/machinery/camera{
+	c_tag = "Docks Central";
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "Vi" = (
 /obj/structure/grille,
 /turf/environment/space,
@@ -14941,6 +15170,13 @@
 /area/station/civilian/bar{
 	lightswitch = 0
 	})
+"Vq" = (
+/obj/structure/object_wall/pod{
+	icon_state = "1,2";
+	dir = 4
+	},
+/turf/environment/space/shuttle,
+/area/space)
 "Vr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15164,6 +15400,15 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"We" = (
+/obj/structure/sign/warning/securearea{
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	layer = 4;
+	name = "EXTERNAL AIRLOCK"
+	},
+/turf/simulated/wall/r_wall,
+/area/space)
 "Wf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15816,6 +16061,16 @@
 	icon_state = "black"
 	},
 /area/station/hallway/secondary/arrival)
+"Ye" = (
+/obj/structure/object_wall/pod{
+	icon_state = "3,1";
+	name = "shuttle window";
+	opacity = 0;
+	dir = 4
+	},
+/obj/item/device/radio/intercom/pod,
+/turf/environment/space,
+/area/space)
 "Yf" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -16284,6 +16539,13 @@
 	},
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/explored)
+"Zx" = (
+/obj/structure/object_wall/pod{
+	icon_state = "0,2";
+	dir = 4
+	},
+/turf/environment/space/shuttle,
+/area/space)
 "Zz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -27031,7 +27293,7 @@ ah
 ah
 th
 th
-hH
+th
 th
 th
 th
@@ -27788,7 +28050,7 @@ th
 th
 th
 th
-ah
+th
 th
 th
 th
@@ -28047,7 +28309,7 @@ th
 th
 th
 th
-ah
+th
 th
 th
 ah
@@ -28302,7 +28564,7 @@ th
 th
 th
 th
-ah
+th
 th
 th
 th
@@ -28556,13 +28818,13 @@ th
 th
 th
 th
-ah
 th
 th
 th
 th
-ah
-ah
+th
+th
+th
 th
 th
 th
@@ -28815,13 +29077,13 @@ th
 th
 th
 th
-ah
 th
 th
-ah
-ah
 th
-hH
+th
+th
+th
+th
 ah
 ah
 ah
@@ -29069,15 +29331,15 @@ th
 th
 th
 th
-ah
 th
 th
 th
 th
-ah
-ah
-ah
-ah
+th
+th
+th
+th
+th
 th
 ah
 ah
@@ -29329,18 +29591,18 @@ th
 th
 th
 th
-ah
 th
 th
-ah
-ah
-th
-th
-th
-th
-th
-th
-th
+BE
+BE
+BE
+BE
+BE
+BE
+BE
+BE
+BE
+BE
 th
 th
 th
@@ -29585,19 +29847,19 @@ th
 th
 th
 th
-ah
-ah
 th
 th
 th
-th
-th
-th
-Rs
-Rs
-Rs
-th
-th
+aN
+ab
+Vq
+Zx
+BE
+PL
+We
+pF
+pF
+BE
 th
 Rs
 Rs
@@ -29838,24 +30100,24 @@ th
 th
 th
 th
-ah
 th
 th
 th
-ah
-ah
-th
-ah
 th
 th
 th
-FK
-FK
-Rs
-Rs
-Rs
-Rs
-Rs
+th
+Ye
+Px
+Pd
+vH
+TF
+IC
+TF
+pF
+pF
+BE
+fp
 Rs
 Rs
 Rs
@@ -30097,21 +30359,21 @@ th
 th
 th
 th
-ah
-th
-ah
 th
 th
-ah
-ah
 th
 th
-FK
-FK
-Rs
-Rs
-Rs
-Rs
+th
+xz
+EC
+xK
+EG
+BE
+Vh
+kr
+pF
+pF
+pF
 Rs
 Rs
 Rs
@@ -30354,21 +30616,21 @@ th
 th
 th
 th
-ah
 th
 th
 th
-ah
-ah
 th
 th
-FK
-FK
-FK
-Rs
-Rs
-Rs
-Rs
+BE
+BE
+BE
+BE
+BE
+BE
+BE
+pF
+pF
+pF
 Rs
 Rs
 Rs
@@ -30609,24 +30871,24 @@ th
 th
 th
 th
-ah
 th
 th
 th
 th
 th
-ah
-ah
 th
-FK
-FK
-eN
-FK
-FK
-Rs
-Rs
-Rs
-Rs
+th
+aN
+ab
+Vq
+Zx
+BE
+PL
+We
+pF
+pF
+BE
+fp
 Rs
 Rs
 Rs
@@ -30869,20 +31131,20 @@ th
 th
 th
 th
-ah
 th
 th
-ah
 th
 th
-FK
-eN
-eN
-eN
-FK
-FK
-FK
-Rs
+Ye
+Px
+Pd
+vH
+TF
+IC
+TF
+pF
+pF
+BE
 Rs
 Rs
 Rs
@@ -31125,21 +31387,21 @@ th
 th
 th
 th
-ah
-ah
 th
 th
 th
 th
 th
-FK
-eN
-eN
-eN
-eN
-FK
-FK
-FK
+xz
+EC
+xK
+EG
+BE
+Vh
+kr
+pF
+pF
+BE
 Rs
 Rs
 Rs
@@ -31380,23 +31642,23 @@ th
 th
 th
 th
-ah
-th
-ah
-ah
-th
-ah
 th
 th
 th
-FK
-FK
-eN
-eN
-eN
-eN
-FK
-FK
+th
+th
+th
+th
+BE
+BE
+BE
+BE
+BE
+BE
+BE
+pF
+pF
+BE
 FK
 FK
 FK
@@ -31637,23 +31899,23 @@ th
 th
 th
 th
-ah
-th
-ah
-ah
-th
-ah
-ah
 th
 th
 th
-FK
-eN
-eN
-eN
-eN
-eN
-eN
+th
+th
+th
+th
+aN
+ab
+Vq
+Zx
+BE
+PL
+We
+pF
+pF
+BE
 eN
 eN
 eN
@@ -31896,21 +32158,21 @@ th
 th
 th
 th
-ah
 th
 th
 th
-ah
 th
 th
-th
-FK
-eN
-eN
-eN
-eN
-eN
-eN
+Ye
+Px
+Pd
+vH
+TF
+IC
+TF
+pF
+pF
+BE
 eN
 eN
 eN
@@ -32155,19 +32417,19 @@ th
 th
 th
 th
-ah
 th
 th
 th
-ah
-th
-FK
-eN
-eN
-eN
-eN
-eN
-eN
+xz
+EC
+xK
+EG
+BE
+Vh
+kr
+pF
+pF
+BE
 eN
 eN
 eN
@@ -32409,22 +32671,22 @@ th
 th
 th
 th
-ah
 th
-ah
-ah
 th
-hH
-ah
-ah
 th
-FK
-eN
-eN
-eN
-eN
-eN
-eN
+th
+th
+th
+BE
+BE
+BE
+BE
+BE
+BE
+BE
+pF
+pF
+BE
 eN
 eN
 eN
@@ -32664,24 +32926,24 @@ th
 th
 th
 th
-ah
 th
 th
 th
 th
-ah
-ah
 th
-ah
-ah
 th
-FK
-eN
-eN
-eN
-eN
-eN
-eN
+th
+th
+aN
+ab
+Vq
+Zx
+BE
+PL
+We
+pF
+pF
+BE
 eN
 eN
 eN
@@ -32923,22 +33185,22 @@ th
 th
 th
 th
-ah
 th
 th
 th
 th
 th
 th
-th
-th
-FK
-FK
-eN
-eN
-eN
-eN
-eN
+Ye
+Px
+Pd
+vH
+TF
+IC
+TF
+pF
+pF
+BE
 eN
 eN
 eN
@@ -33179,23 +33441,23 @@ th
 th
 th
 th
-ah
-ah
-th
-ah
-th
-th
-ah
-ah
 th
 th
 th
-FK
-FK
-eN
-eN
-eN
-eN
+th
+th
+th
+th
+xz
+EC
+xK
+EG
+BE
+Vh
+kr
+pF
+pF
+BE
 eN
 eN
 eN
@@ -33436,24 +33698,24 @@ th
 th
 th
 th
-ah
-ah
 th
 th
 th
-ah
-ah
-ah
-ah
 th
 th
-FK
-FK
-eN
-eN
-eN
-eN
-eN
+th
+th
+BE
+BE
+BE
+BE
+BE
+BE
+BE
+Ng
+kK
+BE
+oh
 eN
 eN
 eN
@@ -33694,23 +33956,23 @@ th
 th
 th
 th
-ah
-th
-ah
-th
-th
-ah
-ah
-ah
 th
 th
 th
-FK
-FK
-FK
-FK
-eN
-eN
+th
+th
+th
+th
+th
+th
+th
+oh
+uQ
+uQ
+fZ
+pn
+qZ
+oh
 eN
 eN
 eN
@@ -33949,25 +34211,25 @@ th
 th
 th
 th
-ah
 th
 th
 th
-ah
-ah
 th
 th
-ah
-ah
 th
-ah
 th
-IE
-IE
-IE
-FK
-FK
-FK
+th
+th
+th
+th
+th
+oh
+OI
+sF
+ls
+IC
+lG
+oh
 eN
 eN
 eN
@@ -34209,22 +34471,22 @@ th
 th
 th
 th
-ah
-ah
-ah
-th
-th
-ah
 th
 th
 th
 th
-IE
-IE
-IE
-FK
-FK
-FK
+th
+th
+th
+th
+th
+oh
+uQ
+Dx
+Ka
+hC
+bd
+oh
 eN
 eN
 eN
@@ -34474,14 +34736,14 @@ th
 th
 th
 ah
-ah
-th
-IE
-IE
-IE
-IE
-IE
-FK
+uP
+oh
+oh
+oh
+oh
+oh
+oh
+oh
 FK
 FK
 eN
@@ -34733,11 +34995,11 @@ ah
 ah
 th
 th
-IE
-IE
-IE
-IE
-IE
+th
+th
+th
+th
+th
 FK
 FK
 FK
@@ -34990,11 +35252,11 @@ ah
 th
 th
 th
-sm
-IE
-IE
-IE
-IE
+th
+th
+th
+th
+th
 IE
 IE
 FK
@@ -35247,11 +35509,11 @@ ah
 th
 th
 th
-sm
-IE
-IE
-IE
-IE
+th
+th
+th
+th
+th
 IE
 IE
 FK
@@ -35504,11 +35766,11 @@ ah
 th
 ah
 th
-sm
-sm
-sm
-IE
-IE
+th
+th
+th
+th
+th
 IE
 IE
 FK

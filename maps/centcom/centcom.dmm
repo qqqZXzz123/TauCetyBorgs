@@ -27205,6 +27205,9 @@
 	icon_state = "vault"
 	},
 /area/centcom/control)
+"iKP" = (
+/turf/environment/space,
+/area/shuttle/escape_pod7/centcom)
 "iLb" = (
 /turf/unsimulated/floor{
 	dir = 8;
@@ -29189,6 +29192,9 @@
 	icon_state = "greenfull"
 	},
 /area/centcom/evac)
+"nfR" = (
+/turf/environment/space,
+/area/shuttle/escape_pod7/transit)
 "ngb" = (
 /obj/structure/sign/mark/symbol_b{
 	icon_state = "N"
@@ -30543,6 +30549,9 @@
 	},
 /turf/simulated/shuttle/floor/evac/medbay,
 /area/shuttle/escape/centcom)
+"sAf" = (
+/turf/environment/space,
+/area/shuttle/escape_pod8/centcom)
 "sAN" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/storage/box/donkpockets{
@@ -30558,6 +30567,9 @@
 /obj/structure/cult/statue/camera/gargoyle,
 /turf/unsimulated/floor/cult/lava,
 /area/custom/cult)
+"tIZ" = (
+/turf/environment/space,
+/area/shuttle/escape_pod8/transit)
 "tWq" = (
 /obj/structure/stool/bed/chair/metal/red{
 	dir = 4
@@ -48401,10 +48413,10 @@ aDC
 aaM
 aDC
 aaM
-aaM
-aaM
-aaM
-aaM
+sAf
+sAf
+sAf
+sAf
 aHv
 aHv
 hGb
@@ -48658,10 +48670,10 @@ aCe
 aBp
 aCe
 aBp
-aaM
-aaM
-aaM
-aaM
+sAf
+sAf
+sAf
+sAf
 eNc
 hGb
 aIy
@@ -48915,10 +48927,10 @@ aCe
 aBp
 aCe
 aBp
-aaM
-aaM
-aaM
-aaM
+sAf
+sAf
+sAf
+sAf
 aHv
 hkN
 hHb
@@ -49429,10 +49441,10 @@ aCe
 aBp
 aCe
 aBp
-aaM
-aaM
-aaM
-aaM
+iKP
+iKP
+iKP
+iKP
 aHv
 glT
 hIb
@@ -49686,10 +49698,10 @@ aCe
 aBp
 aCe
 aBp
-aaM
-aaM
-aaM
-aaM
+iKP
+iKP
+iKP
+iKP
 eNc
 aIy
 aIy
@@ -49943,10 +49955,10 @@ aCe
 aBp
 aCe
 aBp
-aaM
-aaM
-aaM
-aaM
+iKP
+iKP
+iKP
+iKP
 aHv
 aHv
 aIO
@@ -54218,10 +54230,10 @@ aaM
 aaM
 aaM
 ahG
-aaM
-aaM
-aaM
-aaM
+tIZ
+tIZ
+tIZ
+tIZ
 ahG
 aaM
 aaM
@@ -54475,10 +54487,10 @@ aaM
 aaM
 aaM
 ahG
-aaM
-aaM
-aaM
-aaM
+tIZ
+tIZ
+tIZ
+tIZ
 ahG
 aaM
 aaM
@@ -54732,10 +54744,10 @@ aaM
 aaM
 aaM
 ahG
-aaM
-aaM
-aaM
-aaM
+tIZ
+tIZ
+tIZ
+tIZ
 ahG
 aaM
 aaM
@@ -55760,10 +55772,10 @@ aaM
 aaM
 aaM
 ahG
-aaM
-aaM
-aaM
-aaM
+nfR
+nfR
+nfR
+nfR
 ahG
 aaM
 aaM
@@ -56017,10 +56029,10 @@ aaM
 aaM
 aaM
 ahG
-aaM
-aaM
-aaM
-aaM
+nfR
+nfR
+nfR
+nfR
 ahG
 aaM
 aaM
@@ -56274,10 +56286,10 @@ aaM
 aaM
 aaM
 ahG
-aaM
-aaM
-aaM
-aaM
+nfR
+nfR
+nfR
+nfR
 ahG
 aaM
 aaM
