@@ -1931,11 +1931,11 @@
 	id_tag = "solar_tool_airlock";
 	pixel_x = 28;
 	pixel_y = 4;
+	req_one_access = list(13,45,1);
 	tag_airpump = "solar_tool_pump";
 	tag_chamber_sensor = "solar_tool_sensor";
 	tag_exterior_door = "solar_tool_outer";
-	tag_interior_door = "solar_tool_inner";
-	req_one_access = list(13,45,1)
+	tag_interior_door = "solar_tool_inner"
 	},
 /obj/machinery/airlock_sensor{
 	id_tag = "solar_tool_sensor";
@@ -2245,7 +2245,14 @@
 /obj/item/device/radio/intercom{
 	pixel_y = -32
 	},
-/obj/item/weapon/storage/box/beakers,
+/obj/item/weapon/paper_bin{
+	pixel_x = 6;
+	pixel_y = 2
+	},
+/obj/item/weapon/folder/white,
+/obj/item/weapon/pen{
+	pixel_x = -7
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whitehall"
@@ -3378,7 +3385,7 @@
 /area/station/civilian/dormitories)
 "kX" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/item/weapon/storage/fancy/candle_box,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -4425,6 +4432,12 @@
 /obj/structure/table,
 /obj/item/device/radio/intercom{
 	pixel_y = -32
+	},
+/obj/item/weapon/storage/fancy/crayons{
+	pixel_y = 5
+	},
+/obj/item/stack/sheet/cloth{
+	amount = 25
 	},
 /turf/simulated/floor{
 	icon_state = "redfull"
@@ -5583,10 +5596,13 @@
 	lightswitch = 0
 	})
 "rU" = (
-/obj/structure/closet/secure_closet/medical2,
+/obj/structure/closet/secure_closet/medical2{
+	name = "Medical Supplies"
+	},
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
+/obj/item/weapon/autopsy_scanner,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -5746,6 +5762,7 @@
 	dir = 8
 	},
 /obj/structure/table,
+/obj/item/weapon/storage/backpack/medbag,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -5890,6 +5907,11 @@
 /obj/machinery/camera/autoname{
 	dir = 5
 	},
+/obj/item/weapon/storage/pill_bottle/dice{
+	pixel_x = 13;
+	pixel_y = 5
+	},
+/obj/item/weapon/storage/fancy/crayons,
 /turf/simulated/floor{
 	icon_state = "hydrofloor"
 	},
@@ -7518,6 +7540,9 @@
 /area/station/maintenance/dormitory)
 "xP" = (
 /obj/structure/table,
+/obj/item/weapon/storage/briefcase{
+	pixel_y = 4
+	},
 /turf/simulated/floor{
 	icon_state = "hydrofloor"
 	},
@@ -7998,6 +8023,10 @@
 	pixel_x = 9;
 	pixel_y = 8
 	},
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = 9;
+	pixel_y = -2
+	},
 /turf/simulated/floor{
 	icon_state = "whitehall"
 	},
@@ -8305,6 +8334,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/clothing/shoes/footwraps,
+/obj/item/clothing/shoes/footwraps,
 /turf/simulated/floor/wood,
 /area/station/civilian/gym{
 	lightswitch = 0
@@ -10336,7 +10367,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
 "GG" = (
-/obj/structure/table,
+/obj/structure/easel,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor{
 	icon_state = "redfull"
@@ -11543,9 +11574,7 @@
 /area/station/hallway/primary/central)
 "KG" = (
 /obj/structure/stool/bed/chair/metal{
-	dir = 4;
-	flip_angle = 1;
-	flipped = 1
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11571,7 +11600,14 @@
 	pixel_x = 8;
 	pixel_y = 6
 	},
-/obj/item/weapon/paper/crumpled,
+/obj/item/weapon/paper/crumpled{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/trash/candle/red{
+	pixel_x = 4;
+	pixel_y = 2
+	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -13299,11 +13335,9 @@
 	lightswitch = 0
 	})
 "Qp" = (
-/obj/item/clothing/shoes/footwraps,
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "asteroidwarning"
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/head/feathertrilby,
+/turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Qq" = (
 /obj/machinery/light/small,
@@ -14641,6 +14675,11 @@
 /obj/machinery/firealarm{
 	pixel_x = -28
 	},
+/obj/item/clothing/mask/luchador/rudos{
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/obj/item/clothing/mask/luchador/white,
 /turf/simulated/floor/wood,
 /area/station/civilian/gym{
 	lightswitch = 0
@@ -14655,6 +14694,7 @@
 	})
 "Uu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/stool,
 /turf/simulated/floor{
 	icon_state = "redchecker"
 	},
@@ -41535,10 +41575,10 @@ Mx
 Mx
 IB
 IB
-ek
+Qp
 CC
 oD
-Qp
+Fh
 Ie
 Ie
 Qs
