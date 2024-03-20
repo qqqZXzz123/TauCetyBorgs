@@ -1,4 +1,3 @@
-
 //medical
 
 /datum/skillset/oldsparrow/cmo
