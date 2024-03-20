@@ -82,6 +82,7 @@
 	var/escaped_on_pod_2 = 0
 	var/escaped_on_pod_3 = 0
 	var/escaped_on_pod_4 = 0
+	var/escaped_on_pod_5 = 0
 	var/escaped_on_pod_6 = 0
 	var/escaped_on_pod_7 = 0
 	var/escaped_on_pod_8 = 0
