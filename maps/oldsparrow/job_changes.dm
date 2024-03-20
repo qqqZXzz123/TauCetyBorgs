@@ -1,17 +1,5 @@
 #define JOB_MODIFICATION_MAP_NAME "Old Sparrow"
 
-
-
-
-
-
-
-
-
-
-
-
-
 /datum/job/captain/New()
 	..()
 	MAP_JOB_CHECK
@@ -29,20 +17,28 @@
 
 
 /datum/job/doctor/New()
-	..()
-	MAP_JOB_CHECK
-	access += list(access_external_airlocks, access_sec_doors, access_research, access_mailsorting, access_engineering_lobby)
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_ingame_minutes = 900
 	skillsets = list("Medical Doctor" = /datum/skillset/oldsparrow/doctor)
 
+/datum/job/chief_engineer/New()
+	..()
+	MAP_JOB_CHECK
+	minimal_player_ingame_minutes = 3600
+	skillsets = list("Chief Engineer" = /datum/skillset/oldsparrow/ce)
+
+/datum/job/cmo/New()
+	..()
+	MAP_JOB_CHECK
+	minimal_player_ingame_minutes = 3600
+	skillsets = list("Chief Medical Officer" = /datum/skillset/oldsparrow/cmo)
 
 /datum/job/engineer/New()
 	..()
 	MAP_JOB_CHECK
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_ingame_minutes = 600
 	skillsets = list("Station Engineer" = /datum/skillset/oldsparrow/engineer)
 
@@ -65,19 +61,11 @@
 	..()
 	MAP_JOB_CHECK
 	total_positions = 3
-	spawn_positions = 3
+	spawn_positions = 1
 	minimal_player_ingame_minutes = 600
 	skillsets = list("Shaft Miner" = /datum/skillset/oldsparrow/miner)
 
 MAP_REMOVE_JOB(barber)
-
-MAP_REMOVE_JOB(clown)
-
-MAP_REMOVE_JOB(bartender)
-
-MAP_REMOVE_JOB(cmo)
-
-MAP_REMOVE_JOB(chief_engineer)
 
 MAP_REMOVE_JOB(cargo_tech)
 
