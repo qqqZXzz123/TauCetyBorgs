@@ -295,17 +295,12 @@
 	},
 /area/station/hallway/primary/central)
 "bd" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/machinery/power/port_gen/pacman{
-	anchored = 1
+/obj/machinery/power/terminal{
+	dir = 8
 	},
 /obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -2355,12 +2350,12 @@
 	lightswitch = 0
 	})
 "hC" = (
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /obj/machinery/power/port_gen/pacman{
 	anchored = 1
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -3651,8 +3646,10 @@
 	},
 /area/station/maintenance/dormitory)
 "ls" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden,
 /obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 9
+	},
 /turf/simulated/floor/plating,
 /area/space)
 "lt" = (
@@ -3777,12 +3774,6 @@
 /area/station/engineering/break_room{
 	lightswitch = 0
 	})
-"lG" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
-/area/space)
 "lI" = (
 /obj/structure/window/basic,
 /obj/structure/table,
@@ -5051,11 +5042,8 @@
 /turf/simulated/floor/carpet/red,
 /area/station/civilian/dormitories/dormone)
 "pn" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/item/weapon/storage/box/lights/mixed,
 /obj/item/weapon/wrench,
+/obj/item/weapon/storage/box/lights/mixed,
 /turf/simulated/floor/plating,
 /area/space)
 "pr" = (
@@ -6056,7 +6044,7 @@
 	lightswitch = 0
 	})
 "sF" = (
-/obj/machinery/atmospherics/pipe/manifold4w/hidden,
+/obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/plating,
 /area/space)
 "sG" = (
@@ -6933,9 +6921,6 @@
 /area/station/bridge{
 	lightswitch = 0
 	})
-"uP" = (
-/turf/simulated/mineral/random/labormineral,
-/area/space)
 "uQ" = (
 /obj/machinery/atmospherics/components/unary/tank/air,
 /turf/simulated/floor/plating,
@@ -11606,7 +11591,6 @@
 /area/station/hallway/secondary/exit)
 "JK" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
-	dir = 2;
 	frequency = 1441;
 	id = "o2_in";
 	name = "O2 air injector"
@@ -12287,7 +12271,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/medical/glass{
-	id_tag = null;
 	name = "Medbay"
 	},
 /obj/machinery/door/firedoor,
@@ -16733,7 +16716,6 @@
 /area/station/maintenance/bridge)
 "YV" = (
 /obj/machinery/door/airlock/medical/glass{
-	id_tag = null;
 	name = "Medbay"
 	},
 /obj/machinery/door/firedoor,
@@ -34080,7 +34062,7 @@ BE
 Ng
 kK
 BE
-oh
+eN
 eN
 eN
 eN
@@ -34333,11 +34315,11 @@ th
 th
 oh
 uQ
-uQ
-fZ
 pn
+fZ
 qZ
 oh
+eN
 eN
 eN
 eN
@@ -34592,9 +34574,9 @@ oh
 OI
 sF
 ls
-IC
-lG
+bd
 oh
+eN
 eN
 eN
 eN
@@ -34846,12 +34828,12 @@ th
 th
 th
 oh
-uQ
 Dx
 Ka
+IC
 hC
-bd
 oh
+eN
 eN
 eN
 eN
@@ -35101,14 +35083,14 @@ th
 th
 th
 ah
-uP
+th
 oh
 oh
 oh
 oh
 oh
 oh
-oh
+eN
 FK
 FK
 eN
