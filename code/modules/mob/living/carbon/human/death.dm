@@ -119,8 +119,8 @@
 			death()
 			BP.brainmob.death()
 
-			tod = null // These lines prevent reanimation if head was cut and then sewn back, you can only clone these bodies
-			timeofdeath = 0
+			tod = worldtime2text() //tod = null // These lines prevent reanimation if head was cut and then sewn back, you can only clone these bodies
+			timeofdeath = world.time //timeofdeath = 0
 
 /obj/item/organ/external/head/proc/transfer_identity(mob/living/carbon/human/H)//Same deal as the regular brain proc. Used for human-->head
 	brainmob = new(src)

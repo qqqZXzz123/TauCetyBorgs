@@ -166,6 +166,7 @@
 								H.update_inv_slot(SLOT_GLOVES)
 							H.germ_level = 0
 			H.clean_blood()
+			H.wash_poo()
 			if(target == user)
 				user.visible_message("<span class='notice'>\the [user] cleans \his [body_part_name] out with soap.</span>")
 			else

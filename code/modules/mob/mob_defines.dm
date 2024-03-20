@@ -1,4 +1,5 @@
 /mob
+	var/pooition = 20
 	density = TRUE
 	layer = 4.0
 	animate_movement = 2

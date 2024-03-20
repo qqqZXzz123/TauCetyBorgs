@@ -88,7 +88,6 @@
 		else
 			msg += "[t_He] [t_is] wearing [bicon(w_uniform)] \a [w_uniform][w_uniform.display_accessories()].\n"
 
-	//head
 	if(head)
 		if(head.dirt_overlay)
 			msg += "<span class='warning'>[t_He] [t_is] wearing [bicon(head)] [head.gender==PLURAL?"some":"a"] [head.dirt_description()] on [t_his] head[head.display_accessories()]!</span>\n"
@@ -290,6 +289,11 @@
 		msg += "[t_He] look[t_is] a little soaked.\n"
 
 	msg += "</span>"
+
+	//he is covered in shit
+	if(pooed)
+		msg += "[t_He] [t_is] <big><b><font color='pink'>ОБМАЗАН ГОВНОМ</font>.</b></big>\n"
+		
 
 	if(bodyparts_by_name[BP_HEAD] && getBrainLoss() >= 60)
 		msg += "[t_He] [t_has] a stupid expression on [t_his] face.\n"

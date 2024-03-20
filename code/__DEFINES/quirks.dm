@@ -29,3 +29,6 @@
 #define QUIRK_LIGHT_DRINKER "Неустойчивость к Алкоголю"
 #define QUIRK_NYCTOPHOBIA "Никтофобия"
 #define QUIRK_GENETIC_DEGRADATION "Генетическая Деградация"
+
+//white
+#define QUIRK_LIGHT_POOER		"Легкосеря"

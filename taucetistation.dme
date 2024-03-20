@@ -2450,4 +2450,5 @@
 #include "maps\oldsparrow\job_changes.dm"
 #include "maps\stroechka\job_changes.dm"
 #include "maps\testmap\job_changes.dm"
+#include "white\valtos\code\unsorted\poo.dm"
 // END_INCLUDE

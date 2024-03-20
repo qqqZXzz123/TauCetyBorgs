@@ -14826,10 +14826,10 @@
 	},
 /area/centcom/specops)
 "aHy" = (
+/obj/machinery/light,
 /obj/structure/closet/secure_closet/medical1{
 	pixel_x = 5
 	},
-/obj/machinery/light,
 /turf/unsimulated/floor{
 	icon_state = "white"
 	},
@@ -25527,6 +25527,12 @@
 	},
 /turf/environment/space,
 /area/shuttle/officer/velocity)
+"fxq" = (
+/obj/machinery/implantchair,
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/centcom/specops)
 "fyb" = (
 /obj/structure/stool/bed/chair/schair/monorail_chair{
 	dir = 8;
@@ -30504,6 +30510,15 @@
 /obj/item/weapon/kitchenknife/ritual,
 /turf/unsimulated/floor/cult/lava,
 /area/custom/cult)
+"seN" = (
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 4
+	},
+/turf/unsimulated/floor{
+	dir = 4;
+	icon_state = "whitehall"
+	},
+/area/centcom/specops)
 "skC" = (
 /obj/item/weapon/reagent_containers/blood/AMinus{
 	pixel_x = -7;
@@ -64866,9 +64881,9 @@ aBp
 aBp
 aBp
 aBp
-hBb
-hBb
 aBp
+hBb
+seN
 aBp
 aBp
 aBp
@@ -65121,14 +65136,14 @@ gtb
 gtb
 gTb
 aBp
-aFy
+fxq
+aFW
+aFW
 aFW
 aFW
 aFW
 aFW
 aHw
-aBp
-aaM
 aBp
 aBp
 aBp
@@ -65378,15 +65393,15 @@ gtb
 gtb
 gUb
 aCt
-aFz
+aFy
+aFW
+aFW
 aFW
 aFW
 aFW
 aFW
 aHx
 aaR
-aaM
-aaM
 aaM
 aaM
 aJu
@@ -65635,15 +65650,15 @@ gtb
 gtb
 gVb
 aCu
-aFA
+aFz
+aFW
+aFW
 aFW
 aFW
 aFW
 aFW
 aHy
 aaR
-aaM
-aaM
 aaM
 aaM
 aaS
@@ -65892,15 +65907,15 @@ gtb
 gtb
 gUb
 aCv
-aFB
+aFA
+aFW
+aFW
 aFW
 aFW
 aFW
 aFW
 aHz
 aaR
-aaM
-aaM
 aaM
 aaM
 aaS
@@ -66151,13 +66166,13 @@ gWb
 aBp
 aFC
 aFW
+aGQ
 amt
 aGQ
-aGQ
+aFW
+aFB
 aHA
 aBp
-aaM
-aaM
 aaM
 aaM
 aJu

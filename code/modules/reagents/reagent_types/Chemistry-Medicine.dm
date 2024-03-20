@@ -92,7 +92,7 @@
 
 /datum/reagent/paracetamol/on_general_digest(mob/living/M)
 	..()
-	M.adjustHalLoss(-1)
+	M.adjustHalLoss(-2)
 	if(volume > overdose)
 		M.hallucination = max(M.hallucination, 2)
 
@@ -105,12 +105,34 @@
 	overdose = REAGENTS_OVERDOSE
 	custom_metabolism = 0.025
 	restrict_species = list(IPC, DIONA)
+	data = list()
 
 /datum/reagent/tramadol/on_general_digest(mob/living/M)
 	..()
+	if(!data["ticks"])
+		data["ticks"] = 1
+	data["ticks"]++
+	if(!data["time"])
+		data["time"] = 0
+	if(volume <= 0.2 && data["time"] != -1 && data["ticks"] >= 50)
+		data["time"] = -1
+		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
+		var/mob/living/carbon/human/H = M
+		H.shock_stage += 8
+		M.blurEyes(4)
+	else
+		if(world.time > data["time"] + 180 SECONDS && volume >= 0.3)
+			data["time"] = world.time
+			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-4)
 	if(volume > overdose)
 		M.hallucination = max(M.hallucination, 2)
+		M.blurEyes(3)
+		if(prob(1))
+			to_chat(M, "<span class='notice'>Your body feel numb.</span>")
+		if(prob(10))
+			var/mob/living/carbon/human/H = M
+			H.shock_stage += 1
 
 /datum/reagent/oxycodone
 	name = "Oxycodone"
@@ -121,13 +143,38 @@
 	overdose = 20
 	custom_metabolism = 0.025
 	restrict_species = list(IPC, DIONA)
+	data = list()
 
 /datum/reagent/oxycodone/on_general_digest(mob/living/M)
 	..()
+	if(!data["ticks"])
+		data["ticks"] = 1
+	data["ticks"]++
+	if(!data["time"])
+		data["time"] = 0
+	if(volume <= 0.2 && data["time"] != -1 && data["ticks"] >= 50)
+		data["time"] = -1
+		to_chat(M, "<span class='warning'>You're feeling the withdrawal.</span>")
+		var/mob/living/carbon/human/H = M
+		H.shock_stage += 20
+		M.blurEyes(8)
+	else
+		if(world.time > data["time"] + 180 SECONDS && volume >= 0.3)
+			data["time"] = world.time
+			to_chat(M, "<span class='notice'>You're feeling anesthetized.</span>")
 	M.adjustHalLoss(-8)
 	if(volume > overdose)
 		M.adjustDrugginess(1)
 		M.hallucination = max(M.hallucination, 3)
+		if(prob(10))//Побочки, которые бьют немного по игроку.
+			M.emote(pick("giggle","drool","laugh"))
+			M.random_move()
+		if(prob(1))
+			to_chat(M, "<span class='notice'>Your body feel numb.</span>")
+		if(prob(20))
+			var/mob/living/carbon/human/H = M
+			H.shock_stage += 1
+			M.blurEyes(4)
 
 /datum/reagent/sterilizine
 	name = "Sterilizine"
@@ -743,6 +790,8 @@
 	..()
 	M.nutrition = max(M.nutrition - nutriment_factor, 0)
 	M.overeatduration = 0
+	if(prob(1))
+		to_chat(M, "<span class='notice'>Your body gets a little hotter and lighter.</span>")
 
 /datum/reagent/stimulants
 	name = "Stimulants"
