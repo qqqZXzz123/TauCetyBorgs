@@ -65,7 +65,11 @@
 "an" = (
 /obj/machinery/telecomms/bus/preset_four,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "ao" = (
@@ -359,7 +363,11 @@
 "bo" = (
 /obj/machinery/telecomms/server/presets/supply,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "bv" = (
@@ -408,7 +416,11 @@
 "bD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
+	icon_state = "gcircuitoff";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "bE" = (
@@ -506,7 +518,11 @@
 "bQ" = (
 /obj/machinery/telecomms/server/presets/command,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "bS" = (
@@ -1712,7 +1728,11 @@
 "fR" = (
 /obj/machinery/telecomms/server/presets/medical,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "fU" = (
@@ -1878,7 +1898,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
+	icon_state = "gcircuitoff";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "gq" = (
@@ -2410,7 +2434,11 @@
 "hO" = (
 /obj/machinery/telecomms/receiver/preset_right,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "hQ" = (
@@ -2786,7 +2814,11 @@
 	})
 "iX" = (
 /turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
+	icon_state = "gcircuitoff";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "iZ" = (
@@ -3229,7 +3261,11 @@
 	dir = 4
 	},
 /turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
+	icon_state = "gcircuitoff";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "kn" = (
@@ -4465,7 +4501,11 @@
 	pixel_y = -1
 	},
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "nS" = (
@@ -4638,7 +4678,11 @@
 "oq" = (
 /obj/machinery/r_n_d/server/core,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "ou" = (
@@ -5420,7 +5464,11 @@
 "qE" = (
 /obj/machinery/telecomms/bus/preset_two,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "qK" = (
@@ -5525,13 +5573,21 @@
 "re" = (
 /obj/machinery/telecomms/processor/preset_four,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "rg" = (
 /obj/machinery/telecomms/server/presets/engineering,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "ri" = (
@@ -6730,7 +6786,11 @@
 "uu" = (
 /obj/machinery/telecomms/receiver/preset_left,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "ux" = (
@@ -7014,7 +7074,11 @@
 "vn" = (
 /obj/machinery/telecomms/processor/preset_three,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "vp" = (
@@ -8465,7 +8529,11 @@
 	pixel_y = -34
 	},
 /turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
+	icon_state = "gcircuitoff";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "zT" = (
@@ -8544,7 +8612,11 @@
 "Ag" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /turf/simulated/floor/bluegrid{
-	icon_state = "darkstairs_alone"
+	icon_state = "darkstairs_alone";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Ai" = (
@@ -8762,7 +8834,11 @@
 "AD" = (
 /obj/machinery/telecomms/bus/preset_three,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "AE" = (
@@ -8773,7 +8849,11 @@
 "AG" = (
 /obj/machinery/telecomms/server/presets/security,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "AH" = (
@@ -8877,7 +8957,11 @@
 	},
 /obj/item/device/encryptionkey/headset_med,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "AY" = (
@@ -9697,7 +9781,11 @@
 	dir = 1
 	},
 /turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
+	icon_state = "gcircuitoff";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "DL" = (
@@ -9786,7 +9874,11 @@
 "DY" = (
 /obj/machinery/telecomms/processor/preset_two,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "DZ" = (
@@ -12749,7 +12841,11 @@
 	dir = 1
 	},
 /turf/simulated/floor/bluegrid{
-	icon_state = "gcircuitoff"
+	icon_state = "gcircuitoff";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Ni" = (
@@ -12761,7 +12857,11 @@
 "Nj" = (
 /obj/machinery/telecomms/processor/preset_one,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Nl" = (
@@ -12864,7 +12964,11 @@
 "Nx" = (
 /obj/machinery/telecomms/broadcaster/preset_right,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Nz" = (
@@ -13429,7 +13533,11 @@
 "Pp" = (
 /obj/machinery/telecomms/bus/preset_one,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Pu" = (
@@ -13666,7 +13774,11 @@
 "Ql" = (
 /obj/machinery/r_n_d/server/mining,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Qm" = (
@@ -14172,7 +14284,11 @@
 "Sg" = (
 /obj/machinery/telecomms/broadcaster/preset_left,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Si" = (
@@ -14261,7 +14377,11 @@
 "Sr" = (
 /obj/machinery/r_n_d/server/robotics,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Sw" = (
@@ -14878,7 +14998,11 @@
 "TV" = (
 /obj/structure/table,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "TX" = (
@@ -15082,7 +15206,11 @@
 "Ux" = (
 /obj/machinery/telecomms/server/presets/common,
 /turf/simulated/floor/bluegrid{
-	icon_state = "elevatorshaft"
+	icon_state = "elevatorshaft";
+	name = "Server Walkway";
+	nitrogen = 500;
+	oxygen = 0;
+	temperature = 80
 	},
 /area/station/tcommsat/chamber)
 "Uz" = (
