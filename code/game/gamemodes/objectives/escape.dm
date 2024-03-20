@@ -30,5 +30,13 @@
 		return OBJECTIVE_WIN
 	if(istype(check_area, /area/shuttle/escape_pod4/centcom))
 		return OBJECTIVE_WIN
+	if(istype(check_area, /area/shuttle/escape_pod5/centcom))
+		return OBJECTIVE_WIN
+	if(istype(check_area, /area/shuttle/escape_pod6/centcom))
+		return OBJECTIVE_WIN
+	if(istype(check_area, /area/shuttle/escape_pod7/centcom))
+		return OBJECTIVE_WIN
+	if(istype(check_area, /area/shuttle/escape_pod8/centcom))
+		return OBJECTIVE_WIN
 	else
 		return OBJECTIVE_LOSS

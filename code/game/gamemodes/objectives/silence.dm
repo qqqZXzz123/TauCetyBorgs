@@ -13,6 +13,6 @@
 				var/turf/T = get_turf(player)
 				if(!T)	continue
 				switch(T.loc.type)
-					if(/area/shuttle/escape/centcom, /area/shuttle/escape_pod1/centcom, /area/shuttle/escape_pod2/centcom, /area/shuttle/escape_pod3/centcom, /area/shuttle/escape_pod4/centcom)
+					if(/area/shuttle/escape/centcom, /area/shuttle/escape_pod1/centcom, /area/shuttle/escape_pod2/centcom, /area/shuttle/escape_pod3/centcom, /area/shuttle/escape_pod4/centcom, /area/shuttle/escape_pod5/centcom, /area/shuttle/escape_pod6/centcom, /area/shuttle/escape_pod7/centcom, /area/shuttle/escape_pod8/centcom)
 						return OBJECTIVE_LOSS
 	return OBJECTIVE_WIN

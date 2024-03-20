@@ -84,7 +84,7 @@
 	var/escaped_on_pod_5 = 0
 	var/escaped_on_shuttle = 0
 
-	var/list/area/escape_locations = list(/area/shuttle/escape/centcom, /area/shuttle/escape_pod1/centcom, /area/shuttle/escape_pod2/centcom, /area/shuttle/escape_pod3/centcom, /area/shuttle/escape_pod4/centcom)
+	var/list/area/escape_locations = list(/area/shuttle/escape/centcom, /area/shuttle/escape_pod1/centcom, /area/shuttle/escape_pod2/centcom, /area/shuttle/escape_pod3/centcom, /area/shuttle/escape_pod4/centcom, /area/shuttle/escape_pod5/centcom, /area/shuttle/escape_pod6/centcom, /area/shuttle/escape_pod7/centcom, /area/shuttle/escape_pod8/centcom)
 
 	for(var/mob/M in player_list)
 		if(M.client)
@@ -110,7 +110,15 @@
 				if(mob_area.type == /area/shuttle/escape_pod3/centcom)
 					escaped_on_pod_3++
 				if(mob_area.type == /area/shuttle/escape_pod4/centcom)
+					escaped_on_pod_4++
+				if(mob_area.type == /area/shuttle/escape_pod5/centcom)
 					escaped_on_pod_5++
+				if(mob_area.type == /area/shuttle/escape_pod6/centcom)
+					escaped_on_pod_6++
+				if(mob_area.type == /area/shuttle/escape_pod7/centcom)
+					escaped_on_pod_7++
+				if(mob_area.type == /area/shuttle/escape_pod8/centcom)
+					escaped_on_pod_8++
 
 			if(isobserver(M))
 				ghosts++
