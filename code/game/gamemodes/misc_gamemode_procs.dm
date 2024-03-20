@@ -148,8 +148,16 @@
 		feedback_set("escaped_on_pod_2",escaped_on_pod_2)
 	if(escaped_on_pod_3 > 0)
 		feedback_set("escaped_on_pod_3",escaped_on_pod_3)
+	if(escaped_on_pod_4 > 0)
+		feedback_set("escaped_on_pod_4",escaped_on_pod_4)
 	if(escaped_on_pod_5 > 0)
 		feedback_set("escaped_on_pod_5",escaped_on_pod_5)
+	if(escaped_on_pod_6 > 0)
+		feedback_set("escaped_on_pod_6",escaped_on_pod_6)
+	if(escaped_on_pod_7 > 0)
+		feedback_set("escaped_on_pod_3",escaped_on_pod_7)
+	if(escaped_on_pod_8 > 0)
+		feedback_set("escaped_on_pod_3",escaped_on_pod_8)
 
 //////////////////////////
 //Reports player logouts//
