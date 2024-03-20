@@ -1827,7 +1827,7 @@
 	name = "exterior access button";
 	pixel_x = 25;
 	pixel_y = -25;
-	req_access = list(13,45,1)
+	req_one_access = list(13,45,1)
 	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/station/solar/auxport)
@@ -1931,11 +1931,11 @@
 	id_tag = "solar_tool_airlock";
 	pixel_x = 28;
 	pixel_y = 4;
-	req_access = list(13,45,1);
 	tag_airpump = "solar_tool_pump";
 	tag_chamber_sensor = "solar_tool_sensor";
 	tag_exterior_door = "solar_tool_outer";
-	tag_interior_door = "solar_tool_inner"
+	tag_interior_door = "solar_tool_inner";
+	req_one_access = list(13,45,1)
 	},
 /obj/machinery/airlock_sensor{
 	id_tag = "solar_tool_sensor";
@@ -9276,7 +9276,7 @@
 	name = "interior access button";
 	pixel_x = -25;
 	pixel_y = -25;
-	req_access = list(13,45,1)
+	req_one_access = list(13,45,1)
 	},
 /turf/simulated/floor{
 	dir = 1;
@@ -15540,6 +15540,15 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/access_button{
+	command = "cycle_exterior";
+	frequency = 1379;
+	master_tag = "solar_tool_airlock";
+	name = "exterior access button";
+	pixel_x = 25;
+	pixel_y = -25;
+	req_one_access = list(13,45,1)
 	},
 /turf/simulated/floor{
 	dir = 4;

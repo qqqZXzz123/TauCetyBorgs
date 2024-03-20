@@ -2,7 +2,11 @@ var/global/list/escape_area_transit = typecacheof(list(/area/shuttle/escape/tran
                                                 /area/shuttle/escape_pod1/transit,
                                                 /area/shuttle/escape_pod2/transit,
                                                 /area/shuttle/escape_pod3/transit,
-                                                /area/shuttle/escape_pod4/transit))
+                                                /area/shuttle/escape_pod4/transit,
+												/area/shuttle/escape_pod5/transit,
+												/area/shuttle/escape_pod6/transit,
+												/area/shuttle/escape_pod7/transit,
+												/area/shuttle/escape_pod8/transit))
 
 #define IS_ON_ESCAPE_SHUTTLE is_type_in_typecache(get_area(M), escape_area_transit)
 #define ANNOUNCE_TEXT  (1<<0)
@@ -69,7 +73,7 @@ var/global/list/announcement_sounds = list(
 	"malf2" = 'sound/AI/ai_malf_2.ogg',
 	"malf3" = 'sound/AI/ai_malf_3.ogg',
 	"malf4" = 'sound/AI/ai_malf_4.ogg',
-	
+
 	"construction_began" = 'sound/AI/construction_began.ogg',
 	"construction_quarter" = 'sound/AI/construction_quarter.ogg',
 	"construction_half" = 'sound/AI/construction_half.ogg',
