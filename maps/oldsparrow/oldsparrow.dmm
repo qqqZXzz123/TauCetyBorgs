@@ -2111,6 +2111,7 @@
 /obj/machinery/firealarm{
 	pixel_y = -32
 	},
+/obj/item/device/gps/medical,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whitehall"
@@ -2290,6 +2291,7 @@
 /obj/item/device/radio/intercom{
 	pixel_y = -32
 	},
+/obj/item/weapon/storage/box/beakers,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whitehall"
@@ -4526,12 +4528,16 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/item/device/guitar,
 /obj/structure/sign/warning/airlock{
 	pixel_y = -32
 	},
 /obj/machinery/firealarm{
 	pixel_x = -28
+	},
+/obj/item/bodybag/cryobag,
+/obj/item/weapon/medical/teleporter{
+	pixel_x = 9;
+	pixel_y = 7
 	},
 /turf/simulated/floor{
 	icon_state = "yellowpatch"
@@ -5139,6 +5145,14 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"qa" = (
+/obj/structure/closet/secure_closet/engineering_electrical{
+	anchored = 1
+	},
+/turf/simulated/floor,
+/area/station/engineering/break_room{
+	lightswitch = 0
+	})
 "qb" = (
 /obj/item/weapon/ore/glass,
 /turf/environment/space,
@@ -5231,7 +5245,7 @@
 	},
 /area/station/maintenance/dormitory)
 "qs" = (
-/obj/structure/closet/secure_closet/engineering_welding,
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/item/clothing/accessory/armband/engine,
 /obj/item/device/radio/intercom{
 	pixel_y = -32
@@ -5724,7 +5738,7 @@
 /area/station/maintenance/dormitory)
 "se" = (
 /obj/structure/table,
-/obj/item/weapon/defibrillator,
+/obj/item/weapon/defibrillator/loaded,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
@@ -5760,8 +5774,6 @@
 /obj/item/clothing/suit/space/rig/medical,
 /obj/item/clothing/head/helmet/space/rig/medical,
 /obj/item/bodybag/cryobag,
-/obj/item/bodybag/cryobag,
-/obj/item/weapon/medical/teleporter,
 /obj/item/weapon/medical/teleporter,
 /turf/simulated/floor{
 	dir = 4;
@@ -6642,6 +6654,19 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"uy" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/item/clothing/suit/space/globose/mining,
+/obj/item/clothing/head/helmet/space/globose/mining,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/shoes/magboots,
+/obj/item/device/guitar,
+/turf/simulated/floor{
+	icon_state = "yellowpatch"
+	},
+/area/station/cargo/miningoffice{
+	lightswitch = 0
+	})
 "uz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -7048,7 +7073,12 @@
 /turf/simulated/floor/carpet/purple,
 /area/station/civilian/dormitories/dormtwo)
 "vP" = (
-/obj/structure/closet/secure_closet/engineering_personal,
+/obj/structure/rack,
+/obj/item/device/gps/engineering{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps/engineering,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "caution"
@@ -9174,6 +9204,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/item/device/radio/beacon,
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -9436,6 +9467,7 @@
 "Dp" = (
 /obj/structure/closet/secure_closet/medical3,
 /obj/item/clothing/accessory/stethoscope,
+/obj/item/device/gps/medical,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whitehall"
@@ -13429,10 +13461,7 @@
 /obj/item/device/radio/intercom{
 	pixel_x = -28
 	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "brown"
-	},
+/turf/simulated/floor,
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
@@ -13574,6 +13603,9 @@
 	lightswitch = 0
 	})
 "QC" = (
+/obj/structure/closet/secure_closet/engineering_welding{
+	anchored = 1
+	},
 /turf/simulated/floor,
 /area/station/engineering/break_room{
 	lightswitch = 0
@@ -13809,6 +13841,7 @@
 	lightswitch = 0
 	})
 "RB" = (
+/obj/item/device/radio/beacon,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -16105,7 +16138,7 @@
 	lightswitch = 0
 	})
 "Yl" = (
-/obj/structure/closet/secure_closet/engineering_electrical,
+/obj/structure/closet/secure_closet/engineering_personal,
 /obj/item/clothing/accessory/armband/engine,
 /obj/structure/sign/warning/enginesafety{
 	pixel_y = -32
@@ -33025,7 +33058,7 @@ ky
 EZ
 UT
 hY
-QC
+qa
 Oq
 Yl
 wz
@@ -36131,7 +36164,7 @@ QR
 uG
 NA
 sr
-NA
+uy
 hu
 uG
 XQ
