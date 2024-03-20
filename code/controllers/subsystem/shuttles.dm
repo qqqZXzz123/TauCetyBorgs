@@ -322,6 +322,50 @@ SUBSYSTEM_DEF(shuttle)
 						M.playsound_local(null, ep_shot_sound_type, VOL_EFFECTS_MASTER, null, FALSE)
 					shake_mobs_in_area(end_location, EAST)
 
+					start_location = locate(/area/shuttle/escape_pod5/station)
+					end_location = locate(/area/shuttle/escape_pod5/transit)
+					end_location.parallax_movedir = NORTH
+					start_location.move_contents_to(end_location, null, SOUTH)
+					undock_act(start_location, "pod5")
+					undock_act(/area/station/hallway/secondary/entry, "pod5")
+
+					for(var/mob/M in end_location)
+						M.playsound_local(null, ep_shot_sound_type, VOL_EFFECTS_MASTER, null, FALSE)
+					shake_mobs_in_area(end_location, SOUTH)
+
+					start_location = locate(/area/shuttle/escape_pod6/station)
+					end_location = locate(/area/shuttle/escape_pod6/transit)
+					end_location.parallax_movedir = NORTH
+					start_location.move_contents_to(end_location, null, SOUTH)
+					undock_act(start_location, "pod6")
+					undock_act(/area/station/hallway/secondary/entry, "pod6")
+
+					for(var/mob/M in end_location)
+						M.playsound_local(null, ep_shot_sound_type, VOL_EFFECTS_MASTER, null, FALSE)
+					shake_mobs_in_area(end_location, SOUTH)
+
+					start_location = locate(/area/shuttle/escape_pod7/station)
+					end_location = locate(/area/shuttle/escape_pod7/transit)
+					end_location.parallax_movedir = NORTH
+					start_location.move_contents_to(end_location, null, SOUTH)
+					undock_act(start_location, "pod7")
+					undock_act(/area/station/hallway/secondary/entry, "pod7")
+
+					for(var/mob/M in end_location)
+						M.playsound_local(null, ep_shot_sound_type, VOL_EFFECTS_MASTER, null, FALSE)
+					shake_mobs_in_area(end_location, SOUTH)
+
+					start_location = locate(/area/shuttle/escape_pod8/station)
+					end_location = locate(/area/shuttle/escape_pod8/transit)
+					end_location.parallax_movedir = NORTH
+					start_location.move_contents_to(end_location, null, SOUTH)
+					undock_act(start_location, "pod8")
+					undock_act(/area/station/hallway/secondary/entry, "pod8")
+
+					for(var/mob/M in end_location)
+						M.playsound_local(null, ep_shot_sound_type, VOL_EFFECTS_MASTER, null, FALSE)
+					shake_mobs_in_area(end_location, SOUTH)
+
 					announce_emer_left.play()
 				else
 					announce_crew_left.play()
