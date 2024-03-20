@@ -1,5 +1,17 @@
 #define JOB_MODIFICATION_MAP_NAME "Old Sparrow"
 
+
+
+
+
+
+
+
+
+
+
+
+
 /datum/job/captain/New()
 	..()
 	MAP_JOB_CHECK
@@ -15,8 +27,16 @@
 	minimal_player_ingame_minutes = 1800
 	skillsets = list("Security Officer" = /datum/skillset/oldsparrow/officer)
 
+/datum/job/cmo/New()
+	..()
+	MAP_JOB_CHECK
+	minimal_player_ingame_minutes = 3600
+	skillsets = list("Chief Medical Officer" = /datum/skillset/oldsparrow/cmo)
 
 /datum/job/doctor/New()
+	..()
+	MAP_JOB_CHECK
+	access += list(access_external_airlocks, access_sec_doors, access_research, access_mailsorting, access_engineering_lobby)
 	total_positions = 1
 	spawn_positions = 1
 	minimal_player_ingame_minutes = 900
@@ -27,12 +47,6 @@
 	MAP_JOB_CHECK
 	minimal_player_ingame_minutes = 3600
 	skillsets = list("Chief Engineer" = /datum/skillset/oldsparrow/ce)
-
-/datum/job/cmo/New()
-	..()
-	MAP_JOB_CHECK
-	minimal_player_ingame_minutes = 3600
-	skillsets = list("Chief Medical Officer" = /datum/skillset/oldsparrow/cmo)
 
 /datum/job/engineer/New()
 	..()
