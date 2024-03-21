@@ -1621,15 +1621,19 @@
 	pixel_x = -7;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/fancy/donut_box{
-	pixel_x = 5;
-	pixel_y = -3
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
 /obj/machinery/light_switch{
 	pixel_x = -25
+	},
+/obj/item/weapon/paper{
+	info = "Сообщение инженерному отделу: Вчера, прямо посреди ночи, за стеной моей каюты что-то очень громко гремело, а потом хлопнуло с такой силой, что мне показалось, будто внешнюю обшивку пробило нахрен. Кажется там что-то взорвалось. Пожалуйста, почините там всё поскорее, второго падения с койки я, боюсь, не переживу.";
+	pixel_x = 8
+	},
+/obj/item/weapon/folder/yellow{
+	pixel_x = 6;
+	pixel_y = 3
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -5822,6 +5826,13 @@
 /obj/machinery/vending/wallmed1{
 	pixel_y = 30
 	},
+/obj/item/stack/medical/bruise_pack{
+	pixel_x = 10;
+	pixel_y = 2
+	},
+/obj/item/stack/medical/ointment{
+	pixel_y = 4
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -8085,10 +8096,6 @@
 	},
 /obj/machinery/light_switch{
 	pixel_x = 25
-	},
-/obj/item/weapon/paper{
-	info = "Сообщение инженерному отделу: Вчера, прямо посреди ночи, за стеной моей каюты что-то очень громко гремело, а потом хлопнуло с такой силой, что мне показалось, будто внешнюю обшивку пробило нахрен. Кажется там что-то взорвалось. Пожалуйста, почините там всё поскорее, второго падения с койки я, боюсь, не переживу.";
-	pixel_x = -6
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -10816,6 +10823,10 @@
 /obj/structure/table/glass,
 /obj/item/weapon/reagent_containers/food/drinks/sillycup{
 	pixel_x = 10;
+	pixel_y = -1
+	},
+/obj/item/clothing/head/det_hat/gray{
+	pixel_x = -6;
 	pixel_y = -1
 	},
 /turf/simulated/floor{
@@ -13881,7 +13892,8 @@
 	},
 /area/station/maintenance/dormitory)
 "NH" = (
-/obj/machinery/vending/eva/engineering,
+/obj/structure/table,
+/obj/item/weapon/storage/fancy/donut_box,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
