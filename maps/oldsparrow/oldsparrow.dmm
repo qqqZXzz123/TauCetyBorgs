@@ -15482,11 +15482,15 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Td" = (
-/obj/machinery/disposal/deliveryChute{
+/obj/structure/disposaloutlet{
 	dir = 4
 	},
 /obj/structure/disposalpipe/trunk{
 	dir = 4
+	},
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "packageSort2"
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
@@ -17718,11 +17722,15 @@
 	},
 /area/station/hallway/secondary/exit)
 "Ze" = (
-/obj/structure/disposaloutlet{
+/obj/machinery/disposal/deliveryChute{
 	dir = 8
 	},
 /obj/structure/disposalpipe/trunk{
 	dir = 8
+	},
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "packageSort2"
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
