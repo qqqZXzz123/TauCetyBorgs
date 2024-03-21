@@ -429,7 +429,9 @@
 	id = "QMLoad"
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "bB" = (
 /obj/structure/cable{
 	dir = 8
@@ -732,7 +734,9 @@
 	dir = 1
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "co" = (
 /obj/structure/grille,
 /obj/structure/window/basic{
@@ -764,7 +768,9 @@
 /obj/item/device/tagger,
 /obj/structure/table,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "cB" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -840,7 +846,9 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "cO" = (
 /obj/structure/stool/bed/chair/metal/white{
 	dir = 8
@@ -876,7 +884,9 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "cU" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -1103,7 +1113,9 @@
 	dir = 9
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "dF" = (
 /obj/machinery/sleeper{
 	dir = 8
@@ -1275,7 +1287,9 @@
 	name = "EXTERNAL AIRLOCK"
 	},
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "eg" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -1424,7 +1438,9 @@
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "eK" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2920,7 +2936,9 @@
 	},
 /obj/structure/closet/secure_closet/quartermaster,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "iS" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/manifold/visible/green{
@@ -3116,7 +3134,9 @@
 	dir = 4
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "ju" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -4136,6 +4156,12 @@
 /obj/random/scrap/safe_even,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"me" = (
+/obj/structure/dumbbells_rack,
+/turf/simulated/floor/carpet/orange,
+/area/station/civilian/gym{
+	lightswitch = 0
+	})
 "mf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -4454,7 +4480,9 @@
 	dir = 8;
 	icon_state = "yellow"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "mX" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
@@ -4990,7 +5018,9 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "ox" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5274,7 +5304,9 @@
 /turf/simulated/floor{
 	icon_state = "yellowfull"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "pf" = (
 /obj/structure/cable{
 	d2 = 4;
@@ -5738,7 +5770,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "qy" = (
 /obj/structure/table/glass,
 /obj/machinery/vending/wallmed1{
@@ -5794,7 +5828,9 @@
 	dir = 9
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "qR" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
@@ -5859,7 +5895,9 @@
 /area/station/storage/emergency3)
 "rb" = (
 /turf/simulated/wall,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "rc" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -6028,7 +6066,9 @@
 	dir = 5
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "rH" = (
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet{
@@ -6200,7 +6240,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "sg" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/magboots,
@@ -6673,7 +6715,9 @@
 	pixel_y = 25
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "to" = (
 /obj/structure/table/woodentable,
 /obj/item/weapon/pinpointer/advpinpointer,
@@ -6732,7 +6776,9 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "tx" = (
 /obj/structure/stool/bed/roller,
 /obj/machinery/iv_drip,
@@ -7150,7 +7196,9 @@
 "uA" = (
 /obj/machinery/autolathe,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "uC" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access = list(12)
@@ -7218,7 +7266,9 @@
 	dir = 4
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "uL" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/black,
@@ -7715,7 +7765,9 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "wv" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -7806,7 +7858,9 @@
 	id = "QMLoad"
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "wN" = (
 /obj/structure/toilet,
 /obj/machinery/light/small{
@@ -8491,7 +8545,9 @@
 	dir = 5
 	},
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "yI" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -8923,7 +8979,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "zO" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/meter,
@@ -9210,7 +9268,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Ay" = (
 /obj/machinery/light{
 	dir = 8
@@ -9769,7 +9829,9 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Cl" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -9856,7 +9918,9 @@
 	id = "QMLoad2"
 	},
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Cz" = (
 /obj/structure/window/reinforced/polarized{
 	dir = 4;
@@ -10141,7 +10205,9 @@
 	dir = 6
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Dn" = (
 /turf/simulated/floor/airless{
 	dir = 5;
@@ -10387,7 +10453,9 @@
 	dir = 6
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Ed" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/spiderling_remains,
@@ -10525,7 +10593,9 @@
 	dir = 8;
 	icon_state = "yellow"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "EB" = (
 /obj/machinery/vending/assist,
 /obj/machinery/light{
@@ -10726,7 +10796,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Fd" = (
 /obj/machinery/power/solar{
 	id = "auxsolareast";
@@ -10832,7 +10904,9 @@
 	},
 /obj/structure/sign/warning/mail_delivery,
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Fy" = (
 /turf/simulated/wall,
 /area/station/civilian/toilet{
@@ -12187,7 +12261,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "JG" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -12430,7 +12506,9 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Kp" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/wood,
@@ -12490,7 +12568,9 @@
 /turf/simulated/floor{
 	icon_state = "delivery"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Kv" = (
 /obj/effect/spawner/lootdrop/maintenance/three,
 /obj/structure/rack,
@@ -12963,7 +13043,9 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "LK" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -13146,7 +13228,9 @@
 	pixel_x = -28
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Mp" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable{
@@ -13321,14 +13405,18 @@
 "MM" = (
 /obj/machinery/disposal,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "MQ" = (
 /obj/structure/disposalpipe/segment,
 /obj/item/device/radio/intercom{
 	pixel_x = 28
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "MR" = (
 /obj/machinery/conveyor{
 	id = "QMLoad"
@@ -13794,7 +13882,9 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "NV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -14095,7 +14185,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "OI" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
@@ -14367,7 +14459,9 @@
 	dir = 1;
 	icon_state = "yellow"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "PU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -14455,7 +14549,9 @@
 	pixel_x = -28
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Qh" = (
 /obj/structure/window/basic{
 	dir = 4
@@ -14592,11 +14688,15 @@
 	},
 /obj/machinery/light,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "QC" = (
 /obj/structure/closet/secure_closet/engineering_welding{
 	anchored = 1
 	},
+/obj/item/clothing/glasses/welding,
+/obj/item/clothing/glasses/welding,
 /turf/simulated/floor,
 /area/station/engineering/break_room{
 	lightswitch = 0
@@ -14807,7 +14907,9 @@
 	id = "QMLoad2"
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Rx" = (
 /turf/simulated/floor,
 /area/station/civilian/dormitories)
@@ -14822,7 +14924,9 @@
 	},
 /obj/item/device/megaphone,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Rz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15254,7 +15358,9 @@
 /area/station/maintenance/dormitory)
 "SO" = (
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "SS" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -15629,7 +15735,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "TI" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
 /obj/machinery/power/apc{
@@ -15687,7 +15795,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "TP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15751,7 +15861,9 @@
 /turf/simulated/floor{
 	icon_state = "bot"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "TY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15882,7 +15994,9 @@
 	dir = 1;
 	icon_state = "yellow"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Um" = (
 /obj/machinery/computer/med_data/laptop,
 /obj/structure/table,
@@ -15904,7 +16018,9 @@
 	})
 "Ur" = (
 /turf/simulated/floor/plating,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Us" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -16462,7 +16578,9 @@
 /turf/simulated/floor{
 	icon_state = "yellowfull"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "VZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -17042,7 +17160,9 @@
 	pixel_y = 28
 	},
 /turf/simulated/floor,
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "XE" = (
 /obj/machinery/door/airlock/external{
 	dock_tag = "arrival_escape";
@@ -17064,7 +17184,9 @@
 	dir = 1;
 	icon_state = "yellow"
 	},
-/area/station/cargo/storage)
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "XH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -40915,7 +41037,7 @@ LD
 PA
 iz
 oN
-dG
+me
 dG
 wG
 dG
