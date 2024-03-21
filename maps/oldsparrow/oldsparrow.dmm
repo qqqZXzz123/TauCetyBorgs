@@ -349,6 +349,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/light_switch{
+	pixel_x = -25;
+	pixel_y = 25
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfour)
 "bg" = (
@@ -970,6 +974,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/light_switch{
+	pixel_x = -25;
+	pixel_y = 25
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormtwo)
@@ -5959,9 +5967,6 @@
 /obj/structure/stool/bed/chair/metal{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/pda_ad{
-	pixel_x = 32
-	},
 /turf/simulated/floor{
 	icon_state = "redyellowfull"
 	},
@@ -6006,13 +6011,24 @@
 	},
 /area/asteroid/mine/unexplored)
 "rw" = (
+/obj/structure/closet/crate/medical,
+/obj/item/device/camera,
+/obj/item/device/lens/rentgene,
+/obj/item/weapon/cane,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/glasses/sunglasses/blindfold/white,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/clothing/accessory/armband/med,
+/obj/item/clothing/accessory/armband/medgreen,
+/obj/structure/cable{
+	dir = 8
+	},
 /obj/machinery/power/apc{
 	dir = 8;
 	name = null;
 	pixel_x = -28
-	},
-/obj/structure/cable{
-	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -7259,9 +7275,6 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 32
-	},
 /turf/simulated/floor{
 	icon_state = "blackcorner"
 	},
@@ -7798,6 +7811,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/light_switch{
+	pixel_x = -25;
+	pixel_y = 25
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormthree)
@@ -9158,6 +9175,9 @@
 "Am" = (
 /obj/effect/spawner/lootdrop/maintenance/seven,
 /obj/structure/closet,
+/obj/structure/sign/poster/contraband/lusty_xenomorph{
+	pixel_y = 32
+	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -10694,6 +10714,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/light_switch{
+	pixel_x = -25;
+	pixel_y = 25
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormone)
 "EQ" = (
@@ -11167,19 +11191,13 @@
 	},
 /area/station/maintenance/bridge)
 "Gk" = (
-/obj/structure/closet/crate/medical,
-/obj/item/device/camera,
-/obj/item/device/lens/rentgene,
-/obj/item/weapon/cane,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/glasses/sunglasses/blindfold/white,
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/clothing/accessory/armband/med,
-/obj/item/clothing/accessory/armband/medgreen,
 /obj/item/device/radio/intercom{
 	pixel_x = 28
+	},
+/obj/structure/table,
+/obj/machinery/reagentgrinder{
+	layer = 3.1;
+	pixel_y = 5
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -12209,6 +12227,9 @@
 	})
 "JB" = (
 /obj/machinery/camera/autoname,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -28
+	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "blackcorner"
@@ -16474,6 +16495,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/light_switch{
+	pixel_x = -25;
+	pixel_y = 25
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfive)
 "VC" = (
@@ -17058,9 +17083,6 @@
 /obj/structure/toilet,
 /obj/machinery/light/small{
 	dir = 4
-	},
-/obj/structure/sign/poster/contraband/lusty_xenomorph{
-	pixel_y = 32
 	},
 /turf/simulated/floor{
 	icon_state = "blackchecker"
@@ -17752,6 +17774,10 @@
 	dir = 4;
 	pixel_x = 11
 	},
+/obj/structure/mirror{
+	icon_state = "mirror_broke";
+	pixel_x = 28
+	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -17828,6 +17854,9 @@
 	},
 /obj/effect/landmark/start/station_engineer,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/structure/sign/poster/official/pda_ad{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormthree)
 "Zt" = (
@@ -30923,7 +30952,7 @@ th
 th
 th
 th
-BE
+th
 BE
 BE
 BE
@@ -35035,7 +35064,7 @@ th
 th
 th
 th
-BE
+th
 BE
 BE
 BE
