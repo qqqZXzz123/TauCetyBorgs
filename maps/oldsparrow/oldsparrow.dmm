@@ -3211,15 +3211,6 @@
 /area/station/civilian/toilet{
 	lightswitch = 0
 	})
-"jz" = (
-/obj/structure/sign/mark{
-	icon_state = "fup";
-	pixel_y = -20
-	},
-/turf/simulated/floor,
-/area/station/cargo/storage{
-	lightswitch = 0
-	})
 "jA" = (
 /obj/machinery/computer/libraryconsole/bookmanagement/old,
 /obj/structure/table,
@@ -11329,6 +11320,15 @@
 	icon_state = "dark"
 	},
 /area/station/maintenance/cargo)
+"Gq" = (
+/obj/structure/sign/mark{
+	icon_state = "fup";
+	pixel_y = -20
+	},
+/turf/simulated/floor,
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "Gr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -11601,6 +11601,7 @@
 "Hr" = (
 /obj/structure/closet/wardrobe/medic_white,
 /obj/item/weapon/storage/bag/chemistry,
+/obj/item/weapon/reagent_containers/dropper,
 /turf/simulated/floor{
 	icon_state = "whitecorner"
 	},
@@ -14577,15 +14578,6 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
-"PT" = (
-/obj/structure/sign/mark{
-	icon_state = "fdn";
-	pixel_y = 6
-	},
-/turf/simulated/floor,
-/area/station/cargo/storage{
-	lightswitch = 0
-	})
 "PU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -16238,6 +16230,15 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
+"UD" = (
+/obj/structure/sign/mark{
+	icon_state = "fdn";
+	pixel_y = 6
+	},
+/turf/simulated/floor,
+/area/station/cargo/storage{
+	lightswitch = 0
+	})
 "UE" = (
 /turf/simulated/wall/r_wall,
 /area/station/security/main{
@@ -34494,7 +34495,7 @@ TN
 SO
 TX
 NU
-jz
+Gq
 Rw
 zN
 Cy
@@ -35522,7 +35523,7 @@ Fw
 SO
 LI
 ws
-PT
+UD
 bx
 OH
 MR
