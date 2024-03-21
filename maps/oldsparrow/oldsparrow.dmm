@@ -683,7 +683,9 @@
 	lightswitch = 0
 	})
 "ck" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor{
 	dir = 5;
@@ -695,24 +697,35 @@
 "cl" = (
 /obj/structure/table,
 /obj/item/weapon/storage/firstaid/adv{
-	pixel_x = 4;
-	pixel_y = 4
+	pixel_x = 6;
+	pixel_y = 8
 	},
 /obj/item/weapon/storage/firstaid/fire{
-	pixel_x = 2;
-	pixel_y = 2
+	pixel_x = 6;
+	pixel_y = -1
 	},
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/item/weapon/storage/firstaid/o2{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/weapon/storage/firstaid/regular{
-	pixel_x = -4;
-	pixel_y = -4
+/obj/item/weapon/storage/firstaid/toxin{
+	pixel_x = 6;
+	pixel_y = -10
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/item/weapon/storage/firstaid/o2{
+	pixel_x = 6;
+	pixel_y = -19
+	},
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = 6;
+	pixel_y = -28
+	},
+/obj/item/weapon/storage/box/gloves{
+	pixel_x = -12;
+	pixel_y = 10
+	},
+/obj/item/weapon/storage/box/masks{
+	pixel_x = -12;
+	pixel_y = -3
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -1707,6 +1720,9 @@
 /area/station/storage/emergency3)
 "fr" = (
 /obj/machinery/computer/crew,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "whitehall"
 	},
@@ -2093,7 +2109,8 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/random/vending/cola,
+/obj/structure/table,
+/obj/machinery/kitchen_machine/microwave,
 /turf/simulated/floor{
 	icon_state = "redyellowfull"
 	},
@@ -3108,13 +3125,15 @@
 	},
 /area/station/maintenance/dormitory)
 "jp" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/structure/table,
 /obj/item/weapon/folder/white,
 /obj/item/weapon/pen{
 	pixel_x = -7
+	},
+/obj/item/weapon/reagent_containers/food/drinks/tea{
+	list_reagents = null;
+	pixel_x = 13;
+	pixel_y = 3
 	},
 /turf/simulated/floor{
 	icon_state = "whitehall"
@@ -4169,13 +4188,14 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "me" = (
-/obj/structure/stool/bed/chair/office/light{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor{
-	icon_state = "white"
+	dir = 5;
+	icon_state = "cafeteria"
 	},
-/area/station/medical/reception{
+/area/station/civilian/kitchen{
 	lightswitch = 0
 	})
 "mf" = (
@@ -4748,7 +4768,15 @@
 /obj/structure/table,
 /obj/machinery/reagentgrinder{
 	layer = 3.1;
+	pixel_x = 8;
 	pixel_y = 5
+	},
+/obj/item/weapon/kitchen/rollingpin{
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/obj/item/weapon/reagent_containers/glass/beaker{
+	pixel_x = -5
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -6352,7 +6380,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/weapon/storage/backpack/medbag,
+/obj/item/weapon/storage/box/rxglasses,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -6823,6 +6851,8 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/engineering)
 "tz" = (
+/obj/structure/table,
+/obj/item/weapon/storage/box/donkpockets,
 /turf/simulated/floor{
 	icon_state = "redyellowfull"
 	},
@@ -6907,6 +6937,9 @@
 /obj/machinery/vending/medical,
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/machinery/camera/autoname{
+	dir = 4
 	},
 /turf/simulated/floor{
 	icon_state = "whitehall"
@@ -7445,6 +7478,9 @@
 	},
 /obj/machinery/firealarm{
 	pixel_x = 28
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -8231,8 +8267,11 @@
 	dye_color = "cmo";
 	icon_state = "stamp-cmo";
 	name = "medbay rubber stamp";
+	pixel_x = 10;
 	stamp_message = "Medbay"
 	},
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whitehall"
@@ -8772,21 +8811,14 @@
 /area/station/hallway/primary/central)
 "zn" = (
 /obj/structure/table,
-/obj/item/weapon/storage/box/gloves{
-	pixel_x = -7;
-	pixel_y = 7
+/obj/item/weapon/reagent_containers/glass/beaker/teapot{
+	pixel_x = -6;
+	pixel_y = 4
 	},
-/obj/item/weapon/storage/box/masks{
-	pixel_x = -7;
-	pixel_y = -2
-	},
-/obj/item/weapon/storage/box/rxglasses{
-	pixel_x = 9;
-	pixel_y = 8
-	},
-/obj/item/weapon/storage/box/beakers{
-	pixel_x = 9;
-	pixel_y = -2
+/obj/item/weapon/reagent_containers/food/drinks/tea{
+	list_reagents = null;
+	pixel_x = 8;
+	pixel_y = -1
 	},
 /turf/simulated/floor{
 	icon_state = "whitehall"
@@ -9540,9 +9572,9 @@
 	pixel_x = 5;
 	pixel_y = 1
 	},
-/obj/item/weapon/reagent_containers/blood/empty{
-	pixel_x = -6;
-	pixel_y = -2
+/obj/item/weapon/reagent_containers/blood/OMinus{
+	pixel_x = -5;
+	pixel_y = -1
 	},
 /obj/item/weapon/reagent_containers/blood/OMinus{
 	pixel_y = -1
@@ -10782,6 +10814,10 @@
 /area/station/hallway/secondary/arrival)
 "EY" = (
 /obj/structure/table/glass,
+/obj/item/weapon/reagent_containers/food/drinks/sillycup{
+	pixel_x = 10;
+	pixel_y = -1
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},
@@ -11197,7 +11233,15 @@
 /obj/structure/table,
 /obj/machinery/reagentgrinder{
 	layer = 3.1;
+	pixel_x = 7;
 	pixel_y = 5
+	},
+/obj/item/weapon/storage/box/pillbottles{
+	pixel_x = -9;
+	pixel_y = 10
+	},
+/obj/item/weapon/storage/box/beakers{
+	pixel_x = -8
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -11526,8 +11570,6 @@
 "Hr" = (
 /obj/structure/closet/wardrobe/medic_white,
 /obj/item/weapon/storage/bag/chemistry,
-/obj/item/weapon/storage/box/beakers,
-/obj/item/weapon/storage/box/pillbottles,
 /turf/simulated/floor{
 	icon_state = "whitecorner"
 	},
@@ -11607,7 +11649,6 @@
 	pixel_y = 30
 	},
 /obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,
-/obj/machinery/camera/autoname,
 /turf/simulated/floor{
 	icon_state = "whitehall"
 	},
@@ -11668,9 +11709,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/escape)
 "HT" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
@@ -13046,14 +13085,6 @@
 	lightswitch = 0
 	})
 "LH" = (
-/obj/structure/table,
-/obj/item/weapon/kitchen/rollingpin,
-/obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -13441,9 +13472,13 @@
 	lightswitch = 0
 	})
 "MO" = (
-/obj/structure/dumbbells_rack,
-/turf/simulated/floor/carpet/orange,
-/area/station/civilian/gym{
+/obj/structure/stool/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/station/medical/reception{
 	lightswitch = 0
 	})
 "MQ" = (
@@ -14357,6 +14392,12 @@
 	icon_state = "dark"
 	},
 /area/station/hallway/secondary/arrival)
+"Pn" = (
+/obj/structure/dumbbells_rack,
+/turf/simulated/floor/carpet/orange,
+/area/station/civilian/gym{
+	lightswitch = 0
+	})
 "Pp" = (
 /obj/machinery/telecomms/bus/preset_one,
 /turf/simulated/floor/bluegrid{
@@ -14733,7 +14774,6 @@
 /obj/structure/closet/secure_closet/engineering_welding{
 	anchored = 1
 	},
-/obj/item/clothing/glasses/welding,
 /obj/item/clothing/glasses/welding,
 /turf/simulated/floor,
 /area/station/engineering/break_room{
@@ -15728,6 +15768,7 @@
 /obj/machinery/camera/autoname{
 	dir = 8
 	},
+/obj/random/vending/cola,
 /turf/simulated/floor{
 	icon_state = "redyellowfull"
 	},
@@ -16741,20 +16782,12 @@
 /area/station/construction)
 "Wo" = (
 /obj/structure/table,
-/obj/item/clothing/glasses/hud/health{
-	pixel_x = 5;
-	pixel_y = 7
-	},
-/obj/item/clothing/glasses/hud/health{
-	pixel_x = 5;
-	pixel_y = 1
-	},
 /obj/item/weapon/storage/box/bodybags{
-	pixel_x = -10;
-	pixel_y = 7
+	pixel_x = -12;
+	pixel_y = 12
 	},
 /obj/item/weapon/storage/box/cdeathalarm_kit{
-	pixel_x = -10
+	pixel_x = -12
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
@@ -36700,7 +36733,7 @@ uE
 ZE
 SV
 fr
-me
+MO
 Bh
 xM
 Ys
@@ -39261,7 +39294,7 @@ GK
 xj
 pI
 Ut
-Ut
+me
 LH
 cV
 nj
@@ -41075,7 +41108,7 @@ LD
 PA
 iz
 oN
-MO
+Pn
 dG
 wG
 dG
