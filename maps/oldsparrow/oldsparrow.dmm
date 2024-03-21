@@ -11500,6 +11500,8 @@
 "Hr" = (
 /obj/structure/closet/wardrobe/medic_white,
 /obj/item/weapon/storage/bag/chemistry,
+/obj/item/weapon/storage/box/beakers,
+/obj/item/weapon/storage/box/pillbottles,
 /turf/simulated/floor{
 	icon_state = "whitecorner"
 	},
@@ -12463,7 +12465,8 @@
 /area/station/maintenance/cargo)
 "Kf" = (
 /obj/structure/cable{
-	dir = 8
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
 	dir = 8;
