@@ -1698,7 +1698,7 @@
 /turf/simulated/floor,
 /area/station/storage/emergency3)
 "fr" = (
-/obj/machinery/computer/med_data,
+/obj/machinery/computer/crew,
 /turf/simulated/floor{
 	icon_state = "whitehall"
 	},
@@ -3100,9 +3100,13 @@
 	},
 /area/station/maintenance/dormitory)
 "jp" = (
-/obj/machinery/computer/crew,
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/structure/table,
+/obj/item/weapon/folder/white,
+/obj/item/weapon/pen{
+	pixel_x = -7
 	},
 /turf/simulated/floor{
 	icon_state = "whitehall"
@@ -4157,9 +4161,13 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "me" = (
-/obj/structure/dumbbells_rack,
-/turf/simulated/floor/carpet/orange,
-/area/station/civilian/gym{
+/obj/structure/stool/bed/chair/office/light{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "white"
+	},
+/area/station/medical/reception{
 	lightswitch = 0
 	})
 "mf" = (
@@ -13411,6 +13419,12 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"MO" = (
+/obj/structure/dumbbells_rack,
+/turf/simulated/floor/carpet/orange,
+/area/station/civilian/gym{
+	lightswitch = 0
+	})
 "MQ" = (
 /obj/structure/disposalpipe/segment,
 /obj/item/device/radio/intercom{
@@ -14754,7 +14768,7 @@
 	},
 /area/station/bridge/captain_quarters)
 "QP" = (
-/obj/structure/closet/secure_closet/personal,
+/obj/structure/closet,
 /obj/item/clothing/under/patient_gown,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -14942,16 +14956,6 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
-"RA" = (
-/obj/structure/stool/bed/chair/office/light{
-	dir = 1
-	},
-/turf/simulated/floor{
-	icon_state = "white"
-	},
-/area/station/medical/reception{
-	lightswitch = 0
-	})
 "RB" = (
 /obj/item/device/radio/beacon,
 /turf/simulated/floor,
@@ -16778,6 +16782,9 @@
 	dir = 4;
 	name = null;
 	pixel_x = 28
+	},
+/obj/structure/stool/bed/chair/office/light{
+	dir = 1
 	},
 /turf/simulated/floor{
 	icon_state = "white"
@@ -36665,7 +36672,7 @@ uE
 ZE
 SV
 fr
-Qn
+me
 Bh
 xM
 Ys
@@ -36922,7 +36929,7 @@ TQ
 Sy
 SV
 jp
-RA
+Qn
 TZ
 hA
 Ys
@@ -41040,7 +41047,7 @@ LD
 PA
 iz
 oN
-me
+MO
 dG
 wG
 dG
