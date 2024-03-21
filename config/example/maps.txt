@@ -18,6 +18,12 @@ map boxstation
 	default
 endmap
 
+map oldsparrow
+	votable
+	maxplayers 13
+	voteweight 1.5
+endmap
+
 map boxstation_snow
 	votable
 	voteweight 0.7

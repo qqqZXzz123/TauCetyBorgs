@@ -146,6 +146,62 @@
 	icon_state = "shuttle"
 	parallax_movedir = WEST
 
+//Escape Pod Five
+/area/shuttle/escape_pod5
+	name = "Escape Pod Five"
+
+/area/shuttle/escape_pod5/station
+	icon_state = "shuttle2"
+
+/area/shuttle/escape_pod5/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod5/transit
+	icon_state = "shuttle"
+	parallax_movedir = NORTH
+
+//Escape Pod Six
+/area/shuttle/escape_pod6
+	name = "Escape Pod Six"
+
+/area/shuttle/escape_pod6/station
+	icon_state = "shuttle2"
+
+/area/shuttle/escape_pod6/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod6/transit
+	icon_state = "shuttle"
+	parallax_movedir = NORTH
+
+//Escape Pod Seven
+/area/shuttle/escape_pod7
+	name = "Escape Pod Seven"
+
+/area/shuttle/escape_pod7/station
+	icon_state = "shuttle2"
+
+/area/shuttle/escape_pod7/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod7/transit
+	icon_state = "shuttle"
+	parallax_movedir = NORTH
+
+	//Escape Pod Eight
+/area/shuttle/escape_pod8
+	name = "Escape Pod Eight"
+
+/area/shuttle/escape_pod8/station
+	icon_state = "shuttle2"
+
+/area/shuttle/escape_pod8/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod8/transit
+	icon_state = "shuttle"
+	parallax_movedir = NORTH
+
 //Mining-Research Shuttle
 /area/shuttle/mining
 	name = "Mining-Research Shuttle"
@@ -314,6 +370,10 @@ var/global/list/centcom_shuttle_areas = list (
 	/area/shuttle/escape_pod2/centcom,
 	/area/shuttle/escape_pod3/centcom,
 	/area/shuttle/escape_pod4/centcom,
+	/area/shuttle/escape_pod5/centcom,
+	/area/shuttle/escape_pod6/centcom,
+	/area/shuttle/escape_pod7/centcom,
+	/area/shuttle/escape_pod8/centcom,
 	/area/shuttle/transport1/centcom,
 	/area/shuttle/administration/centcom,
 	/area/shuttle/specops/centcom,
@@ -327,6 +387,10 @@ var/global/list/station_shuttle_areas = list (
 	/area/shuttle/escape_pod2/station,
 	/area/shuttle/escape_pod3/station,
 	/area/shuttle/escape_pod4/station,
+	/area/shuttle/escape_pod5/station,
+	/area/shuttle/escape_pod6/station,
+	/area/shuttle/escape_pod7/station,
+	/area/shuttle/escape_pod8/station,
 	/area/shuttle/transport1/station,
 	/area/shuttle/administration/station,
 	/area/shuttle/specops/station,
