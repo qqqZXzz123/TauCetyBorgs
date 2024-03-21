@@ -2927,7 +2927,7 @@
 /turf/environment/space,
 /area/shuttle/transport1/centcom)
 "ahI" = (
-/obj/structure/lattice,
+/obj/structure/,
 /obj/structure/grille,
 /turf/environment/space,
 /area/space)
@@ -27436,7 +27436,6 @@
 	},
 /area/centcom/control)
 "jiZ" = (
-/obj/structure/lattice,
 /obj/structure/lattice,
 /turf/environment/space,
 /area/space)
