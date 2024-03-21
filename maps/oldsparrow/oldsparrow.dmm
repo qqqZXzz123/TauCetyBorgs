@@ -130,11 +130,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whiteblue"
@@ -1341,11 +1336,19 @@
 	lightswitch = 0
 	})
 "eq" = (
-/obj/machinery/power/apc/smallcell{
-	dir = 4
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	dir = 4;
+	icon_state = "1-2"
 	},
-/turf/simulated/wall/r_wall,
-/area/station/storage/emergency3)
+/obj/machinery/firealarm{
+	pixel_y = -32
+	},
+/turf/simulated/floor{
+	icon_state = "warnwhite"
+	},
+/area/station/maintenance/escape)
 "er" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -1410,9 +1413,6 @@
 "eF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
 	},
 /turf/simulated/floor,
 /area/station/storage/emergency3)
@@ -1885,13 +1885,13 @@
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormone)
 "fZ" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/machinery/atmospherics/components/binary/valve/open{
 	dir = 4
+	},
+/obj/machinery/power/terminal,
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/escape)
@@ -2801,11 +2801,6 @@
 	},
 /area/station/maintenance/cargo)
 "ix" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "whiteblue"
@@ -3575,12 +3570,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	dir = 4;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor{
 	icon_state = "whitebluefull"
 	},
@@ -4111,11 +4100,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /turf/simulated/floor,
 /area/station/storage/emergency3)
 "lY" = (
@@ -4215,6 +4199,7 @@
 /obj/machinery/door/airlock/external{
 	name = "Arrival Airlock"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/station/maintenance/escape)
 "mp" = (
@@ -5376,8 +5361,11 @@
 /turf/simulated/floor/carpet/red,
 /area/station/civilian/dormitories/dormone)
 "pn" = (
-/obj/structure/cable,
 /obj/machinery/power/smes/fullcharge,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/escape)
 "pr" = (
@@ -6514,15 +6502,15 @@
 	lightswitch = 0
 	})
 "sO" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
 /obj/item/weapon/wrench,
 /obj/item/weapon/storage/box/lights/mixed,
+/obj/machinery/light/small,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	dir = 4;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/escape)
 "sP" = (
@@ -10544,10 +10532,6 @@
 	lightswitch = 0
 	})
 "Er" = (
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/camera{
 	c_tag = "MiniSat South";
 	network = list("MiniSat")
@@ -11627,10 +11611,11 @@
 	},
 /area/station/construction)
 "HM" = (
-/obj/machinery/door/airlock/external{
-	dock_tag = "arrival_specops";
-	locked = 1;
-	name = "Arrival Airlock"
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/centcom{
+	name = "Special Operations";
+	req_access = list(103);
+	dock_tag = "arrival_specops"
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/escape)
@@ -13143,6 +13128,10 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whiteblue"
@@ -14327,9 +14316,6 @@
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
-/area/station/hallway/secondary/arrival)
-"Pn" = (
-/turf/environment/space,
 /area/station/hallway/secondary/arrival)
 "Pp" = (
 /obj/machinery/telecomms/bus/preset_one,
@@ -16370,6 +16356,11 @@
 	icon_state = "0-2";
 	pixel_y = 1
 	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = null;
+	pixel_y = 28
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "warnwhite"
@@ -16553,12 +16544,6 @@
 	icon_state = "asteroidfloor"
 	},
 /area/station/maintenance/dormitory)
-"VQ" = (
-/obj/machinery/power/apc/largecell{
-	dir = 4
-	},
-/turf/simulated/wall/r_wall,
-/area/station/maintenance/escape)
 "VR" = (
 /obj/machinery/computer/secure_data,
 /turf/simulated/floor{
@@ -17993,9 +17978,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
 	},
 /turf/simulated/floor,
 /area/station/storage/emergency3)
@@ -31260,7 +31242,7 @@ th
 th
 th
 th
-Pn
+uq
 Of
 hj
 QE
@@ -32218,7 +32200,7 @@ PL
 We
 hs
 Sn
-eq
+jM
 Er
 ix
 aD
@@ -33502,7 +33484,7 @@ cr
 IC
 TF
 hs
-pA
+eq
 uP
 eN
 eN
@@ -34014,7 +33996,7 @@ BE
 BE
 uP
 uP
-VQ
+uP
 Vk
 Zv
 uP
