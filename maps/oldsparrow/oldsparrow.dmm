@@ -38,6 +38,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/machinery/computer/guestpass{
+	pixel_x = 28
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "caution"
@@ -429,6 +432,13 @@
 	},
 /turf/simulated/floor,
 /area/station/cargo/storage{
+	lightswitch = 0
+	})
+"by" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/glass/rag,
+/turf/simulated/floor/wood,
+/area/station/civilian/bar{
 	lightswitch = 0
 	})
 "bB" = (
@@ -844,6 +854,21 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"cG" = (
+/obj/machinery/power/apc{
+	dir = 8;
+	name = null;
+	pixel_x = -28
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "blackcorner"
+	},
+/area/station/hallway/primary/central)
 "cK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -2657,9 +2682,7 @@
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	dir = 1
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "hU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -3582,9 +3605,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "ku" = (
 /obj/machinery/atmospherics/components/unary/portables_connector{
@@ -4255,9 +4276,7 @@
 	dir = 0;
 	pixel_y = -35
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "ml" = (
 /obj/structure/grille,
@@ -4451,9 +4470,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "mO" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -4608,18 +4625,14 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "nn" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	dir = 1;
 	icon_state = "bench_2"
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "ns" = (
 /obj/machinery/door/window{
@@ -5018,6 +5031,10 @@
 /obj/item/weapon/medical/teleporter{
 	pixel_x = 9;
 	pixel_y = 7
+	},
+/obj/item/device/gps/mining{
+	pixel_x = -12;
+	pixel_y = 12
 	},
 /turf/simulated/floor{
 	icon_state = "yellowfull"
@@ -6114,17 +6131,14 @@
 	},
 /area/asteroid/mine/unexplored)
 "rw" = (
-/obj/structure/closet/crate/medical,
-/obj/item/device/camera,
-/obj/item/device/lens/rentgene,
-/obj/item/weapon/cane,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/glasses/sunglasses/blindfold/white,
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/clothing/accessory/armband/med,
-/obj/item/clothing/accessory/armband/medgreen,
+/obj/structure/rack,
+/obj/item/clothing/shoes/magboots,
+/obj/item/clothing/mask/gas/coloured,
+/obj/item/weapon/tank/emergency_oxygen/double,
+/obj/item/clothing/suit/space/rig/medical,
+/obj/item/clothing/head/helmet/space/rig/medical,
+/obj/item/bodybag/cryobag,
+/obj/item/weapon/medical/teleporter,
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -6192,6 +6206,9 @@
 	},
 /obj/machinery/camera/autoname{
 	dir = 5
+	},
+/obj/machinery/computer/guestpass{
+	pixel_x = -28
 	},
 /turf/simulated/floor,
 /area/station/cargo/storage{
@@ -6372,14 +6389,17 @@
 	lightswitch = 0
 	})
 "sg" = (
-/obj/structure/rack,
-/obj/item/clothing/shoes/magboots,
-/obj/item/clothing/mask/gas/coloured,
-/obj/item/weapon/tank/emergency_oxygen/double,
-/obj/item/clothing/suit/space/rig/medical,
-/obj/item/clothing/head/helmet/space/rig/medical,
-/obj/item/bodybag/cryobag,
-/obj/item/weapon/medical/teleporter,
+/obj/structure/closet/crate/medical,
+/obj/item/device/camera,
+/obj/item/device/lens/rentgene,
+/obj/item/weapon/cane,
+/obj/item/clothing/mask/muzzle,
+/obj/item/clothing/suit/straight_jacket,
+/obj/item/clothing/glasses/sunglasses/blindfold/white,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/clothing/accessory/armband/med,
+/obj/item/clothing/accessory/armband/medgreen,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "whitehall"
@@ -6433,13 +6453,14 @@
 /obj/item/clothing/suit/space/globose/mining,
 /obj/item/clothing/head/helmet/space/globose/mining,
 /obj/item/clothing/mask/breath,
-/obj/item/clothing/shoes/magboots,
+/obj/item/weapon/storage/belt,
 /obj/item/device/radio/intercom{
 	pixel_x = 28
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/item/clothing/shoes/magboots,
 /turf/simulated/floor{
 	icon_state = "yellowfull"
 	},
@@ -7306,8 +7327,9 @@
 /obj/item/clothing/suit/space/globose/mining,
 /obj/item/clothing/head/helmet/space/globose/mining,
 /obj/item/clothing/mask/breath,
-/obj/item/clothing/shoes/magboots,
+/obj/item/weapon/storage/belt,
 /obj/item/device/guitar,
+/obj/item/clothing/shoes/magboots,
 /turf/simulated/floor{
 	icon_state = "yellowfull"
 	},
@@ -7995,9 +8017,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "wG" = (
 /obj/structure/cable{
@@ -8193,7 +8213,7 @@
 	dir = 1
 	},
 /obj/machinery/light_switch{
-	pixel_x = 25
+	pixel_x = 23
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -8410,7 +8430,8 @@
 /obj/structure/table,
 /obj/item/weapon/storage/wallet/random,
 /turf/simulated/floor{
-	icon_state = "hydrofloor"
+	dir = 8;
+	icon_state = "warningcorner"
 	},
 /area/station/hallway/secondary/exit)
 "xQ" = (
@@ -8923,6 +8944,9 @@
 	list_reagents = null;
 	pixel_x = 8;
 	pixel_y = -1
+	},
+/obj/machinery/computer/guestpass{
+	pixel_y = 28
 	},
 /turf/simulated/floor{
 	icon_state = "whitehall"
@@ -12528,7 +12552,8 @@
 	pixel_y = 28
 	},
 /turf/simulated/floor{
-	icon_state = "hydrofloor"
+	dir = 1;
+	icon_state = "warningcorner"
 	},
 /area/station/hallway/secondary/exit)
 "JK" = (
@@ -12688,21 +12713,6 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
-"Kf" = (
-/obj/structure/cable{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = null;
-	pixel_x = -28
-	},
-/turf/simulated/floor{
-	dir = 8;
-	icon_state = "black"
-	},
-/area/station/hallway/primary/central)
 "Kg" = (
 /obj/machinery/mineral/output,
 /obj/machinery/conveyor{
@@ -13013,25 +13023,6 @@
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
-"Lb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "black"
-	},
-/area/station/hallway/primary/central)
 "Le" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -13971,6 +13962,7 @@
 /obj/item/clothing/suit/space/globose/mining,
 /obj/item/clothing/head/helmet/space/globose/mining,
 /obj/item/clothing/mask/breath,
+/obj/item/weapon/storage/belt,
 /obj/item/clothing/shoes/magboots,
 /turf/simulated/floor{
 	icon_state = "yellowfull"
@@ -14041,6 +14033,9 @@
 "NH" = (
 /obj/structure/table,
 /obj/item/weapon/storage/fancy/donut_box,
+/obj/item/blueprints{
+	pixel_y = 13
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -14223,9 +14218,7 @@
 	name = null;
 	pixel_y = 28
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "Oh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -15074,9 +15067,10 @@
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	icon_state = "bench_2"
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
+/obj/machinery/computer/guestpass/dark{
+	pixel_y = 28
 	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "Rd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -15460,6 +15454,11 @@
 	dir = 4;
 	icon_state = "pipe-c";
 	layer = 1.9
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -16536,9 +16535,7 @@
 /obj/machinery/status_display{
 	pixel_y = 32
 	},
-/turf/simulated/floor{
-	icon_state = "hydrofloor"
-	},
+/turf/simulated/floor,
 /area/station/hallway/secondary/exit)
 "UY" = (
 /turf/environment/space,
@@ -35645,8 +35642,8 @@ Lp
 RD
 FM
 pd
-MW
-Kf
+cG
+zm
 Lt
 aX
 Ig
@@ -35903,7 +35900,7 @@ FA
 Ks
 YC
 Sp
-Lb
+kH
 kH
 kH
 vM
@@ -37695,7 +37692,7 @@ ts
 ZL
 eh
 iA
-Gz
+by
 Eg
 Gz
 dU
