@@ -412,6 +412,20 @@
 	icon_state = "asteroidwarning"
 	},
 /area/station/storage/emergency3)
+"bq" = (
+/obj/structure/table,
+/obj/item/weapon/storage/toolbox/emergency,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = null;
+	pixel_x = 30
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "bv" = (
 /obj/machinery/alarm{
 	dir = 0;
@@ -806,12 +820,6 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
-"cv" = (
-/obj/machinery/drone_fabricator,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "cB" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -991,6 +999,7 @@
 	})
 "dc" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/holder/mouse,
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "dd" = (
@@ -1496,6 +1505,26 @@
 	icon_state = "dark"
 	},
 /area/station/maintenance/disposal)
+"eI" = (
+/obj/structure/table,
+/obj/item/device/flashlight,
+/obj/item/weapon/noose,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = null;
+	pixel_x = 28
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "eJ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -2536,18 +2565,6 @@
 	icon_state = "warnwhite"
 	},
 /area/station/hallway/secondary/entry)
-"ht" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/maintenance/bridge)
 "hu" = (
 /obj/structure/dispenser/oxygen,
 /obj/structure/sign/poster/official/safety_internals{
@@ -2559,6 +2576,14 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"hv" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "hw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3653,6 +3678,16 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"kv" = (
+/mob/living/simple_animal/hostile/retaliate/malf_drone,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/explored)
+"kx" = (
+/obj/machinery/computer/drone_control,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "ky" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3726,6 +3761,16 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
+"kJ" = (
+/obj/machinery/door_control{
+	id = "Security_private";
+	name = "Shutters Control";
+	pixel_x = -28
+	},
+/turf/simulated/wall/r_wall,
+/area/station/security/main{
+	lightswitch = 0
+	})
 "kK" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'HIGH VOLTAGE'";
@@ -3849,12 +3894,6 @@
 "kT" = (
 /turf/simulated/floor/plating/airless/asteroid,
 /area/station/solar/auxport)
-"kU" = (
-/obj/machinery/computer/security/engineering/drone,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "kV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4323,14 +4362,6 @@
 	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/station/solar/auxport)
-"mi" = (
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "loadingarea"
-	},
-/area/station/cargo/miningoffice{
-	lightswitch = 0
-	})
 "mk" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	dir = 1;
@@ -4638,6 +4669,16 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"mU" = (
+/obj/item/weapon/holder/mouse,
+/turf/simulated/floor{
+	icon_state = "asteroidfloor"
+	},
+/area/station/maintenance/dormitory)
+"mV" = (
+/obj/structure/sign/poster/contraband/free_drone,
+/turf/simulated/wall,
+/area/station/engineering/drone_fabrication)
 "mX" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
@@ -4767,6 +4808,9 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"nz" = (
+/turf/simulated/wall,
+/area/station/engineering/drone_fabrication)
 "nA" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -6504,10 +6548,6 @@
 /area/station/bridge/comms{
 	lightswitch = 0
 	})
-"sk" = (
-/obj/structure/sign/poster/contraband/free_drone,
-/turf/simulated/wall,
-/area/station/engineering/drone_fabrication)
 "sl" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -8317,6 +8357,22 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"xn" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/obj/machinery/door/poddoor/shutters{
+	density = 0;
+	icon_state = "shutter0";
+	id = "Security_private";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/station/security/main{
+	lightswitch = 0
+	})
 "xp" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -8533,6 +8589,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/item/weapon/holder/mouse,
 /turf/simulated/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -8569,10 +8626,6 @@
 	icon_state = "asteroid_dug"
 	},
 /area/asteroid/mine/unexplored)
-"xW" = (
-/mob/living/simple_animal/hostile/retaliate/malf_drone,
-/turf/environment/space,
-/area/space)
 "xX" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -10099,22 +10152,12 @@
 /area/station/security/main{
 	lightswitch = 0
 	})
-"Ca" = (
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
-/obj/structure/window/reinforced{
-	dir = 5
+"Cc" = (
+/obj/item/weapon/holder/mouse,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
 	},
-/obj/machinery/door/poddoor/shutters{
-	density = 0;
-	icon_state = "shutter0";
-	id = "Security_private";
-	opacity = 0
-	},
-/turf/simulated/floor/plating,
-/area/station/security/main{
-	lightswitch = 0
-	})
+/area/station/maintenance/dormitory)
 "Cd" = (
 /obj/structure/bookcase/manuals,
 /obj/item/weapon/book/manual/wiki/supply_crates,
@@ -10473,10 +10516,6 @@
 	icon_state = "dark"
 	},
 /area/station/maintenance/disposal)
-"Df" = (
-/obj/structure/sign/plaques/kiddie/perfect_drone,
-/turf/simulated/wall,
-/area/station/engineering/drone_fabrication)
 "Dg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -10560,20 +10599,6 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
-"Dr" = (
-/obj/structure/table,
-/obj/item/weapon/storage/toolbox/emergency,
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 8
-	},
-/obj/machinery/alarm{
-	dir = null;
-	pixel_x = 30
-	},
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "Dv" = (
 /obj/structure/table,
 /obj/item/device/radio/intercom{
@@ -11242,6 +11267,12 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"Fq" = (
+/obj/structure/closet/toolcloset,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "Ft" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 6
@@ -11456,26 +11487,6 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
-"FW" = (
-/obj/structure/table,
-/obj/item/device/flashlight,
-/obj/item/weapon/noose,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = null;
-	pixel_x = 28
-	},
-/obj/structure/cable{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "FX" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
@@ -12279,6 +12290,18 @@
 	icon_state = "warnwhite"
 	},
 /area/station/hallway/secondary/entry)
+"Iw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/bridge)
 "Ix" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -12469,10 +12492,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/station/storage/emergency3)
-"Jg" = (
-/mob/living/simple_animal/hostile/retaliate/malf_drone,
-/turf/simulated/floor/plating/airless/asteroid,
-/area/asteroid/mine/explored)
 "Jh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -12912,6 +12931,14 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"Kd" = (
+/turf/simulated/floor{
+	dir = 1;
+	icon_state = "loadingarea"
+	},
+/area/station/cargo/miningoffice{
+	lightswitch = 0
+	})
 "Kg" = (
 /obj/machinery/mineral/output,
 /obj/machinery/conveyor{
@@ -12925,6 +12952,10 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"Kh" = (
+/mob/living/simple_animal/hostile/retaliate/malf_drone,
+/turf/environment/space,
+/area/space)
 "Kk" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -12932,6 +12963,12 @@
 	},
 /turf/environment/space/shuttle,
 /area/shuttle/escape_pod8/station)
+"Kl" = (
+/obj/machinery/drone_fabricator,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "Kn" = (
 /obj/machinery/atmospherics/components/unary/tank/air{
 	dir = 4
@@ -14130,16 +14167,6 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
-"Nu" = (
-/obj/machinery/camera{
-	c_tag = "Medbay East";
-	dir = 8;
-	network = list("SS13","Medical")
-	},
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "Nv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14954,14 +14981,6 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
-"PO" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "PQ" = (
 /obj/machinery/computer/stockexchange,
 /obj/structure/table,
@@ -15186,16 +15205,6 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/bridge)
-"Qy" = (
-/obj/machinery/door_control{
-	id = "Security_private";
-	name = "Shutters Control";
-	pixel_x = -28
-	},
-/turf/simulated/wall/r_wall,
-/area/station/security/main{
-	lightswitch = 0
-	})
 "QA" = (
 /obj/effect/decal/cleanable/blood/drip{
 	icon_state = "3"
@@ -15371,12 +15380,6 @@
 /obj/structure/firedoor_assembly,
 /turf/simulated/floor/plating,
 /area/station/construction)
-"Re" = (
-/obj/machinery/computer/drone_control,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "Rk" = (
 /obj/machinery/computer/security/engineering{
 	dir = 8
@@ -15587,6 +15590,12 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"RW" = (
+/obj/machinery/computer/security/engineering/drone,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "RY" = (
 /turf/simulated/floor/airless{
 	dir = 10;
@@ -15831,6 +15840,16 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"SD" = (
+/obj/machinery/camera{
+	c_tag = "Medbay East";
+	dir = 8;
+	network = list("SS13","Medical")
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "SE" = (
 /obj/structure/table,
 /obj/machinery/recharger{
@@ -16583,9 +16602,6 @@
 /area/station/engineering/monitoring{
 	lightswitch = 0
 	})
-"Uq" = (
-/turf/simulated/wall,
-/area/station/engineering/drone_fabrication)
 "Ur" = (
 /turf/simulated/floor/plating,
 /area/station/cargo/storage{
@@ -17279,22 +17295,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/construction)
-"Wn" = (
-/obj/structure/table,
-/obj/item/weapon/paper/crumpled{
-	icon_state = "crumpled";
-	info = "Не сегодня";
-	pixel_x = 6;
-	pixel_y = -5
-	},
-/obj/item/weapon/pen{
-	pixel_x = -1;
-	pixel_y = 7
-	},
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "Wo" = (
 /obj/structure/table,
 /obj/item/weapon/storage/box/bodybags{
@@ -17674,6 +17674,22 @@
 /area/station/civilian/gym{
 	lightswitch = 0
 	})
+"Xq" = (
+/obj/structure/table,
+/obj/item/weapon/paper/crumpled{
+	icon_state = "crumpled";
+	info = "Не сегодня";
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/weapon/pen{
+	pixel_x = -1;
+	pixel_y = 7
+	},
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/engineering/drone_fabrication)
 "Xr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -18401,6 +18417,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"Zm" = (
+/obj/structure/sign/plaques/kiddie/perfect_drone,
+/turf/simulated/wall,
+/area/station/engineering/drone_fabrication)
 "Zo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -18626,6 +18646,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/generic,
+/obj/item/weapon/holder/mouse,
 /turf/simulated/floor/plating{
 	dir = 4;
 	icon_state = "warnplate"
@@ -18660,12 +18681,6 @@
 	icon_state = "black"
 	},
 /area/station/hallway/secondary/arrival)
-"ZT" = (
-/obj/structure/closet/toolcloset,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/engineering/drone_fabrication)
 "ZW" = (
 /turf/simulated/floor{
 	icon_state = "blackcorner"
@@ -34215,7 +34230,7 @@ JJ
 DI
 DI
 xP
-Ca
+xn
 GG
 gP
 wk
@@ -35243,7 +35258,7 @@ Rb
 UP
 DI
 hT
-Ca
+xn
 oK
 No
 BY
@@ -35759,7 +35774,7 @@ yO
 jm
 UE
 UE
-Qy
+kJ
 Iy
 UE
 UE
@@ -37515,13 +37530,13 @@ Mx
 Mx
 Mx
 Mx
-Uq
-cv
-Re
+nz
+Kl
+kx
 YR
 FP
 UQ
-Uq
+nz
 dw
 Od
 Vn
@@ -37772,14 +37787,14 @@ Mx
 Mx
 Mx
 Mx
-Uq
+nz
 jI
-kU
+RW
 jI
 Ef
 Yp
 WZ
-ht
+Iw
 Ap
 Vn
 Vn
@@ -38029,13 +38044,13 @@ Mx
 Mx
 sn
 sn
-sk
-PO
+mV
+hv
 jI
 jI
 YT
 jb
-Uq
+nz
 Gf
 be
 hK
@@ -38286,13 +38301,13 @@ Mx
 Mx
 sn
 sn
-Df
-Wn
-Nu
-ZT
-FW
-Dr
-Uq
+Zm
+Xq
+SD
+Fq
+eI
+bq
+nz
 ZQ
 Pj
 hK
@@ -38543,13 +38558,13 @@ Mx
 Mx
 sn
 sn
-Uq
-Uq
-Uq
-Uq
-Uq
-Uq
-Uq
+nz
+nz
+nz
+nz
+nz
+nz
+nz
 ZQ
 NN
 hK
@@ -38602,7 +38617,7 @@ KB
 SS
 BL
 eO
-mi
+Kd
 wd
 wd
 wd
@@ -43218,7 +43233,7 @@ Un
 eR
 BH
 Yw
-Kb
+Cc
 Pu
 Ae
 ig
@@ -43720,7 +43735,7 @@ CC
 oD
 Fh
 Ie
-Ie
+mU
 Qs
 aw
 lU
@@ -49610,7 +49625,7 @@ Mx
 Mx
 Mx
 Mx
-Jg
+kv
 ig
 Mx
 Mx
@@ -71279,7 +71294,7 @@ th
 th
 th
 th
-xW
+Kh
 th
 th
 th
@@ -74086,7 +74101,7 @@ th
 ah
 th
 th
-xW
+Kh
 th
 th
 th
