@@ -271,11 +271,11 @@
 	},
 /area/station/hallway/primary/central)
 "aZ" = (
-/obj/structure/sign/poster/contraband/lusty_xenomorph,
-/turf/simulated/wall,
-/area/station/civilian/toilet{
-	lightswitch = 0
-	})
+/obj/machinery/vending/holy,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/dormitory)
 "ba" = (
 /obj/structure/table,
 /obj/item/weapon/paper_bin{
@@ -1761,12 +1761,6 @@
 	icon_state = "brownold"
 	},
 /area/station/civilian/dormitories)
-"fm" = (
-/obj/structure/sign/poster/contraband/hacking_guide{
-	pixel_y = -32
-	},
-/turf/simulated/wall,
-/area/station/civilian/dormitories/dormthree)
 "fn" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
@@ -3750,9 +3744,11 @@
 	},
 /area/station/hallway/primary/central)
 "kJ" = (
-/obj/structure/sign/poster/contraband/power,
+/obj/structure/sign/poster/contraband/hacking_guide{
+	pixel_y = -32
+	},
 /turf/simulated/wall,
-/area/station/hallway/secondary/arrival)
+/area/station/civilian/dormitories/dormthree)
 "kK" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'HIGH VOLTAGE'";
@@ -4851,7 +4847,7 @@
 	lightswitch = 0
 	})
 "nE" = (
-/obj/machinery/vending/clothing,
+/obj/machinery/vending/cola,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "black"
@@ -6586,6 +6582,10 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"st" = (
+/obj/structure/sign/poster/contraband/robust_softdrinks,
+/turf/simulated/wall,
+/area/station/hallway/secondary/arrival)
 "su" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -8117,12 +8117,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
-"wD" = (
-/obj/machinery/vending/holy,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/maintenance/dormitory)
 "wF" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	dir = 1
@@ -11914,6 +11908,12 @@
 	icon_state = "asteroidfloor"
 	},
 /area/asteroid/mine/unexplored)
+"Hq" = (
+/obj/structure/sign/poster/contraband/lusty_xenomorph,
+/turf/simulated/wall,
+/area/station/civilian/toilet{
+	lightswitch = 0
+	})
 "Hr" = (
 /obj/structure/closet/wardrobe/medic_white,
 /obj/item/weapon/storage/bag/chemistry,
@@ -13030,7 +13030,7 @@
 	lightswitch = 0
 	})
 "Kv" = (
-/obj/structure/sign/poster/contraband/robust_softdrinks,
+/obj/structure/sign/poster/contraband/power,
 /turf/simulated/wall,
 /area/station/hallway/secondary/arrival)
 "Kw" = (
@@ -15508,6 +15508,8 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
+/obj/item/weapon/stock_parts/cell/high,
+/obj/item/weapon/stock_parts/cell/high,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -33430,7 +33432,7 @@ zB
 zB
 zB
 th
-kJ
+Kv
 Pk
 xA
 bE
@@ -33944,7 +33946,7 @@ zB
 zB
 zB
 th
-Kv
+st
 dV
 Jb
 Bb
@@ -41687,7 +41689,7 @@ IB
 XX
 Wc
 IB
-wD
+aZ
 iJ
 IB
 IB
@@ -42432,7 +42434,7 @@ GU
 GU
 GU
 dX
-fm
+kJ
 dX
 dX
 fi
@@ -42954,7 +42956,7 @@ FX
 dn
 Tc
 Av
-aZ
+Hq
 Xm
 LM
 uh
