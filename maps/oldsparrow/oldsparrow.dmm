@@ -271,11 +271,13 @@
 	},
 /area/station/hallway/primary/central)
 "aZ" = (
-/obj/structure/sign/poster/contraband/lusty_xenomorph,
-/turf/simulated/wall,
-/area/station/civilian/toilet{
-	lightswitch = 0
-	})
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/station/engineering/drone_fabrication)
 "ba" = (
 /obj/structure/table,
 /obj/item/weapon/paper_bin{
@@ -412,7 +414,8 @@
 	pixel_x = 30
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "bv" = (
@@ -1504,7 +1507,8 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "eJ" = (
@@ -2568,8 +2572,9 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	dir = 6;
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "hw" = (
@@ -3121,7 +3126,8 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "jd" = (
@@ -3367,8 +3373,8 @@
 	},
 /area/station/tcommsat/chamber)
 "jI" = (
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "jJ" = (
@@ -3673,7 +3679,7 @@
 "kx" = (
 /obj/machinery/computer/drone_control,
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "ky" = (
@@ -5810,6 +5816,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/machinery/cell_charger,
+/obj/item/weapon/stock_parts/cell/high,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -10836,7 +10843,8 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Eg" = (
@@ -11251,7 +11259,8 @@
 "Fq" = (
 /obj/structure/closet/toolcloset,
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Ft" = (
@@ -11424,10 +11433,10 @@
 /turf/simulated/floor/plating/airless/catwalk,
 /area/station/solar/port)
 "FP" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/recharge_station,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	dir = 5;
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "FQ" = (
@@ -11473,6 +11482,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"FY" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/engineering/drone_fabrication)
 "FZ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -12949,8 +12965,8 @@
 /area/shuttle/escape_pod8/station)
 "Kl" = (
 /obj/machinery/drone_fabricator,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "Kn" = (
@@ -15504,10 +15520,15 @@
 "RH" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/obj/item/weapon/storage/toolbox/electrical,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
+/obj/machinery/cell_charger,
+/obj/item/weapon/stock_parts/cell/high{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/weapon/stock_parts/cell/high,
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "dark"
@@ -15580,7 +15601,7 @@
 "RW" = (
 /obj/machinery/computer/security/engineering/drone,
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "RY" = (
@@ -15833,8 +15854,12 @@
 	dir = 8;
 	network = list("SS13","Medical")
 	},
+/obj/structure/stool/bed/chair/metal{
+	dir = 8
+	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "SE" = (
@@ -16416,7 +16441,7 @@
 /area/station/maintenance/bridge)
 "TV" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/weapon/storage/toolbox/electrical,
 /turf/simulated/floor/bluegrid{
 	icon_state = "elevatorshaft";
 	name = "Server Walkway";
@@ -16789,8 +16814,9 @@
 /area/station/hallway/secondary/exit)
 "UQ" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	dir = 6;
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "UT" = (
@@ -17525,7 +17551,8 @@
 	req_access = list(32)
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Xa" = (
@@ -17675,7 +17702,8 @@
 	pixel_y = 7
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Xr" = (
@@ -18033,7 +18061,8 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Yq" = (
@@ -18252,11 +18281,9 @@
 /turf/simulated/wall,
 /area/station/solar/auxport)
 "YR" = (
-/obj/structure/stool/bed/chair/metal{
-	dir = 1
-	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "YS" = (
@@ -18282,7 +18309,8 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "YV" = (
@@ -37519,8 +37547,8 @@ Mx
 sn
 sn
 sn
-Mx
-Mx
+sn
+sn
 Mx
 Mx
 Mx
@@ -37774,17 +37802,17 @@ ig
 ig
 Mx
 Mx
-Mx
-Mx
-Mx
-Mx
-Mx
-Mx
+sn
+sn
+sn
+sn
+sn
+sn
 Mx
 nz
 jI
 RW
-jI
+YR
 Ef
 Yp
 WZ
@@ -38032,16 +38060,16 @@ ig
 ig
 Mx
 Mx
-Mx
-Mx
-Mx
-Mx
 sn
 sn
+sn
+sn
+sn
+Mx
 mV
 hv
-jI
-jI
+YR
+FY
 YT
 jb
 nz
@@ -38292,9 +38320,9 @@ Mx
 Mx
 Mx
 Mx
+sn
+sn
 Mx
-sn
-sn
 Zm
 Xq
 SD
@@ -38551,11 +38579,11 @@ Mx
 Mx
 Mx
 sn
-sn
+Mx
 nz
 nz
-nz
-nz
+aZ
+aZ
 nz
 nz
 nz
@@ -38810,10 +38838,10 @@ Mx
 Mx
 Mx
 Mx
-Mx
-Mx
-Mx
-Mx
+ig
+ig
+ig
+ig
 Mx
 Mx
 ZQ
@@ -39067,10 +39095,10 @@ ig
 ig
 ig
 ig
-Mx
-Mx
-Mx
-Mx
+ig
+ig
+ig
+ig
 Mx
 Mx
 ZQ
@@ -42954,7 +42982,7 @@ FX
 dn
 Tc
 Av
-aZ
+Fy
 Xm
 LM
 uh
