@@ -4857,7 +4857,7 @@
 	lightswitch = 0
 	})
 "nE" = (
-/obj/machinery/vending/clothing,
+/obj/random/vending/snack,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "black"
@@ -6031,6 +6031,16 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/carpet/purple,
 /area/station/civilian/dormitories/dormtwo)
+"qC" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Airlock";
+	req_access = list(1)
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/station/hallway/secondary/exit)
 "qE" = (
 /obj/machinery/telecomms/bus/preset_two,
 /turf/simulated/floor/bluegrid{
@@ -6469,6 +6479,13 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"sd" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/engineering/drone_fabrication)
 "se" = (
 /obj/structure/table,
 /obj/item/weapon/defibrillator/loaded,
@@ -11482,13 +11499,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
-"FY" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor{
-	dir = 4;
-	icon_state = "dark"
-	},
-/area/station/engineering/drone_fabrication)
 "FZ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -16355,8 +16365,6 @@
 	})
 "TK" = (
 /obj/machinery/door/airlock/external{
-	dock_tag = "arrival_escape";
-	locked = 1;
 	name = "Escape Airlock"
 	},
 /turf/simulated/floor{
@@ -17340,6 +17348,7 @@
 	},
 /area/station/hallway/primary/central)
 "Wr" = (
+/obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "floorscorched2"
@@ -33740,7 +33749,7 @@ TK
 IR
 UE
 jm
-XE
+qC
 jm
 Ib
 UE
@@ -38069,7 +38078,7 @@ Mx
 mV
 hv
 YR
-FY
+sd
 YT
 jb
 nz
