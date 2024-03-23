@@ -271,22 +271,11 @@
 	},
 /area/station/hallway/primary/central)
 "aZ" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/turf/simulated/floor{
-	dir = 1;
-	icon_state = "black"
-	},
-/area/station/hallway/secondary/arrival)
+/obj/structure/sign/poster/contraband/lusty_xenomorph,
+/turf/simulated/wall,
+/area/station/civilian/toilet{
+	lightswitch = 0
+	})
 "ba" = (
 /obj/structure/table,
 /obj/item/weapon/paper_bin{
@@ -862,14 +851,8 @@
 	lightswitch = 0
 	})
 "cF" = (
-/obj/structure/table,
-/obj/item/weapon/storage/box/matches{
-	pixel_x = -6;
-	pixel_y = -2
-	},
-/obj/item/weapon/match{
-	pixel_x = 10
-	},
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/maintenance/three,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -1306,8 +1289,7 @@
 	lightswitch = 0
 	})
 "dV" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/structure/closet/emcloset,
+/obj/random/vending/cola,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -1779,6 +1761,12 @@
 	icon_state = "brownold"
 	},
 /area/station/civilian/dormitories)
+"fm" = (
+/obj/structure/sign/poster/contraband/hacking_guide{
+	pixel_y = -32
+	},
+/turf/simulated/wall,
+/area/station/civilian/dormitories/dormthree)
 "fn" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
@@ -1986,12 +1974,6 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/door_control{
-	id = "Dorm1";
-	name = "Dorm 1";
-	pixel_x = 28;
-	specialfunctions = 4
-	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormone)
 "fZ" = (
@@ -2018,6 +2000,12 @@
 /obj/item/weapon/flora/random,
 /obj/machinery/firealarm{
 	pixel_x = -28
+	},
+/obj/machinery/door_control{
+	id = "Dorm5";
+	name = "Dorm 3";
+	pixel_y = -28;
+	specialfunctions = 4
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfive)
@@ -3762,15 +3750,9 @@
 	},
 /area/station/hallway/primary/central)
 "kJ" = (
-/obj/machinery/door_control{
-	id = "Security_private";
-	name = "Shutters Control";
-	pixel_x = -28
-	},
-/turf/simulated/wall/r_wall,
-/area/station/security/main{
-	lightswitch = 0
-	})
+/obj/structure/sign/poster/contraband/power,
+/turf/simulated/wall,
+/area/station/hallway/secondary/arrival)
 "kK" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'HIGH VOLTAGE'";
@@ -3910,6 +3892,13 @@
 "kX" = (
 /obj/structure/table,
 /obj/item/weapon/storage/fancy/candle_box,
+/obj/item/weapon/storage/box/matches{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/item/weapon/match{
+	pixel_x = 10
+	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -4019,7 +4008,7 @@
 	name = null;
 	pixel_y = 28
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/orange,
 /area/station/civilian/dormitories/dormthree)
 "ln" = (
 /turf/simulated/floor/plating/airless/catwalk,
@@ -4085,7 +4074,7 @@
 /area/station/maintenance/bridge)
 "lv" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/orange,
 /area/station/civilian/dormitories/dormthree)
 "lx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4442,13 +4431,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/door_control{
-	id = "Dorm4";
-	name = "Dorm 2";
-	pixel_x = 28;
-	specialfunctions = 4
-	},
-/turf/simulated/floor/carpet/red,
+/turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfour)
 "mz" = (
 /obj/machinery/door/firedoor,
@@ -4683,6 +4666,9 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 1
+	},
 /turf/simulated/floor{
 	icon_state = "black"
 	},
@@ -4865,9 +4851,7 @@
 	lightswitch = 0
 	})
 "nE" = (
-/obj/machinery/atm{
-	pixel_y = 32
-	},
+/obj/machinery/vending/clothing,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "black"
@@ -5972,9 +5956,6 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -8136,6 +8117,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
+"wD" = (
+/obj/machinery/vending/holy,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/dormitory)
 "wF" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	dir = 1
@@ -9461,12 +9448,6 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
-	},
-/obj/machinery/door_control{
-	id = "Dorm2";
-	name = "Dorm 2";
-	pixel_x = 28;
-	specialfunctions = 4
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormtwo)
@@ -11908,6 +11889,9 @@
 	lightswitch = 0
 	})
 "Ha" = (
+/obj/machinery/atm{
+	pixel_y = 32
+	},
 /turf/simulated/floor{
 	dir = 9;
 	icon_state = "black"
@@ -12000,6 +11984,7 @@
 /area/shuttle/escape_pod6/station)
 "HE" = (
 /obj/structure/closet/emcloset,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -12463,8 +12448,7 @@
 /turf/simulated/floor/wood,
 /area/station/bridge/captain_quarters)
 "Jb" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor{
@@ -12985,7 +12969,7 @@
 	})
 "Kp" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/red,
 /area/station/civilian/dormitories/dormfour)
 "Kq" = (
 /obj/machinery/shower{
@@ -13046,12 +13030,9 @@
 	lightswitch = 0
 	})
 "Kv" = (
-/obj/effect/spawner/lootdrop/maintenance/three,
-/obj/structure/rack,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
-	},
-/area/station/maintenance/dormitory)
+/obj/structure/sign/poster/contraband/robust_softdrinks,
+/turf/simulated/wall,
+/area/station/hallway/secondary/arrival)
 "Kw" = (
 /obj/structure/reagent_dispensers/aqueous_foam_tank,
 /obj/machinery/light/small{
@@ -13352,6 +13333,13 @@
 /obj/structure/table,
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/machinery/door_control{
+	id = "Security_private";
+	name = "Queue shutters";
+	pixel_x = -6;
+	pixel_y = 27;
+	req_access = list(57)
 	},
 /turf/simulated/floor{
 	icon_state = "redfull"
@@ -13767,6 +13755,12 @@
 /obj/machinery/firealarm{
 	pixel_x = -28
 	},
+/obj/machinery/door_control{
+	id = "Dorm4";
+	name = "Dorm 3";
+	pixel_y = -28;
+	specialfunctions = 4
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfour)
 "Mz" = (
@@ -14076,7 +14070,7 @@
 /area/station/tcommsat/chamber)
 "Ni" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/cyan,
 /area/station/civilian/dormitories/dormfive)
 "Nj" = (
 /obj/machinery/telecomms/processor/preset_one,
@@ -14625,13 +14619,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/door_control{
-	id = "Dorm3";
-	name = "Dorm 2";
-	pixel_x = 28;
-	specialfunctions = 4
-	},
-/turf/simulated/floor/carpet/orange,
+/turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormthree)
 "OD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -14819,8 +14807,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "Pk" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/obj/structure/closet/emcloset,
+/obj/machinery/vending/donut,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -15030,7 +15017,7 @@
 	name = null;
 	pixel_y = 28
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/red,
 /area/station/civilian/dormitories/dormfour)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -15044,13 +15031,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/door_control{
-	id = "Dorm5";
-	name = "Dorm 2";
-	pixel_x = 28;
-	specialfunctions = 4
-	},
-/turf/simulated/floor/carpet/cyan,
+/turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfive)
 "Qc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -15580,6 +15561,12 @@
 /obj/machinery/firealarm{
 	pixel_x = -28
 	},
+/obj/machinery/door_control{
+	id = "Dorm2";
+	name = "Dorm 3";
+	pixel_y = -28;
+	specialfunctions = 4
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormtwo)
 "RU" = (
@@ -16063,11 +16050,14 @@
 /area/station/maintenance/disposal)
 "Te" = (
 /obj/item/weapon/flora/random,
-/obj/structure/sign/poster/contraband/hacking_guide{
-	pixel_y = -32
-	},
 /obj/machinery/firealarm{
 	pixel_x = -28
+	},
+/obj/machinery/door_control{
+	id = "Dorm3";
+	name = "Dorm 3";
+	pixel_y = -28;
+	specialfunctions = 4
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormthree)
@@ -16507,12 +16497,10 @@
 /turf/simulated/floor/plating/airless/catwalk,
 /area/space)
 "Ue" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+	dir = 6
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "black"
@@ -17742,6 +17730,12 @@
 /obj/machinery/firealarm{
 	pixel_x = -28
 	},
+/obj/machinery/door_control{
+	id = "Dorm1";
+	name = "Dorm 3";
+	pixel_y = -28;
+	specialfunctions = 4
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormone)
 "XC" = (
@@ -17754,7 +17748,7 @@
 	name = null;
 	pixel_y = 28
 	},
-/turf/simulated/floor/wood,
+/turf/simulated/floor/carpet/cyan,
 /area/station/civilian/dormitories/dormfive)
 "XD" = (
 /obj/machinery/alarm{
@@ -33436,9 +33430,9 @@ zB
 zB
 zB
 th
-uq
+kJ
 Pk
-aZ
+xA
 bE
 WO
 Pi
@@ -33950,7 +33944,7 @@ zB
 zB
 zB
 th
-uq
+Kv
 dV
 Jb
 Bb
@@ -35774,7 +35768,7 @@ yO
 jm
 UE
 UE
-kJ
+UE
 Iy
 UE
 UE
@@ -41693,8 +41687,8 @@ IB
 XX
 Wc
 IB
+wD
 iJ
-Kv
 IB
 IB
 Mx
@@ -42438,7 +42432,7 @@ GU
 GU
 GU
 dX
-dX
+fm
 dX
 dX
 fi
@@ -42960,7 +42954,7 @@ FX
 dn
 Tc
 Av
-Fy
+aZ
 Xm
 LM
 uh
