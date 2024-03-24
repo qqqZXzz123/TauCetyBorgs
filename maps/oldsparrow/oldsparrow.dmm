@@ -271,11 +271,13 @@
 	},
 /area/station/hallway/primary/central)
 "aZ" = (
-/obj/machinery/vending/holy,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 5
 	},
-/area/station/maintenance/dormitory)
+/turf/simulated/floor/plating,
+/area/station/engineering/drone_fabrication)
 "ba" = (
 /obj/structure/table,
 /obj/item/weapon/paper_bin{
@@ -412,7 +414,8 @@
 	pixel_x = 30
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "bv" = (
@@ -1504,7 +1507,8 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "eJ" = (
@@ -1761,6 +1765,12 @@
 	icon_state = "brownold"
 	},
 /area/station/civilian/dormitories)
+"fm" = (
+/obj/structure/sign/poster/contraband/hacking_guide{
+	pixel_y = -32
+	},
+/turf/simulated/wall,
+/area/station/civilian/dormitories/dormthree)
 "fn" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
@@ -2562,8 +2572,9 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	dir = 6;
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "hw" = (
@@ -3115,7 +3126,8 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "jd" = (
@@ -3361,8 +3373,8 @@
 	},
 /area/station/tcommsat/chamber)
 "jI" = (
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "jJ" = (
@@ -3667,7 +3679,7 @@
 "kx" = (
 /obj/machinery/computer/drone_control,
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "ky" = (
@@ -3744,11 +3756,9 @@
 	},
 /area/station/hallway/primary/central)
 "kJ" = (
-/obj/structure/sign/poster/contraband/hacking_guide{
-	pixel_y = -32
-	},
+/obj/structure/sign/poster/contraband/power,
 /turf/simulated/wall,
-/area/station/civilian/dormitories/dormthree)
+/area/station/hallway/secondary/arrival)
 "kK" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'HIGH VOLTAGE'";
@@ -4743,7 +4753,6 @@
 	dir = 10
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
@@ -4847,7 +4856,7 @@
 	lightswitch = 0
 	})
 "nE" = (
-/obj/machinery/vending/cola,
+/obj/random/vending/snack,
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "black"
@@ -5806,6 +5815,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/machinery/cell_charger,
+/obj/item/weapon/stock_parts/cell/high,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -6020,6 +6030,16 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/carpet/purple,
 /area/station/civilian/dormitories/dormtwo)
+"qC" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Airlock";
+	req_access = list(1)
+	},
+/turf/simulated/floor{
+	dir = 5;
+	icon_state = "vault"
+	},
+/area/station/hallway/secondary/exit)
 "qE" = (
 /obj/machinery/telecomms/bus/preset_two,
 /turf/simulated/floor/bluegrid{
@@ -6458,6 +6478,13 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"sd" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	dir = 4;
+	icon_state = "dark"
+	},
+/area/station/engineering/drone_fabrication)
 "se" = (
 /obj/structure/table,
 /obj/item/weapon/defibrillator/loaded,
@@ -6582,10 +6609,6 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
-"st" = (
-/obj/structure/sign/poster/contraband/robust_softdrinks,
-/turf/simulated/wall,
-/area/station/hallway/secondary/arrival)
 "su" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -8117,6 +8140,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
+"wD" = (
+/obj/machinery/vending/holy,
+/turf/simulated/floor{
+	icon_state = "floorgrime"
+	},
+/area/station/maintenance/dormitory)
 "wF" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	dir = 1
@@ -10830,7 +10859,8 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Eg" = (
@@ -11245,7 +11275,8 @@
 "Fq" = (
 /obj/structure/closet/toolcloset,
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Ft" = (
@@ -11418,10 +11449,10 @@
 /turf/simulated/floor/plating/airless/catwalk,
 /area/station/solar/port)
 "FP" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/recharge_station,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	dir = 5;
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "FQ" = (
@@ -11908,12 +11939,6 @@
 	icon_state = "asteroidfloor"
 	},
 /area/asteroid/mine/unexplored)
-"Hq" = (
-/obj/structure/sign/poster/contraband/lusty_xenomorph,
-/turf/simulated/wall,
-/area/station/civilian/toilet{
-	lightswitch = 0
-	})
 "Hr" = (
 /obj/structure/closet/wardrobe/medic_white,
 /obj/item/weapon/storage/bag/chemistry,
@@ -12949,8 +12974,8 @@
 /area/shuttle/escape_pod8/station)
 "Kl" = (
 /obj/machinery/drone_fabricator,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "Kn" = (
@@ -13030,7 +13055,7 @@
 	lightswitch = 0
 	})
 "Kv" = (
-/obj/structure/sign/poster/contraband/power,
+/obj/structure/sign/poster/contraband/robust_softdrinks,
 /turf/simulated/wall,
 /area/station/hallway/secondary/arrival)
 "Kw" = (
@@ -15504,11 +15529,14 @@
 "RH" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/obj/item/weapon/storage/toolbox/electrical,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
-/obj/item/weapon/stock_parts/cell/high,
+/obj/machinery/cell_charger,
+/obj/item/weapon/stock_parts/cell/high{
+	pixel_x = 4;
+	pixel_y = 4
+	},
 /obj/item/weapon/stock_parts/cell/high,
 /turf/simulated/floor{
 	dir = 4;
@@ -15582,7 +15610,7 @@
 "RW" = (
 /obj/machinery/computer/security/engineering/drone,
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "RY" = (
@@ -15835,8 +15863,12 @@
 	dir = 8;
 	network = list("SS13","Medical")
 	},
+/obj/structure/stool/bed/chair/metal{
+	dir = 8
+	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "SE" = (
@@ -16332,8 +16364,6 @@
 	})
 "TK" = (
 /obj/machinery/door/airlock/external{
-	dock_tag = "arrival_escape";
-	locked = 1;
 	name = "Escape Airlock"
 	},
 /turf/simulated/floor{
@@ -16418,7 +16448,7 @@
 /area/station/maintenance/bridge)
 "TV" = (
 /obj/structure/table,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/weapon/storage/toolbox/electrical,
 /turf/simulated/floor/bluegrid{
 	icon_state = "elevatorshaft";
 	name = "Server Walkway";
@@ -16791,8 +16821,9 @@
 /area/station/hallway/secondary/exit)
 "UQ" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor{
-	icon_state = "floorgrime"
+/turf/simulated/floor/plating{
+	dir = 6;
+	icon_state = "warnplate"
 	},
 /area/station/engineering/drone_fabrication)
 "UT" = (
@@ -17316,6 +17347,7 @@
 	},
 /area/station/hallway/primary/central)
 "Wr" = (
+/obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor{
 	dir = 8;
 	icon_state = "floorscorched2"
@@ -17527,7 +17559,8 @@
 	req_access = list(32)
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Xa" = (
@@ -17607,7 +17640,6 @@
 	dir = 9
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
@@ -17677,7 +17709,8 @@
 	pixel_y = 7
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Xr" = (
@@ -18035,7 +18068,8 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "Yq" = (
@@ -18240,7 +18274,6 @@
 	dir = 5
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
@@ -18254,11 +18287,9 @@
 /turf/simulated/wall,
 /area/station/solar/auxport)
 "YR" = (
-/obj/structure/stool/bed/chair/metal{
-	dir = 1
-	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "YS" = (
@@ -18284,7 +18315,8 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor{
-	icon_state = "floorgrime"
+	dir = 4;
+	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
 "YV" = (
@@ -33432,7 +33464,7 @@ zB
 zB
 zB
 th
-Kv
+kJ
 Pk
 xA
 bE
@@ -33714,7 +33746,7 @@ TK
 IR
 UE
 jm
-XE
+qC
 jm
 Ib
 UE
@@ -33946,7 +33978,7 @@ zB
 zB
 zB
 th
-st
+Kv
 dV
 Jb
 Bb
@@ -37521,8 +37553,8 @@ Mx
 sn
 sn
 sn
-Mx
-Mx
+sn
+sn
 Mx
 Mx
 Mx
@@ -37776,17 +37808,17 @@ ig
 ig
 Mx
 Mx
-Mx
-Mx
-Mx
-Mx
-Mx
-Mx
+sn
+sn
+sn
+sn
+sn
+sn
 Mx
 nz
 jI
 RW
-jI
+YR
 Ef
 Yp
 WZ
@@ -38034,16 +38066,16 @@ ig
 ig
 Mx
 Mx
-Mx
-Mx
-Mx
-Mx
 sn
 sn
+sn
+sn
+sn
+Mx
 mV
 hv
-jI
-jI
+YR
+sd
 YT
 jb
 nz
@@ -38294,9 +38326,9 @@ Mx
 Mx
 Mx
 Mx
+sn
+sn
 Mx
-sn
-sn
 Zm
 Xq
 SD
@@ -38553,11 +38585,11 @@ Mx
 Mx
 Mx
 sn
-sn
+Mx
 nz
 nz
-nz
-nz
+aZ
+aZ
 nz
 nz
 nz
@@ -38812,10 +38844,10 @@ Mx
 Mx
 Mx
 Mx
-Mx
-Mx
-Mx
-Mx
+ig
+ig
+ig
+ig
 Mx
 Mx
 ZQ
@@ -39069,10 +39101,10 @@ ig
 ig
 ig
 ig
-Mx
-Mx
-Mx
-Mx
+ig
+ig
+ig
+ig
 Mx
 Mx
 ZQ
@@ -41689,7 +41721,7 @@ IB
 XX
 Wc
 IB
-aZ
+wD
 iJ
 IB
 IB
@@ -42434,7 +42466,7 @@ GU
 GU
 GU
 dX
-kJ
+fm
 dX
 dX
 fi
@@ -42956,7 +42988,7 @@ FX
 dn
 Tc
 Av
-Hq
+Fy
 Xm
 LM
 uh
