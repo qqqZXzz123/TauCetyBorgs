@@ -4753,7 +4753,6 @@
 	dir = 10
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
@@ -17641,7 +17640,6 @@
 	dir = 9
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
@@ -18276,7 +18274,6 @@
 	dir = 5
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
