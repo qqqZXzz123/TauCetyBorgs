@@ -1,4 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/simulated/floor/carpet,
+/area/station/civilian/chapel)
 "ab" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -150,11 +153,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfour)
-"aF" = (
-/obj/structure/window/reinforced,
-/turf/simulated/floor/airless{
-	dir = 8;
-	icon_state = "asteroidwarning"
+"aI" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/carpet{
+	icon_state = "carpetsymbol"
 	},
 /area/station/civilian/chapel)
 "aJ" = (
@@ -174,21 +181,6 @@
 	icon_state = "warnplate"
 	},
 /area/station/maintenance/engineering)
-"aL" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/window/eastleft,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/airless{
-	dir = 4;
-	icon_state = "asteroidwarning"
-	},
-/area/station/civilian/chapel)
 "aN" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -264,6 +256,20 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"aU" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/airless{
+	dir = 8;
+	icon_state = "asteroidwarning"
+	},
+/area/station/civilian/chapel)
 "aV" = (
 /obj/machinery/chem_dispenser/soda{
 	pixel_y = 10
@@ -317,6 +323,17 @@
 	icon_state = "dark"
 	},
 /area/station/hallway/primary/central)
+"bb" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	dir = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/station/solar/port)
 "bd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -377,6 +394,9 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"bh" = (
+/turf/simulated/mineral/random/low_chance,
+/area/space)
 "bl" = (
 /obj/structure/drain{
 	drainage = 2
@@ -534,6 +554,13 @@
 	icon_state = "bot"
 	},
 /area/station/hallway/secondary/entry)
+"bH" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/airless{
+	dir = 8;
+	icon_state = "asteroidwarning"
+	},
+/area/station/civilian/chapel)
 "bI" = (
 /obj/machinery/alarm{
 	dir = 0;
@@ -714,12 +741,6 @@
 	},
 /turf/simulated/floor/carpet/black,
 /area/station/bridge/captain_quarters)
-"cg" = (
-/turf/simulated/floor/airless{
-	dir = 8;
-	icon_state = "asteroidwarning"
-	},
-/area/station/civilian/chapel)
 "cj" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor,
@@ -914,6 +935,11 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"cL" = (
+/obj/structure/grille,
+/obj/structure/grille,
+/turf/environment/space,
+/area/space)
 "cN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -989,17 +1015,6 @@
 /obj/effect/spawner/lootdrop/glowstick,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
-"da" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	dir = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/plating/airless{
-	icon_state = "asteroidplating"
-	},
-/area/station/solar/port)
 "db" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1231,6 +1246,21 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"dI" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/station/civilian/chapel)
+"dK" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+/area/station/civilian/chapel)
 "dL" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -1488,6 +1518,9 @@
 	icon_state = "asteroidfloor"
 	},
 /area/station/civilian/hydroponics)
+"ez" = (
+/turf/simulated/floor/plating/airless/asteroid,
+/area/station/civilian/chapel)
 "eA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1908,9 +1941,6 @@
 	icon_state = "asteroidwarning"
 	},
 /area/station/maintenance/bridge)
-"fB" = (
-/turf/simulated/floor/carpet,
-/area/station/civilian/chapel)
 "fD" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/machinery/light/small{
@@ -1933,12 +1963,6 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
-"fL" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/simulated/floor/carpet,
-/area/station/civilian/chapel)
 "fM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -2061,15 +2085,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfive)
-"gd" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/simulated/floor/airless{
-	dir = 4;
-	icon_state = "asteroidwarning"
-	},
-/area/station/civilian/chapel)
 "ge" = (
 /obj/machinery/deepfryer,
 /obj/machinery/light{
@@ -2304,11 +2319,6 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/bridge)
-"gL" = (
-/obj/structure/grille,
-/obj/structure/grille,
-/turf/environment/space,
-/area/space)
 "gM" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -3378,17 +3388,6 @@
 /area/station/civilian/toilet{
 	lightswitch = 0
 	})
-"jz" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/simulated/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
-/area/station/civilian/chapel)
 "jA" = (
 /obj/machinery/computer/libraryconsole/bookmanagement/old,
 /obj/structure/table,
@@ -3489,16 +3488,6 @@
 "jM" = (
 /turf/simulated/wall/r_wall,
 /area/station/storage/emergency3)
-"jN" = (
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/turf/simulated/floor/plating/airless{
-	icon_state = "asteroidplating"
-	},
-/area/station/solar/port)
 "jP" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 4
@@ -3513,13 +3502,6 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
-"jU" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/table/woodentable/fancy,
-/turf/simulated/floor/carpet/black,
-/area/station/civilian/chapel)
 "jV" = (
 /obj/structure/grille{
 	destroyed = 1
@@ -3543,6 +3525,20 @@
 /area/station/civilian/kitchen{
 	lightswitch = 0
 	})
+"jY" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/airless{
+	dir = 5;
+	icon_state = "asteroidfloor"
+	},
+/area/station/civilian/chapel)
 "jZ" = (
 /obj/structure/window/basic{
 	dir = 1
@@ -3811,9 +3807,16 @@
 	icon_state = "whitebluefull"
 	},
 /area/station/storage/emergency3)
-"kD" = (
-/obj/machinery/door/window/eastleft{
-	dir = 1
+"kE" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = null;
+	pixel_y = 28
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
 	},
 /turf/simulated/floor/carpet,
 /area/station/civilian/chapel)
@@ -3851,6 +3854,17 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
+"kI" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/carpet,
+/area/station/civilian/chapel)
 "kJ" = (
 /obj/structure/sign/poster/contraband/power,
 /turf/simulated/wall,
@@ -4030,6 +4044,18 @@
 	icon_state = "white"
 	},
 /area/station/civilian/dormitories)
+"ld" = (
+/obj/structure/stool/bed/chair/lectern,
+/obj/machinery/driver_button{
+	id = "chapelgun";
+	name = "Chapel Mass Driver";
+	pixel_x = 25
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/carpet/black,
+/area/station/civilian/chapel)
 "le" = (
 /obj/structure/window/reinforced/polarized{
 	dir = 4;
@@ -4066,6 +4092,14 @@
 	},
 /turf/simulated/floor/plating/ironsand,
 /area/station/civilian/hydroponics)
+"lh" = (
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/eastleft,
+/turf/simulated/floor/airless{
+	dir = 4;
+	icon_state = "asteroidwarning"
+	},
+/area/station/civilian/chapel)
 "li" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -4336,6 +4370,15 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"lR" = (
+/obj/structure/sign/departments/holy{
+	pixel_y = 32
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/space)
 "lS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4792,6 +4835,17 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"nc" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+/area/station/civilian/chapel)
 "nj" = (
 /turf/simulated/floor{
 	icon_state = "showroomfloor"
@@ -4833,6 +4887,13 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/secondary/exit)
+"no" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/airless{
+	dir = 5;
+	icon_state = "asteroidfloor"
+	},
+/area/station/civilian/chapel)
 "ns" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
 	dir = 1
@@ -5396,6 +5457,12 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"oG" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/station/civilian/chapel)
 "oH" = (
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet/captain,
@@ -5491,6 +5558,12 @@
 /area/station/civilian/gym{
 	lightswitch = 0
 	})
+"oO" = (
+/turf/simulated/floor/airless{
+	dir = 8;
+	icon_state = "asteroidwarning"
+	},
+/area/station/civilian/chapel)
 "oP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5510,6 +5583,15 @@
 	icon_state = "warnwhite"
 	},
 /area/station/hallway/secondary/entry)
+"oT" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/carpet{
+	icon_state = "carpetsymbol"
+	},
+/area/station/civilian/chapel)
 "oU" = (
 /obj/structure/closet/toolcloset,
 /obj/effect/spawner/lootdrop/maintenance/three,
@@ -5696,18 +5778,6 @@
 	icon_state = "warning"
 	},
 /area/station/hallway/secondary/exit)
-"ps" = (
-/obj/structure/table/woodentable/fancy,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/carpet/black,
-/area/station/civilian/chapel)
 "pt" = (
 /obj/machinery/light{
 	dir = 1
@@ -5964,17 +6034,6 @@
 	icon_state = "dark"
 	},
 /area/station/hallway/primary/central)
-"qh" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/carpet,
-/area/station/civilian/chapel)
 "qi" = (
 /obj/item/device/radio/intercom{
 	pixel_x = -28
@@ -6485,6 +6544,12 @@
 	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/station/solar/port)
+"rN" = (
+/obj/machinery/door/window/eastleft{
+	dir = 1
+	},
+/turf/simulated/floor/carpet,
+/area/station/civilian/chapel)
 "rO" = (
 /obj/structure/dryer{
 	dir = 4;
@@ -7519,9 +7584,6 @@
 /area/station/civilian/gym{
 	lightswitch = 0
 	})
-"us" = (
-/turf/simulated/wall,
-/area/station/civilian/chapel)
 "ut" = (
 /obj/machinery/shower{
 	pixel_y = 24
@@ -7654,15 +7716,6 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
-"uH" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/simulated/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
-/area/station/civilian/chapel)
 "uJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8159,13 +8212,6 @@
 /area/station/bridge/comms{
 	lightswitch = 0
 	})
-"wj" = (
-/obj/structure/window/reinforced,
-/turf/simulated/floor/airless{
-	dir = 5;
-	icon_state = "asteroidfloor"
-	},
-/area/station/civilian/chapel)
 "wk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -8254,10 +8300,6 @@
 	icon_state = "solarpanel"
 	},
 /area/station/solar/port)
-"wy" = (
-/obj/structure/stool/bed/chair/pew/left,
-/turf/simulated/floor/plating/airless/asteroid,
-/area/station/civilian/chapel)
 "wz" = (
 /turf/simulated/wall,
 /area/station/engineering/break_room{
@@ -8273,17 +8315,6 @@
 	icon_state = "floor"
 	},
 /area/shuttle/escape_pod8/station)
-"wB" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/simulated/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
-/area/station/civilian/chapel)
 "wC" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/external{
@@ -8355,14 +8386,6 @@
 /area/station/civilian/toilet{
 	lightswitch = 0
 	})
-"wO" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating/airless/asteroid,
-/area/station/civilian/chapel)
 "wP" = (
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet{
@@ -8441,20 +8464,6 @@
 	icon_state = "asteroidfloor"
 	},
 /area/station/civilian/hydroponics)
-"xa" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/airless{
-	dir = 8;
-	icon_state = "asteroidwarning"
-	},
-/area/station/civilian/chapel)
 "xb" = (
 /obj/structure/stool/bed/chair/comfy/black,
 /turf/simulated/floor/carpet/black,
@@ -8558,6 +8567,9 @@
 /area/station/security/main{
 	lightswitch = 0
 	})
+"xo" = (
+/turf/simulated/floor/plating/airless/asteroid,
+/area/space)
 "xp" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -8622,18 +8634,6 @@
 /area/station/engineering/break_room{
 	lightswitch = 0
 	})
-"xx" = (
-/obj/structure/stool/bed/chair/lectern,
-/obj/machinery/driver_button{
-	id = "chapelgun";
-	name = "Chapel Mass Driver";
-	pixel_x = 25
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/carpet/black,
-/area/station/civilian/chapel)
 "xy" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 9
@@ -8823,9 +8823,6 @@
 	icon_state = "asteroid_dug"
 	},
 /area/asteroid/mine/unexplored)
-"xV" = (
-/turf/simulated/mineral/random/caves,
-/area/space)
 "xX" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -9609,12 +9606,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
-"Af" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/floor/carpet,
-/area/station/civilian/chapel)
 "Ag" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /turf/simulated/floor/bluegrid{
@@ -9924,12 +9915,6 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
-"AO" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/simulated/floor/plating/airless/asteroid,
-/area/station/civilian/chapel)
 "AQ" = (
 /obj/machinery/door/window/eastright{
 	dir = 1;
@@ -10009,6 +9994,12 @@
 	temperature = 80
 	},
 /area/station/tcommsat/chamber)
+"AX" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/carpet,
+/area/station/civilian/chapel)
 "AY" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -10108,6 +10099,13 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/primary/central)
+"Bo" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/table/woodentable/fancy,
+/turf/simulated/floor/carpet/black,
+/area/station/civilian/chapel)
 "Bp" = (
 /obj/effect/decal/cleanable/shreds,
 /obj/item/stack/sheet/mineral/uranium{
@@ -10318,6 +10316,14 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"BP" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/station/solar/port)
 "BU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -10421,6 +10427,21 @@
 	icon_state = "warnplate"
 	},
 /area/station/storage/emergency3)
+"Cp" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/window/eastleft,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/airless{
+	dir = 4;
+	icon_state = "asteroidwarning"
+	},
+/area/station/civilian/chapel)
 "Cr" = (
 /obj/structure/table,
 /obj/item/weapon/reagent_containers/food/snacks/grown/harebell{
@@ -10859,12 +10880,6 @@
 "Dz" = (
 /turf/simulated/mineral,
 /area/station/construction)
-"DB" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/simulated/floor/carpet,
-/area/station/civilian/chapel)
 "DD" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -11177,14 +11192,6 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
-"Ev" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/carpet,
-/area/station/civilian/chapel)
 "Ew" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor{
@@ -11920,6 +11927,16 @@
 	icon_state = "black"
 	},
 /area/station/civilian/dormitories)
+"Gw" = (
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/station/solar/port)
 "Gx" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -12099,6 +12116,14 @@
 "GU" = (
 /turf/simulated/wall,
 /area/station/civilian/dormitories/dormtwo)
+"GV" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/station/civilian/chapel)
 "GX" = (
 /obj/machinery/atmospherics/pipe/manifold/visible,
 /obj/machinery/meter,
@@ -12194,20 +12219,6 @@
 /area/station/bridge{
 	lightswitch = 0
 	})
-"Hy" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/airless{
-	dir = 5;
-	icon_state = "asteroidfloor"
-	},
-/area/station/civilian/chapel)
 "Hz" = (
 /turf/simulated/floor/plating/airless/asteroid,
 /area/station/maintenance/dormitory)
@@ -12347,6 +12358,12 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"HW" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/carpet,
+/area/station/civilian/chapel)
 "HX" = (
 /obj/structure/window/basic{
 	dir = 1
@@ -12425,6 +12442,10 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormtwo)
+"Ii" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/carpet,
+/area/station/civilian/chapel)
 "Ij" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -12731,9 +12752,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/station/storage/emergency3)
-"Jg" = (
-/turf/simulated/floor/plating/airless/asteroid,
-/area/space)
 "Jh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -13198,6 +13216,10 @@
 /mob/living/simple_animal/hostile/retaliate/malf_drone,
 /turf/environment/space,
 /area/space)
+"Kj" = (
+/obj/structure/stool/bed/chair/pew/left,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/station/civilian/chapel)
 "Kk" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -13456,9 +13478,6 @@
 /area/station/medical/sleeper{
 	lightswitch = 0
 	})
-"KQ" = (
-/turf/environment/space,
-/area/station/civilian/chapel)
 "KR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13942,14 +13961,13 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"Mn" = (
+/obj/structure/stool/bed/chair/pew/right,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/station/civilian/chapel)
 "Mo" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating/airless{
-	icon_state = "asteroidplating"
-	},
-/area/station/solar/port)
+/turf/environment/space,
+/area/station/civilian/chapel)
 "Mp" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable{
@@ -14209,10 +14227,6 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/primary/central)
-"MY" = (
-/obj/structure/window/reinforced,
-/turf/simulated/floor/carpet,
-/area/station/civilian/chapel)
 "MZ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4
@@ -14528,15 +14542,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/station/construction)
-"NF" = (
-/obj/structure/sign/departments/holy{
-	pixel_y = 32
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/plating/airless/asteroid,
-/area/space)
 "NG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14988,16 +14993,9 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
-"OO" = (
-/obj/structure/stool/bed/chair/pew/right,
-/turf/simulated/floor/plating/airless/asteroid,
-/area/station/civilian/chapel)
 "OU" = (
 /turf/simulated/wall,
 /area/station/maintenance/medbay)
-"OW" = (
-/turf/simulated/mineral/random/low_chance,
-/area/space)
 "Pa" = (
 /obj/structure/stool/bed/chair/pedalgen{
 	dir = 1
@@ -15257,6 +15255,15 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
+"PO" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/airless{
+	dir = 4;
+	icon_state = "asteroidwarning"
+	},
+/area/station/civilian/chapel)
 "PQ" = (
 /obj/machinery/computer/stockexchange,
 /obj/structure/table,
@@ -15268,6 +15275,18 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"PR" = (
+/obj/structure/table/woodentable/fancy,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/carpet/black,
+/area/station/civilian/chapel)
 "PU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15562,6 +15581,9 @@
 	icon_state = "warnplate"
 	},
 /area/station/maintenance/dormitory)
+"QL" = (
+/turf/simulated/wall,
+/area/station/civilian/chapel)
 "QO" = (
 /obj/structure/sink{
 	dir = 4;
@@ -15604,14 +15626,6 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
-"QX" = (
-/obj/structure/window/reinforced,
-/obj/machinery/door/window/eastleft,
-/turf/simulated/floor/airless{
-	dir = 4;
-	icon_state = "asteroidwarning"
-	},
-/area/station/civilian/chapel)
 "QY" = (
 /obj/structure/cable{
 	d2 = 4;
@@ -15635,9 +15649,6 @@
 	icon_state = "platingdmg1"
 	},
 /area/station/maintenance/bridge)
-"Ra" = (
-/turf/simulated/floor/plating/airless/asteroid,
-/area/station/civilian/chapel)
 "Rb" = (
 /obj/structure/stool/bed/chair/schair/wagon/bench{
 	icon_state = "bench_2"
@@ -15661,6 +15672,14 @@
 /obj/structure/firedoor_assembly,
 /turf/simulated/floor/plating,
 /area/station/construction)
+"Rf" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/carpet,
+/area/station/civilian/chapel)
 "Rk" = (
 /obj/machinery/computer/security/engineering{
 	dir = 8
@@ -15690,6 +15709,16 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/bridge/captain_quarters)
+"Rp" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/mass_driver{
+	dir = 8;
+	id = "chapelgun"
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/station/civilian/chapel)
 "Rq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15882,6 +15911,9 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"RV" = (
+/turf/simulated/mineral/random/caves,
+/area/space)
 "RW" = (
 /obj/machinery/computer/security/engineering/drone,
 /turf/simulated/floor{
@@ -16132,16 +16164,6 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
-"SB" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/mass_driver{
-	dir = 8;
-	id = "chapelgun"
-	},
-/turf/simulated/floor/plating/airless/asteroid,
-/area/station/civilian/chapel)
 "SD" = (
 /obj/machinery/camera{
 	c_tag = "Medbay East";
@@ -17917,12 +17939,6 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
-"Xj" = (
-/turf/simulated/floor/airless{
-	dir = 5;
-	icon_state = "asteroidfloor"
-	},
-/area/station/civilian/chapel)
 "Xk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 10
@@ -18031,6 +18047,12 @@
 /area/station/civilian/kitchen{
 	lightswitch = 0
 	})
+"Xu" = (
+/turf/simulated/floor/airless{
+	dir = 5;
+	icon_state = "asteroidfloor"
+	},
+/area/station/civilian/chapel)
 "Xw" = (
 /turf/simulated/floor{
 	dir = 4;
@@ -18051,19 +18073,6 @@
 	icon_state = "asteroidplating"
 	},
 /area/station/solar/auxport)
-"Xz" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = null;
-	pixel_y = 28
-	},
-/obj/structure/cable{
-	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 1
-	},
-/turf/simulated/floor/carpet,
-/area/station/civilian/chapel)
 "XA" = (
 /obj/item/weapon/flora/random,
 /obj/machinery/firealarm{
@@ -18267,15 +18276,6 @@
 	icon_state = "whiteblue_ex"
 	},
 /area/station/storage/emergency3)
-"Ya" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
-/area/station/civilian/chapel)
 "Yb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -24621,8 +24621,8 @@ Vi
 Vi
 Vi
 Vi
-KQ
-KQ
+Mo
+Mo
 th
 th
 th
@@ -24878,8 +24878,8 @@ th
 rh
 th
 Vi
-KQ
-KQ
+Mo
+Mo
 th
 th
 th
@@ -25126,17 +25126,17 @@ th
 th
 Vi
 th
-wB
-Af
-Af
-Af
-Af
-Af
-Ya
+nc
+dI
+dI
+dI
+dI
+dI
+oT
 we
 Vi
-KQ
-KQ
+Mo
+Mo
 th
 th
 th
@@ -25382,14 +25382,14 @@ Vi
 Vi
 we
 we
-AO
-kD
-Ra
-Ra
-wy
-wy
-wy
-MY
+oG
+rN
+ez
+ez
+Kj
+Kj
+Kj
+Ii
 th
 Vi
 ah
@@ -25638,15 +25638,15 @@ wx
 th
 Vi
 th
-Jg
-SB
-fL
-jU
-AO
-OO
-OO
-OO
-MY
+xo
+Rp
+AX
+Bo
+oG
+Mn
+Mn
+Mn
+Ii
 th
 Vi
 th
@@ -25896,14 +25896,14 @@ th
 rI
 we
 we
-us
-Xz
-xx
-AO
-Ra
-Ra
-Ra
-MY
+QL
+kE
+ld
+oG
+ez
+ez
+ez
+Ii
 th
 Vi
 ah
@@ -26154,13 +26154,13 @@ Vi
 th
 Vi
 we
-fL
-ps
-AO
-wy
-wy
-wy
-MY
+AX
+PR
+oG
+Kj
+Kj
+Kj
+Ii
 th
 Vi
 th
@@ -26411,15 +26411,15 @@ Vi
 we
 Vi
 we
-fL
-wO
-Ra
-OO
-OO
-OO
-MY
+AX
+GV
+ez
+Mn
+Mn
+Mn
+Ii
 th
-gL
+cL
 th
 th
 th
@@ -26668,13 +26668,13 @@ th
 th
 rI
 we
-jz
-qh
-Ev
-fB
-fB
-DB
-uH
+aI
+kI
+Rf
+aa
+aa
+HW
+dK
 we
 Vi
 th
@@ -26927,9 +26927,9 @@ Vi
 th
 we
 th
-xa
-cg
-aF
+aU
+oO
+bH
 th
 we
 th
@@ -27184,9 +27184,9 @@ Vi
 th
 we
 th
-Hy
-Xj
-wj
+jY
+Xu
+no
 th
 we
 Vi
@@ -27441,13 +27441,13 @@ we
 th
 we
 th
-Hy
-Xj
-wj
+jY
+Xu
+no
 th
 we
 th
-th
+we
 ah
 th
 ah
@@ -27698,13 +27698,13 @@ we
 th
 we
 th
-aL
-gd
-QX
+Cp
+PO
+lh
 th
 we
 th
-th
+we
 th
 th
 ah
@@ -27947,21 +27947,21 @@ un
 un
 un
 un
-jN
-Mo
-Mo
-Mo
-Mo
-Mo
-Mo
-Mo
-da
+Gw
+BP
+BP
+BP
+BP
+BP
+BP
+BP
+bb
 un
-xV
-th
+un
+RV
 we
 th
-th
+we
 th
 th
 th
@@ -28214,11 +28214,11 @@ qe
 un
 un
 un
-xV
-xV
-xV
-xV
-xV
+un
+RV
+RV
+RV
+RV
 FK
 th
 th
@@ -28466,16 +28466,16 @@ Rs
 Rs
 Rs
 Rs
-xV
+RV
 oh
-NF
-Jg
-Jg
-Jg
-xV
-xV
-OW
-OW
+lR
+xo
+xo
+xo
+RV
+RV
+bh
+bh
 FK
 FK
 th
@@ -28723,16 +28723,16 @@ Rs
 Rs
 FK
 FK
-xV
-xV
-xV
-xV
-Jg
-Jg
-Jg
-xV
-OW
-OW
+RV
+RV
+RV
+RV
+xo
+xo
+xo
+RV
+bh
+bh
 eN
 FK
 FK
@@ -28980,16 +28980,16 @@ Rs
 Rs
 FK
 FK
-xV
-xV
-xV
-xV
-Jg
-Jg
-Jg
-xV
-OW
-OW
+RV
+RV
+RV
+RV
+xo
+xo
+xo
+RV
+bh
+bh
 eN
 eN
 FK
