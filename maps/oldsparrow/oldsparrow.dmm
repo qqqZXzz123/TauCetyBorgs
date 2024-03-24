@@ -276,12 +276,12 @@
 /obj/structure/window/reinforced{
 	dir = 5
 	},
-/turf/simulated/floor/plating,
-/area/station/engineering/drone_fabrication)
 /obj/machinery/vending/holy,
+/turf/simulated/floor/plating,
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
+/area/station/engineering/drone_fabrication,
 /area/station/maintenance/dormitory)
 "ba" = (
 /obj/structure/table,
@@ -43107,7 +43107,6 @@ th
 th
 th
 ah
-th
 th
 th
 th
