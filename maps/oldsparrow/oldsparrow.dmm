@@ -676,6 +676,15 @@
 	icon_state = "platingdmg1"
 	},
 /area/station/maintenance/dormitory)
+"cb" = (
+/obj/structure/grille,
+/obj/machinery/door/firedoor,
+/obj/structure/window/reinforced{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/turf/simulated/floor/plating,
+/area/station/hallway/secondary/arrival)
 "cc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1479,6 +1488,15 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"eE" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating/airless/catwalk,
+/area/station/solar/auxport)
 "eF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -3013,8 +3031,10 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
-"iF" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
+"iI" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 9
+	},
 /turf/simulated/floor/plating/airless/catwalk,
 /area/station/solar/auxport)
 "iJ" = (
@@ -3440,12 +3460,6 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
-"jS" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 10
-	},
-/turf/simulated/floor/plating/airless/catwalk,
-/area/station/solar/auxport)
 "jV" = (
 /obj/structure/grille{
 	destroyed = 1
@@ -5610,6 +5624,17 @@
 /obj/item/weapon/storage/box/lights/mixed,
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
+"po" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 8
+	},
+/turf/simulated/floor/plating/airless/catwalk,
+/area/station/solar/auxport)
 "pr" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light{
@@ -5642,6 +5667,12 @@
 /area/station/engineering/monitoring{
 	lightswitch = 0
 	})
+"pw" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 10
+	},
+/turf/simulated/floor/plating/airless/catwalk,
+/area/station/solar/auxport)
 "py" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -5742,17 +5773,6 @@
 /area/station/civilian/kitchen{
 	lightswitch = 0
 	})
-"pJ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 6
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/plating/airless/catwalk,
-/area/station/solar/auxport)
 "pK" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/poncho,
@@ -6081,17 +6101,6 @@
 	temperature = 80
 	},
 /area/station/tcommsat/chamber)
-"qG" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 8
-	},
-/turf/simulated/floor/plating/airless/catwalk,
-/area/station/solar/auxport)
 "qK" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
@@ -7206,12 +7215,6 @@
 /turf/simulated/floor/plating/airless{
 	icon_state = "asteroidplating"
 	},
-/area/station/solar/auxport)
-"tH" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 8
-	},
-/turf/simulated/floor/plating/airless/catwalk,
 /area/station/solar/auxport)
 "tK" = (
 /obj/structure/table,
@@ -8786,6 +8789,17 @@
 /area/station/civilian/gym{
 	lightswitch = 0
 	})
+"yi" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 6
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/plating/airless/catwalk,
+/area/station/solar/auxport)
 "yj" = (
 /obj/structure/weightlifter,
 /turf/simulated/floor/carpet/orange,
@@ -10669,12 +10683,6 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
-"Ds" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 9
-	},
-/turf/simulated/floor/plating/airless/catwalk,
-/area/station/solar/auxport)
 "Dv" = (
 /obj/structure/table,
 /obj/item/device/radio/intercom{
@@ -12077,15 +12085,6 @@
 	},
 /turf/environment/space/shuttle,
 /area/shuttle/escape_pod5/station)
-"HC" = (
-/obj/structure/grille,
-/obj/machinery/door/firedoor,
-/obj/structure/window/reinforced{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/turf/simulated/floor/plating,
-/area/station/hallway/secondary/arrival)
 "HD" = (
 /obj/structure/stool/bed/chair/schair/wagon{
 	dir = 1
@@ -12300,15 +12299,6 @@
 	icon_state = "black"
 	},
 /area/station/civilian/dormitories)
-"Ik" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/plating/airless/catwalk,
-/area/station/solar/auxport)
 "Il" = (
 /obj/structure/stool/bed/roller,
 /obj/machinery/alarm{
@@ -15246,6 +15236,12 @@
 /area/station/medical/reception{
 	lightswitch = 0
 	})
+"Qo" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 8
+	},
+/turf/simulated/floor/plating/airless/catwalk,
+/area/station/solar/auxport)
 "Qp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/head/feathertrilby,
@@ -17300,6 +17296,10 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"VW" = (
+/obj/machinery/atmospherics/pipe/simple/visible/green,
+/turf/simulated/floor/plating/airless/catwalk,
+/area/station/solar/auxport)
 "VZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -30989,10 +30989,10 @@ th
 th
 th
 th
-pJ
-Ik
-iF
-Ds
+yi
+eE
+VW
+iI
 of
 zb
 dx
@@ -31503,7 +31503,7 @@ th
 th
 th
 th
-qG
+po
 rT
 fu
 gq
@@ -31760,7 +31760,7 @@ th
 th
 th
 th
-tH
+Qo
 IQ
 eQ
 gN
@@ -32017,7 +32017,7 @@ th
 th
 th
 th
-tH
+Qo
 uq
 Of
 JK
@@ -32274,8 +32274,8 @@ zB
 zB
 zB
 th
-jS
-HC
+pw
+cb
 Dj
 JO
 bg
