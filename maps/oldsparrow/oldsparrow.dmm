@@ -7517,20 +7517,6 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
-"uy" = (
-/obj/structure/closet/secure_closet/miner,
-/obj/item/clothing/suit/space/globose/mining,
-/obj/item/clothing/head/helmet/space/globose/mining,
-/obj/item/clothing/mask/breath,
-/obj/item/weapon/storage/belt,
-/obj/item/device/guitar,
-/obj/item/clothing/shoes/magboots,
-/turf/simulated/floor{
-	icon_state = "yellowfull"
-	},
-/area/station/cargo/miningoffice{
-	lightswitch = 0
-	})
 "uz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13462,6 +13448,7 @@
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/nerdshirt,
 /obj/item/clothing/suit/plaid,
+/obj/item/device/guitar,
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormtwo)
 "Lp" = (
@@ -38220,7 +38207,7 @@ QR
 uG
 NA
 sr
-uy
+NA
 hu
 uG
 XQ
