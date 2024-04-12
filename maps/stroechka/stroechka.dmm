@@ -6097,6 +6097,12 @@
 /obj/structure/stool,
 /turf/simulated/floor,
 /area/station/engineering/atmos)
+"He" = (
+/obj/effect/landmark{
+	name = "Observer-Start"
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/central)
 "Hh" = (
 /obj/structure/stool,
 /obj/structure/cable{
@@ -33815,7 +33821,7 @@ Fe
 GV
 lw
 io
-Mp
+He
 Mp
 Mp
 RP
