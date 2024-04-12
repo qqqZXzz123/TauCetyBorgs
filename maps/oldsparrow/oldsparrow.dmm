@@ -1346,7 +1346,7 @@
 	},
 /obj/item/weapon/storage/toolbox/electrical,
 /obj/item/device/radio/headset/syndicate/alt{
-	desc = "A well-worn gaming headset. Someone has modified it to function as a modular inetcom.";
+	desc = "A well-worn gaming headset. Someone has modified it to function as a modular intercom.";
 	ks1type = /obj/item/device/encryptionkey;
 	name = "Gaming headset";
 	syndie = 0
