@@ -5122,7 +5122,6 @@
 	dir = 10
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
@@ -16111,7 +16110,6 @@
 /area/station/solar/auxport)
 "Qp" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/head/feathertrilby,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
 "Qq" = (
@@ -17255,9 +17253,7 @@
 	pixel_x = -5;
 	pixel_y = 7
 	},
-/obj/item/weapon/paper/capletter{
-	pixel_x = 7
-	},
+/obj/item/weapon/paper/capletter,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -18773,7 +18769,6 @@
 	dir = 9
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
@@ -19430,7 +19425,6 @@
 	dir = 5
 	},
 /obj/machinery/door/window/brigdoor{
-	dir = 3;
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
