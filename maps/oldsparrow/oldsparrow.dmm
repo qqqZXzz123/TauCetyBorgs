@@ -9807,6 +9807,9 @@
 /obj/structure/window/reinforced{
 	dir = 5
 	},
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/station/engineering/atmos{
 	lightswitch = 0
