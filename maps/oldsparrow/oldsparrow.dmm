@@ -14528,6 +14528,10 @@
 	pixel_x = 4;
 	pixel_y = 10
 	},
+/obj/item/clothing/glasses/sunglasses/hud/sechud{
+	pixel_x = 6;
+	pixel_y = -1
+	},
 /turf/simulated/floor/wood,
 /area/station/bridge/captain_quarters)
 "Mm" = (
