@@ -2441,8 +2441,18 @@
 /area/station/hallway/primary/central)
 "gK" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/lootdrop/maintenance/three,
+/obj/item/device/multitool{
+	pixel_x = 8;
+	pixel_y = -4
+	},
 /obj/structure/rack,
+/obj/item/device/radio/off{
+	pixel_y = 12
+	},
+/obj/item/device/radio/off{
+	pixel_x = -6;
+	pixel_y = 6
+	},
 /turf/simulated/floor{
 	icon_state = "floorgrime"
 	},
@@ -17467,18 +17477,7 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
 "TV" = (
-/obj/structure/table,
-/obj/item/device/radio/off{
-	pixel_y = 12
-	},
-/obj/item/device/multitool{
-	pixel_x = 8;
-	pixel_y = -4
-	},
-/obj/item/device/radio/off{
-	pixel_x = -6;
-	pixel_y = 6
-	},
+/obj/machinery/message_server,
 /turf/simulated/floor/bluegrid{
 	icon_state = "elevatorshaft";
 	name = "Server Walkway";
