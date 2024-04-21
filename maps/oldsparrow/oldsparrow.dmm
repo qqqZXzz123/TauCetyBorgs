@@ -34,6 +34,17 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
+"af" = (
+/obj/machinery/light/small,
+/obj/structure/table,
+/obj/item/clothing/suit/space/rig/wizard{
+	armor = list("melee"=40,"bullet"=5,"laser"=10,"energy"=5,"bomb"=55,"bio"=100,"rad"=20);
+	desc = "Old bizarre gem-encrusted suit that radiates magical energies."
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "ag" = (
 /obj/structure/table,
 /obj/item/stack/rods{
@@ -87,6 +98,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/unexplored)
+"ap" = (
+/obj/structure/table,
+/obj/machinery/bunsen_burner{
+	pixel_x = -5
+	},
+/obj/item/device/analyzer{
+	pixel_x = 9;
+	pixel_y = 6
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "ar" = (
 /obj/structure/cable,
 /obj/machinery/power/apc{
@@ -177,6 +201,14 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfour)
+"aH" = (
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/warning/airlock{
+	pixel_y = -32
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/research_outpost/anomaly)
 "aJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -473,6 +505,13 @@
 	icon_state = "dark"
 	},
 /area/station/engineering/drone_fabrication)
+"bs" = (
+/obj/effect/decal/cleanable/generic,
+/obj/item/weapon/ore/glass,
+/turf/simulated/floor/plating/airless/asteroid{
+	icon_state = "asteroid_dug"
+	},
+/area/asteroid/mine/unexplored)
 "bv" = (
 /obj/machinery/alarm{
 	dir = 0;
@@ -883,6 +922,12 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"cx" = (
+/obj/machinery/suspension_gen{
+	dir = 4
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "cz" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -954,6 +999,15 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/primary/central)
+"cH" = (
+/obj/structure/inflatable,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/research_outpost/anomaly)
+"cI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/ore/diamond,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "cK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -965,6 +1019,13 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"cM" = (
+/obj/machinery/floodlight{
+	dir = 4;
+	on = 1
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "cN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1207,6 +1268,30 @@
 	icon_state = "platingdmg3"
 	},
 /area/station/maintenance/dormitory)
+"dp" = (
+/obj/effect/decal/cleanable/generic,
+/obj/item/trash/candle{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/item/trash/candle,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/research_outpost/anomaly)
+"dr" = (
+/obj/structure/table,
+/obj/item/clothing/glasses/science{
+	pixel_x = -4;
+	pixel_y = 6
+	},
+/obj/item/clothing/mask/breath{
+	pixel_x = 4;
+	pixel_y = -4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "dt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1335,6 +1420,17 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/dormitory)
+"dI" = (
+/obj/structure/rack,
+/obj/item/clothing/mask/breath,
+/obj/item/clothing/glasses/science,
+/obj/item/clothing/head/bio_hood/particle_protection,
+/obj/item/clothing/suit/bio_suit/particle_protection,
+/obj/item/clothing/gloves/latex,
+/turf/simulated/floor/plating{
+	icon_state = "floorgrime"
+	},
+/area/asteroid/research_outpost/anomaly)
 "dL" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -1417,16 +1513,16 @@
 	lightswitch = 0
 	})
 "dU" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/flora/floorleaf{
-	pixel_x = 1;
-	pixel_y = 13
-	},
 /obj/item/device/radio/intercom{
 	pixel_y = -32
 	},
 /obj/machinery/camera/autoname{
-	dir = 10
+	dir = 1
+	},
+/obj/machinery/door/window/southright{
+	dir = 4;
+	name = "Bar Door";
+	req_one_access = list(25)
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
@@ -2192,6 +2288,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/hallway/secondary/entry)
+"ga" = (
+/obj/machinery/artifact/bluespace_crystal,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "gb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -2238,6 +2338,11 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"gg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/ore/iron,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "gi" = (
 /obj/machinery/light_switch{
 	pixel_x = 25;
@@ -2358,6 +2463,16 @@
 	icon_state = "asteroidfloor"
 	},
 /area/station/storage/emergency3)
+"gu" = (
+/obj/structure/table,
+/obj/machinery/kitchen_machine/microwave{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "gv" = (
 /obj/machinery/door/firedoor,
 /turf/simulated/floor{
@@ -2398,6 +2513,32 @@
 /area/station/bridge{
 	lightswitch = 0
 	})
+"gB" = (
+/obj/machinery/light/small,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
+/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/soda{
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/obj/item/clothing/glasses/regular{
+	pixel_x = 6;
+	pixel_y = 11
+	},
+/obj/item/weapon/book/manual/wiki/new_excavation{
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
+"gC" = (
+/obj/structure/flora/mine_rocks{
+	icon_state = "basalt3"
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "gH" = (
 /obj/machinery/alarm{
 	dir = 0;
@@ -2985,6 +3126,15 @@
 /area/station/bridge/comms{
 	lightswitch = 0
 	})
+"hX" = (
+/obj/structure/stool/bed,
+/obj/item/weapon/bedsheet/purple{
+	icon_state = "sheetrd"
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "hY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -3003,6 +3153,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/simulated/floor/plating,
 /area/station/maintenance/medbay)
+"if" = (
+/obj/item/inflatable/door/torn,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/research_outpost/anomaly)
 "ig" = (
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/explored)
@@ -3329,6 +3483,13 @@
 /area/station/civilian/bar{
 	lightswitch = 0
 	})
+"iW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/inflatable/door,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "iX" = (
 /turf/simulated/floor/bluegrid{
 	icon_state = "gcircuitoff";
@@ -3405,17 +3566,14 @@
 	lightswitch = 0
 	})
 "je" = (
-/obj/structure/grille,
-/obj/structure/window/basic{
-	dir = 8
-	},
 /obj/structure/window/basic{
 	dir = 4
 	},
-/obj/structure/window/basic,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/station/civilian/kitchen{
+/obj/machinery/vending/boozeomat{
+	req_access = list()
+	},
+/turf/simulated/floor/wood,
+/area/station/civilian/bar{
 	lightswitch = 0
 	})
 "jf" = (
@@ -3701,6 +3859,13 @@
 "jM" = (
 /turf/simulated/wall/r_wall,
 /area/station/storage/emergency3)
+"jO" = (
+/obj/item/tape/science{
+	icon_state = "science_v"
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "jP" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 4
@@ -3715,6 +3880,11 @@
 	icon_state = "floorgrime"
 	},
 /area/station/maintenance/cargo)
+"jR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/ore/coal,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "jV" = (
 /obj/structure/grille{
 	destroyed = 1
@@ -3925,9 +4095,9 @@
 /turf/simulated/wall/r_wall,
 /area/station/hallway/secondary/entry)
 "ks" = (
-/obj/machinery/disposal,
-/obj/structure/disposalpipe/trunk{
-	dir = 8
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
 /obj/machinery/status_display{
 	pixel_y = -32
@@ -4060,6 +4230,14 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
+"kI" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "kJ" = (
 /obj/structure/sign/poster/contraband/power,
 /turf/simulated/wall,
@@ -4605,6 +4783,12 @@
 /obj/effect/decal/cleanable/shreds,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"lW" = (
+/obj/structure/inflatable,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "lX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -4636,6 +4820,17 @@
 	icon_state = "warnplate"
 	},
 /area/station/construction)
+"mb" = (
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/terminal,
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "mc" = (
 /turf/simulated/floor/plating{
 	dir = 9;
@@ -4860,6 +5055,21 @@
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/dormitories/dormfour)
+"mF" = (
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = null;
+	pixel_x = 28
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "mG" = (
 /obj/item/weapon/ore/slag,
 /obj/effect/decal/cleanable/dirt,
@@ -5064,6 +5274,10 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"ne" = (
+/obj/item/weapon/wrench,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "ng" = (
 /obj/structure/grille,
 /obj/structure/cable{
@@ -5630,7 +5844,9 @@
 	},
 /area/station/maintenance/dormitory)
 "oy" = (
-/obj/machinery/power/port_gen/pacman,
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
 /obj/structure/cable{
 	d2 = 4;
 	icon_state = "0-4"
@@ -5699,6 +5915,11 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"oG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/ore,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "oH" = (
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet/captain,
@@ -5807,6 +6028,10 @@
 	icon_state = "warndark"
 	},
 /area/station/maintenance/medbay)
+"oQ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/environment/space,
+/area/asteroid/mine/unexplored)
 "oR" = (
 /obj/machinery/light,
 /turf/simulated/floor{
@@ -6011,6 +6236,12 @@
 	icon_state = "warning"
 	},
 /area/station/hallway/secondary/exit)
+"ps" = (
+/obj/structure/glowshroom,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "pt" = (
 /obj/machinery/light{
 	dir = 1
@@ -6345,6 +6576,12 @@
 	icon_state = "warnwhite"
 	},
 /area/station/hallway/secondary/entry)
+"qp" = (
+/obj/structure/flora/mine_rocks{
+	icon_state = "basalt2"
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "qq" = (
 /obj/structure/grille,
 /obj/machinery/door/firedoor,
@@ -6592,6 +6829,11 @@
 "qZ" = (
 /turf/simulated/wall,
 /area/station/storage/emergency3)
+"ra" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/candle,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/research_outpost/anomaly)
 "rb" = (
 /turf/simulated/wall,
 /area/station/cargo/storage{
@@ -6638,9 +6880,12 @@
 	lightswitch = 0
 	})
 "rn" = (
-/obj/machinery/media/jukebox/bar,
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 2
 	},
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
@@ -6693,6 +6938,37 @@
 	icon_state = "asteroidwarning"
 	},
 /area/asteroid/mine/unexplored)
+"ru" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/table,
+/obj/item/weapon/screwdriver{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/obj/item/stack/sheet/mineral/diamond{
+	pixel_x = 11;
+	pixel_y = 7
+	},
+/obj/item/stack/sheet/mineral/diamond{
+	pixel_x = 7;
+	pixel_y = 2
+	},
+/obj/item/bluespace_crystal{
+	pixel_x = -10;
+	pixel_y = -2
+	},
+/obj/item/bluespace_crystal{
+	pixel_x = -5;
+	pixel_y = -5
+	},
+/obj/item/bluespace_crystal{
+	pixel_x = -6
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "rw" = (
 /obj/structure/rack,
 /obj/item/clothing/shoes/magboots,
@@ -7021,6 +7297,12 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
+"sh" = (
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "si" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/command{
@@ -7146,6 +7428,12 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/station/construction)
+"sA" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "sD" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
@@ -8499,6 +8787,11 @@
 	icon_state = "asteroidwarning"
 	},
 /area/station/storage/emergency3)
+"vY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/ore/slag,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "vZ" = (
 /obj/machinery/door/airlock/external{
 	dock_tag = "pod7"
@@ -8608,6 +8901,12 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"wt" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/airless{
+	icon_state = "floorgrimecaution"
+	},
+/area/asteroid/research_outpost/anomaly)
 "wv" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -8646,6 +8945,13 @@
 	icon_state = "solarpanel"
 	},
 /area/station/solar/port)
+"wy" = (
+/obj/machinery/artifact_harvester,
+/turf/simulated/floor/plating/airless{
+	dir = 1;
+	icon_state = "floorgrimecaution"
+	},
+/area/asteroid/research_outpost/anomaly)
 "wz" = (
 /turf/simulated/wall,
 /area/station/engineering/break_room{
@@ -8704,6 +9010,12 @@
 	icon_state = "asteroidfloor"
 	},
 /area/asteroid/mine/unexplored)
+"wL" = (
+/obj/structure/sign/mark{
+	pixel_x = 32
+	},
+/turf/environment/space,
+/area/space)
 "wM" = (
 /obj/machinery/status_display{
 	layer = 3.3;
@@ -8993,6 +9305,20 @@
 /area/station/engineering/break_room{
 	lightswitch = 0
 	})
+"xu" = (
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
+"xx" = (
+/obj/machinery/power/smes,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "xy" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 9
@@ -9055,6 +9381,10 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"xH" = (
+/obj/item/inflatable/torn,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/research_outpost/anomaly)
 "xI" = (
 /obj/structure/sign/departments/evac{
 	pixel_y = 32
@@ -9068,6 +9398,13 @@
 	icon_state = "asteroidwarning"
 	},
 /area/station/storage/emergency3)
+"xJ" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "xK" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -9530,6 +9867,12 @@
 	icon_state = "white"
 	},
 /area/station/hallway/secondary/exit)
+"yP" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "yQ" = (
 /obj/structure/grille,
 /turf/simulated/floor/plating/airless/asteroid,
@@ -9704,6 +10047,12 @@
 "zp" = (
 /turf/simulated/floor/plating/airless/catwalk,
 /area/space)
+"zq" = (
+/mob/living/simple_animal/hostile/asteroid/goliath,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "zs" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -9899,6 +10248,7 @@
 	})
 "zM" = (
 /obj/structure/stool/bar,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/carpet/black,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -10065,7 +10415,9 @@
 	})
 "Aj" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
@@ -10540,6 +10892,13 @@
 	icon_state = "blackcorner"
 	},
 /area/station/hallway/primary/central)
+"Bm" = (
+/obj/structure/glowshroom,
+/obj/item/weapon/table_parts,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Bp" = (
 /obj/effect/decal/cleanable/shreds,
 /obj/item/stack/sheet/mineral/uranium{
@@ -11083,6 +11442,12 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"CN" = (
+/obj/machinery/artifact_scanpad,
+/turf/simulated/floor/plating/airless{
+	icon_state = "recharge_floor"
+	},
+/area/asteroid/research_outpost/anomaly)
 "CO" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -11169,6 +11534,12 @@
 	icon_state = "white"
 	},
 /area/station/storage/emergency3)
+"Dd" = (
+/obj/item/tape/science{
+	icon_state = "science_h"
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "De" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
@@ -11244,6 +11615,10 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"Dl" = (
+/obj/item/weapon/ore/diamond,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Dn" = (
 /turf/simulated/floor/airless{
 	dir = 5;
@@ -11263,6 +11638,18 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
+"Dr" = (
+/obj/effect/meteor/dust,
+/obj/effect/decal/cleanable/dirt,
+/turf/environment/space,
+/area/asteroid/mine/unexplored)
+"Ds" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/ore/diamond,
+/turf/simulated/floor/plating/airless/asteroid{
+	icon_state = "asteroid_dug"
+	},
+/area/asteroid/mine/unexplored)
 "Dv" = (
 /obj/structure/table,
 /obj/item/device/radio/intercom{
@@ -11342,7 +11729,8 @@
 	},
 /area/station/construction)
 "DF" = (
-/obj/structure/pit/closed/grave,
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/unexplored)
 "DI" = (
@@ -11642,6 +12030,17 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"Ev" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/sign/nanotrasen{
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Ew" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor{
@@ -11651,6 +12050,13 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"EA" = (
+/obj/machinery/floodlight{
+	dir = 8;
+	on = 1
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "EB" = (
 /obj/machinery/vending/assist,
 /obj/machinery/light{
@@ -11780,6 +12186,12 @@
 	icon_state = "asteroidplating"
 	},
 /area/station/solar/port)
+"ES" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/ore/iron,
+/obj/item/weapon/ore/glass,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "ET" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -11927,6 +12339,27 @@
 	icon_state = "asteroidwarning"
 	},
 /area/station/maintenance/dormitory)
+"Fi" = (
+/obj/structure/rack,
+/obj/item/clothing/head/bio_hood/particle_protection{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/clothing/gloves/latex{
+	pixel_x = 5;
+	pixel_y = -1
+	},
+/turf/simulated/floor/plating{
+	icon_state = "floorgrime"
+	},
+/area/asteroid/research_outpost/anomaly)
+"Fm" = (
+/obj/structure/inflatable/door,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Fn" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -12190,6 +12623,12 @@
 	icon_state = "warnwhite"
 	},
 /area/station/hallway/secondary/entry)
+"Ga" = (
+/obj/structure/sign/warning/xeno_mining{
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Gb" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -12403,6 +12842,10 @@
 /area/station/maintenance/bridge)
 "Gz" = (
 /obj/structure/table/reinforced,
+/obj/item/weapon/flora/floorleaf{
+	pixel_x = 1;
+	pixel_y = 13
+	},
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -12657,6 +13100,10 @@
 /area/station/medical/storage{
 	lightswitch = 0
 	})
+"Hs" = (
+/obj/item/weapon/ore/diamond,
+/turf/environment/space,
+/area/asteroid/mine/unexplored)
 "Ht" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -13233,7 +13680,6 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating/airless{
-	dir = 6;
 	icon_state = "asteroidwarning"
 	},
 /area/station/aisat/ai_chamber)
@@ -13354,6 +13800,13 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"Jp" = (
+/obj/machinery/light/small,
+/obj/item/device/camera,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Jq" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -13685,6 +14138,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/carpet/black,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -13735,6 +14189,12 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"Kf" = (
+/obj/item/weapon/ore,
+/turf/simulated/floor/plating/airless/asteroid{
+	icon_state = "asteroid_dug"
+	},
+/area/asteroid/mine/unexplored)
 "Kg" = (
 /obj/machinery/mineral/output,
 /obj/machinery/conveyor{
@@ -13752,6 +14212,12 @@
 /mob/living/simple_animal/hostile/retaliate/malf_drone,
 /turf/environment/space,
 /area/space)
+"Kj" = (
+/obj/item/weapon/ore/slag,
+/turf/simulated/floor/plating/airless/asteroid{
+	icon_state = "asteroid_dug"
+	},
+/area/asteroid/mine/unexplored)
 "Kk" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -14183,6 +14649,13 @@
 /area/station/civilian/cold_room{
 	lightswitch = 0
 	})
+"Lj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Lk" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -14237,6 +14710,12 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"Ls" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Lt" = (
 /obj/machinery/light{
 	dir = 8
@@ -14286,6 +14765,12 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"Lz" = (
+/obj/structure/stool/bed/chair/metal,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "LC" = (
 /obj/effect/spawner/lootdrop/maintenance/three,
 /obj/structure/rack,
@@ -14309,6 +14794,13 @@
 	icon_state = "black"
 	},
 /area/station/civilian/dormitories)
+"LE" = (
+/obj/structure/glowshroom,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "LF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14403,6 +14895,12 @@
 /mob/living/simple_animal/hostile/retaliate/malf_drone,
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/explored)
+"LW" = (
+/obj/item/weapon/ore/coal,
+/turf/simulated/floor/plating/airless/asteroid{
+	icon_state = "asteroid_dug"
+	},
+/area/asteroid/mine/unexplored)
 "LX" = (
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet{
@@ -15004,9 +15502,7 @@
 	lightswitch = 0
 	})
 "Np" = (
-/obj/machinery/vending/boozeomat{
-	req_access = list()
-	},
+/obj/machinery/media/jukebox/bar,
 /turf/simulated/floor/wood,
 /area/station/civilian/bar{
 	lightswitch = 0
@@ -15026,6 +15522,11 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"Ns" = (
+/obj/effect/decal/cleanable/generic,
+/obj/item/weapon/ore/glass,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Nt" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -15265,6 +15766,13 @@
 /obj/machinery/camera/autoname,
 /turf/simulated/floor/plating/ironsand,
 /area/station/civilian/hydroponics)
+"NT" = (
+/obj/machinery/artifact_analyser,
+/obj/structure/table,
+/turf/simulated/floor/plating/airless{
+	icon_state = "floorgrime"
+	},
+/area/asteroid/research_outpost/anomaly)
 "NU" = (
 /obj/structure/closet/crate,
 /turf/simulated/floor{
@@ -15683,9 +16191,27 @@
 	icon_state = "platebotc"
 	},
 /area/station/aisat/ai_chamber)
+"OS" = (
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "OU" = (
 /turf/simulated/wall,
 /area/station/maintenance/medbay)
+"OY" = (
+/obj/machinery/floodlight{
+	dir = 1;
+	on = 1
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
+"OZ" = (
+/obj/effect/decal/cleanable/poo,
+/turf/simulated/floor/plating/airless/asteroid{
+	icon_state = "asteroid_dug"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Pa" = (
 /obj/structure/stool/bed/chair/pedalgen{
 	dir = 1
@@ -15789,6 +16315,10 @@
 	icon_state = "dark"
 	},
 /area/station/hallway/secondary/arrival)
+"Pm" = (
+/obj/machinery/power/grounding_rod,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Pn" = (
 /obj/structure/stool/bed/chair/office/light{
 	dir = 1
@@ -15836,6 +16366,13 @@
 	icon_state = "warnplate"
 	},
 /area/station/storage/emergency3)
+"Ps" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/glowshroom,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Pu" = (
 /obj/structure/table,
 /obj/item/weapon/paper/crumpled{
@@ -15873,6 +16410,11 @@
 	icon_state = "floor"
 	},
 /area/shuttle/escape_pod5/station)
+"Pz" = (
+/obj/effect/decal/cleanable/generic,
+/obj/item/weapon/ore/coal,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "PA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15961,6 +16503,12 @@
 /area/station/cargo/storage{
 	lightswitch = 0
 	})
+"PT" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "PU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15981,6 +16529,18 @@
 /obj/machinery/mecha_part_fabricator,
 /turf/simulated/floor/plating,
 /area/station/aisat/ai_chamber)
+"PX" = (
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "PY" = (
 /obj/machinery/power/smes,
 /obj/structure/cable{
@@ -16252,6 +16812,12 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"QG" = (
+/obj/structure/sign/warning/xeno_mining{
+	pixel_x = -32
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "QH" = (
 /obj/machinery/pipedispenser/disposal,
 /turf/simulated/floor{
@@ -16260,6 +16826,14 @@
 /area/station/engineering/atmos{
 	lightswitch = 0
 	})
+"QJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
+/obj/item/weapon/xenoarch_utilizer,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "QK" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
@@ -16301,6 +16875,23 @@
 /area/station/medical/surgery{
 	lightswitch = 0
 	})
+"QQ" = (
+/obj/structure/rack,
+/obj/item/weapon/particles_battery{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/weapon/particles_battery{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/weapon/particles_battery,
+/obj/item/weapon/xenoarch_utilizer,
+/turf/simulated/floor/plating/airless{
+	dir = 1;
+	icon_state = "floorgrimecaution"
+	},
+/area/asteroid/research_outpost/anomaly)
 "QR" = (
 /turf/simulated/wall,
 /area/station/maintenance/cargo)
@@ -16376,6 +16967,10 @@
 /obj/structure/firedoor_assembly,
 /turf/simulated/floor/plating,
 /area/station/construction)
+"Re" = (
+/obj/item/weapon/ore/slag,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Rk" = (
 /obj/machinery/computer/security/engineering{
 	dir = 8
@@ -16543,6 +17138,13 @@
 	icon_state = "black"
 	},
 /area/station/hallway/primary/central)
+"RE" = (
+/obj/effect/decal/cleanable/generic,
+/obj/item/weapon/storage/firstaid/small_firstaid_kit/space,
+/turf/simulated/floor/plating/airless{
+	icon_state = "floorgrimecaution"
+	},
+/area/asteroid/research_outpost/anomaly)
 "RG" = (
 /obj/effect/decal/cleanable/shreds,
 /obj/item/weapon/stock_parts/micro_laser/high,
@@ -16683,6 +17285,16 @@
 	},
 /turf/simulated/floor,
 /area/station/civilian/dormitories)
+"Sc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/weapon/storage/box/donkpockets{
+	pixel_x = -6;
+	pixel_y = 13
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Sd" = (
 /obj/effect/decal/cleanable/spiderling_remains,
 /turf/simulated/floor/plating,
@@ -16888,6 +17500,13 @@
 /area/station/cargo/miningoffice{
 	lightswitch = 0
 	})
+"SC" = (
+/obj/structure/glowshroom,
+/obj/item/weapon/folder/purple,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "SD" = (
 /obj/machinery/camera/autoname{
 	dir = 9
@@ -16977,6 +17596,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/dormitory)
+"SM" = (
+/obj/effect/decal/cleanable/generic,
+/obj/item/weapon/ore/iron,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "SN" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/plating/airless/asteroid,
@@ -17480,6 +18104,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/bridge)
+"TU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "TV" = (
 /obj/machinery/message_server,
 /turf/simulated/floor/bluegrid{
@@ -17607,6 +18238,10 @@
 /obj/item/device/radio/intercom/pod,
 /turf/environment/space,
 /area/shuttle/escape_pod6/station)
+"Uh" = (
+/obj/structure/flora/mine_rocks,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Ui" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -17940,6 +18575,13 @@
 /obj/structure/sign/directions/dock_tablo/tablo2,
 /turf/simulated/wall,
 /area/station/hallway/secondary/entry)
+"Vd" = (
+/obj/item/tape/science{
+	icon_state = "science_h"
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Ve" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/high_volume{
 	dir = 8;
@@ -18014,6 +18656,12 @@
 /obj/structure/grille,
 /turf/environment/space,
 /area/space)
+"Vj" = (
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroid"
+	},
+/area/asteroid/research_outpost/anomaly)
 "Vk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -18061,11 +18709,9 @@
 	lightswitch = 0
 	})
 "Vp" = (
-/obj/machinery/vending/dinnerware,
-/turf/simulated/floor/wood,
-/area/station/civilian/bar{
-	lightswitch = 0
-	})
+/obj/item/weapon/ore,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Vq" = (
 /obj/structure/object_wall/pod{
 	dir = 4;
@@ -18087,6 +18733,12 @@
 /area/station/bridge/comms{
 	lightswitch = 0
 	})
+"Vs" = (
+/obj/item/weapon/ore/glass,
+/turf/simulated/floor/plating/airless/asteroid{
+	icon_state = "asteroid_dug"
+	},
+/area/asteroid/mine/unexplored)
 "Vt" = (
 /turf/simulated/floor{
 	icon_state = "black"
@@ -18172,6 +18824,13 @@
 	icon_state = "asteroidwarning"
 	},
 /area/station/maintenance/engineering)
+"VE" = (
+/obj/structure/sign/mark{
+	icon_state = "b2";
+	pixel_x = 32
+	},
+/turf/environment/space,
+/area/space)
 "VI" = (
 /obj/structure/curtain/medical,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -18181,6 +18840,10 @@
 /area/station/medical/patients_rooms{
 	lightswitch = 0
 	})
+"VJ" = (
+/obj/effect/decal/cleanable/generic,
+/turf/environment/space,
+/area/asteroid/mine/unexplored)
 "VK" = (
 /obj/structure/cable,
 /obj/machinery/power/apc{
@@ -18616,6 +19279,9 @@
 	icon_state = "platingdmg2"
 	},
 /area/station/maintenance/dormitory)
+"WK" = (
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/research_outpost/anomaly)
 "WL" = (
 /obj/machinery/disposal,
 /obj/machinery/alarm{
@@ -18735,6 +19401,9 @@
 /area/station/civilian/cold_room{
 	lightswitch = 0
 	})
+"Xe" = (
+/turf/simulated/mineral,
+/area/asteroid/research_outpost/anomaly)
 "Xg" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -18853,19 +19522,15 @@
 	},
 /area/station/hallway/primary/central)
 "Xs" = (
-/obj/structure/grille,
-/obj/structure/window/basic{
-	dir = 8
-	},
 /obj/structure/window/basic{
 	dir = 4
 	},
 /obj/structure/window/basic{
 	dir = 1
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/station/civilian/kitchen{
+/obj/machinery/vending/dinnerware,
+/turf/simulated/floor/wood,
+/area/station/civilian/bar{
 	lightswitch = 0
 	})
 "Xv" = (
@@ -18873,7 +19538,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating/airless{
-	icon_state = "asteroidwarning"
+	icon_state = "recharge_floor_asteroid"
 	},
 /area/station/aisat/ai_chamber)
 "Xw" = (
@@ -19109,6 +19774,12 @@
 	icon_state = "whiteblue_ex"
 	},
 /area/station/storage/emergency3)
+"Ya" = (
+/obj/item/tape/science{
+	icon_state = "science_v"
+	},
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Yb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -19598,6 +20269,11 @@
 /obj/structure/sign/plaques/kiddie/perfect_drone,
 /turf/simulated/wall,
 /area/station/engineering/drone_fabrication)
+"Zn" = (
+/obj/effect/decal/cleanable/generic,
+/obj/item/weapon/ore/diamond,
+/turf/simulated/floor/plating/airless/asteroid,
+/area/asteroid/mine/unexplored)
 "Zo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -19829,6 +20505,9 @@
 	icon_state = "warnplate"
 	},
 /area/station/maintenance/bridge)
+"ZO" = (
+/turf/simulated/wall,
+/area/asteroid/research_outpost/anomaly)
 "ZP" = (
 /turf/simulated/floor{
 	icon_state = "white"
@@ -19858,6 +20537,16 @@
 	icon_state = "black"
 	},
 /area/station/hallway/secondary/arrival)
+"ZT" = (
+/obj/structure/table,
+/obj/item/device/taperecorder,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/plating/airless{
+	icon_state = "asteroidplating"
+	},
+/area/asteroid/research_outpost/anomaly)
 "ZW" = (
 /turf/simulated/floor{
 	icon_state = "blackcorner"
@@ -30014,13 +30703,13 @@ th
 th
 th
 we
-th
+wL
 we
 th
 th
 th
 we
-th
+VE
 we
 th
 th
@@ -39515,7 +40204,7 @@ dQ
 Iz
 Iz
 Iz
-Vp
+Iz
 OU
 Kw
 Sy
@@ -59043,8 +59732,8 @@ IE
 sm
 sm
 sm
-IE
-IE
+sm
+sm
 IE
 IE
 IE
@@ -59298,11 +59987,11 @@ IE
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -59555,11 +60244,11 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -59810,13 +60499,13 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+Xe
+Xe
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -60065,16 +60754,16 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+sm
 IE
 IE
 IE
@@ -60318,23 +61007,23 @@ sm
 sm
 sm
 sm
-DF
+sm
 sm
 JY
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -60578,21 +61267,21 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+sm
 IE
 IE
 IE
@@ -60827,29 +61516,29 @@ IE
 IE
 IE
 sm
-DF
 sm
 sm
 sm
-IE
-IE
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+sm
 IE
 IE
 IE
@@ -61089,26 +61778,26 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+Xe
+Xe
+Xe
+Xe
+Xe
+ZO
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -61346,26 +62035,26 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+Xe
+Xe
+Xe
+Xe
+Xe
+ap
+ZT
+dr
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -61601,29 +62290,29 @@ sm
 sm
 sm
 sm
-DF
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+Xe
+Xe
+Xe
+Xe
+yP
+Lz
+xJ
+sA
+ru
+Xe
+Xe
+Xe
+sm
+sm
+sm
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -61860,27 +62549,27 @@ sm
 sm
 sm
 JY
+Xe
+Xe
+Xe
+Xe
+Xe
+SC
+Lj
+sh
+LE
+af
+ZO
+Xe
+Xe
+Xe
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -62111,33 +62800,33 @@ IE
 sm
 IE
 IE
-IE
+bL
+bL
 sm
 sm
 sm
+Xe
+Xe
+Xe
+Xe
+Xe
+LE
+OS
+Ls
+ps
+QJ
+Bm
+Xe
+Xe
+Xe
+Xe
+Xe
 sm
 sm
+IE
+IE
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
 IE
 IE
 IE
@@ -62368,30 +63057,30 @@ sm
 sm
 sm
 sm
-IE
-IE
+bL
+pH
+Ya
+Ya
+pH
+Xe
+Xe
+OZ
+Xe
+ZO
+kI
+QQ
+NT
+RE
+Ls
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 IE
@@ -62629,27 +63318,27 @@ sm
 sm
 sm
 sm
+bL
+Xe
+ps
+dp
+Xe
+Xe
+TU
+wy
+CN
+wt
+Jp
+ZO
+Xe
+PX
+Xe
+Xe
+Xe
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
+sm
+sm
+sm
 IE
 IE
 IE
@@ -62879,36 +63568,36 @@ IE
 IE
 sm
 sm
-DF
+sm
+xu
 sm
 sm
 sm
 sm
 sm
+Xe
+Xe
+ra
+OS
+iW
+OS
+Ls
+OS
+Ls
+Ls
+ps
+Xe
+PT
+mb
+xx
+Xe
+Xe
+Xe
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-hp
-IE
-IE
+sm
+sm
+bL
+bL
 IE
 IE
 IE
@@ -63143,29 +63832,29 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+Xe
+Xe
+Xe
+Xe
+Xe
+Fi
+Ls
+ps
+OS
+zq
+TU
+OS
+sh
+Ps
+mF
+Xe
+Xe
+ZO
+Ya
+Ya
+Ya
+pH
+bL
 IE
 IE
 IE
@@ -63399,30 +64088,30 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
+dI
+Ls
+WK
+Ls
+ps
+Xe
+Bm
+Sc
+gB
+ZO
+Xe
+Xe
+Xe
+sm
+sm
+sm
+bL
+bL
 IE
 IE
 IE
@@ -63649,34 +64338,34 @@ sm
 sm
 sm
 sm
-IE
-IE
+bL
+pH
+Ya
+Ya
+Ya
+jO
+Ya
+ZO
+Xe
+Xe
+Xe
+Xe
+Xe
+ZO
+lW
+Fm
+xH
+ZO
+Xe
+gu
+Vj
+hX
+Xe
+Xe
+Xe
 sm
 sm
 sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 IE
@@ -63906,35 +64595,35 @@ sm
 sm
 IE
 IE
-IE
-IE
+bL
+bL
 sm
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
+sm
+QG
+Xe
+Xe
+Xe
+Xe
+Xe
+ZO
+Ev
+WK
+aH
+ZO
+Xe
+Xe
+ps
+Xe
+Xe
+Xe
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -64167,32 +64856,32 @@ IE
 sm
 sm
 sm
+Mg
+xu
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+Xe
+Xe
+Xe
+Xe
+Xe
+ZO
+lW
+if
+cH
+ZO
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -64422,35 +65111,35 @@ IE
 IE
 IE
 sm
+Mg
+xu
+Mg
+sm
+Mg
+sm
+sm
+sm
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+Pm
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
 sm
 sm
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
 IE
 IE
 IE
@@ -64680,35 +65369,35 @@ IE
 IE
 sm
 sm
+sm
+sm
+cM
+sm
+sm
+Pm
+sm
+sm
+sm
+sm
+sm
+sm
+sm
+Xe
+Xe
+Xe
+Xe
+Xe
+sm
+sm
+sm
+sm
 IE
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
 IE
 IE
 IE
@@ -64934,38 +65623,38 @@ IE
 IE
 IE
 IE
+IE
+sm
+Mg
 sm
 sm
 sm
+sm
+sm
+sm
+sm
+sm
+sm
+xu
+sm
+sm
+sm
+Xe
+Xe
+ZO
+Ga
+sm
+xu
+sm
+sm
 IE
 IE
 IE
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
 IE
 IE
 IE
@@ -65193,36 +65882,36 @@ IE
 IE
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+Mg
+sm
+ga
+xu
+sm
+Uh
+ga
+Dl
+Mg
+sm
+Mg
+sm
+sm
+sm
+Dd
+sm
+Mg
+sm
+sm
+sm
+sm
 IE
 IE
 hp
 IE
 hp
 IE
-IE
+sm
 IE
 IE
 hp
@@ -65449,37 +66138,37 @@ IE
 IE
 sm
 sm
+xu
+sm
+sm
+sm
+sm
+sm
+gC
+Dl
+gC
+cI
+qp
+Mg
+Mg
+xu
+sm
+sm
+sm
+Dd
+sm
+sm
+sm
+sm
+sm
+sm
 sm
 IE
 IE
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
 IE
 IE
 IE
@@ -65705,38 +66394,38 @@ IE
 IE
 IE
 sm
+Re
+sm
+sm
+sm
+Re
+yT
+sm
+Dl
+Mg
+Mg
+Kf
+Re
+qp
+cI
+sm
+sm
+OY
+sm
+Vd
+sm
+xu
+sm
+sm
+xu
 sm
 sm
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 hp
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
+sm
 IE
 IE
 IE
@@ -65963,31 +66652,31 @@ IE
 IE
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-hp
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+Mg
+Mg
+qp
+sm
+Mg
+gC
+Uh
+ga
+gC
+Mg
+xu
+Vp
+qp
+sm
+sm
+sm
+sm
+Dd
+sm
+sm
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -66217,35 +66906,35 @@ IE
 IE
 IE
 IE
+Re
+sm
+gC
+Mg
+vY
+Mg
+Zn
+Ds
+Vp
+cI
+Uh
+ga
+qp
+Dl
+Mg
 sm
 sm
+xu
+Mg
+sm
+pH
+bL
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -66476,34 +67165,34 @@ IE
 IE
 sm
 sm
+sm
+sm
+Ll
+xu
+sm
+xT
+Hs
+xT
+Mg
+yT
+gC
+sm
+Mg
+ga
+sm
+sm
+sm
+bL
+bL
 IE
 IE
 IE
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
 IE
 IE
 IE
@@ -66731,24 +67420,24 @@ sm
 IE
 IE
 sm
+Uh
+Dl
+Vs
+iP
+iP
+xT
+Mg
+iP
+iP
+gC
+cI
+xT
+Dl
+SM
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
 IE
 IE
 IE
@@ -66758,9 +67447,9 @@ IE
 hp
 IE
 IE
-IE
-IE
-IE
+sm
+sm
+sm
 IE
 hp
 IE
@@ -66983,42 +67672,42 @@ IE
 IE
 IE
 IE
+jE
+sm
+sm
+xu
+yT
+DF
+Mg
+ES
+iP
+iP
+Re
+Mg
+iP
+ga
+xu
+Uh
+Re
+gC
 sm
 sm
 sm
+xu
+sm
+IE
+IE
+IE
+IE
 sm
 sm
 sm
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
 IE
 IE
 hp
@@ -67242,41 +67931,41 @@ IE
 IE
 sm
 sm
+Dl
+sm
+sm
+Mg
+dd
+oQ
+iP
+Vs
+sm
+Ll
+iP
+iP
+Mg
+Mg
+Mg
+ga
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
 IE
 IE
 IE
 hp
 IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
+sm
+sm
 hp
-IE
-IE
-IE
-IE
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -67497,43 +68186,43 @@ sm
 IE
 IE
 IE
-IE
-IE
 sm
+jE
+yT
+iP
+yT
 sm
+jE
+xu
+iP
+iP
+iP
+iP
+iP
+xu
+Vp
+Mg
+cI
+Mg
+xu
 sm
+Mg
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 hp
 hp
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
+sm
+sm
+sm
+sm
+sm
+sm
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -67752,30 +68441,30 @@ sm
 sm
 sm
 sm
-IE
-IE
-IE
 sm
 sm
 sm
-IE
+xu
+sm
+Dr
+iP
+LW
+sm
+iP
+iP
+iP
+iP
+iP
+Mg
+xT
+gC
+yT
 sm
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
+sm
 IE
 IE
 hp
@@ -67783,13 +68472,13 @@ IE
 IE
 IE
 IE
+sm
+sm
+sm
 IE
 IE
 IE
-IE
-IE
-IE
-IE
+sm
 IE
 IE
 IE
@@ -68006,12 +68695,32 @@ IE
 IE
 IE
 IE
-IE
 sm
 sm
 sm
-IE
-IE
+sm
+iP
+Hh
+sm
+Mg
+pB
+iP
+iP
+Ll
+iP
+iP
+iP
+Ll
+Mg
+Mg
+Mg
+sm
+sm
+Re
+sm
+EA
+sm
+sm
 sm
 sm
 IE
@@ -68021,27 +68730,7 @@ IE
 IE
 IE
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
 IE
 IE
 IE
@@ -68264,33 +68953,33 @@ IE
 IE
 IE
 IE
-IE
+sm
+pB
+sm
+sm
+iP
+sm
+Vs
+Ns
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+Hh
+iP
+cI
+Mg
 sm
 sm
 sm
-IE
-IE
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+xu
+sm
 IE
 IE
 IE
@@ -68298,8 +68987,8 @@ IE
 IE
 hp
 IE
-IE
-IE
+sm
+sm
 IE
 hp
 IE
@@ -68520,44 +69209,44 @@ sm
 IE
 IE
 IE
+sm
+pB
+Vs
+Pz
+Mg
+iP
+iP
+jE
+iP
+iP
+iP
+iP
+iP
+qb
+yW
+oG
+sm
+iP
+iP
+sm
+sm
+xu
+sm
+sm
+xu
+sm
+sm
+sm
+sm
+IE
+IE
+IE
+IE
+IE
 IE
 IE
 sm
 sm
-sm
-IE
-IE
-sm
-sm
-sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 IE
@@ -68774,6 +69463,40 @@ sm
 sm
 sm
 sm
+sm
+IE
+sm
+Mg
+sm
+Vp
+Mg
+gg
+pB
+iP
+iP
+iP
+iP
+Ll
+iP
+iP
+sm
+jE
+Dl
+sm
+jE
+sm
+sm
+ne
+sm
+sm
+Mg
+sm
+sm
+Mg
+sm
+sm
+IE
+IE
 IE
 IE
 IE
@@ -68782,40 +69505,6 @@ IE
 IE
 sm
 sm
-sm
-sm
-sm
-sm
-IE
-sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 hp
@@ -69032,6 +69721,40 @@ sm
 sm
 sm
 sm
+sm
+Vs
+Mg
+iP
+sm
+sm
+Vs
+pB
+iP
+Ll
+iP
+iP
+iP
+iP
+Mg
+LW
+Mg
+sm
+xT
+sm
+sm
+cx
+sm
+sm
+sm
+sm
+sm
+IE
+sm
+sm
+sm
+IE
+IE
+IE
 IE
 IE
 IE
@@ -69040,40 +69763,6 @@ IE
 sm
 sm
 sm
-sm
-IE
-IE
-IE
-IE
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 IE
@@ -69286,52 +69975,52 @@ sm
 sm
 sm
 sm
+sm
+pB
+Vp
+Mg
+XV
+iP
+iP
+SM
+Mg
+Mg
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+sm
+iP
+iP
+Mg
+sm
+IE
+IE
+IE
+sm
+sm
+sm
+IE
+IE
+IE
+sm
+sm
+sm
+IE
+IE
+IE
+IE
+IE
+IE
 IE
 sm
 sm
 sm
 sm
-IE
-IE
-sm
-sm
-sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-hp
-hp
-IE
 IE
 IE
 IE
@@ -69541,6 +70230,31 @@ sm
 sm
 IE
 sm
+sm
+sm
+Vs
+jE
+sm
+iP
+iP
+iP
+sm
+LW
+sm
+iP
+iP
+iP
+iP
+iP
+Ll
+xT
+Mg
+iP
+iP
+iP
+Mg
+cI
+sm
 IE
 IE
 IE
@@ -69548,37 +70262,12 @@ IE
 sm
 sm
 sm
-sm
-sm
-sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 IE
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
+sm
 IE
 IE
 IE
@@ -69589,7 +70278,7 @@ hp
 IE
 IE
 IE
-IE
+sm
 IE
 IE
 IE
@@ -69799,6 +70488,31 @@ IE
 IE
 IE
 IE
+sm
+yT
+pB
+XV
+XV
+iP
+iP
+Mg
+sm
+iP
+iP
+iP
+Ll
+iP
+iP
+Re
+Vp
+Mg
+iP
+Vp
+sm
+sm
+sm
+IE
+IE
 IE
 IE
 IE
@@ -69806,36 +70520,11 @@ sm
 sm
 sm
 sm
-sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 sm
 sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+sm
 IE
 IE
 IE
@@ -70055,6 +70744,32 @@ IE
 IE
 IE
 IE
+sm
+sm
+yT
+Vp
+sm
+Vs
+xu
+iP
+vY
+iP
+iP
+iP
+iP
+iP
+iP
+Kj
+Mg
+sm
+SM
+sm
+jE
+sm
+Uh
+sm
+IE
+IE
 IE
 IE
 IE
@@ -70063,37 +70778,11 @@ sm
 sm
 sm
 sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 IE
 sm
 sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 IE
@@ -70313,45 +71002,45 @@ IE
 IE
 sm
 sm
+xu
+iP
+yT
+gg
+xu
+sm
+iP
+iP
+Ll
+iP
+iP
+iP
+iP
+iP
+iP
+Mg
+Mg
+Mg
+xT
+sm
+IE
+sm
+sm
+IE
+IE
+IE
+IE
 IE
 IE
 IE
 sm
 sm
 sm
-sm
-sm
-sm
-sm
-sm
-IE
-IE
-IE
-IE
 IE
 IE
 IE
 sm
 sm
-IE
 sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 IE
 IE
 IE
@@ -70569,46 +71258,46 @@ IE
 IE
 sm
 sm
+jE
+jE
+iP
+iP
+vY
+Mg
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+Mg
+Re
+iP
+iP
+Mg
 sm
 sm
-IE
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-IE
-IE
-IE
-sm
-sm
-sm
-sm
-IE
-IE
-sm
-sm
+Re
 IE
 IE
-IE
+sm
 sm
 IE
 IE
 IE
+sm
 IE
 IE
 IE
+sm
+sm
+sm
+sm
 IE
 IE
 IE
-IE
-IE
+sm
 IE
 IE
 IE
@@ -70824,35 +71513,26 @@ sm
 IE
 IE
 IE
-IE
+jR
+XV
+Mg
+Vs
+pB
+iP
+AL
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+vY
+Mg
 sm
+iP
+jE
 sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-IE
-IE
-IE
-IE
-IE
-IE
-IE
 sm
 sm
 IE
@@ -70862,7 +71542,16 @@ IE
 IE
 IE
 IE
+sm
+sm
 IE
+IE
+IE
+IE
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -71077,41 +71766,30 @@ sm
 sm
 IE
 IE
-sm
-sm
-IE
-IE
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+Mg
 sm
 IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
-IE
+Mg
+sm
+iP
+Mg
+pB
+gg
+iP
+iP
+iP
+Ll
+iP
+iP
+iP
+iP
+iP
+DF
+xT
 sm
 sm
+sm
+Vp
 IE
 IE
 IE
@@ -71121,6 +71799,17 @@ IE
 IE
 IE
 IE
+sm
+sm
+IE
+IE
+IE
+IE
+IE
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -71331,41 +72020,33 @@ IE
 sm
 sm
 sm
-sm
-sm
+Mg
+Mg
 IE
+XV
 sm
 sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-IE
-IE
-IE
-sm
-sm
-sm
+Mg
+oG
+iP
+iP
+Re
+VJ
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+VJ
+Mg
+Mg
 IE
 IE
 IE
-IE
-IE
-IE
+sm
 sm
 sm
 IE
@@ -71374,11 +72055,19 @@ IE
 IE
 IE
 IE
+sm
+sm
 IE
 IE
 IE
 IE
 IE
+IE
+IE
+sm
+sm
+sm
+sm
 IE
 IE
 IE
@@ -71588,36 +72277,30 @@ IE
 IE
 IE
 sm
+Mg
+DF
+Re
+CG
+iP
 sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+Mg
+XV
+XV
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+yT
 sm
 IE
 IE
-IE
-IE
-IE
-sm
-sm
-sm
 IE
 IE
 IE
@@ -71627,6 +72310,9 @@ sm
 IE
 IE
 IE
+sm
+sm
+sm
 IE
 IE
 IE
@@ -71637,6 +72323,9 @@ IE
 IE
 IE
 IE
+sm
+sm
+sm
 IE
 IE
 IE
@@ -71846,27 +72535,27 @@ IE
 IE
 IE
 IE
+Vp
 sm
+iP
+Ll
+iP
 sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+bs
+Mg
+iP
+Ll
+iP
+iP
+iP
+iP
+iP
+iP
+Ll
+iP
+iP
+Mg
+vY
 IE
 IE
 IE
@@ -72102,28 +72791,28 @@ IE
 IE
 IE
 IE
+Mg
 sm
+iP
+iP
+iP
 sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+jE
+Re
+Mg
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+Mg
+Mg
+Mg
 IE
 IE
 IE
@@ -72359,27 +73048,27 @@ th
 th
 th
 sm
+DF
+jR
+pB
+DF
+iP
+iP
+XV
 sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+Vp
+xT
 sm
 IE
 IE
@@ -72618,25 +73307,25 @@ th
 th
 th
 th
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+Kf
+XV
+XV
+iP
+Mg
+iP
+Ll
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+VJ
+Mg
 IE
 IE
 IE
@@ -72876,23 +73565,23 @@ th
 th
 th
 th
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+Ll
+iP
+iP
+Ll
+iP
 sm
 IE
 IE
@@ -73135,21 +73824,21 @@ th
 th
 th
 th
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+Mg
+iP
+iP
+Mg
 sm
 IE
 sm
@@ -73393,20 +74082,20 @@ th
 th
 th
 th
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
+iP
 sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+DF
+Re
+iP
+oG
 sm
 sm
 sm
@@ -73652,16 +74341,16 @@ th
 th
 th
 th
+iP
+iP
+iP
+iP
+iP
+Mg
+iP
+iP
 sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
-sm
+yW
 sm
 sm
 sm
@@ -73912,14 +74601,14 @@ th
 th
 th
 th
+iP
+Ll
+Kf
 sm
+iP
+Re
 sm
-sm
-sm
-sm
-sm
-sm
-sm
+jE
 sm
 IE
 IE
@@ -74170,12 +74859,12 @@ th
 th
 th
 th
+iP
+iP
+xu
 sm
-sm
-sm
-sm
-sm
-sm
+jE
+Vp
 sm
 sm
 sm
