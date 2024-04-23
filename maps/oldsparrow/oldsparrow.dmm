@@ -3505,7 +3505,6 @@
 /obj/machinery/artifact/bluespace_crystal{
 	desc = "This bluespace crytsal looks particularly large";
 	name = "George";
-	resize_rev = .25
 	},
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/unexplored)
