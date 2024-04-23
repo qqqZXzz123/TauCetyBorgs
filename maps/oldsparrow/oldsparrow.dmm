@@ -1433,7 +1433,9 @@
 /area/asteroid/research_outpost/anomaly)
 "dL" = (
 /obj/structure/table,
-/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -28
 	},
@@ -4102,6 +4104,9 @@
 	},
 /area/station/maintenance/dormitory)
 "kq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "warndarkcorners"
@@ -8621,7 +8626,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+	dir = 9
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -9858,6 +9863,9 @@
 	lightswitch = 0
 	})
 "yL" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
 /turf/simulated/floor{
 	dir = 4;
 	icon_state = "warndarkcorners"
@@ -17209,7 +17217,9 @@
 /area/station/construction)
 "RH" = (
 /obj/structure/table,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
 	},
@@ -18291,7 +18301,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 8
+	dir = 5
 	},
 /turf/simulated/floor{
 	dir = 4;
@@ -19518,10 +19528,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 10
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
 /obj/machinery/door/window/brigdoor{
+	name = "Telecommunications Access";
+	req_access = list(10)
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/window/brigdoor/westright{
 	name = "Telecommunications Access";
 	req_access = list(10)
 	},
@@ -19763,12 +19777,6 @@
 	icon_state = "floor"
 	},
 /area/shuttle/escape_pod7/station)
-"XN" = (
-/obj/item/weapon/flora/random,
-/turf/simulated/floor{
-	icon_state = "dark"
-	},
-/area/station/civilian/locker)
 "XO" = (
 /obj/effect/decal/cleanable/shreds,
 /turf/simulated/floor/plating{
@@ -20176,11 +20184,15 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
 /obj/machinery/door/window/brigdoor{
 	name = "Telecommunications Access";
+	req_access = list(10)
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Telecommuncations Access";
 	req_access = list(10)
 	},
 /turf/simulated/floor{
@@ -42341,7 +42353,7 @@ OJ
 OJ
 ue
 kg
-XN
+EH
 Gv
 GK
 EH
