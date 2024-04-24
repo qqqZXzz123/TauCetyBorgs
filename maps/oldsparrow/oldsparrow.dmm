@@ -2726,6 +2726,9 @@
 /obj/machinery/firealarm{
 	pixel_y = -32
 	},
+/obj/structure/reagent_dispensers/cleaner{
+	pixel_x = 32
+	},
 /turf/simulated/floor{
 	dir = 1;
 	icon_state = "whitehall"
@@ -3504,7 +3507,7 @@
 "iW" = (
 /obj/machinery/artifact/bluespace_crystal{
 	desc = "This bluespace crytsal looks particularly large";
-	name = "George";
+	name = "George"
 	},
 /turf/simulated/floor/plating/airless/asteroid,
 /area/asteroid/mine/unexplored)
@@ -4347,6 +4350,7 @@
 /obj/item/weapon/folder/blue{
 	pixel_x = 3
 	},
+/obj/item/device/eftpos,
 /turf/simulated/floor{
 	icon_state = "dark"
 	},
@@ -6588,6 +6592,11 @@
 /obj/item/weapon/storage/visuals/surgery/full,
 /obj/item/weapon/razor{
 	pixel_x = -4
+	},
+/obj/item/weapon/reagent_containers/spray/cleaner{
+	desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back.";
+	name = "Surgery Cleaner";
+	pixel_x = 4
 	},
 /turf/simulated/floor{
 	icon_state = "white"
