@@ -13259,7 +13259,6 @@
 /obj/machinery/atmospherics/components/binary/pump/high_power/on{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/powered/pump,
 /turf/simulated/wall,
 /area/station/engineering/atmos{
 	lightswitch = 0
