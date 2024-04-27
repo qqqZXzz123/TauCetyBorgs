@@ -1473,9 +1473,9 @@ Owl & Griffin toys
 	name = "corgi plushie"
 	icon_state = "corgi"
 
-/obj/item/toy/plushie/space_whale
-	name = "space whale"
-	icon_state = "tau_kit"
+/obj/item/toy/plushie/tau_turtures
+	name = "turtures"
+	icon_state = "tau_turtures"
 
 /obj/item/toy/plushie/girly_corgi
 	name = "corgi plushie"

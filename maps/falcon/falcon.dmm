@@ -4150,14 +4150,12 @@
 	pixel_x = -7;
 	pixel_y = 17
 	},
-/obj/item/toy/plushie/space_whale{
-	pixel_y = 6
-	},
 /obj/item/device/radio/intercom{
 	dir = 8;
 	name = "Station Intercom (General)";
 	pixel_x = 22
 	},
+/obj/item/toy/plushie/tau_turtures,
 /turf/simulated/floor/carpet/blue,
 /area/station/bridge/captain_quarters)
 "ahD" = (

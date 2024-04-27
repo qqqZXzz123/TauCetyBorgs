@@ -1749,9 +1749,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/cakeslice,
 /obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
 /obj/structure/table,
-/obj/item/toy/plushie/space_whale{
-	name = "Plushie Oculus"
-	},
+/obj/item/toy/plushie/tau_turtures,
 /turf/simulated/shuttle/floor/erokez{
 	icon_state = "sign_2"
 	},
@@ -2927,7 +2925,6 @@
 /turf/environment/space,
 /area/shuttle/transport1/centcom)
 "ahI" = (
-/obj/structure/,
 /obj/structure/grille,
 /turf/environment/space,
 /area/space)
@@ -14540,7 +14537,7 @@
 /obj/structure/stool/bed,
 /obj/item/weapon/bedsheet/wiz,
 /obj/structure/torch_holder/magic,
-/obj/item/toy/plushie/space_whale,
+/obj/item/toy/plushie/tau_turtures,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -27435,10 +27432,6 @@
 	icon_state = "vault"
 	},
 /area/centcom/control)
-"jiZ" = (
-/obj/structure/lattice,
-/turf/environment/space,
-/area/space)
 "jjb" = (
 /turf/unsimulated/floor{
 	dir = 9;
@@ -48173,7 +48166,7 @@ abn
 aII
 abn
 ahJ
-jiZ
+ahJ
 ahJ
 aaM
 aKu
