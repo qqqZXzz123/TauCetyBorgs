@@ -1464,6 +1464,7 @@
 #include "code\modules\clothing\gloves\stungloves.dm"
 #include "code\modules\clothing\head\beret.dm"
 #include "code\modules\clothing\head\collectable.dm"
+#include "code\modules\client\character_menu\emote_panel_editor.dm"
 #include "code\modules\clothing\head\hardhat.dm"
 #include "code\modules\clothing\head\helmet.dm"
 #include "code\modules\clothing\head\jobs.dm"
