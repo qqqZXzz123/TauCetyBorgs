@@ -3839,8 +3839,8 @@
 /area/station/security/interrogation)
 "agK" = (
 /obj/structure/table/woodentable,
-/obj/item/toy/plushie/space_whale,
 /obj/item/device/flashlight/lamp/green,
+/obj/item/toy/plushie/tau_turtures,
 /turf/simulated/floor/carpet/blue,
 /area/station/bridge/captain_quarters)
 "agL" = (

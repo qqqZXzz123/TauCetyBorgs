@@ -5965,6 +5965,7 @@
 /obj/structure/bobross{
 	pixel_y = 30
 	},
+/obj/item/toy/plushie/tau_turtures,
 /turf/simulated/floor/carpet/black,
 /area/station/bridge/captain_quarters)
 "oI" = (
