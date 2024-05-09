@@ -474,8 +474,8 @@
 		user.visible_message("<span class='danger'>\The [user] fails to apply [src].</span>", "<span class='danger'>You fail to apply [src].</span>", "<span class='danger'>You hear something being wrapped.</span>")
 		return
 
-/obj/item/stack/proc/split(var/tamount) //утащил кусочек кода из тг
-	var/obj/item/stack/newstack = new src.type(loc, tamount)
+/obj/item/stack/proc/split(tamount) //утащил кусочек кода из тг
+	var/obj/item/stack/newstack = new type(loc, tamount)
 	newstack.color = color
 	return newstack
 

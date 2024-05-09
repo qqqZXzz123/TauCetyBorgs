@@ -94,7 +94,7 @@
 /obj/item/organ/external/proc/get_tourniquet_necrosis()
 	return tourniquet_necrosis
 
-/obj/item/organ/external/proc/apply_tourniquet(var/atom/movable/tourniquet)//Жгут
+/obj/item/organ/external/proc/apply_tourniquet(atom/movable/tourniquet)//Жгут
 	if(!tourniqueted)
 		tourniqueted = tourniquet
 		if(!applied_pressure)
