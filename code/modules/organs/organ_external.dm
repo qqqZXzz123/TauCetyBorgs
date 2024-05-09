@@ -70,11 +70,58 @@
 
 	var/regen_bodypart_penalty = 0 // This variable determines how much time it would take to regenerate a bodypart, and the cost of it's regeneration.
 
+	//Жгут
+	var/atom/movable/tourniqueted
+	var/tourniquet_necrosis = 0
+
+/obj/item/organ/external/proc/adjust_tourniquet_necrosis(change)
+	tourniquet_necrosis = max(0, tourniquet_necrosis + change)
+	if (!(status & ORGAN_DEAD))
+		if (tourniquet_necrosis > 200)
+			if(tourniqueted)
+				if(prob(1))
+					to_chat(owner, "<span class='notice'>[tourniqueted] pressing on my arm. Should I take it off?</span>")
+		if (tourniquet_necrosis > 300) //через 10 минут накидываем инфекцию
+			germ_level++
+			if(tourniqueted)
+				if(prob(5))
+					to_chat(owner, "<span class='notice'>My arm hurts because of [tourniqueted], it needs to be removed.</span>")
+		if (tourniquet_necrosis > 600)//через 20 минут конечность отмирает
+			status |= ORGAN_DEAD
+			to_chat(owner, "<span class='notice'>You can't feel your [name] anymore...</span>")
+			owner.update_body()
+
+/obj/item/organ/external/proc/get_tourniquet_necrosis()
+	return tourniquet_necrosis
+
+/obj/item/organ/external/proc/apply_tourniquet(var/atom/movable/tourniquet)//Жгут
+	if(!tourniqueted)
+		tourniqueted = tourniquet
+		if(!applied_pressure)
+			applied_pressure = tourniquet
+		return 1
+	return 0
+
+/obj/item/organ/external/proc/remove_tourniquet()//Жгут
+	if(tourniqueted)
+		if(tourniqueted.loc == src)
+			tourniqueted.forceMove(get_turf(owner))
+		if(applied_pressure == tourniqueted)
+			applied_pressure = null
+		tourniqueted = null
+		return 1
+	return 0
+
 /obj/item/organ/external/Destroy()
 	if(parent)
 		parent.children -= src
 		parent = null
 	QDEL_NULL(controller)
+
+	if(tourniqueted && tourniqueted.loc == src)//Жгут
+		qdel(tourniqueted)
+	tourniqueted = null
+
 	if(owner)
 		owner.bodyparts -= src
 		if(owner.bodyparts_by_name[body_zone] == src)
