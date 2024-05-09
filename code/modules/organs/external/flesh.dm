@@ -426,6 +426,19 @@ Note that amputating the affected organ does in fact remove the infection from t
 		//** Handle the effects of infections
 		handle_germ_effects()
 
+		//handle_tourniquet_necrosis()//жгут
+
+// /datum/bodypart_controller/proc/handle_tourniquet_necrosis()
+// 	if (BP.tourniquet_necrosis > 200)
+// 		to_chat(BP.owner, "<span class='notice'>AMOGUS!</span>")
+// 	if (BP.tourniquet_necrosis > 300) //через 10 минут накидываем инфекцию
+// 		BP.germ_level++
+// 	if (BP.tourniquet_necrosis > 450)//через 15 минут конечность отмирает
+// 		if (!(BP.status & ORGAN_DEAD))
+// 			BP.status |= ORGAN_DEAD
+// 			to_chat(BP.owner, "<span class='notice'>You can't feel your [BP.name] anymore...</span>")
+// 			BP.owner.update_body()
+
 /datum/bodypart_controller/proc/handle_germ_sync()
 	var/antibiotics = BP.owner.reagents.get_reagent_amount("spaceacillin")
 	for(var/datum/wound/W in BP.wounds)

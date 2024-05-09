@@ -411,3 +411,77 @@
 			"<span class='notice'>You have stitched [L]'s [BP.name] with [src].</span>")
 		return TRUE
 	return ..()
+
+/////////Tourniquets
+/obj/item/stack/medical/tourniquet
+	name = "tourniquet"
+	singular_name = "tourniquet"
+	desc = "That's the generic tourniquet used to treat arterial bleeding."
+	icon_state = "tourniquet"
+	amount = 1
+	max_amount = 1
+	icon = 'icons/obj/tourniquet.dmi'
+	var/list/tourniquetable_organs = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)	//List of organs you can splint, natch.
+
+/obj/item/stack/medical/tourniquet/can_heal(mob/living/L, mob/living/user)
+	. = ..()
+	if(!.)
+		return
+
+	if(!ishuman(L))
+		return
+
+	var/mob/living/carbon/human/H = L
+	var/target_zone = user.get_targetzone()
+	var/obj/item/organ/external/BP = H.get_bodypart(target_zone)
+	var/limb = BP.name
+
+	if (L == user)
+		if(( !user.hand && (target_zone == BP_R_ARM) || \
+			user.hand && (target_zone == BP_L_ARM )))
+			to_chat(user, "<span class='danger'>You can't apply \the [src] to the arm you're using!</span>")
+			return FALSE
+	if(!(target_zone in tourniquetable_organs))//Checking for allowed body parts
+		to_chat(user, "<span class='danger'>You can't apply \the [src] there!</span>")
+		return FALSE
+	if(BP.tourniqueted)//Checking for a tourniquet
+		to_chat(user, "<span class='danger'>[L]'s [limb] is already tourniqueted!</span>")
+		return FALSE
+	if(!((BP.status & ORGAN_ARTERY_CUT) || (BP.status & ORGAN_BLEEDING)))//There is nothing to fix don't fix anything.
+		to_chat(user, "<span class='danger'>Why would I apply \the [src]? There's nothing to fix. </span>")
+		return FALSE
+
+/obj/item/stack/medical/tourniquet/heal(mob/living/L, mob/user)
+	if(ishuman(L))
+		var/mob/living/carbon/human/H = L
+		var/target_zone = user.get_targetzone()
+		var/obj/item/organ/external/BP = H.get_bodypart(target_zone)
+		var/limb = BP.name
+		if (L != user)
+			to_chat("<span class='danger'>[user] starts to apply \the [src] to [L]'s [limb].</span>", "<span class='danger'>You start to apply \the [src] to [L]'s [limb].</span>", "<span class='danger'>You hear something being wrapped.</span>")
+		else
+			to_chat("<span class='danger'>[user] starts to apply \the [src] to their [limb].</span>", "<span class='danger'>You start to apply \the [src] to your [limb].</span>", "<span class='danger'>You hear something being wrapped.</span>")
+		var/obj/item/stack/medical/tourniquet/S = split(1)
+		if(S)
+			if(BP.apply_tourniquet(S))
+				S.forceMove(BP)
+				if (L != user)
+					to_chat("<span class='danger'>\The [user] finishes applying [src] to [L]'s [limb].</span>", "<span class='danger'>You finish applying \the [src] to [L]'s [limb].</span>", "<span class='danger'>You hear something being wrapped.</span>")
+				else
+					to_chat("<span class='danger'>\The [user] successfully applies [src] to their [limb].</span>", "<span class='danger'>You successfully apply \the [src] to your [limb].</span>", "<span class='danger'>You hear something being wrapped.</span>")
+				return
+			//S.dropInto(src.loc) //didn't get applied, so just drop it
+		user.visible_message("<span class='danger'>\The [user] fails to apply [src].</span>", "<span class='danger'>You fail to apply [src].</span>", "<span class='danger'>You hear something being wrapped.</span>")
+		return
+
+/obj/item/stack/proc/split(tamount) //piece of code from tg
+	var/obj/item/stack/newstack = new type(loc, tamount)
+	newstack.color = color
+	return newstack
+
+/obj/item/stack/medical/tourniquet/improvised
+	name = "improvised tourniquet"
+	singular_name = "improvised tourniquet"
+	desc = "That's the improvised tourniquet used to treat arterial bleeding."
+	icon_state = "improvised"
+

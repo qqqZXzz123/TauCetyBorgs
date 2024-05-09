@@ -493,6 +493,7 @@
 
 	dat += "<tr><td><B>Bandages:</B></td><td><A href='?src=\ref[src];bandages=1'>Remove</A></td></tr>"
 	dat += "<tr><td><B>Splints:</B></td><td><A href='?src=\ref[src];splints=1'>Remove</A></td></tr>"
+	dat += "<tr><td><B>Tourniquets:</B></td><td><A href='?src=\ref[src];tourniquets=1'>Remove</A></td></tr>"
 
 	dat += "</table>"
 
@@ -698,6 +699,9 @@
 
 	if (href_list["bandages"] && usr.CanUseTopicInventory(src))
 		remove_bandages()
+
+	if (href_list["tourniquets"] && usr.CanUseTopicInventory(src))
+		remove_tourniquet()
 
 	if (href_list["splints"] && usr.CanUseTopicInventory(src))
 		var/list/splints
@@ -2191,6 +2195,22 @@
 			attack_log += "\[[time_stamp()]\] <font color='orange'>Had their bandages removed by [usr.name] ([usr.ckey]).</font>"
 			usr.attack_log += "\[[time_stamp()]\] <font color='red'>Removed [name]'s ([ckey]) bandages.</font>"
 
+/mob/living/carbon/human/verb/remove_tourniquet()
+	set category = "IC"
+	set name = "Remove tourniquets"
+	set desc = "Remove your own tourniquets"
+
+	if(!ishuman(usr) || usr.incapacitated())
+		return
+
+	for(var/obj/item/organ/external/BP in bodyparts)
+		if(BP.tourniqueted)
+			visible_message("<span class='danger'>[usr] is trying to remove [src == usr ? "their" : "[src]'s"] tourniquets!</span>")
+			if(do_mob(usr, src, HUMAN_STRIP_DELAY))
+				BP.remove_tourniquet()
+				attack_log += "\[[time_stamp()]\] <font color='orange'>Had their tourniquets removed by [usr.name] ([usr.ckey]).</font>"
+				usr.attack_log += "\[[time_stamp()]\] <font color='red'>Removed [name]'s ([ckey]) tourniquets.</font>"
+
 /mob/living/carbon/human/proc/perform_cpr(mob/living/carbon/human/user)
 	if(species.flags[NO_BLOOD])
 		return
@@ -2198,11 +2218,11 @@
 	if(world.time - timeofdeath >= DEFIB_TIME_LIMIT)
 		to_chat(user, "<span class='notice'>It seems [src] is far too gone to be reanimated... Your efforts are futile.</span>")
 		return
-		
+
 	if(!organs_by_name[O_BRAIN])
 		to_chat(user, "<span class='notice'>Looks like [src] doesn't have a brain... Your efforts are futile.</span>")
 		return
-		
+
 	var/obj/item/organ/external/head/BP_H = bodyparts_by_name[BP_HEAD]
 	if(!BP_H || (BP_H.is_stump))
 		to_chat(user, "<span class='notice'>Looks like [src] doesn't have a head.... Your efforts are futile.</span>")

@@ -182,6 +182,11 @@ var/global/const/BLOOD_VOLUME_SURVIVE = 122
 		if(BP.is_robotic())
 			continue
 
+		if(BP.tourniqueted)
+			BP.adjust_tourniquet_necrosis(1)
+		else
+			BP.adjust_tourniquet_necrosis(-10)
+
 		var/open_wound
 		if(BP.status & ORGAN_BLEEDING)
 			if(BP.open)
@@ -202,9 +207,10 @@ var/global/const/BLOOD_VOLUME_SURVIVE = 122
 						blood_max += max(min_eff_damage, W.damage - 30) / 40
 					else
 						blood_max += W.damage / 40
-
 		if(BP.status & ORGAN_ARTERY_CUT)
 			var/bleed_amount = blood_total / (BP.applied_pressure ? 500 : 250) * BP.arterial_bleed_severity
+			if (BP.tourniqueted)//Tourniquet
+				bleed_amount = 0
 			if(bleed_amount)
 				if(open_wound)
 					blood_max += bleed_amount
