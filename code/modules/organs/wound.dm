@@ -10,7 +10,7 @@
 	var/bleed_threshold = 30   // Above this amount wounds you will need to treat the wound to stop bleeding, regardless of bleed_timer
 	var/min_damage = 0         // amount of damage the current wound type requires(less means we need to apply the next healing stage)
 	var/bandaged = FALSE       // is the wound bandaged?
-	var/tourniqueted = FALSE   // жгут
+	var/tourniqueted = FALSE   // Tourniquet
 	var/clamped = FALSE        // Similar to bandaged, but works differently
 	var/salved = FALSE         // is the wound salved?
 	var/disinfected = FALSE    // is the wound disinfected?
@@ -198,7 +198,7 @@
 	return TRUE
 
 /datum/wound/proc/bleeding()
-	if(bandaged || clamped || tourniqueted) //жгут
+	if(bandaged || clamped || tourniqueted) //Tourniquet
 		return FALSE
 
 	if(embedded_objects.len)

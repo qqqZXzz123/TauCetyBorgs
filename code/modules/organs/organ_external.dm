@@ -81,12 +81,12 @@
 			if(tourniqueted)
 				if(prob(1))
 					to_chat(owner, "<span class='notice'>[tourniqueted] pressing on my arm. Should I take it off?</span>")
-		if (tourniquet_necrosis > 300) //через 10 минут накидываем инфекцию
+		if (tourniquet_necrosis > 300) //in 10 minutes, we'll get the infection out.
 			germ_level++
 			if(tourniqueted)
 				if(prob(5))
 					to_chat(owner, "<span class='notice'>My arm hurts because of [tourniqueted], it needs to be removed.</span>")
-		if (tourniquet_necrosis > 600)//через 20 минут конечность отмирает
+		if (tourniquet_necrosis > 600)//20 minutes later, the limb dies.
 			status |= ORGAN_DEAD
 			to_chat(owner, "<span class='notice'>You can't feel your [name] anymore...</span>")
 			owner.update_body()
@@ -94,7 +94,7 @@
 /obj/item/organ/external/proc/get_tourniquet_necrosis()
 	return tourniquet_necrosis
 
-/obj/item/organ/external/proc/apply_tourniquet(atom/movable/tourniquet)//Жгут
+/obj/item/organ/external/proc/apply_tourniquet(atom/movable/tourniquet)//Tourniquet
 	if(!tourniqueted)
 		tourniqueted = tourniquet
 		if(!applied_pressure)
@@ -102,7 +102,7 @@
 		return 1
 	return 0
 
-/obj/item/organ/external/proc/remove_tourniquet()//Жгут
+/obj/item/organ/external/proc/remove_tourniquet()//Tourniquet
 	if(tourniqueted)
 		if(tourniqueted.loc == src)
 			tourniqueted.forceMove(get_turf(owner))
@@ -118,7 +118,7 @@
 		parent = null
 	QDEL_NULL(controller)
 
-	if(tourniqueted && tourniqueted.loc == src)//Жгут
+	if(tourniqueted && tourniqueted.loc == src)//Tourniquet
 		qdel(tourniqueted)
 	tourniqueted = null
 

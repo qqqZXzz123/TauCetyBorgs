@@ -209,7 +209,7 @@ var/global/const/BLOOD_VOLUME_SURVIVE = 122
 						blood_max += W.damage / 40
 		if(BP.status & ORGAN_ARTERY_CUT)
 			var/bleed_amount = blood_total / (BP.applied_pressure ? 500 : 250) * BP.arterial_bleed_severity
-			if (BP.tourniqueted)//жгут
+			if (BP.tourniqueted)//Tourniquet
 				bleed_amount = 0
 			if(bleed_amount)
 				if(open_wound)

@@ -414,13 +414,13 @@
 
 /////////Tourniquets
 /obj/item/stack/medical/tourniquet
-	icon = 'icons/obj/tourniquet.dmi'
 	name = "tourniquet"
 	singular_name = "tourniquet"
 	desc = "That's the generic tourniquet used to treat arterial bleeding."
 	icon_state = "tourniquet"
 	amount = 1
 	max_amount = 1
+	icon = 'icons/obj/tourniquet.dmi'
 	var/list/tourniquetable_organs = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)	//List of organs you can splint, natch.
 
 /obj/item/stack/medical/tourniquet/can_heal(mob/living/L, mob/living/user)
@@ -441,10 +441,10 @@
 			user.hand && (target_zone == BP_L_ARM )))
 			to_chat(user, "<span class='danger'>You can't apply \the [src] to the arm you're using!</span>")
 			return FALSE
-	if(!(target_zone in tourniquetable_organs))//Проверка на разрешенные для применения части тела
+	if(!(target_zone in tourniquetable_organs))//Checking for allowed body parts
 		to_chat(user, "<span class='danger'>You can't apply \the [src] there!</span>")
 		return FALSE
-	if(BP.tourniqueted)//Проверка на наличие жгута
+	if(BP.tourniqueted)//Checking for a tourniquet
 		to_chat(user, "<span class='danger'>[L]'s [limb] is already tourniqueted!</span>")
 		return FALSE
 	if(!((BP.status & ORGAN_ARTERY_CUT) || (BP.status & ORGAN_BLEEDING)))//There is nothing to fix don't fix anything.
@@ -474,7 +474,7 @@
 		user.visible_message("<span class='danger'>\The [user] fails to apply [src].</span>", "<span class='danger'>You fail to apply [src].</span>", "<span class='danger'>You hear something being wrapped.</span>")
 		return
 
-/obj/item/stack/proc/split(tamount) //утащил кусочек кода из тг
+/obj/item/stack/proc/split(tamount) //piece of code from tg
 	var/obj/item/stack/newstack = new type(loc, tamount)
 	newstack.color = color
 	return newstack
