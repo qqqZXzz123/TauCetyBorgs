@@ -586,6 +586,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/atmospherics/components/unary/portables_connector,
+/obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor{
 	icon_state = "blackcorner"
 	},
@@ -2045,6 +2046,10 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
 	},
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister/empty/nitrogen,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -3483,8 +3488,8 @@
 	})
 "iS" = (
 /obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/manifold/visible/green{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/visible/green{
+	dir = 6
 	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
@@ -7254,7 +7259,10 @@
 	lightswitch = 0
 	})
 "rY" = (
-/obj/machinery/atmospherics/components/unary/portables_connector,
+/obj/machinery/atmospherics/components/unary/portables_connector{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/empty/oxygen,
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -9327,7 +9335,6 @@
 	},
 /area/station/maintenance/dormitory)
 "xs" = (
-/obj/machinery/portable_atmospherics/powered/pump,
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
@@ -10321,8 +10328,10 @@
 	lightswitch = 0
 	})
 "zO" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/manifold/visible/green{
+	dir = 4
+	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
@@ -16347,7 +16356,6 @@
 	},
 /area/station/maintenance/dormitory)
 "Pi" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/machinery/atmospherics/pipe/manifold/visible/red,
 /turf/simulated/floor{
 	icon_state = "bot"
@@ -19891,6 +19899,7 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/components/unary/portables_connector,
+/obj/machinery/portable_atmospherics/powered/pump,
 /turf/simulated/floor{
 	icon_state = "black"
 	},
@@ -20251,7 +20260,9 @@
 	lightswitch = 0
 	})
 "YW" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
+/obj/machinery/atmospherics/pipe/manifold/visible/green{
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/station/engineering/atmos{
 	lightswitch = 0
