@@ -443,8 +443,6 @@ var/global/shutdown_processed = FALSE
 	var/list/features = list()
 
 	features += "Roleplay: <b>Medium</b>"
-	features += "Round Duration: [roundduration2text()]"
-	features += "Last updates: <a href=\"[config.changelog_link]\""
 
 	if(SSticker)
 		if(master_mode)
