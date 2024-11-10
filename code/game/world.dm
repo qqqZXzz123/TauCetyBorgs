@@ -433,31 +433,26 @@ var/global/shutdown_processed = FALSE
 
 	var/list/features = list()
 
-//	features += "(18+) ERP allowed"
+	features += "Roleplay: <b>Medium</b>"
 
 	if(SSticker)
-		if(master_mode)
-			features += master_mode
-	else
-		features += "<b>STARTING</b>"
+
+		features += "Mode: [master_mode ? master_mode : "<b>STARTING</b>"]"
 
 	if (LAZYACCESS(SSlag_switch.measures, DISABLE_NON_OBSJOBS))
-		features += "closed"
+		features += "Status: Closed"
 
-	features += abandon_allowed ? "respawn" : "no respawn"
-
-	if (config && config.allow_ai)
-		features += "AI allowed"
 
 	var/n = 0
 	for (var/mob/M in player_list)
 		if (M.client)
 			n++
 
-	if (n > 1)
-		features += "~[n] players"
-	else if (n > 0)
-		features += "~[n] player"
+	if (n > 0)
+		features += "Players: [n]"
+
+	features += "Round Duration: [roundduration2text()]"
+	features += "Last updates: <a href=\"[config.changelog_link]\""
 
 	/*
 	is there a reason for this? the byond site shows 'hosted by X' when there is a proper host already.
@@ -466,14 +461,10 @@ var/global/shutdown_processed = FALSE
 	*/
 
 	if (!host && config && config.hostedby)
-		features += "hosted by <b>[config.hostedby]</b>"
+		features += "Hosted by <b>[config.hostedby]</b>"
 
 	if (features)
-		s += ": [jointext(features, ", ")]"
-
-	/* does this help? I do not know */
-	if (src.status != s)
-		src.status = s
+		s += "[jointext(features, "\n")]"
 
 /proc/SetRoundID()
 	if(!establish_db_connection("erro_round"))
