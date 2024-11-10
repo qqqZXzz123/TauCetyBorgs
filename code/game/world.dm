@@ -437,12 +437,14 @@ var/global/shutdown_processed = FALSE
 		s += "<a href=\"[config.discord_invite_url]\">"
 		s += "discord"
 		s += "</a>"
+		s += "):"
 		s += "\n"
 
-	s += "<br>"
 	var/list/features = list()
 
-	features += "Roleplay: <b>Medium</b>"
+	features += "<br>Roleplay: <b>Medium</b>"
+	features += "<br>Round Duration: [roundduration2text()]"
+	features += "<br>Last updates: <a href=\"[config.changelog_link]\""
 
 	if(SSticker)
 		if(master_mode)
@@ -478,7 +480,7 @@ var/global/shutdown_processed = FALSE
 		features += "hosted by <b>[config.hostedby]</b>"
 
 	if (features)
-		s += ": [jointext(features, ", ")]"
+		s += "[jointext(features, ", ")]"
 
 	/* does this help? I do not know */
 	if (src.status != s)
