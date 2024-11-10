@@ -437,12 +437,14 @@ var/global/shutdown_processed = FALSE
 		s += "<a href=\"[config.discord_invite_url]\">"
 		s += "discord"
 		s += "</a>"
-		s += "):"
 		s += "\n"
 
+	s += "<br>"
 	var/list/features = list()
 
 	features += "Roleplay: <b>Medium</b>"
+	features += "Round Duration: [roundduration2text()]"
+	features += "Last updates: <a href=\"[config.changelog_link]\""
 
 	if(SSticker)
 		if(master_mode)
@@ -467,9 +469,6 @@ var/global/shutdown_processed = FALSE
 		features += "~[n] players"
 	else if (n > 0)
 		features += "~[n] player"
-
-	features += "Round Duration: [roundduration2text()]"
-	features += "Last updates: <a href=\"[config.changelog_link]\""
 
 	/*
 	is there a reason for this? the byond site shows 'hosted by X' when there is a proper host already.
