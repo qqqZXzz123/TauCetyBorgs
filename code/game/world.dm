@@ -463,8 +463,10 @@ var/global/shutdown_processed = FALSE
 		if (M.client)
 			n++
 
-	if (n > 0)
-		features += "Players: [n]"
+	if (n > 1)
+		features += "~[n] players"
+	else if (n > 0)
+		features += "~[n] player"
 
 	features += "Round Duration: [roundduration2text()]"
 	features += "Last updates: <a href=\"[config.changelog_link]\""
