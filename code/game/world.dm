@@ -424,16 +424,25 @@ var/global/shutdown_processed = FALSE
 
 	s += "<b>[station_name()]</b>";
 
-	if (config && config.siteurl)
+	if (config && config.siteurl && config.wikiurl && config.discord_invite_url)
 		s += " ("
 		s += "<a href=\"[config.siteurl]\">" //Change this to wherever you want the hub to link to.
 		s += "site"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 		s += "</a>"
-		s += ")"
+		s += ", "
+		s += "<a href=\"[config.wikiurl]\">"
+		s += "wiki"
+		s += "</a>"
+		s += ", "
+		s += "<a href=\"[config.discord_invite_url]\">"
+		s += "discord"
+		s += "</a>"
+		s += "):"
+		s += "\n"
 
 	var/list/features = list()
 
-//	features += "(18+) ERP allowed"
+	features += "Roleplay: <b>Medium</b>"
 
 	if(SSticker)
 		if(master_mode)
@@ -454,10 +463,11 @@ var/global/shutdown_processed = FALSE
 		if (M.client)
 			n++
 
-	if (n > 1)
-		features += "~[n] players"
-	else if (n > 0)
-		features += "~[n] player"
+	if (n > 0)
+		features += "Players: [n]"
+
+	features += "Round Duration: [roundduration2text()]"
+	features += "Last updates: <a href=\"[config.changelog_link]\""
 
 	/*
 	is there a reason for this? the byond site shows 'hosted by X' when there is a proper host already.
