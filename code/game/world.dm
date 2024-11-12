@@ -424,17 +424,32 @@ var/global/shutdown_processed = FALSE
 
 	s += "<b>[station_name()]</b>";
 
-	if (config && config.siteurl)
-		s += " ("
-		s += "<a href=\"[config.siteurl]\">" //Change this to wherever you want the hub to link to.
-		s += "site"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
-		s += "</a>"
-		s += ")"
+//	if (config && config.siteurl)
+			s += " ("
+	s += "<a href=\"url\">" //Change this to wherever you want the hub to link to.
+	s += "site"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "</a>"
+	s += ", "
+	s += "<a href=\"url\">"
+	s += "wiki"
+	s += "</a>"
+	s += ", "
+	s += "<a href=\"url\">"
+	s += "discord"
+	s += "</a>"
+	s += "):"
+	s += "<br>"
 
 	var/list/features = list()
 
-//	features += "(18+) ERP allowed"
+	features += "Roleplay: <b>Medium</b>"
 
+	if(SSticker)
+
+		features += "Mode: [master_mode ? master_mode : "<b>STARTING</b>"]"
+
+	if (LAZYACCESS(SSlag_switch.measures, DISABLE_NON_OBSJOBS))
+		features += "Status: Closed"
 	if(SSticker)
 		if(master_mode)
 			features += master_mode
