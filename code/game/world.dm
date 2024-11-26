@@ -419,59 +419,23 @@ var/global/shutdown_processed = FALSE
 /world/proc/update_status()
 	var/s = ""
 
-	if (config && config.server_name)
-		s += "<b>[config.server_name]</b> &#8212; "
+	s += "<b>"
 
-	s += "<b>[station_name()]</b>";
+	if (config && config.server_name)
+		s += "[config.server_name] &#8212; "
+
+	s += "[station_name()]</b>";
 
 	if (config && config.siteurl)
-		s += " ("
-		s += "<a href=\"[config.siteurl]\">" //Change this to wherever you want the hub to link to.
-		s += "site"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
-		s += "</a>"
-		s += ")"
+		s += " (<a href=\"[config.siteurl]\">links</a>)"
 
-	var/list/features = list()
+	s += "<br>Roleplay: <b>Medium</b>"
 
-//	features += "(18+) ERP allowed"
+	s += "<br>Round Duration: <b>[roundduration2text()]</b>"
 
-	if(SSticker)
-		if(master_mode)
-			features += master_mode
-	else
-		features += "<b>STARTING</b>"
+	if (config && config.changelog_link)
+		s += "<br><a href=\"[config.changelog_link]\">Recent changes</a>"
 
-	if (LAZYACCESS(SSlag_switch.measures, DISABLE_NON_OBSJOBS))
-		features += "closed"
-
-	features += abandon_allowed ? "respawn" : "no respawn"
-
-	if (config && config.allow_ai)
-		features += "AI allowed"
-
-	var/n = 0
-	for (var/mob/M in player_list)
-		if (M.client)
-			n++
-
-	if (n > 1)
-		features += "~[n] players"
-	else if (n > 0)
-		features += "~[n] player"
-
-	/*
-	is there a reason for this? the byond site shows 'hosted by X' when there is a proper host already.
-	if (host)
-		features += "hosted by <b>[host]</b>"
-	*/
-
-	if (!host && config && config.hostedby)
-		features += "hosted by <b>[config.hostedby]</b>"
-
-	if (features)
-		s += ": [jointext(features, ", ")]"
-
-	/* does this help? I do not know */
 	if (src.status != s)
 		src.status = s
 
